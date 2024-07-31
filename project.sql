@@ -1,3 +1,4 @@
+@ -0,0 +1,172 @@
 DROP TABLE IF EXISTS Mem_info;
 DROP TABLE IF EXISTS Pmt_amt;
 DROP TABLE IF EXISTS Rest_class;
