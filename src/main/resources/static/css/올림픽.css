@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+}
+header {
+  font-size: 2rem;
+  display: flex;
+  background-color: beige;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+}
+#se1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+#paris {
+  width: 150px;
+  height: 150px;
+}
+#submit {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+}
+#text {
+  width: 500px;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+#img {
+  width: 500px;
+  height: 300px;
+  padding-top: 150px;
+  padding-left: 34%;
+  background-blend-mode: color;
+}

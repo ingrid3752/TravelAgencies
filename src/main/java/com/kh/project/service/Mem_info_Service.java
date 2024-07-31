@@ -1,23 +1,25 @@
 package com.kh.project.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
+
 import org.springframework.stereotype.Service;
 
-import com.kh.project.model.vo.Member;
+import com.kh.project.model.vo.Mem_info;
 
-import mapper.MemberMapper;
+import mapper.Mem_info_Mapper;
 
 @Service
-public class MemberService {
+public class Mem_info_Service {
 	
 	@Autowired
-	private MemberMapper memberMapper;
+	private Mem_info_Mapper memberMapper;
 	
-	public MemberService(MemberMapper memberMapper) {
+	public Mem_info_Service(Mem_info_Mapper memberMapper) {
 		this.memberMapper = memberMapper;
 	}
 	
-	public void register(Member member) {
+	public void register(Mem_info member) {
 		memberMapper.register(member);
 	}
 }
