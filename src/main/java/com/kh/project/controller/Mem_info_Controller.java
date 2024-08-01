@@ -6,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.kh.mybatis.model.vo.Member;
 import com.kh.project.model.vo.Mem_info;
 import com.kh.project.service.Mem_info_Service;
 
