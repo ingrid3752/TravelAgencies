@@ -1,18 +1,18 @@
-DROP TABLE IF EXISTS mem_info;
-DROP TABLE IF EXISTS pmt_amt;
-DROP TABLE IF EXISTS stadium;
-DROP TABLE IF EXISTS stadium_res;
-DROP TABLE IF EXISTS theme_park;
-DROP TABLE IF EXISTS theme_park_res;
-DROP TABLE IF EXISTS goods;
-DROP TABLE IF EXISTS rest;
-DROP TABLE IF EXISTS rest_res;
-DROP TABLE IF EXISTS rest_class;
-DROP TABLE IF EXISTS review;
-DROP TABLE IF EXISTS question_table;
-DROP TABLE IF EXISTS accom;
-DROP TABLE IF EXISTS accom_res;
-DROP TABLE IF EXISTS accom_class;
+DROP TABLE stadium_res;
+DROP TABLE theme_park_res;
+DROP TABLE goods;
+DROP TABLE rest_res;
+DROP TABLE review;
+DROP TABLE accom_res;
+DROP TABLE pmt_amt;
+DROP TABLE question_table;
+DROP TABLE mem_info;
+DROP TABLE stadium;
+DROP TABLE theme_park;
+DROP TABLE rest;
+DROP TABLE rest_class;
+DROP TABLE accom;
+DROP TABLE accom_class;
 
 -- 회원 정보
 CREATE TABLE mem_info (
