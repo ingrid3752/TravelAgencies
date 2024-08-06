@@ -6,9 +6,10 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Rest {
-	private String restName;
-	private String restLocation;
-	private String restPhone;
-	private int avgPrice;
-	private String restClass;
+	private int restCode;
+    private String restName;
+    private String restLocation;
+    private String restPhone;
+    private int avgPrice;
+    private int restClassCode;
 }

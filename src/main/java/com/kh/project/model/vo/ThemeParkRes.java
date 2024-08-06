@@ -5,10 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class MemInfo {
-	private int memInfoCode;
-	private String id;
-	private String password;
-	private String name;
-	private String phone;
+public class ThemeParkRes {
+	private int themeParkResCode;
+	private int pmtAmtCode;
+	private int themeCode;
+	private int memCode;
 }

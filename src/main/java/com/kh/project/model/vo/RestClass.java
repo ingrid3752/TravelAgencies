@@ -6,5 +6,6 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class RestClass {
+	private int restClassCode;
 	private String restSector;
 }

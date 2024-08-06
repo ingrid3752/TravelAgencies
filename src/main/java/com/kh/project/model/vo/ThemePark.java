@@ -6,7 +6,8 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class ThemePark {
-	private String location;
-	private String themePhone;
-	private String guide;
+	private int themeCode;
+    private String location;
+    private String themePhone;
+    private String guide;
 }

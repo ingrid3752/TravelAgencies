@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Review {
+	private int reviewCode;
 	private Date reviewDate;
 	private String packageReview;
 	private String memInfo;

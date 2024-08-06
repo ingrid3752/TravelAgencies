@@ -94,7 +94,7 @@ CREATE TABLE goods (
     local_goods VARCHAR(50),
     special_goods VARCHAR(50),
     pmt_amt_code INT,
-    FOREIGN KEY (pmt_amt_code) REFERENCES pmt_amt (pmt_amt_code)
+    FOREIGN KEY (theme_code) REFERENCES theme_park (theme_code)
 );
 
 -- 식당

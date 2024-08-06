@@ -1,8 +1,4 @@
-package com.kh.project.reservation;
-
-import java.sql.Time;
-
-import java.util.Date;
+package com.kh.project.model.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,11 +6,12 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class RestRes {
-	private Date date;
-	private Time time;
+	private int reservationCode;
+	private String date;
+	private String time;
 	private int people;
 	private int amount;
-	private String pmtAmt;
-	private String rest;
-	private String memInfo;
+	private int pmtAmtCode;
+	private int restCode;
+	private int memCode;
 }

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Accom {
+	private int accomCode;
 	private String phone;
 	private String location;
 	private int price;

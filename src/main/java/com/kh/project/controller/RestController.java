@@ -1,5 +1,5 @@
 package com.kh.project.controller;
 
-public class StadiumResController {
+public class RestController {
 
 }

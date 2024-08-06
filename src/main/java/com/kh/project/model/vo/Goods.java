@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Goods {
+	private int GoodsCode;
 	private String localGoods;
 	private String specialGoods;
 	private String pmtAmt;
