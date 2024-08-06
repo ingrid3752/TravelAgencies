@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kh.TravelAgencies.mapper.AccomMapper">
+    <resultMap id="BaseResultMap" type="com.kh.TravelAgencies.model.Accom">
+        <id column="accom_code" property="accomCode"/>
+        <result column="phone" property="phone"/>
+        <result column="location" property="location"/>
+        <result column="price" property="price"/>
+        <result column="name_of_accom" property="nameOfAccom"/>
+        <result column="breakfast_availability" property="breakfastAvailability"/>
+        <result column="accom_class_code" property="accomClassCode"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT * FROM accom
+    </select>
+
+    <select id="findById" parameterType="int" resultMap="BaseResultMap">
+        SELECT * FROM accom WHERE accom_code = #{accomCode}
+    </select>
+
+    <insert id="save" parameterType="com.kh.TravelAgencies.model.Accom">
+        INSERT INTO accom (phone, location, price, name_of_accom, breakfast_availability, accom_class_code)
+        VALUES (#{phone}, #{location}, #{price}, #{nameOfAccom}, #{breakfastAvailability}, #{accomClassCode})
+    </insert>
+
+    <update id="update" parameterType="com.kh.TravelAgencies.model.Accom">
+        UPDATE accom
+        SET phone = #{phone}, location = #{location}, price = #{price}, name_of_accom = #{nameOfAccom}, 
+            breakfast_availability = #{breakfastAvailability}, accom_class_code = #{accomClassCode}
+        WHERE accom_code = #{accomCode}
+    </update>
+
+    <delete id="deleteById" parameterType="int">
+        DELETE FROM accom WHERE accom_code = #{accomCode}
+    </delete>
+</mapper>

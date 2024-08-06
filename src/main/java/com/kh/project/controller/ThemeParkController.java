@@ -2,7 +2,6 @@ package com.kh.project.controller;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -13,44 +12,43 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.kh.project.model.vo.Stadium;
-import com.kh.project.service.StadiumService;
-
+import com.kh.project.model.vo.ThemePark;
+import com.kh.project.service.ThemeParkService;
 
 @Controller
-@RequestMapping("/stadiums")
-public class StadiumController {
+@RequestMapping("/theme-parks")
+public class ThemeParkController {
     @Autowired
-    private StadiumService stadiumService;
+    private ThemeParkService themeParkService;
 
     @GetMapping
-    public List<Stadium> findAll() {
-        return stadiumService.findAll();
+    public List<ThemePark> findAll() {
+        return themeParkService.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Stadium> findById(@PathVariable Integer id) {
-        Stadium stadium = stadiumService.findById(id);
-        if (stadium != null) {
-            return ResponseEntity.ok(stadium);
+    public ResponseEntity<ThemePark> findById(@PathVariable Integer id) {
+        ThemePark themePark = themeParkService.findById(id);
+        if (themePark != null) {
+            return ResponseEntity.ok(themePark);
         } else {
             return ResponseEntity.notFound().build();
         }
     }
 
     @PostMapping
-    public void save(@RequestBody Stadium stadium) {
-        stadiumService.save(stadium);
+    public void save(@RequestBody ThemePark themePark) {
+        themeParkService.save(themePark);
     }
 
     @PutMapping("/{id}")
-    public void update(@PathVariable Integer id, @RequestBody Stadium stadium) {
-        stadium.setStadiumCode(id);
-        stadiumService.update(stadium);
+    public void update(@PathVariable Integer id, @RequestBody ThemePark themePark) {
+        themePark.setThemeCode(id);
+        themeParkService.update(themePark);
     }
 
     @DeleteMapping("/{id}")
     public void deleteById(@PathVariable Integer id) {
-        stadiumService.deleteById(id);
+        themeParkService.deleteById(id);
     }
 }

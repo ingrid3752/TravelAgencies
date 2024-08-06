@@ -2,7 +2,6 @@ package com.kh.project.controller;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -13,44 +12,44 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.kh.project.model.vo.Stadium;
-import com.kh.project.service.StadiumService;
 
+import com.kh.project.model.vo.Accom;
+import com.kh.project.service.AccomService;
 
 @Controller
-@RequestMapping("/stadiums")
-public class StadiumController {
+@RequestMapping("/accommodations")
+public class AccomController {
     @Autowired
-    private StadiumService stadiumService;
+    private AccomService accomService;
 
     @GetMapping
-    public List<Stadium> findAll() {
-        return stadiumService.findAll();
+    public List<Accom> findAll() {
+        return accomService.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Stadium> findById(@PathVariable Integer id) {
-        Stadium stadium = stadiumService.findById(id);
-        if (stadium != null) {
-            return ResponseEntity.ok(stadium);
+    public ResponseEntity<Accom> findById(@PathVariable Integer id) {
+        Accom accom = accomService.findById(id);
+        if (accom != null) {
+            return ResponseEntity.ok(accom);
         } else {
             return ResponseEntity.notFound().build();
         }
     }
 
     @PostMapping
-    public void save(@RequestBody Stadium stadium) {
-        stadiumService.save(stadium);
+    public void save(@RequestBody Accom accom) {
+        accomService.save(accom);
     }
 
     @PutMapping("/{id}")
-    public void update(@PathVariable Integer id, @RequestBody Stadium stadium) {
-        stadium.setStadiumCode(id);
-        stadiumService.update(stadium);
+    public void update(@PathVariable Integer id, @RequestBody Accom accom) {
+        accom.setAccomCode(id);
+        accomService.update(accom);
     }
 
     @DeleteMapping("/{id}")
     public void deleteById(@PathVariable Integer id) {
-        stadiumService.deleteById(id);
+        accomService.deleteById(id);
     }
 }
