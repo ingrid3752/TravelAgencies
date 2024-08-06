@@ -9,8 +9,8 @@ import com.kh.project.model.vo.Mem;
 
 
 
-//@Service
-//public class Mem_Service {
+@Service
+public class Mem_Service {
 //	
 //	@Autowired
 //	private Mem_Mapper memberMapper;
@@ -22,4 +22,4 @@ import com.kh.project.model.vo.Mem;
 //	public void register(Mem member) {
 //		memberMapper.register(member);
 //	}
-//}
+}

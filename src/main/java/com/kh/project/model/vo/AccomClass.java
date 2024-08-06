@@ -1,5 +1,5 @@
 package com.kh.project.model.vo;
 
-public class Rest_res {
+public class AccomClass {
 
 }

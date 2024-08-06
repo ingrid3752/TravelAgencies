@@ -15,7 +15,7 @@ userId.addEventListener("input", function (e) {
   const check = regExp.test(userId.value);
 
   if (check) {
-    userIdSpan.style.color = "blue";
+    userIdSpan.style.color = "green";
     userIdSpan.innerHTML = "OK!";
   } else {
     userIdSpan.style.color = "red";
