@@ -5,9 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kh.project.model.vo.ThemePark;
-
-import mapper.ThemeParkMapper;
+import com.kh.project.mapper.ThemeParkMapper;
+import com.kh.project.model.ThemePark;
 
 @Service
 public class ThemeParkService {

@@ -5,9 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kh.project.model.vo.Rest;
-
-import mapper.RestMapper;
+import com.kh.project.mapper.RestMapper;
+import com.kh.project.model.Rest;
 
 @Service
 public class RestService {

@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.kh.project.model.vo.MemInfo;
+import com.kh.project.model.MemInfo;
 import com.kh.project.service.MemInfoService;
 
 import jakarta.servlet.http.HttpServletRequest;

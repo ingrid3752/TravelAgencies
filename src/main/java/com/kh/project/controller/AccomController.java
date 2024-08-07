@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.kh.project.model.vo.Accom;
+import com.kh.project.model.Accom;
 import com.kh.project.service.AccomService;
 
 @Controller

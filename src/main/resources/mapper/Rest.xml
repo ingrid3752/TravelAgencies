@@ -3,8 +3,8 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.kh.TravelAgencies.mapper.RestMapper">
-    <resultMap id="BaseResultMap" type="com.kh.TravelAgencies.model.Rest">
+<mapper namespace="com.kh.project.mapper.RestMapper">
+    <resultMap id="BaseResultMap" type="com.kh.project.model.Rest">
         <id column="rest_code" property="restCode"/>
         <result column="rest_name" property="restName"/>
         <result column="rest_location" property="restLocation"/>
@@ -21,12 +21,12 @@
         SELECT * FROM rest WHERE rest_code = #{restCode}
     </select>
 
-    <insert id="save" parameterType="com.kh.TravelAgencies.model.Rest">
+    <insert id="save" parameterType="com.kh.project.model.Rest">
         INSERT INTO rest (rest_name, rest_location, rest_phone, avg_price, rest_class_code)
         VALUES (#{restName}, #{restLocation}, #{restPhone}, #{avgPrice}, #{restClassCode})
     </insert>
 
-    <update id="update" parameterType="com.kh.TravelAgencies.model.Rest">
+    <update id="update" parameterType="com.kh.project.model.Rest">
         UPDATE rest
         SET rest_name = #{restName}, rest_location = #{restLocation}, rest_phone = #{restPhone}, 
             avg_price = #{avgPrice}, rest_class_code = #{restClassCode}

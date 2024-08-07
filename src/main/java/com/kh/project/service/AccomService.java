@@ -5,12 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kh.project.model.vo.Accom;
-
-import mapper.AccomMapper;
+import com.kh.project.mapper.AccomMapper;
+import com.kh.project.model.Accom;
 
 @Service
 public class AccomService {
+	
     @Autowired
     private AccomMapper accomMapper;
 

@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.kh.project.model.vo.Stadium;
+
+import com.kh.project.model.Stadium;
 import com.kh.project.service.StadiumService;
 
 

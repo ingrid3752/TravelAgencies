@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.kh.project.model.vo.Rest;
+import com.kh.project.model.Rest;
 import com.kh.project.service.RestService;
 
 @Controller
