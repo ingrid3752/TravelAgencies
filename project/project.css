@@ -160,11 +160,7 @@ button:disabled {
   transform: none; /* 비활성화 시 확대/축소 효과 제거 */
 }
 
-.accommodation.p {
-  font-style: inherit;
-  font-size: x-large;
-  color:#004080;
-}
+
 
 .top {
   position: fixed;
@@ -181,3 +177,43 @@ button:disabled {
 }
 
 
+.container {
+  display: flex;
+}
+.square {
+  width: 10px;
+  height: 30px;
+  margin: 3px;
+  background-color: white;
+  border-radius: 10px;
+  animation: squareScale 1s linear infinite; /* 수정된 부분 */
+}
+
+.square:nth-child(2),
+.square:nth-child(6) {
+  animation-delay: 0.1s;
+}
+.square:nth-child(3),
+.square:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.square:nth-child(4) {
+  animation-delay:0.3s;
+}
+@keyframes squareScale {
+  0%{
+      transform: scaleY(1);
+  }
+  50% {
+      transform: scaleY(1.8);
+  }
+  100% {
+      transform:scaleY(1);
+  }
+}
+
+.accommodation.p {
+  font-style: inherit;
+  font-size: x-large;
+  color:#004080;
+}
