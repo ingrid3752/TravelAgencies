@@ -6,6 +6,16 @@
     <title>KHTRAVEL</title>
     <link rel="stylesheet" href="project.css" />
     <link rel="stylesheet" href="css/reset.css" />
+
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+
+
+
 </head>
 <body>
     <header>
@@ -56,15 +66,14 @@
                 <img src="/이미지/캡처6.PNG" alt="인터시티 서울 호텔" />
                 <p>인터시티 서울 호텔</p>
                 <p>4.3 (4,496)</p>
-                <button>예약하기</button>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
             <div class="accommodation-item">
                 <img src="/이미지/그랜드 워커힐 서울.PNG" alt="그랜드 워커힐 서울" />
                 <p>그랜드 워커힐 서울</p>
                 <p>4.9 (30)</p>
-                <button>예약하기</button>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
-        </div>
     </section>
 
     <section class="accommodation" id="프리미엄">
@@ -74,15 +83,15 @@
                 <img src="/이미지/라파엘파리.PNG" alt="발리 발리쿠" />
                 <p>라파엘 파리</p>
                 <p>4.3 (4,496)</p>
-                <button>예약하기</button>
-            </div>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>       
+            </div>  
             <div class="accommodation-item">
                 <img src="/이미지/아트호텔에펠.PNG" alt="이야나 발리" />
                 <p>이야나 발리</p>
                 <p>4.9 (30)</p>
-                <button>예약하기</button>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
-        </div>
+       
     </section>  
 
     <section class="accommodation" id="경기장">
@@ -98,7 +107,7 @@
                 <img src="이미지/파리여행티켓.PNG" alt="파리여행티켓" />
                 <p>올림픽 경기장 예약하기</p>
                 <p>4.9 (30)</p>
-                <button>예약하기</button>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
         </div>
     </section>  
@@ -110,13 +119,13 @@
                 <img src="이미지/폴드락레스토랑.PNG" alt="폴드락레스토랑" />
                 <p>폴드락 레스토랑</p>
                 <p>4.3 (4,496)</p>
-                <button>예약하기</button>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
             <div class="accommodation-item">
                 <img src="이미지/레졸릴떼.PNG" alt="레졸릴떼" />
                 <p>레졸릴떼 레스토랑</p>
                 <p>4.9 (30)</p>
-                <button>예약하기</button>
+                <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
         </div>
     </section>  
@@ -134,13 +143,6 @@
            
      
     </section>  
-
-
-
-
-
-    <a href="" class="top">TOP</a>
-
 
 </body>
 </html>
