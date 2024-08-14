@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../project"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "TravelAgencies"
+  }
+}

@@ -5,42 +5,94 @@ body {
   padding: 0;
 }
 h1 {
+  position: relative;
+  left: 45%;
+  top: 50px;
   font-weight: 350;
   color: rgba(0, 0, 0, 0.979);
 }
 
-.slider {
+/* slider */
+.slider__wrap {
   width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2rem;
-  margin: 20px 0;
-}
-
-.slides-container {
+  height: 400px;
   display: flex;
-  width: 100%;
-  max-height: 500px;
-  transition: transform 0.5s ease-in-out;
-  opacity: 0.7;
+  align-items: center;
+  justify-content: center;
+}
+.slider__img {
+  /* 이미지 보이는 영역 */
+  position: center;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+.slider__inner {
+  /* 이미지를 감싸고 있는 부모(움직이는 부분) */
+  display: flex;
+
+  width: 2000px;
+  height: 520px;
+}
+.slider {
+  /* 개별적인 이미지 */
+  position: relative;
+  width: 800px;
+  height: 520px;
+}
+.slider::before {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 5px 10px;
 }
 
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
+@media (max-width: 800px) {
+  .slider__img {
+    width: 400px;
+    height: 260px;
+  }
 }
 
-.slide img {
-  width: 40%;
-  max-height: 800px;
-  object-fit: cover;
+.slider__btn a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.2s;
+  display: block;
+  color: #fff;
 }
-
+.slider__btn a:hover {
+  background: rgb(190, 157, 85);
+}
+.slider__btn a.prev {
+  left: 650px;
+}
+.slider__btn a.next {
+  right: 650px;
+}
+.slider__dot {
+  position: absolute;
+  left: 48%;
+  top: 450px;
+  bottom: 20px;
+}
+.slider__dot .dot {
+  width: 15px;
+  height: 15px;
+  background: rgba(22, 21, 21, 0.205);
+  display: inline-block;
+  border-radius: 50%;
+  /* text-indent: 들여쓰기 속성. 여기에선 blind 역할 */
+  text-indent: -9999px;
+  transition: all 0.3s;
+  margin: 2px;
+}
 .rating-container {
   width: 80%;
   max-width: 600px;
