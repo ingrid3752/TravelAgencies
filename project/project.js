@@ -3,5 +3,5 @@
         window.location.href = 'hotel.html'
     };
 
-
+      
 </script>

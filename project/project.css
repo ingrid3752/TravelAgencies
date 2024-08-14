@@ -3,10 +3,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 header {
-  background-color: #ff69b4;
+  background-color: hotpink;
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -51,6 +54,7 @@ nav ul {
   justify-content: space-around;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  
 }
 
 nav li {
@@ -60,7 +64,7 @@ nav li {
 }
 
 nav li:hover {
-  background-color: #f0f0f0;
+  background-color: blanchedalmond;
 }
 
 .banner {
@@ -216,4 +220,9 @@ button:disabled {
   font-style: inherit;
   font-size: x-large;
   color:#004080;
+}
+
+
+.bungee-tint-regular {
+
 }
