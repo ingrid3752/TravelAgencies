@@ -4,19 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KHTRAVEL</title>
+
     <link rel="stylesheet" href="project.css" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
-
-    <script>
-        function navigateTo(url) {
-            window.location.href = url;
-        }
-    </script>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easing/1.4.1/jquery.easing.min.js"></script>
 
 </head>
 <body>
@@ -59,22 +53,29 @@
     </section>
 <br>
 
-    <section class="accommodation" id="호텔">
-        <h2>호텔 / 모텔🏨</h2>
-        <div class="accommodation-list">
-            <div class="accommodation-item">
+<section class="accommodation" id="호텔">
+    <h2>호텔 / 모텔🏨</h2>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slider-item">
                 <img src="/이미지/캡처6.PNG" alt="인터시티 서울 호텔" />
                 <p>인터시티 서울 호텔</p>
                 <p>4.3 (4,496)</p>
                 <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
-            <div class="accommodation-item">
+            <div class="slider-item">
                 <img src="/이미지/그랜드 워커힐 서울.PNG" alt="그랜드 워커힐 서울" />
                 <p>그랜드 워커힐 서울</p>
                 <p>4.9 (30)</p>
                 <button onclick="navigateTo('hotel.html')">예약하기</button>
             </div>
-    </section>
+            <!-- 더 많은 슬라이드 항목을 추가하세요 -->
+        </div>
+        <button class="button prev">❮</button>
+        <button class="button next">❯</button>
+    </div>
+</section>
+
 
     <section class="accommodation" id="프리미엄">
         <h2>프리미엄숙소 🌟 </h2>
@@ -145,4 +146,5 @@
     </section> 
 
 
-    
+    <script src="project.js"></script>
+        
