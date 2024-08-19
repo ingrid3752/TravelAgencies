@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지도 상세 페이지</title>
+    <link rel="stylesheet" href="map.css" />
+</head>
+<body>
+    <header>
+        <h1>지도 상세 페이지</h1>
+        <a href="project.html">홈으로 돌아가기</a>
+    </header>
+
+    <main>
+        <section class="map-section">
+            <h2>경기장 위치</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
