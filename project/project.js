@@ -1,31 +1,29 @@
 $(document).ready(function() {
+    let $slider = $('.slider');
+    let $sliderItems = $slider.find('.slider-item');
+    let $prevButton = $('.button.prev');
+    let $nextButton = $('.button.next');
     let currentIndex = 0;
-    const $slider = $('.slider');
-    const $slides = $('.slider-item');
-    let sliderWidth = $slides.outerWidth();
-    const sliderInterval = 3000;
-
-    function updateSliderWidth() {
-        sliderWidth = $slides.outerWidth();
-    }
-
+    
     function showSlide(index) {
-        $slider.animate({left: -index * sliderWidth}, 1000, "easeInOutQuint");
+        $sliderItems.hide();
+        $sliderItems.eq(index).show();
     }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % $slides.length;
+    
+    function goToPrevSlide() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : $sliderItems.length - 1;
         showSlide(currentIndex);
     }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + $slides.length) % $slides.length;
+    
+    function goToNextSlide() {
+        currentIndex = (currentIndex < $sliderItems.length - 1) ? currentIndex + 1 : 0;
         showSlide(currentIndex);
     }
-
-    $('.next').click(nextSlide);
-    $('.prev').click(prevSlide);
-
+    
+    $prevButton.on('click', goToPrevSlide);
+    $nextButton.on('click', goToNextSlide);
+    
+    showSlide(currentIndex);
 });
 
 function navigateTo(url) {
