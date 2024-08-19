@@ -7,4 +7,17 @@
 	<select id="login" parameterType="Member" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id} AND password = #{password}
 	</select>
+
+	<update id="update" parameterType="Member">
+		UPDATE mem_info
+		SET
+		id=#{id}, password=#{password}
+		WHERE mem_code = #{mem_code}
+	</update>
+
+	<delete id="delete" parameterType="int">
+		DELETE FROM mem_info
+		WHERE mem_code =
+		#{mem_code}
+	</delete>
 </mapper>

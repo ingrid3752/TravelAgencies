@@ -47,19 +47,65 @@ public class MemberController {
 	}
 	
 	// 회원가입
-	@PostMapping("/register")
-	public String register(Member vo, HttpServletRequest request) {
+	@PostMapping("/signUp")
+	public String signUp(Member vo, HttpServletRequest request) {
 	    try {
-	        boolean isRegistered = memberService.register(vo);
+	        boolean isRegistered = memberService.signUp(vo);
 	        if (isRegistered) {
 	            return "redirect:/login"; // 회원가입 성공 후 로그인 페이지로 리다이렉트
 	        } else {
 	            request.setAttribute("errorMessage", "회원가입에 실패했습니다. 다시 시도해주세요.");
-	            return "register"; // 실패 시 다시 회원가입 페이지로 이동
+	            return "signUp"; // 실패 시 다시 회원가입 페이지로 이동
 	        }
 	    } catch (Exception e) {
 	        request.setAttribute("errorMessage", "회원가입 중 오류가 발생했습니다: " + e.getMessage());
-	        return "register"; // 예외 발생 시 다시 회원가입 페이지로 이동
+	        return "signUp"; // 예외 발생 시 다시 회원가입 페이지로 이동
 	    }
 	}
+	
+	  // 로그인 페이지 이동
+    @GetMapping("/login")
+    public String login() {
+        return "login"; 
+    }
+
+    // 회원가입 페이지 이동
+    @GetMapping("/signUp")
+    public String signUp() {
+        return "signUp"; 
+    }
+    
+    // 회원정보수정 페이지 이동
+    @GetMapping("/update")
+    public String update() {
+    	return "redirect:/";
+    }
+    
+ // 회원정보수정
+    @PostMapping("/update")
+    public String update(Member vo, HttpServletRequest request) {
+        try {
+            HttpSession session = request.getSession();
+            Member currentMember = (Member) session.getAttribute("vo");
+
+            if (currentMember != null) {
+                vo.setId(currentMember.getId()); // 현재 사용자의 ID를 유지
+                vo.setMemCode(currentMember.getMemCode()); // 고유 회원 코드 유지
+                boolean isUpdated = memberService.update(vo);
+
+                if (isUpdated) {
+                    session.setAttribute("vo", vo); // 업데이트된 정보를 세션에 저장
+                    return "redirect:/"; // 수정 성공 시 메인 페이지로 리다이렉트
+                } else {
+                    request.setAttribute("errorMessage", "회원정보 수정에 실패했습니다. 다시 시도해주세요.");
+                    return "update"; // 실패 시 다시 회원정보수정 페이지로 이동
+                }
+            } else {
+                return "redirect:/login"; // 세션에 사용자가 없을 경우 로그인 페이지로 리다이렉트
+            }
+        } catch (Exception e) {
+            request.setAttribute("errorMessage", "회원정보 수정 중 오류가 발생했습니다: " + e.getMessage());
+            return "update"; // 예외 발생 시 다시 회원정보수정 페이지로 이동
+        }
+    }
 }

@@ -36,13 +36,30 @@ public class MemberService {
      * @param vo 회원가입 정보가 담긴 Member 객체
      * @return 회원가입 성공 시 true, 실패 시 false
      */
-    public boolean register(Member vo) {
+    public boolean signUp(Member vo) {
         try {
-            int result = memberMapper.register(vo);
+            int result = memberMapper.signUp(vo);
             return result == 1; // 삽입된 레코드 수가 1이면 성공
         } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
     }
+    
+    // 회원정보 수정
+    // 회원정보 수정
+    public boolean update(Member vo) {
+        try {
+            int result = memberMapper.update(vo);
+            return result > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    
+    public void delete(int no) {
+    	memberMapper.delete(no);
+    }
+    
 }

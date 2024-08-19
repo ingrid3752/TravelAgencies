@@ -9,6 +9,8 @@ public interface MemberMapper {
     
     Member check(String id);
     Member login(Member vo);
-    int register(Member vo);
+    int signUp(Member vo);
+    int update(Member vo);
+    void delete(int no);
     
 }
