@@ -26,20 +26,4 @@ $(document).ready(function() {
     showSlide(currentIndex);
 });
 
-function initMap() {
-    var location = { lat: 48.8566, lng: 2.3522 }; // 예시: 파리의 위도와 경도
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: location
-    });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map,
-        title: '경기장 위치'
-    });
-}
 
-
-function navigateTo(url) {
-    window.location.href = url;
-}

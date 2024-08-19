@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>호텔 / 모텔</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easing/1.4.1/jquery.easing.min.js"></script>
+    <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+    <header>
+        <h1>호텔 / 모텔</h1>
+        <a href="project.html">홈으로 돌아가기</a>
+    </header>
+  
+    <section class="accommodation">
+        <h2>호텔 / 모텔 목록</h2>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slider-item">
+                    <img src="/이미지/캡처6.PNG" alt="인터시티 서울 호텔" />
+                    <p>인터시티 서울 호텔</p>
+                    <p>4.3 (4,496)</p>
+                    <button onclick="navigateTo('hotel.html')">예약하기</button>
+                </div>
+
+                <div class="slider-item">
+                    <img src="/이미지/그랜드 워커힐 서울.PNG" alt="그랜드 워커힐 서울" />
+                    <p>그랜드 워커힐 서울</p>
+                    <p>4.9 (30)</p>
+                    <button onclick="navigateTo('hotel.html')">예약하기</button>
+                </div>
+                <!-- 더 많은 호텔 항목을 추가하세요 -->
+            </div>
+            <button class="button prev">❮</button>
+            <button class="button next">❯</button>
+        </div>
+    </section>
+  
+    <script src="project.js"></script>
+</body>
+</html>
