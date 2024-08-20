@@ -5,12 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class Member {
+public class Goods {
 	
-	private int MemCode;
-	private String id;
-	private String password;
-	private String name;
-	private String phone;
+	private int goodsCode;
+	private String goods;
 	
 }

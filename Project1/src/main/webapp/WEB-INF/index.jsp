@@ -32,7 +32,7 @@
         <a href="#">☰</a>
         <ul class="submenu">
           <li><a href="<%= request.getContextPath() %>/login">로그인</a></li>
-          <li><a href="#">마이페이지</a></li>
+          <li><a href="<%= request.getContextPath() %>/mypage">마이페이지</a></li>
           <li><a href="#">관광지</a></li>
           <li><a href="#">굿즈</a></li>
           <li><a href="#">submenu05</a></li>
@@ -50,6 +50,6 @@
     </div>
 </section>
      <!-- SCRIPTS -->
-    <script src="${pageContext.request.contextPath}/js/로그인.js"></script>
+    <script src="${pageContext.request.contextPath}/js/index.js"></script>
 </body>
 </html>

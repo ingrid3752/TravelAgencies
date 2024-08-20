@@ -63,24 +63,6 @@ public class MemberController {
 	    }
 	}
 	
-	  // 로그인 페이지 이동
-    @GetMapping("/login")
-    public String login() {
-        return "login"; 
-    }
-
-    // 회원가입 페이지 이동
-    @GetMapping("/signUp")
-    public String signUp() {
-        return "signUp"; 
-    }
-    
-    // 회원정보수정 페이지 이동
-    @GetMapping("/update")
-    public String update() {
-    	return "redirect:/";
-    }
-    
  // 회원정보수정
     @PostMapping("/update")
     public String update(Member vo, HttpServletRequest request) {

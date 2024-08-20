@@ -7,6 +7,10 @@
 	<select id="login" parameterType="Member" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id} AND password = #{password}
 	</select>
+	
+	<insert id="signUp" parameterType="Member">
+		INSERT INTO mem_info (id, password, name, phone) VALUES(#{id}, #{password}, #{name}, #{phone})
+	</insert>
 
 	<update id="update" parameterType="Member">
 		UPDATE mem_info

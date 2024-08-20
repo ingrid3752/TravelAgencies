@@ -5,12 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class Member {
+public class PmtAmt {
 	
-	private int MemCode;
-	private String id;
-	private String password;
-	private String name;
-	private String phone;
+	private int pmtAmtCode;
+	private String accom;
+	private String meal;
+	private String goods;
+	private String ticket;
+	private int sumPrice;
 	
 }
