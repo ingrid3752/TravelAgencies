@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/이미지/france-1686269_1280.jpg);
+  background-size: cover;
+  background-position: center;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 350px;
+}
+#mypageinfo {
+  background-color: #f1d9d9;
+  padding: 20px;
+  padding-top: 75px;
+  border-radius: 8px;
+  box-shadow: 0 20px 30px rgba(218, 178, 178, 0.8);
+  width: 100%;
+  max-width: 400px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mypage {
+  margin-bottom: 15px;
+}
+.mypage label {
+  display: block;
+  margin-bottom: 5px;
+}
+.mypage input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.mypagebutton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+.mypagebutton:hover {
+  background-color: #0056b3;
+}
+.back-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+.back-button:hover {
+  background-color: #5a6268;
+}
