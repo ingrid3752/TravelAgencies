@@ -29,5 +29,35 @@ public class PageController {
     public String mypage() {
     	return "mypage";
     }
+    
+    // 로그인 후 메인 페이지로 이동
+    @GetMapping("/login/success")
+    public String loginSuccess() {
+        return "index"; 
+    }
+
+    // 회원가입 후 로그인 페이지로 이동
+    @GetMapping("/register/success")
+    public String registerSuccess() {
+        return "login"; 
+    }
+    
+    // 식당 페이지로 이동
+    @GetMapping("/rest")
+    public String RestPage() {
+        return "rest"; 
+    }
 	
+    // 숙소 페이지로 이동
+    @GetMapping("/accom")
+    public String AccomPage() {
+        return "accom"; 
+    }
+
+    // 굿즈 페이지로 이동
+    @GetMapping("/goods")
+    public String GoodsPage() {
+        return "goods"; 
+    }
+    
 }

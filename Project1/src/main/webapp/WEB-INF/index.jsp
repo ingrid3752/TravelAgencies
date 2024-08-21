@@ -33,9 +33,9 @@
         <ul class="submenu">
           <li><a href="<%= request.getContextPath() %>/login">로그인</a></li>
           <li><a href="<%= request.getContextPath() %>/mypage">마이페이지</a></li>
-          <li><a href="#">관광지</a></li>
-          <li><a href="#">굿즈</a></li>
-          <li><a href="#">submenu05</a></li>
+          <li><a href="<%= request.getContextPath() %>/rest">식당</a></li>
+          <li><a href="<%= request.getContextPath() %>/accom">숙소</a></li>
+          <li><a href="<%= request.getContextPath() %>/goods">굿즈</a></li>
         </ul>
       </li>
     </ul>

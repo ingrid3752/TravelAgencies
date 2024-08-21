@@ -8,6 +8,12 @@ import lombok.NoArgsConstructor;
 public class Goods {
 	
 	private int goodsCode;
-	private String goods;
+	private String goodsName;
+	private double price;
+	private int stock;
+	private String description;
+	private String category;
+	private int themeCode;
+	private int memCode;
 	
 }
