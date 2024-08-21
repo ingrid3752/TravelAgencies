@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/로그인.css" />
+    <link rel="stylesheet" href="../css/마이페이지.css" />
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../js/회원가입.js" />
     <!-- 폰트어썸폴더 -->
@@ -17,17 +17,17 @@
   
   <header id="header">
     <div id="Binggrae_font">
-      <a href="" id="KHTRAVLE">KHTRAVEL</a>
+      <a href="./메인.html" id="KHTRAVLE">KHTRAVEL</a>
     </div>
     <div>
-      <a href="./로그인.html" id="login">Login</a>
-      <a href="./회원가입.html" id="sign">Signup</a>
+      <a href="./로그인.html" id="login">로그인</a>
+      <a href="./회원가입.html" id="sign">회원가입</a>
     <ul class="menu">
         <li>
           <a href="#">☰</a>
           <ul class="submenu">
             <li><a href="./로그인.html">로그인</a></li>
-            <li><a href="./마이페이지.html"></a></li>
+            <li><a href="#">마이페이지</a></li>
             <li><a href="#">관광지</a></li>
             <li><a href="#">굿즈</a></li>
             <li><a href="#">submenu05</a></li>
@@ -38,19 +38,14 @@
   <!-- //style="overflow: hidden" -->
   <body style="overflow: hidden" id="body">
     <div id="login-form">
-      <h2>Login</h2>
-      <form method="post">
-          <div class="form-group">
-              <label for="id">ID </label>
-              <input type="text" id="id" name="id" required>
-          </div>
-          <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" required>
-          </div>
-          <button type="submit">Login</button>
-
-        </form>
-  </div>
+      <h2>Mypage</h2>
+      <ul id="mypage">
+        <li><a href="./로그인.html">&ensp;&ensp;&ensp;로그인</a></li>
+        <li><a href="./정보수정.html">&ensp;&ensp;&ensp;회원정보수정</a></li>
+        <li><a href="#">&ensp;&ensp;&ensp;예약관리</a></li>
+        <li><a href="#">&ensp;&ensp;&ensp;...</a></li>
+        <li><a href="#">&ensp;&ensp;&ensp;...</a></li>
+       </ul>
+     </div>
   </body>
 </html>

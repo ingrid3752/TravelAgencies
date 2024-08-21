@@ -8,6 +8,7 @@
   font-family: "Binggrae";
 }
 #header {
+  position: fixed;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -15,10 +16,10 @@
   height: 80px;
   width: 100%;
   padding-left: 30px;
-  font-optical-sizing: auto;
   font-family: "Gowun Batang", serif;
   font-weight: 400;
   font-style: normal;
+  top: 0%;
 }
 
 #KHTRAVLE {
@@ -44,10 +45,6 @@
 a {
   text-decoration: none;
   font-size: 14px;
-}
-#loginbutton {
-  height: 30px;
-  color: rgb(155, 108, 108);
 }
 #kh {
   color: white;
@@ -112,65 +109,10 @@ a {
   width: 100%;
   text-align: center;
   line-height: 40px;
-  background-color: #000000;
+  background-color: #00000017;
 }
 
 /*바디*/
-section p {
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section h2 {
-  font-size: 4rem;
-}
-#mainpage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 200px;
-}
-#h2main {
-  font-size: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-#inputmain {
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  margin: auto;
-  height: 30px;
-}
-#input {
-  width: 500px;
-  height: 40px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-right: 0px;
-  background-color: rgba(255, 255, 255, 0.274);
-  border: solid 0px;
-  color: rgb(255, 255, 255);
-  font-size: 1.3rem;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-#button {
-  height: 42px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-left: 0px;
-  outline: none;
-  color: rgb(243, 236, 204);
-  background-color: rgba(255, 255, 255, 0.274);
-  border: solid 0px;
-  font-size: 1rem;
-}
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.5)),
@@ -178,4 +120,94 @@ body {
   background-size: 100% 120%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Paris2024", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 기본 폰트 설정 */
+@font-face {
+  font-family: "Paris2024";
+  src: url("/fonts/Paris2024-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 로그인 폼 컨테이너 */
+#login-form {
+  background-color: #ffffffbd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.123);
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  color: #0000003b;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#login-form h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  font-family: "Gowun Batang", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+}
+
+.form-group input:focus {
+  border-color: #ffffff54;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00000042;
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff54;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #ffffff57;
 }

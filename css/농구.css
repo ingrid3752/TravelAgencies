@@ -67,8 +67,8 @@ a {
   width: 30px;
   overflow: hidden;
   margin: 150px auto;
-  bottom: 480px;
-  height: 300px;
+  bottom: 500px;
+  height: 285px;
   width: 100px;
   overflow: hidden;
   margin: 150px auto;
@@ -116,66 +116,84 @@ a {
 }
 
 /*바디*/
-section p {
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section h2 {
-  font-size: 4rem;
-}
-#mainpage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 200px;
-}
-#h2main {
-  font-size: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-#inputmain {
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  margin: auto;
-  height: 30px;
-}
-#input {
-  width: 500px;
-  height: 40px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-right: 0px;
-  background-color: rgba(255, 255, 255, 0.274);
-  border: solid 0px;
-  color: rgb(255, 255, 255);
-  font-size: 1.3rem;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-#button {
-  height: 42px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-left: 0px;
-  outline: none;
-  color: rgb(243, 236, 204);
-  background-color: rgba(255, 255, 255, 0.274);
-  border: solid 0px;
-  font-size: 1rem;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
 }
 
-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.5)),
-    url(/IMG/Untitled\ design.png);
-  background-size: 100% 120%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.event-info {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.event-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event-info .gender-symbol {
+  font-size: 24px;
+  color: #555;
+}
+
+.ticket-selection,
+.seat-map {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.ticket-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+.minus-btn,
+.plus-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.quantity {
+  margin: 0 15px;
+  font-size: 18px;
+}
+#black {
+  width: 1000px;
+  height: 400px;
+  background-color: #000000;
+  color: white;
+  font-size: 2rem;
+}
+#black a {
+  color: white;
+  width: 30px;
+  margin: 90%;
+}
+.bottom {
+  padding-bottom: 30px;
+}
+#black p {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 1.5rem;
+  padding-right: 80px;
+}
+#top {
+  background-color: rgb(0, 0, 0);
+  height: 200px;
+  width: 50px;
+  margin-left: 88%;
 }

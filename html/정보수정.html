@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/로그인.css" />
+    <link rel="stylesheet" href="../css/회원가입.css" />
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="../js/회원가입.js" />
     <!-- 폰트어썸폴더 -->
@@ -20,14 +20,14 @@
       <a href="" id="KHTRAVLE">KHTRAVEL</a>
     </div>
     <div>
-      <a href="./로그인.html" id="login">Login</a>
-      <a href="./회원가입.html" id="sign">Signup</a>
+      <a href="./로그인.html" id="login">로그인</a>
+      <a href="./회원가입.html" id="sign">회원가입</a>
     <ul class="menu">
         <li>
           <a href="#">☰</a>
           <ul class="submenu">
             <li><a href="./로그인.html">로그인</a></li>
-            <li><a href="./마이페이지.html"></a></li>
+            <li><a href="./마이페이지.html">마이페이지</a></li>
             <li><a href="#">관광지</a></li>
             <li><a href="#">굿즈</a></li>
             <li><a href="#">submenu05</a></li>
@@ -38,17 +38,26 @@
   <!-- //style="overflow: hidden" -->
   <body style="overflow: hidden" id="body">
     <div id="login-form">
-      <h2>Login</h2>
+      <h2>회원 정보 수정</h2>
       <form method="post">
           <div class="form-group">
-              <label for="id">ID </label>
+              <label for="id">ID</label>
               <input type="text" id="id" name="id" required>
           </div>
           <div class="form-group">
               <label for="password">Password</label>
               <input type="password" id="password" name="password" required>
           </div>
-          <button type="submit">Login</button>
+          <div class="form-group">
+            <label for="password">E-mail</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Phone</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+          <button type="submit">정보수정</button>
 
         </form>
   </div>
