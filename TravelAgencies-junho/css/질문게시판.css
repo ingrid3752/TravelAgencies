@@ -1,17 +1,24 @@
-/*new font*/
-/*헤더*/
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
+  overflow-x: hidden; /* 수평 스크롤 방지 */
+}
 
+
+
+/* 기본 스타일 */
+body {
+  font-family: 'Sunflower', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f5f5f5; /* 배경색 설정 */
   background-image: url("/IMG/question-mark-2492009_1920.jpg");
 }
 
-@font-face {
-  src: url("../html/font/Paris2024-Variable.ttf");
-  font-family: "Binggrae";
-}
-#Binggrae_font {
-  font-family: "Binggrae";
-}
+/* 헤더 스타일 */
 #header {
   background-color: black;
   display: flex;
@@ -21,96 +28,36 @@ body {
   width: 100%;
   padding-left: 30px;
   font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
 }
 
 #KHTRAVLE {
   color: white;
   font-size: 2rem;
 }
-#login {
+
+#login, #sign {
   color: white;
   font-size: 1.3rem;
-  padding-right: 10px;
   font-family: "Sunflower", sans-serif;
   font-weight: 500;
-  font-style: normal;
+  padding-right: 20px; /* padding-right 값을 통일 */
 }
+
 #sign {
-  color: white;
-  font-size: 1.3rem;
   padding-right: 150px;
-  font-family: "Sunflower", sans-serif;
-  font-weight: 500;
-  font-style: normal;
 }
+
 a {
   text-decoration: none;
-  font-size: 14px;
+  color: inherit; /* 링크 색상 상속 */
 }
-#loginbutton {
-  height: 30px;
-  color: rgb(155, 108, 108);
-}
-#kh {
-  color: white;
-  padding-left: 30px;
-  font-size: 3rem;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  font-size: 14px;
-}
+
 .menu {
   position: fixed;
   right: 20px;
-  width: 30px;
-  overflow: hidden;
-  margin: 150px auto;
-  bottom: 480px;
-  height: 300px;
+  top: 20px; /* fixed 위치 조정 */
   width: 100px;
-  overflow: hidden;
-  margin: 150px auto;
-}
-
-.menu > li {
-  width: 20%; /*20*5=100%*/
-  float: left;
-  text-align: center;
-  line-height: 40px;
-  background-color: #000000;
-  font-family: "Sunflower", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.menu a {
-  color: #fff;
-}
-
-.submenu > li {
-  line-height: 50px;
-  background-color: #000000;
-}
-
-.submenu {
-  height: 0; /*ul의 높이를 안보이게 처리*/
-  overflow: hidden;
-}
-.menu > li:hover {
-  background-color: #000000;
-  transition-duration: 0.5s;
-}
-
-.menu > li:hover .submenu {
-  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
-  transition-duration: 1s;
 }
 
 .menu > li {
@@ -118,8 +65,27 @@ a {
   text-align: center;
   line-height: 40px;
   background-color: #000000;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
 }
 
+.menu a {
+  color: #fff;
+}
+
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.menu > li:hover {
+  background-color: #000000;
+}
+
+.menu > li:hover .submenu {
+  height: 250px;
+}
 
 
 /* 컨테이너 스타일 */
@@ -140,7 +106,7 @@ a {
 }
 
 .question-form {
-  background: #fff;
+  background: rgba(144, 238, 144, 0.5);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

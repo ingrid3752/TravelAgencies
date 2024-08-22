@@ -40,41 +40,39 @@
         </div>
     </header>
     <main id="mainpage">
-        <!-- 여행지 선택 바 -->
-        <section id="destinationSelectContainer">
+        <!-- 리뷰 작성 폼 -->
+        <section id="reviewForm">
+            <h2>리뷰 작성하기</h2>
+
             <label for="categorySelect">여행지 카테고리 선택:</label>
-            <select id="categorySelect">
+            <select id="categorySelect" aria-label="여행지 카테고리 선택">
                 <option value="" selected>카테고리를 선택하세요</option>
                 <option value="domestic">국내</option>
                 <option value="international">해외</option>
             </select>
             
             <label for="destinationSelect">여행지 선택:</label>
-            <select id="destinationSelect">
+            <select id="destinationSelect" aria-label="여행지 선택">
                 <option value="" selected>여행지를 선택하세요</option>
                 <!-- 동적으로 채워질 부분 -->
             </select>
-        </section>
-        
-        <!-- 리뷰 작성 폼 -->
-        <section id="reviewForm">
-            <h2>리뷰 작성하기</h2>
+            <br>
+            
             <form action="/submit-review" method="post">
                 <label for="name">이름</label>
                 <input type="text" id="name" name="name" required>
                 
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">별점</label>
-                    <select class="form-select" id="inputGroupSelect01" name="rating" required>
-                        <option value="" selected>선택하기</option>
-                        <option value="1">⭐</option>
-                        <option value="2">⭐⭐</option>
-                        <option value="3">⭐⭐⭐</option>
-                        <option value="4">⭐⭐⭐⭐</option>
-                        <option value="5">⭐⭐⭐⭐⭐</option>
-                    </select>
-                </div>
-                
+                <label for="inputGroupSelect01">별점</label>
+                <select id="inputGroupSelect01" name="rating" required>
+                    <option value="" selected>선택하기</option>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+                <br>
+                <br>
                 <label for="comment">댓글</label>
                 <textarea id="comment" name="comment" rows="4" required></textarea>
                 
@@ -94,7 +92,7 @@
                     <span class="review-date">2024-08-22</span>
                 </div>
                 <p class="review-body">
-                    이곳은 매우 좋았습니다. 강력히 추천합니다!
+                    정말로 좋았습니다. 강력히 추천합니다!
                 </p>
             </article>
             <article class="review-item">
@@ -113,6 +111,6 @@
             <!-- 추가적인 리뷰 항목이 여기에 추가됩니다 -->
         </section>
     </main> 
-    <script src="/js/리뷰.js"></script>
+    <script src="../js/리뷰.js" defer></script>
 </body>
 </html>
