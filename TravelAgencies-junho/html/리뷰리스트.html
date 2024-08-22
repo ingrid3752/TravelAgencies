@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰 리스트 페이지</title>
+    <link rel="stylesheet" href="../css/리뷰.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <script src="../js/리뷰리스트.js" defer></script>
+    <script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일을 여기 넣을 수 있습니다 */
+        .review-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .review-rating {
+            font-size: 1.2em;
+        }
+
+        .review-meta {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .review-body {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="Binggrae_font">
+            <a href="#" id="KHTRAVLE">KHTRAVLE</a>
+        </div>
+        <div>
+            <a href="#" id="login" aria-label="로그인">로그인</a>
+            <a href="#" id="sign" aria-label="회원가입">회원가입</a>
+            <ul class="menu">
+                <li>
+                    <a href="#" aria-label="메뉴 열기">☰</a>
+                    <ul class="submenu">
+                        <li><a href="./로그인.html" aria-label="로그인 페이지">로그인</a></li>
+                        <li><a href="/예약페이지/project.html" aria-label="예약 페이지">예약페이지</a></li>
+                        <li><a href="./질문게시판.html" aria-label="질문 게시판">질문게시판</a></li>
+                        <li><a href="./리뷰.html" aria-label="리뷰 작성 페이지">리뷰 작성</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main id="mainpage">
+        <section id="reviewList">
+            <h2>리뷰 리스트</h2>
+            <!-- 리뷰 항목들이 동적으로 추가됩니다 -->
+        </section>
+    </main> 
+    <script src="../js/리뷰리스트.js" defer></script>
+</body>
+</html>

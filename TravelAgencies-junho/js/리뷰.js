@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('#reviewForm form');
+    const form = document.querySelector('#reviewFormContent');
     const nameInput = document.querySelector('#name');
     const ratingSelect = document.querySelector('#inputGroupSelect01');
     const commentTextarea = document.querySelector('#comment');
-    const categorySelect = document.getElementById('categorySelect');
-    const destinationSelect = document.getElementById('destinationSelect');
-    const reviewList = document.querySelector('#reviewList'); // 리뷰 항목이 추가될 리스트
+    const categorySelect = document.querySelector('#categorySelect');
+    const destinationSelect = document.querySelector('#destinationSelect');
 
-    // 여행지 데이터 (여기서 필요한 데이터를 직접 입력합니다)
+    // 여행지 데이터
     const destinations = {
         domestic: [
             { value: 'seoul', text: '서울' },
@@ -21,30 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     };
 
-    // 카테고리 변경 시 세부 여행지 업데이트
+    // 카테고리 변경 시 여행지 업데이트
     categorySelect.addEventListener('change', () => {
         const selectedCategory = categorySelect.value;
-
-        // destinationSelect 초기화
+        const destinationsForCategory = destinations[selectedCategory] || [];
+        
+        // 여행지 선택 박스 초기화
         destinationSelect.innerHTML = '<option value="" selected>여행지를 선택하세요</option>';
-
-        if (selectedCategory && destinations[selectedCategory]) {
-            destinations[selectedCategory].forEach(dest => {
-                const option = document.createElement('option');
-                option.value = dest.value;
-                option.textContent = dest.text;
-                destinationSelect.appendChild(option);
-            });
-        }
+        
+        // 선택된 카테고리에 따라 여행지 옵션 추가
+        destinationsForCategory.forEach(destination => {
+            const option = document.createElement('option');
+            option.value = destination.value;
+            option.textContent = destination.text;
+            destinationSelect.appendChild(option);
+        });
     });
 
-    // 별점 선택 시 시각적 표시
-    ratingSelect.addEventListener('change', () => {
-        const selectedValue = ratingSelect.value;
-        console.log(`선택된 별점: ${selectedValue}`); // 선택된 별점 로그
-        // 별점 시각적 표시
-    });
-
+    // 리뷰 제출
     form.addEventListener('submit', (event) => {
         event.preventDefault(); // 기본 폼 제출 동작을 방지
 
@@ -52,57 +45,36 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = nameInput.value.trim();
         const rating = ratingSelect.value;
         const comment = commentTextarea.value.trim();
-        const destination = destinationSelect.options[destinationSelect.selectedIndex].text;
+        const category = categorySelect.value;
+        const destination = destinationSelect.value;
 
         // 입력 값 검증
-        if (!name) {
-            alert('이름을 입력해 주세요.');
-            nameInput.focus();
+        if (!name || !rating || !comment || !category || !destination) {
+            alert('모든 필드를 입력해 주세요.');
             return;
         }
 
-        if (rating === '' || rating === '선택하기') {
-            alert('별점을 선택해 주세요.');
-            ratingSelect.focus();
-            return;
-        }
+        // 리뷰 데이터 객체 생성
+        const review = {
+            name,
+            rating,
+            comment,
+            category,
+            destination,
+            date: new Date().toLocaleDateString() // 현재 날짜
+        };
 
-        if (!comment) {
-            alert('댓글을 입력해 주세요.');
-            commentTextarea.focus();
-            return;
-        }
+        // 로컬 저장소에서 리뷰 리스트 불러오기
+        const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+        
+        // 새 리뷰를 리스트에 추가
+        reviews.push(review);
 
-        if (!destination) {
-            alert('여행지를 선택해 주세요.');
-            destinationSelect.focus();
-            return;
-        }
-
-        // 새로운 리뷰 항목 생성
-        const reviewItem = document.createElement('div');
-        reviewItem.className = 'review-item';
-
-        const reviewHeader = document.createElement('div');
-        reviewHeader.className = 'review-header';
-        reviewHeader.innerHTML = `
-            <strong>${name}</strong><br><small>여행지: ${destination}</small>
-            <br>
-            <br>
-            <span>${'⭐'.repeat(rating)}</span> 
-        `;
-        reviewItem.appendChild(reviewHeader);
-
-        const reviewBody = document.createElement('p');
-        reviewBody.textContent = comment;
-        reviewItem.appendChild(reviewBody);
-
-        // 리뷰 리스트에 새로운 리뷰 항목 추가
-        reviewList.appendChild(reviewItem);
+        // 리뷰 리스트를 로컬 저장소에 저장
+        localStorage.setItem('reviews', JSON.stringify(reviews));
 
         // 폼 필드 초기화
         form.reset();
-        destinationSelect.innerHTML = '<option value="" selected>여행지를 선택하세요</option>';
 
         // 사용자에게 피드백 제공
         alert('리뷰가 성공적으로 제출되었습니다!');
