@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
-    <script src="../js/경기장.js"></script>
+    
   </head>
   <!-- //style="overflow: hidden" -->
   <body style="overflow-x: hidden">
@@ -36,57 +36,140 @@
           </ul>
       </li>
     </header>  
-    <body>
-        <!-- Event Information Section -->
-            <div class="event-info"> 
-        <h1>파리 배드민턴 <span class="gender-symbol">♂♀</span></h1>   
-        <p>PBDM01 M/W/혼성 - 싱글 및 더블: 그룹 플레이 스테이지</p>
-        <p>포르트 드 라 샤펠 아레나, 파리</p> 
-        </div>
-            <!-- Ticket Selection Information Section --> 
-        <div class="ticket-selection">
-        <h2>티켓 선택 정보</h2>  
-        <p>티켓 수량</p>     
-        <p>티켓 수량
-          티켓 수에는 제한이 있습니다. 세션당 최대 20장의 티켓을 선택할 수 있으며 패럴림픽 개막식과 폐막식의 경우 최대 4장의 티켓을 선택할 수 있습니다. 휠체어 및 접근 가능한 티켓을 구매하는 경우, Paris 2024는 모든 장소에 입장할 때 장애 증빙 서류 또는 증빙 서류를 요청할 권리가 있습니다. 장애인의 경우 가족 오퍼에 좌석 카테고리가 나열되지 않은 경우 고객 센터 에 문의하세요 .</p>
-        </div>
-        <!-- Seat Map Overview Section -->
-            <div class="seat-map">    
-        <h2>좌석 배치도 개요</h2>         
-        <img src="seatmap.png" alt="Seat Map">
+      <div style="display: flex;">
+      <div class="ticket-container">
+        <div class="ticket">
+          <h2>경기종목 설명</h2>
+            <div class="ticket-icon">  
             </div>
-            <!-- Ticket Categories Section -->
-        <div class="ticket-category">
-        <h3>카테고리 첫 번째</h3>
-                <div class="quantity-selector">
-        <button class="minus-btn">-</button> 
-        <span class="quantity">0</span>        
-        <button class="plus-btn">+</button>
+            <div class="ticket-info">
+                
+                <div class="text-wrapper"> 
+                <!-- 텍스트 내용 -->
+                <span class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, ipsum hic, voluptatem, perferendis quia debitis blanditiis dolore voluptates esse atque voluptate. Dolorum libero mollitia et temporibus nulla rem, sit animi.
+                Sed harum, impedit laudantium dolores laboriosam cumque sit nam mollitia eos, fugit voluptatibus nobis quod id repudiandae provident officia consequatur ad perspiciatis minus eveniet perferendis. Dignissimos fugit eveniet eius culpa.
+                Repellendus nemo sunt officiis cum corrupti provident voluptate similique, fugit laborum, earum dolore ad dicta excepturi. Unde fugiat ipsam dolore provident maiores quos cumque odit iure inventore. Dolor, placeat? Non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempore unde in voluptate quasi veniam beatae at doloremque nobis reiciendis earum odit eveniet architecto, omnis ad fugiat vitae alias quas?</span>     
+                <span class="more-text">더보기</span>
+                <span class="less-text">줄이기</span>      
+            </div>
+            </div>
+            <div>
+             <p>이미지</p>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div style="display: flex;">
+      <div class="ticket-container1">
+        <div class="ticket1">
+            <div class="ticket-icon">  
+            </div>
+            <div class="ticket-info">
+                <h2>선택한티켓의 설명</h2>
+            </div>
+        </div>
+      </div>
+      <div class="ticket-container1">
+        <div class="ticket2">
+            <div class="ticket-info">
+                <h2>좌석 배치도</h2>
+              </div>
+              <div class="ticket-icon"> 
+                <img src="../IMG/사격.png" alt="">
+              </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="ticket-container">
+        <div class="ticket3">
+            <div class="ticket-icon"></div>
+            <div class="ticket-info">
+                <h1>티켓 A</h1>    
+            </div>
+            <div class="itembu">
+                <div class="control">
+                    <button id="minus" class="butt">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="quantity" readonly />
+                    <button id="plus" class="butt">+</button>
                 </div>
-                <p>€45.00</p>
+                <div class="price">
+                    <p>TotalPrice : <span id="totalPrice">500</span> Won ₩</p>
+                    <br>
+                    <button type="submit" class="ticket-pay">티켓구매</button>
+                </div>
             </div>
         </div>
-            <div class="ticket-category">
-                <h3>카테고리 A</h3>
-                <div class="quantity-selector">
-
-                </div>
-                <p>€30.00</p>
-            </div>
-
-
-             <div class="num">
-              <span>수량</span>
-            <span class="count">
-          <a href ="#" class="minus">-</a>
-            <span class="result">1</span>
-          <a href = "#" class="plus">+</a>
-         </span>
-       </div>
-     </body>
-        </html>
-  <script src="../js/경기장.js"></script>
+    </div>
     
-  
+    <div class="ticket-container">
+        <div class="ticket3">
+            <div class="ticket-icon"></div>
+            <div class="ticket-info">
+                <h1>티켓 B</h1>    
+            </div>
+            <div class="itembu">
+                <div class="control">
+                    <button id="minus1" class="butt">-</button>
+                    <input type="number" id="quantity1" value="1" min="1" class="quantity" readonly />
+                    <button id="plus1" class="butt">+</button>
+                </div>
+                <div class="price">
+                    <p>TotalPrice : <span id="totalPrice1">400</span> Won ₩</p>
+                    <br>
+                    <button type="submit" class="ticket-pay">티켓구매</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ticket-container">
+        <div class="ticket3">
+            <div class="ticket-icon"></div>
+            <div class="ticket-info">
+                <h1>티켓 C</h1>    
+            </div>
+            <div class="itembu">
+                <div class="control">
+                    <button id="minus2" class="butt">-</button>
+                    <input type="number" id="quantity2" value="1" min="1" class="quantity" readonly />
+                    <button id="plus2" class="butt">+</button>
+                </div>
+                <div class="price">
+                    <p>TotalPrice : <span id="totalPrice2">300</span> Won ₩</p>
+                    <br>
+                    <button type="submit" class="ticket-pay">티켓구매</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div id="black">
+      <p>안녕</p>
+          <div id="top">
+      <div class="bottom">      
+      <a href="https://www.instagram.com/kh_iei/">
+      <i class="fa-brands fa-instagram"></i></a>
+  </div >
+  <div class="bottom">
+      <a href="https://www.facebook.com/khacademy1998/">
+      <i class="fa-brands fa-facebook"></i></a>
+  </div>
+  <div class="bottom">
+      <a href="https://khedu.co.kr/main/main.kh">KH</a>
+  </div>
+  <div class="bottom">
+      <a href="#"><i class="fa-brands fa-github">
+      </i></a>
+       </div>
+   </div>
+  </div>
+        <script src="../js/농구.js"></script>
   </body>
 </html>

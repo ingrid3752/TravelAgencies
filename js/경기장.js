@@ -1,21 +1,24 @@
-let plus = document.querySelector(".plus");
-let minus = document.querySelector(".minus");
-let result = document.querySelector("#result");
-let totalcost = document.querySelector(".totalcost");
-let i = 1;
-plus.addEventListener("click", () => {
-  i++;
-  result.textContent = i;
-  let totalcostNum = i * 300;
-  totalcost.textContent = "won ₩" + totalcostNum.toLocaleString();
+const quantityInput = document.getElementById("quantity");
+const totalPriceElement = document.getElementById("totalPrice");
+const pricePerUnit = 1000; // 단위 가격
+
+document.getElementById("increase").addEventListener("click", () => {
+  let quantity = parseInt(quantityInput.value);
+  quantity++;
+  quantityInput.value = quantity;
+  updateTotalPrice(quantity);
 });
-minus.addEventListener("click", () => {
-  if (1 > 0) {
-    i--;
-    result.textContent = i;
-    let totalcostNum = i * 300;
-    totalcost.textContent = "won ₩" + totalcostNum.toLocaleString();
-  } else {
-    totalcost.textContent = "won ₩" + 0;
+
+document.getElementById("decrease").addEventListener("click", () => {
+  let quantity = parseInt(quantityInput.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInput.value = quantity;
+    updateTotalPrice(quantity);
   }
 });
+
+function updateTotalPrice(quantity) {
+  const totalPrice = quantity * pricePerUnit;
+  totalPriceElement.textContent = totalPrice;
+}

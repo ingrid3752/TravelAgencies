@@ -118,59 +118,194 @@ a {
 /*바디*/
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 20px;
+  background-color: #ffffff;
+  margin: 0;
+}
+.ticket-container {
+  padding-top: 50px;
+  padding-right: 10%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.ticket-container1 {
+  padding-top: 10px;
+  max-width: 1100px;
+  padding-left: 50px;
 }
 
-.event-info {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 50%;
-  margin-top: 30px;
+.ticket {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  margin-bottom: 20px; /* 박스 사이의 간격을 더 띄움 */
+  height: 250px;
+  border: 1px color #000000;
+  width: 1000px;
 }
 
-.event-info h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.ticket1 {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  height: 250px;
+  width: 650px; /* 박스의 너비를 적절히 설정 */
+  margin-left: 410px;
+}
+.ticket2 {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  height: 250px;
+  width: 300px; /* 박스의 너비를 적절히 설정 */
+  margin-right: 500px;
+}
+.ticket3 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  margin-bottom: 0px; /* 박스 사이의 간격을 더 띄움 */
+  height: 150px;
+  border: 1px color #000000;
+  width: 1000px;
 }
 
-.event-info .gender-symbol {
-  font-size: 24px;
+.ticket-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.ticket-info {
+  flex: 1;
+  padding-right: 100px;
+}
+
+.ticket-info h2 {
+  font-size: 1.3em;
+  margin: 0 0 10px 0;
+  color: #6a329f;
+}
+
+.ticket-info p {
+  margin: 5px 0;
   color: #555;
+  line-height: 1.4;
 }
 
-.ticket-selection,
-.seat-map {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
+.ticket-action {
+  text-align: right;
+  min-width: 120px;
 }
-.ticket-category {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
+
+.ticket-action p {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
 }
-.quantity-selector {
-  display: flex;
-  align-items: center;
+
+.ticket-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
-.minus-btn,
-.plus-btn {
-  background-color: #ddd;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+
+.ticket-button:hover {
+  background-color: #333;
+}
+.box {
+  font-size: 3rem;
+  box-shadow: 0 0 10px rgb(rgba(0, 0, 0, 0.1), green, blue);
+  border: 1px #000000 solid;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+}
+
+#itembu {
+  background: white;
+  padding-left: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.itembu h1 {
+  padding-left: 50px;
+}
+.butt {
+  padding: 10px 15px;
   font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  border: 0.1px color black solid;
 }
+
 .quantity {
-  margin: 0 15px;
-  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.ticket-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+.ticket-pay {
+  background-color: rgba(146, 146, 146, 0.377);
+  margin-left: 30px;
+  height: 30px;
+  width: 100px;
+  border: 1px solid white;
+}
+.control {
+  padding-right: 50px;
+}
+#container {
+  display: inline;
+}
+
+.text {
+  /* 요소의 내용이 영역을 벗어날 경우 그 부분은 숨겨지게 처리 */
+  overflow: hidden;
+  /* 요소의 표시 방법을 -webkit-box로 표시 */
+  display: -webkit-box;
+  /* webkit-box로 표시된 자식 요소들의 배치 방법 결정 (여기서는 수직) */
+  -webkit-box-orient: vertical;
+  /* 요소 내 텍스트를 지정한 라인수까지만 표시 */
+  -webkit-line-clamp: 3;
+  /* 텍스트 양쪽정렬 */
+  text-align: justify;
+  line-height: 18px;
+}
+
+.more-text {
+  /* 글씨 크기,색상 지정 */
+  font-size: 16px;
+  color: rgb(182, 182, 182);
+
+  /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */
+  cursor: pointer;
+}
+
+.less-text {
+  /* 글씨 크기,색상 지정 */
+  font-size: 16px;
+  color: rgb(182, 182, 182);
+  /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */
+  cursor: pointer;
+  /* 줄이기 버튼 (처음에는 안보이게) */
+  display: none;
 }
 #black {
+  margin-left: 24%;
   width: 1000px;
   height: 400px;
   background-color: #000000;
