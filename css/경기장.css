@@ -118,8 +118,9 @@ a {
 /*바디*/
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 20px;
 }
@@ -163,12 +164,18 @@ body {
   font-size: 1.3em;
   margin: 0 0 10px 0;
   color: #6a329f;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .ticket-info p {
   margin: 5px 0;
   color: #555;
   line-height: 1.4;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .ticket-action {
