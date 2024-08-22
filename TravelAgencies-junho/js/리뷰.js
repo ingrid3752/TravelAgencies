@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ratingSelect.addEventListener('change', () => {
         const selectedValue = ratingSelect.value;
         console.log(`선택된 별점: ${selectedValue}`); // 선택된 별점 로그
-        // 별점 시각적 표시 추가 로직
+        // 별점 시각적 표시
     });
 
     form.addEventListener('submit', (event) => {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const reviewHeader = document.createElement('div');
         reviewHeader.className = 'review-header';
         reviewHeader.innerHTML = `
-            <strong>${name}</strong> <span>(${rating}⭐)</span>
+            <strong>${name}</strong> <span>${'⭐'.repeat(rating)}</span>
         `;
         reviewItem.appendChild(reviewHeader);
 
@@ -61,6 +61,44 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
 
         // 사용자에게 피드백 제공
-        alert('리뷰가 제출되었습니다!');
+        alert('리뷰가 성공적으로 제출되었습니다!');
+        stop
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const categorySelect = document.getElementById('categorySelect');
+    const destinationSelect = document.getElementById('destinationSelect');
+
+    // 여행지 데이터 (여기서 필요한 데이터를 직접 입력합니다)
+    const destinations = {
+        domestic: [
+            { value: 'seoul', text: '서울' },
+            { value: 'busan', text: '부산' },
+            { value: 'jeju', text: '제주도' }
+        ],
+        international: [
+            { value: 'tokyo', text: '도쿄' },
+            { value: 'newyork', text: '뉴욕' },
+            { value: 'paris', text: '파리' }
+        ]
+    };
+
+    // 카테고리 변경 시 세부 여행지 업데이트
+    categorySelect.addEventListener('change', () => {
+        const selectedCategory = categorySelect.value;
+
+        // destinationSelect 초기화
+        destinationSelect.innerHTML = '<option value="" selected>여행지를 선택하세요</option>';
+
+        if (selectedCategory && destinations[selectedCategory]) {
+            destinations[selectedCategory].forEach(dest => {
+                const option = document.createElement('option');
+                option.value = dest.value;
+                option.textContent = dest.text;
+                destinationSelect.appendChild(option);
+            });
+        }
     });
 });
