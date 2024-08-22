@@ -60,4 +60,28 @@ public class PageController {
         return "goods"; 
     }
     
+    // 리뷰 페이지로 이동
+    @GetMapping("/review")
+    public String ReviewPage() {
+    	return "review";
+    }
+    
+    // 예약 페이지로 이동
+    @GetMapping("/reservation")
+    public String ReservationPage() {
+    	return "reservation";
+    }
+    
+    // 경기장 페이지로 이동
+    @GetMapping("/stadium")
+    public String StadiumPage() {
+    	return "stadium";
+    }
+    
+    // 농구 페이지로 이동
+    @GetMapping("/basketball")
+    public String BasketBallPage() {
+    	return "basketball";
+    }
+    
 }

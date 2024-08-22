@@ -7,13 +7,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class Review {
+public class MealHistory {
 	
-	private int reviewId;
+	private int historyId;
 	private int memCode;
-	private ReviewEntity entity;
-	private int rating;         
-    private String reviewText; 
-    private Date reviewDate;
-    
+	private int restCode;
+	private String menuName;
+	private Date orderDate;
+	
 }

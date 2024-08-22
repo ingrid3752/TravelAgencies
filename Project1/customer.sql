@@ -7,7 +7,12 @@ CREATE TABLE mem_info (
     phone VARCHAR(13),
     date_registered DATETIME DEFAULT CURRENT_TIMESTAMP
 );
--- 
+-- 식당, 숙소 리뷰를 받는데 따로 받지않고 한번에 받는 리뷰 기능? 
+-- 한번에 받으려면 xml에도 테이블을 조인해서 select를 받는다면 resultmap association도 추가하여 
+-- resultmap을 받는다?
+
+USE project;
+SHOW TABLES LIKE 'mem_info';
 -- 회원 구매목록
 CREATE TABLE mem_purchases (
     purchase_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -79,6 +84,17 @@ CREATE TABLE rest_reservation (
     FOREIGN KEY (rest_code) REFERENCES rest(rest_code)
 );
 
+-- 식당 식사 기록
+CREATE TABLE meal_history (
+	history_id INT PRIMARY KEY AUTO_INCREMENT,
+    mem_code INT NOT NULL,            
+    rest_code INT NOT NULL,           
+    menu_name VARCHAR(100),           
+    order_date DATETIME DEFAULT CURRENT_TIMESTAMP, 
+    FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code),
+    FOREIGN KEY (rest_code) REFERENCES rest(rest_code)
+);
+
 -- 숙소
 CREATE TABLE accom (
     accom_code INT PRIMARY KEY AUTO_INCREMENT,
@@ -111,22 +127,15 @@ CREATE TABLE accom_reservation (
     FOREIGN KEY (accom_code) REFERENCES accom (accom_code)
 );
 
-
--- 리뷰 (평점)
-CREATE TABLE review (
-    review_code INT PRIMARY KEY AUTO_INCREMENT,
+-- 리뷰
+CREATE TABLE reviews (
+	review_id INT PRIMARY KEY AUTO_INCREMENT,
+    mem_code INT NOT NULL,
+    entity_type VARCHAR(20) NOT NULL,
+    entity_id INT NOT NULL,
+    rating INT CHECK (rating >= 1 AND rating <= 5),
+    review_text TEXT,
     review_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    package_review VARCHAR(100),
-    mem_code INT,
-    FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code)
-);
-
--- 질문게시판
-CREATE TABLE question_table (
-    question_code INT PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(50),
-    qna VARCHAR(100),
-    mem_code INT,
     FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code)
 );
 
