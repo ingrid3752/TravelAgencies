@@ -1,0 +1,119 @@
+/* 기본 스타일 */
+body {
+    background-image: url("/IMG/coffee-3419370_1920.jpg");
+
+
+}
+
+
+
+
+#review {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: 2px solid #000;
+    margin-top: 80px;
+
+}
+
+#name {
+    margin: 5px;
+}
+
+#textarea {
+    resize:none;
+}
+
+
+#h2{
+    font-size: x-large;
+
+}
+
+/* 리뷰 폼 스타일*/
+
+/* 버튼 스타일 */
+#reviewbutton {
+    height: 80px;
+    background-color: yellowgreen;
+
+}
+
+#reviewbutton:hover {
+    background-color: aquamarine;
+}
+
+
+/* 헤더 스타일 */
+#header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-left: 30px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+#KHTRAVLE {
+    color: white;
+    font-size: 2rem;
+}
+
+#login, #sign {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+}
+
+#sign {
+    padding-right: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* 링크 색상 상속 */
+}
+
+/* 메뉴 스타일 */
+.menu {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+}
+
+.menu > li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #000;
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.menu > li:hover {
+    background-color: #000;
+}
+
+.menu > li:hover .submenu {
+    height: 250px;
+}
+/**/

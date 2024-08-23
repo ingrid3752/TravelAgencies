@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰 페이지</title>
+    <link rel="stylesheet" href="../css/리뷰2.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <script src="../js/리뷰.js" defer></script>
+    <script src="../js/리뷰리스트.js" defer></script>
+    <script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div id="Binggrae_font">
+            <a href="#" id="KHTRAVLE">KHTRAVLE</a>
+        </div>
+        <div>
+            <a href="#" id="login" aria-label="로그인">로그인</a>
+            <a href="#" id="sign" aria-label="회원가입">회원가입</a>
+            <ul class="menu">
+                <li>
+                    <a href="#" aria-label="메뉴 열기">☰</a>
+                    <ul class="submenu">
+                        <li><a href="./로그인.html" aria-label="로그인 페이지">로그인</a></li>
+                        <li><a href="/예약페이지/project.html" aria-label="예약 페이지">예약페이지</a></li>
+                        <li><a href="./질문게시판.html" aria-label="질문 게시판">질문게시판</a></li>
+                        <li><a href="./리뷰.html" aria-label="리뷰 작성 페이지">리뷰 작성</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="review">
+        <h5>리뷰페이지</h5>
+        <br>
+        <br>
+        <label for="이름">이름:</label>
+        <input type="text" id="name" name="name" ></input>
+
+        <label for="별점">별점:</label>
+        <select id="name" name="star">
+            <option value="" selected>선택하기</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <label for="닉네임">닉네임:</label>
+        <input type="text" id="name" name="name" ></input>
+
+        <label for="여행">여행 후기:</label>
+        <textarea rows="7" id="textarea" ></textarea>
+        <br>
+        <br>
+        <button id="reviewbutton">리뷰제출</button>
+   </section>
+
+
+
+
+</body>
