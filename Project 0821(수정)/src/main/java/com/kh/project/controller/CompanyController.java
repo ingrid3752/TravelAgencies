@@ -6,29 +6,27 @@
 //import org.springframework.web.bind.annotation.PostMapping;
 //import org.springframework.web.bind.annotation.ResponseBody;
 //
-//import com.kh.project.model.vo.CompanyRest;
-//import com.kh.project.service.CompanyRestService;
-//
+//import com.kh.project.model.vo.Company;
+//import com.kh.project.service.CompanyService;
 //
 //import jakarta.servlet.http.HttpServletRequest;
 //import jakarta.servlet.http.HttpSession;
 //
 //@Controller
-//public class CompanyRestController {
+//public class CompanyController {
 //	
 //	@Autowired
-//	private CompanyRestService companyrestService;
-//	
+//	private CompanyService companyService;
 //	
 //	@ResponseBody
 //	@PostMapping("/ComCheck")
 //	public boolean check(String Comid) {
-//		return companyrestService.check(Comid);
+//		return companyService.check(Comid);
 //	}
 //
 //	@PostMapping("/ComLogin")
-//	public String login(CompanyRest vo,HttpServletRequest request ) {
-//		CompanyRest result = companyrestService.login(vo);
+//	public String login(Company vo,HttpServletRequest request ) {
+//		Company result = companyService.login(vo);
 //		if(result != null) {
 //			HttpSession session = request.getSession();
 //			session.setAttribute("vo", result);
@@ -45,9 +43,9 @@
 //	}
 //	
 //	@PostMapping("/ComSignUp")
-//	public String signUp(CompanyRest vo, HttpServletRequest request) {
+//	public String signUp(Company vo, HttpServletRequest request) {
 //		try {
-//			boolean isRegistered = companyrestService.signUp(vo);
+//			boolean isRegistered = companyService.signUp(vo);
 //			if(isRegistered) {
 //				return "redirect:/ComLogin";
 //			}else {
@@ -63,15 +61,15 @@
 //	
 // 
 //    @PostMapping("/ComUpdate")
-//    public String update(CompanyRest vo, HttpServletRequest request) {
+//    public String update(Company vo, HttpServletRequest request) {
 //        try {
 //            HttpSession session = request.getSession();
-//            CompanyRest currentCompanyRest = (CompanyRest) session.getAttribute("vo");
+//            Company currentCompany = (Company) session.getAttribute("vo");
 //
-//            if (currentCompanyRest != null) {
-//                vo.setComid(currentCompanyRest.getComid()); 
-//                vo.setComRestCode(currentCompanyRest.getComRestCode()); 
-//                boolean isUpdated = companyrestService.update(vo);
+//            if (currentCompany != null) {
+//                vo.setComid(currentCompany.getComid()); 
+//                vo.setComCode(currentCompany.getComCode()); 
+//                boolean isUpdated = companyService.update(vo);
 //
 //                if (isUpdated) {
 //                    session.setAttribute("vo", vo); 

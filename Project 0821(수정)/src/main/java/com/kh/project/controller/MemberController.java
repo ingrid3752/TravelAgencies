@@ -21,10 +21,10 @@ public class MemberController {
 	@Autowired
 	private TokenProvider tokenProvider;
 	
-	@PostMapping("/register")
-	public String register(Member vo) {
+	@PostMapping("/signUp")
+	public String signUp(Member vo) {
 		
-		service.register(vo);
+		service.signUp(vo);
 		
 		return "redirect:/login";
 	}

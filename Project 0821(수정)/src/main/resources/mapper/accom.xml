@@ -1,0 +1,77 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.AccomMapper">
+
+	 <resultMap type="Accom" id="accomMap">
+        <id column="accom_code" property="accomCode"/>
+        <result column="accom_phone" property="accomPhone"/>
+        <result column="location" property="location"/>
+        <result column="accom_date" property="accomDate"/>
+        <result column="head_count" property="headCount"/>
+        <result column="price" property="price"/>
+        <result column="accom_name" property="accomName"/>
+    </resultMap>
+
+    <resultMap type="AccomReservation" id="accomReservationMap">
+        <id column="reservation_id" property="reservationId"/>
+        <result column="mem_id" property="memId"/>
+        <result column="accom_code" property="accomCode"/>
+        <result column="reservation_date" property="reservationDate"/>
+        <result column="seats" property="seats"/>
+        <result column="requests" property="requests"/>
+    </resultMap>
+
+    <resultMap type="AccomFavorites" id="accomFavoritesMap">
+        <id column="favorite_id" property="favoriteId"/>
+        <result column="mem_id" property="memId"/>
+        <result column="accom_id" property="accomId"/>
+        <result column="date_added" property="dateAdded"/>
+    </resultMap>
+
+	<!-- 즐겨찾기 목록 조회 -->
+    <select id="getFavorites" parameterType="int" resultMap="accomMap">
+        SELECT accom.*
+        FROM accom
+        INNER JOIN accom_favorites ON accom.accom_id = accom_favorites.accom_id
+        WHERE accom_favorites.mem_id = #{memId}
+    </select>
+
+    <!-- 즐겨찾기 추가 -->
+    <insert id="insertFavorite" parameterType="map">
+        INSERT INTO accom_favorites (mem_id, accom_id)
+        VALUES (#{memId}, #{accomId})
+    </insert>
+
+    <!-- 즐겨찾기 삭제 -->
+    <delete id="deleteFavorite" parameterType="map">
+        DELETE FROM accom_favorites
+        WHERE mem_id = #{memId} AND accom_id = #{accomId}
+    </delete>
+
+	 <!-- 숙소 예약 추가 -->
+    <insert id="insertReservation" parameterType="AccomReservation">
+        INSERT INTO accom_reservation (mem_id, accom_code, reservation_date, seats, requests)
+        VALUES (#{memId}, #{accomCode}, #{reservationDate}, #{seats}, #{requests})
+    </insert>
+
+    <!-- 예약 내역 조회 -->
+    <select id="getReservationsByMember" parameterType="int" resultType="AccomReservation">
+        SELECT r.*, accom.accom_name, accom.accom_location, accom.accom_phone
+        FROM accom_reservation r
+        JOIN accom ON r.accom_code = accom.accom_code
+        WHERE r.mem_id = #{memId}
+        ORDER BY r.reservation_date DESC
+    </select>
+
+    <!-- 예약 내역 변경 -->
+    <update id="updateReservation" parameterType="AccomReservation">
+        UPDATE accom_reservation
+        SET reservation_date = #{reservationDate}, seats = #{seats}, requests = #{requests}
+        WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
+    </update>
+
+    <!-- 예약 내역 삭제 -->
+    <delete id="deleteReservation" parameterType="int">
+        DELETE FROM accom_reservation
+        WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
+    </delete>
+</mapper>

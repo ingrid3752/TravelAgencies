@@ -1,27 +1,9 @@
--- 경기장업체
-CREATE TABLE com_stadium (
-    com_stadium_code INT PRIMARY KEY AUTO_INCREMENT,
+-- 업체 (경기장, 숙소, 식당) <-- 구분할 컬럼 하나만 추가!
+CREATE TABLE company (
+    com_code INT PRIMARY KEY AUTO_INCREMENT,
     com_id VARCHAR(50),
     com_password VARCHAR(50),
     com_name VARCHAR(50),
-    com_phone VARCHAR(13)
+    com_phone VARCHAR(13)-- ,
+--     com_type VARCHAR(20) -- 경기장, 숙소, 식당 
 );
-
--- 숙소업체
-CREATE TABLE com_accom (
-    com_accom_code INT PRIMARY KEY AUTO_INCREMENT,
-    com_id VARCHAR(50),
-    com_password VARCHAR(50),
-    com_name VARCHAR(50),
-    com_phone VARCHAR(13)
-);
-
--- 식당업체
-CREATE TABLE com_rest (
-    com_rest_code INT PRIMARY KEY AUTO_INCREMENT,
-    com_id VARCHAR(50),
-    com_password VARCHAR(50),
-    com_name VARCHAR(50),
-    com_phone VARCHAR(13)
-);
-

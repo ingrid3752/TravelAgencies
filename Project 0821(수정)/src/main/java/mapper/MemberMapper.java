@@ -7,6 +7,6 @@ import com.kh.project.model.vo.Member;
 @Mapper
 public interface MemberMapper {
     
-   void register(Member vo);
+   void signUp(Member vo);
    Member login(String id);
 }

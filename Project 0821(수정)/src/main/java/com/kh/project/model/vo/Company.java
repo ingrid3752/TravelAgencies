@@ -5,9 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class CompanyAccom {
+public class Company {
 	
-	private int ComAccomCode;
+	private int ComCode;
 	private String Comid;
 	private String Compassword;
 	private String Comname;

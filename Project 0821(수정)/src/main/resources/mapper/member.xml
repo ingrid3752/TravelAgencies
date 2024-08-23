@@ -22,11 +22,15 @@
 		#{mem_code}
 	</delete>
 	  -->
-	  <insert id="register" parameterType="Member">
-		INSERT INTO mem_info VALUES(#{id}, #{password}, #{name}, #{role})
-	</insert>
+	  <insert id="signUp" parameterType="Member">
+    INSERT INTO mem_info (id, password, name, phone, role)
+    VALUES (#{id}, #{password}, #{name}, #{phone}, #{role})
+</insert>
 	
 	<select id="login" parameterType="String" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id}
 	</select>
 </mapper>
+
+
+	

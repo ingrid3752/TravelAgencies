@@ -5,12 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class CompanyRest {
+public class RecommendedMenu {
 	
-	private int ComRestCode;
-	private String Comid;
-	private String Compassword;
-	private String Comname;
-	private String Comphone;
-
+	private String menuName;
+	private int orderCount;
+	
 }

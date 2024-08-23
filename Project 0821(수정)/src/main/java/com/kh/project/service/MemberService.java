@@ -15,12 +15,12 @@ public class MemberService {
 	
 	private BCryptPasswordEncoder bcpe = new BCryptPasswordEncoder();
 	
-	public void register(Member vo) {
+	public void signUp(Member vo) {
 		
 		vo.setPassword(bcpe.encode(vo.getPassword()));
-		vo.setRole("ROLE_MEMBER");
+		vo.setRole("ROLE_COMPANY");
 		
-		mapper.register(vo);
+		mapper.signUp(vo);
 	}
 	
 	public Member login(Member vo) {

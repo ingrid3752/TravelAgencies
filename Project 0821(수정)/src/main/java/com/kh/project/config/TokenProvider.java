@@ -27,6 +27,7 @@ private SecretKey secretKey = Keys.secretKeyFor(SignatureAlgorithm.HS512);
 				.setClaims(Map.of(
 						"id", member.getId(),
 						"name", member.getName(),
+						"password", member.getPassword(),
 						"phone", member.getPhone(),
 						"role", member.getRole()
 				))
@@ -44,6 +45,7 @@ private SecretKey secretKey = Keys.secretKeyFor(SignatureAlgorithm.HS512);
 		return Member.builder()
 				.id((String) claims.get("id"))
 				.name((String) claims.get("name"))
+				.password((String) claims.get("password"))
 				.phone((String) claims.get("phone"))
 				.role((String) claims.get("role"))
 				.build();
