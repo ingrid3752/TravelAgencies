@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: url(img/호텔메인배경.jpg);
+  background-image: url(/img/호텔메인배경.jpg);
   background-size: 100% 120%;
   background-repeat: no-repeat;
   background-attachment: fixed;
