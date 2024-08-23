@@ -1,75 +1,11 @@
+/* 기본 스타일 */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
     overflow-x: hidden; /* 수평 스크롤 방지 */
-  }
-
-
-
-/* 여행지 선택 바 스타일 */
-#destinationSelectContainer {
-    margin: 20px auto;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    background: hsla(180, 100%, 50%, 0.5); /* 배경색 설정 */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 카테고리 선택 스타일 */
-#categorySelect {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    background: #f9f9f9; /* 배경색 설정 */
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-#categorySelect:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-/* 여행지 선택 스타일 */
-#destinationSelect {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    background: #f9f9f9; /* 배경색 설정 */
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-#destinationSelect:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-/* 레이블 스타일 */
-#destinationSelectContainer label {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 8px;
-    display: block;
-    font-weight: 500;
-}
-
-/* 기본 스타일 */
-body {
-    font-family: 'Sunflower', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #f5f5f5; /* 배경색 설정 */
-    background-image:url("/IMG/restaurant-2585265_1920.jpg");
+    background: #f5f5f5 url("/IMG/restaurant-2585265_1920.jpg") no-repeat center center fixed; /* 배경색 및 이미지 설정 */
 }
 
 /* 헤더 스타일 */
@@ -79,7 +15,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    width: 100%;
     padding-left: 30px;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -95,7 +30,6 @@ body {
     font-size: 1.3rem;
     font-family: "Sunflower", sans-serif;
     font-weight: 500;
-    padding-right: 20px; /* padding-right 값을 통일 */
 }
 
 #sign {
@@ -107,10 +41,11 @@ a {
     color: inherit; /* 링크 색상 상속 */
 }
 
+/* 메뉴 스타일 */
 .menu {
     position: fixed;
     right: 20px;
-    top: 20px; /* fixed 위치 조정 */
+    top: 20px;
     width: 100px;
 }
 
@@ -118,7 +53,7 @@ a {
     width: 100%;
     text-align: center;
     line-height: 40px;
-    background-color: #000000;
+    background-color: #000;
     font-family: "Sunflower", sans-serif;
     font-weight: 500;
 }
@@ -134,54 +69,84 @@ a {
 }
 
 .menu > li:hover {
-    background-color: #000000;
+    background-color: #000;
 }
 
 .menu > li:hover .submenu {
     height: 250px;
 }
 
+/* 여행지 선택 바 스타일 */
+#destinationSelectContainer {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background: hsla(180, 100%, 50%, 0.5); /* 배경색 설정 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 카테고리 및 여행지 선택 스타일 */
+#categorySelect, #destinationSelect {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#categorySelect:focus, #destinationSelect:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* 레이블 스타일 */
+#destinationSelectContainer label, #reviewForm label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+}
+
 /* 리뷰 작성 폼 스타일 */
 #reviewForm {
     margin: 20px auto;
-    max-width: 600px;
-    background:hsla(270, 60%, 50%, 0.4);
+    max-width: 500px;
+    background: hsla(270, 60%, 50%, 0.4);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* 요소들을 줄 바꿈 허용 */
+    gap: 20px; /* 요소 간 간격 */
 }
 
-#reviewForm h2 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #080808;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-#reviewForm label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #070707;
+/* 수평 레이아웃을 위한 폼 요소 스타일 */
+#reviewForm > div {
+    flex: 1 1 48%; /* 두 개의 컬럼 레이아웃 */
+    min-width: 280px; /* 작은 화면에서의 최소 너비 */
 }
 
 #reviewForm input,
+#reviewForm select,
 #reviewForm textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    margin-bottom: 15px;
     box-sizing: border-box;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 #reviewForm textarea {
     resize: vertical;
+    min-height: 80px; /* 최소 높이 설정 */
 }
 
 #reviewForm button {
@@ -193,8 +158,6 @@ a {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    display: inline-block;
-    text-align: center;
 }
 
 #reviewForm button:hover {
@@ -211,7 +174,7 @@ a {
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
-    background: hsla(0, 0%, 50%, 0.6); /* 배경색 설정 */
+    background: hsla(0, 0%, 50%, 0.6);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
