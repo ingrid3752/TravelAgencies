@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(250, 235, 215);
   font-weight: 600;
 }
 .button {
@@ -75,4 +75,7 @@ li {
 ul {
   border: 5px solid rgb(255, 255, 255);
   padding: 10px;
+}
+li {
+  line-height: 65px;
 }
