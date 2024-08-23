@@ -35,33 +35,40 @@
         </div>
     </header>
     <section id="review">
-        <h5>리뷰페이지</h5>
-        <br>
-        <br>
-        <label for="이름">이름:</label>
-        <input type="text" id="name" name="name" ></input>
+        <h5>리뷰 페이지</h5>
+        <form id="review-form">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="별점">별점:</label>
-        <select id="name" name="star">
-            <option value="" selected>선택하기</option>
-            <option value="1">⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-        </select>
+            <label for="star">별점:</label>
+            <select id="star" name="star" required>
+                <option value="" selected>선택하기</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
 
-        <label for="닉네임">닉네임:</label>
-        <input type="text" id="name" name="name" ></input>
+            <label for="nickname">닉네임:</label>
+            <input type="text" id="nickname" name="nickname" required>
 
-        <label for="여행">여행 후기:</label>
-        <textarea rows="7" id="textarea" ></textarea>
-        <br>
-        <br>
-        <button id="reviewbutton">리뷰제출</button>
-   </section>
+            <label for="review-text">여행 후기:</label>
+            <textarea rows="7" id="review-text" name="review-text" required></textarea>
+            
+            <br>
+            <br>
+            <button type="submit" id="reviewbutton">리뷰 제출</button>
+        </form>
+    </section>
 
+    <section id="review-list">
+        <h5>리뷰 목록</h5>
+        <ul id="reviews">
+            <!-- 리뷰 항목이 여기에 추가됩니다 -->
+        </ul>
+    </section>
 
-
-
+    <script src="../js/리뷰2.js" defer></script>
 </body>
+</html>
