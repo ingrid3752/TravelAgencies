@@ -2,11 +2,12 @@
 CREATE TABLE mem_info (
     mem_code INT PRIMARY KEY AUTO_INCREMENT,
     id VARCHAR(50),
-    password VARCHAR(50),
+    password VARCHAR(50), -- 정규표현식
     name VARCHAR(50),
     phone VARCHAR(13),
     date_registered DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+SELECT * FROM mem_info;
 -- 식당, 숙소 리뷰를 받는데 따로 받지않고 한번에 받는 리뷰 기능? 
 -- 한번에 받으려면 xml에도 테이블을 조인해서 select를 받는다면 resultmap association도 추가하여 
 -- resultmap을 받는다?
@@ -28,6 +29,10 @@ INSERT INTO mem_info (id, password, name, phone) VALUES('test1', '1234', 'user',
 DROP TABLE mem_info;
 SELECT id, password, name, CONCAT(SUBSTR(phone, 1, 3), '-', SUBSTR(phone, 4, 4), '-', SUBSTR(phone, 8, 4)) AS phone
 FROM mem_info;
+
+UPDATE mem_info 
+SET id = 'test2', password = '1234', phone= '01012345678'
+WHERE mem_code = '3';
 
 -- 경기장
 CREATE TABLE stadium (

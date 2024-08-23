@@ -16,17 +16,22 @@
 	</insert>
 	
 	<!-- 회원정보수정 -->
-	<update id="update" parameterType="Member">
-		UPDATE mem_info
-		SET
-		id=#{id}, password=#{password}
-		WHERE mem_code = #{mem_code}
+	<update id="updateId" parameterType="Member">
+		UPDATE mem_info 
+		SET id = #{id}, password = #{password}
+		WHERE id = #{id}
+	</update>
+	
+	<update id="updatePassword" parameterType="Member">
+		UPDATE mem_info 
+		SET id = #{id}, password = #{password}
+		WHERE password = #{password}
 	</update>
 	
 	<!-- 회원탈퇴 -->
 	<delete id="delete" parameterType="int">
 		DELETE FROM mem_info
 		WHERE mem_code =
-		#{mem_code}
+		#{MemCode}
 	</delete>
 </mapper>

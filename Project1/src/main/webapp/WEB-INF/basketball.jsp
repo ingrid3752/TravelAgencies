@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Basketball</title>
 <link href="${pageContext.request.contextPath}/css/basketball.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
 <!-- 폰트어썸폴더 -->
@@ -19,7 +19,7 @@
 <body style="overflow-x: hidden">
     <header id="header">
       <div id="Binggrae_font">
-        <a href="" id="KHTRAVEL">KHTRAVEL</a>
+        <a href="<%=request.getContextPath()%>/" id="KHTRAVEL">KHTRAVEL</a>
       </div>
       <ul class="menu">
           <li>
@@ -141,7 +141,12 @@
         </div>
     </div>
     <br><br><br>
-    <div id="black">
+	<div>
+		<a href="<%=request.getContextPath()%>/accom">숙소</a>
+		<a href="<%=request.getContextPath()%>/rest">식당</a>
+		<a href="<%=request.getContextPath()%>/goods">굿즈</a>
+	</div>
+	<div id="black">
 		<p>안녕</p>
 		<div id="top">
 			<div class="bottom">

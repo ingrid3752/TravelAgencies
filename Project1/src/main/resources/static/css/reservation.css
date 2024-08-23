@@ -110,7 +110,7 @@ a {
 .menu > li {
   width: 100%;
   text-align: center;
-  line-height: 40px;
+  line-height: 40px;  
   background-color: #000000;
 }
 
@@ -130,7 +130,7 @@ body {
 
 .ticket-container {
   padding-right: 10%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -149,7 +149,13 @@ body {
 .ticket-icon img {
   width: 80px;
   height: 80px;
+  margin-right: 10px;
+  
 }
+.ticket-img{
+	margin-left: 20px;
+}
+
 
 .ticket-info {
   flex: 1;
@@ -177,6 +183,7 @@ body {
 .ticket-action {
   text-align: right;
   min-width: 120px;
+  margin-right: 10px;
 }
 
 .ticket-action p {
@@ -187,7 +194,7 @@ body {
 
 .ticket-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px;  
   background-color: black;
   color: white;
   text-decoration: none;
@@ -204,7 +211,7 @@ body {
   background-color: #000000;
   color: white;
   font-size: 2rem;
-  margin-left: 29%;
+  margin-left: 24%;
 }
 #black a {
   color: white;

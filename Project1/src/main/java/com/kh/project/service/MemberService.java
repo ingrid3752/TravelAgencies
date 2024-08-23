@@ -11,31 +11,16 @@ public class MemberService {
 
     @Autowired
     private MemberMapper memberMapper;
-    
-    /**
-     * ID 중복 체크
-     * @param id 체크할 ID
-     * @return true면 중복, false면 사용 가능
-     */
+   
     public boolean check(String id) {
         Member vo = memberMapper.check(id);
         return vo != null; // ID가 이미 존재하면 true
     }
     
-    /**
-     * 로그인 처리
-     * @param vo 로그인 시 입력한 ID와 비밀번호
-     * @return 로그인 성공 시 Member 객체, 실패 시 null
-     */
     public Member login(Member vo) {
         return memberMapper.login(vo);
     }
 
-    /**
-     * 회원가입 처리
-     * @param vo 회원가입 정보가 담긴 Member 객체
-     * @return 회원가입 성공 시 true, 실패 시 false
-     */
     public boolean signUp(Member vo) {
         try {
             int result = memberMapper.signUp(vo);
@@ -46,8 +31,7 @@ public class MemberService {
         }
     }
     
-    // 회원정보 수정
-    // 회원정보 수정
+    // 회원정보 수정(아이디)
     public boolean update(Member vo) {
         try {
             int result = memberMapper.update(vo);
@@ -57,7 +41,6 @@ public class MemberService {
             return false;
         }
     }
-    
     public void delete(int no) {
     	memberMapper.delete(no);
     }

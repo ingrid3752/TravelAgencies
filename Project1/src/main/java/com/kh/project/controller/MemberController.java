@@ -63,7 +63,7 @@ public class MemberController {
 	    }
 	}
 	
- // 회원정보수정
+	// 회원정보수정 (아이디)
     @PostMapping("/update")
     public String update(Member vo, HttpServletRequest request) {
         try {
@@ -79,15 +79,16 @@ public class MemberController {
                     session.setAttribute("vo", vo); // 업데이트된 정보를 세션에 저장
                     return "redirect:/"; // 수정 성공 시 메인 페이지로 리다이렉트
                 } else {
-                    request.setAttribute("errorMessage", "회원정보 수정에 실패했습니다. 다시 시도해주세요.");
+                    request.setAttribute("errorMessage", "아이디 수정에 실패했습니다. 다시 시도해주세요.");
                     return "update"; // 실패 시 다시 회원정보수정 페이지로 이동
                 }
             } else {
                 return "redirect:/login"; // 세션에 사용자가 없을 경우 로그인 페이지로 리다이렉트
             }
         } catch (Exception e) {
-            request.setAttribute("errorMessage", "회원정보 수정 중 오류가 발생했습니다: " + e.getMessage());
+            request.setAttribute("errorMessage", "아이디 수정 중 오류가 발생했습니다: " + e.getMessage());
             return "update"; // 예외 발생 시 다시 회원정보수정 페이지로 이동
         }
     }
+    
 }

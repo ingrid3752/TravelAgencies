@@ -7,22 +7,10 @@ pageEncoding="UTF-8"%>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KHTRAVEL</title>
-    <link
-      href="${pageContext.request.contextPath}/css/reset.css"
-      rel="stylesheet"
-    />
-    <link
-      href="${pageContext.request.contextPath}/css/Sunflower.css"
-      rel="stylesheet"
-    />
-    <link
-      href="${pageContext.request.contextPath}/css/index.css"
-      rel="stylesheet"
-    />
-    <link
-      href="${pageContext.request.contextPath}/css/Paris.css"
-      rel="stylesheet"
-    />
+    <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/css/Sunflower.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/css/index.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}/css/Paris.css" rel="stylesheet"/>
 
     <!-- 폰트어썸폴더 -->
     <script
@@ -36,7 +24,7 @@ pageEncoding="UTF-8"%>
 <body style="overflow: hidden" id="body">
 	<header id="header">
 		<div class="paris-font">
-			<a href="#" id="KHTRAVEL">KHTRAVEL</a>
+			<a href="<%=request.getContextPath()%>/" id="KHTRAVEL">KHTRAVEL</a>
 		</div>
 		<%@ page session="true"%>
 		<%
@@ -57,7 +45,7 @@ pageEncoding="UTF-8"%>
 			<li><a href="#">☰</a>
 				<ul class="submenu">
 					<li><a href="<%=request.getContextPath()%>/reservation">예약</a></li>
-					<li><a href="<%=request.getContextPath()%>/stadium">경기장</a></li>
+					<li><a href="<%=request.getContextPath()%>/stadium">오시는 길</a></li>
 					<li><a href="<%=request.getContextPath()%>/review">리뷰</a></li>
 					<li><a href="<%=request.getContextPath()%>/goods">굿즈</a></li>
 				</ul></li>

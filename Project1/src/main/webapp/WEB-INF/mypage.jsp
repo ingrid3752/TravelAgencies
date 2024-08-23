@@ -23,8 +23,9 @@
         <p><a href="tiketinfo.html">경기예약정보</a></p>
       </div>
       <div class="user-info-box">
-        <p><a href="memberinfo.html">회원정보수정</a></p>
-      </div></div>
+        <p><a href="<%=request.getContextPath()%>/update">회원정보변경</a></p>
+      </div>
+     </div>
    
       <!-- SCRIPTS -->
     <script src="${pageContext.request.contextPath}/js/mypage.js"></script>

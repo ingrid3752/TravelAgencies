@@ -1,53 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6e6fa;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  background-color: rgb(235, 124, 73);
+  font-weight: 600;
+}
+.button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+  width: 100px;
+  height: 70px;
+  border-radius: 9px;
+  background: rgb(252, 180, 180);
+  border: solid 0.1px #e6a328;
+}
+.button:hover {
+  background: rgb(243, 182, 108);
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  background: url() no-repeat center;
+  padding: 5px;
+  border: 5px solid white;
 }
 
-header {
-    background-color: #9370db;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+h2 > div {
+  font-size: 4rem;
+  color: rgb(159, 198, 238);
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #9370db;
-    overflow: hidden;
+#img {
+  position: relative;
 }
-
-nav ul li {
-    float: left;
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-align: justify;
+  padding-left: 30px;
+  font-size: 1.7rem;
 }
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.308);
+  font-size: 1.5rem;
 }
-
-nav ul li a:hover {
-    background-color: #b39ddb;
+.menu:hover {
+  background: rgba(252, 232, 53, 0.637);
 }
-
-section {
-    padding: 20px;
-    text-align: center;
+#review {
+  padding-top: 40px;
+  border: 5px solid rgb(255, 255, 255);
+  border-top: none;
+  border-bottom: none;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-
-footer {
-    background-color: #9370db;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+#review-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid rgb(255, 255, 255);
+}
+#review > p {
+  padding-left: 30px;
+  line-height: 25px;
+  text-align: left;
+}
+ul {
+  border: 5px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+li {
+  line-height: 75px;
 }
