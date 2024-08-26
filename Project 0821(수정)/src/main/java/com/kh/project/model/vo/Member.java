@@ -23,7 +23,7 @@ public class Member implements UserDetails{
 	private String role;
 	
 	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities(){
+	public Collection<? extends GrantedAuthority> getAuthorities() {
 		ArrayList<GrantedAuthority> authList = new ArrayList<>();
 		authList.add(new SimpleGrantedAuthority(role));
 		return authList;
@@ -33,6 +33,4 @@ public class Member implements UserDetails{
 	public String getUsername() {
 		return id;
 	}
-	
-	
 }

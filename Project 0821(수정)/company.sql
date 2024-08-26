@@ -4,6 +4,11 @@ CREATE TABLE company (
     com_id VARCHAR(50),
     com_password VARCHAR(50),
     com_name VARCHAR(50),
-    com_phone VARCHAR(13)-- ,
---     com_type VARCHAR(20) -- 경기장, 숙소, 식당 
+    com_phone VARCHAR(13),
+    com_type VARCHAR(20) -- 경기장, 숙소, 식당
 );
+-- SELECT를 사용한다고 했을 때 --> 경기장 업체들만 가지고 오고 싶을 수도 있죠
+SELECT * FROM company
+WHERE com_type = "숙소";
+INSERT INTO company (com_id, com_password, com_name, com_phone, com_type)
+VALUES ('com1', '1234', 'comname', '01012345678', '숙소');

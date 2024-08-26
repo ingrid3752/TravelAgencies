@@ -9,54 +9,169 @@ import com.kh.project.model.vo.Member;
 
 @Controller
 public class PageController {
-	
-//	  // 로그인 페이지 이동
-//    @GetMapping("/login")
-//    public String login() {
-//        return "login"; 
-//    }
-//
+
+	  // 로그인 페이지 이동
+    @GetMapping("/login")
+    public String login() {
+        return "login"; 
+    }
+
     // 회원가입 페이지 이동
     @GetMapping("/signUp")
     public String signUp() {
         return "signUp"; 
     }
-//    
-//    // 회원정보수정 페이지 이동
-//    @GetMapping("/update")
-//    public String update() {
-//    	return "redirect:/";
-//    }
-//    
-//    // 마이페이지 이동
-//    @GetMapping("/mypage")
-//    public String mypage() {
-//    	return "mypage";
-//    }
-//    
-//    // 업체메인페이지 이동
-//    @GetMapping("/ComIndex")
-//    public String ComIndex() {
-//    	return "ComIndex";
-//    }
-	@GetMapping("/")
-	public String index() {
-		return "index";
-	}
-    @GetMapping("/register")
-	public String register() {
-		return "register";
-    }	
-    @GetMapping("/login")
-	public String login() {
-		return "login";
-	}
-	
-	@GetMapping("/member")
-	public String member() {
-		return "member";
-	}
+    
+    // 회원정보수정 (아이디) 페이지 이동
+    @GetMapping("/update")
+    public String update() {
+    	return "update";
+    }
+    
+    // 마이페이지 이동
+    @GetMapping("/mypage")
+    public String mypage() {
+    	return "mypage";
+    }
+    
+    // 로그인 후 메인 페이지로 이동
+    @GetMapping("/login/success")
+    public String loginSuccess() {
+        return "index"; 
+    }
 
+    // 회원가입 후 로그인 페이지로 이동
+    @GetMapping("/register/success")
+    public String registerSuccess() {
+        return "login"; 
+    }
+    
+    // 식당 페이지로 이동
+    @GetMapping("/rest")
+    public String RestPage() {
+        return "rest"; 
+    }
+	
+    // 숙소 페이지로 이동
+    @GetMapping("/accom")
+    public String AccomPage() {
+        return "accom"; 
+    }
+
+    // 굿즈 페이지로 이동
+    @GetMapping("/goods")
+    public String GoodsPage() {
+        return "goods"; 
+    }
+    
+    // 리뷰 페이지로 이동
+    @GetMapping("/review")
+    public String ReviewPage() {
+    	return "review";
+    }
+    
+    // 예약 페이지로 이동
+    @GetMapping("/reservation")
+    public String ReservationPage() {
+    	return "reservation";
+    }
+    
+    // 경기장 페이지로 이동
+    @GetMapping("/stadium")
+    public String StadiumPage() {
+    	return "stadium";
+    }
+    
+    // 농구 페이지로 이동
+    @GetMapping("/basketball")
+    public String BasketBallPage() {
+    	return "basketball";
+    }
+    
+    // 배드민턴 페이지로 이동
+    @GetMapping("/badminton")
+    public String BadmintonPage() {
+    	return "badminton";
+    }
+    
+    // 펜싱 페이지로 이동
+    @GetMapping("/fencing")
+    public String FencingPage() {
+    	return "fencing";
+    }
+    
+    // 리듬체조 페이지로 이동
+    @GetMapping("/gymnastics")
+    public String GymnasticsPage() {
+    	return "gymnastics";
+    }
+    
+    // 사격 페이지로 이동
+    @GetMapping("/shooting")
+    public String ShootingPage() {
+    	return "shooting";
+    }
+    
+    // 서핑 페이지로 이동
+    @GetMapping("/surfing")
+    public String SurfingPage() {
+    	return "surfing";
+    }
+    
+    // 태권도 페이지로 이동
+    @GetMapping("/taekwondo")
+    public String TaekwondoPage() {
+    	return "taekwondo";
+    }
+    
+    // 테니스 페이지로 이동
+    @GetMapping("/tennis")
+    public String TennisPage() {
+    	return "tennis";
+    }
+    
+    // 르 호텔 페이지로 이동
+    @GetMapping("/lehotel")
+    public String LehotelPage() {
+    	return "lehotel";
+    }
+    
+    // 슈 호텔 페이지로 이동
+    @GetMapping("/shuhotel")
+    public String shuhotelPage() {
+    	return "shuhotel";
+    }
+    
+    // 데 호텔 페이지로 이동
+    @GetMapping("/dehotel")
+    public String dehotelPage() {
+    	return "dehotel";
+    }
+    
+    // 한식 페이지로 이동
+    @GetMapping("/korea")
+    public String KoreaPage() {
+    	return "korea";
+    }
+    
+    // 일식 페이지로 이동
+    @GetMapping("/japan")
+    public String JapanPage() {
+    	return "japan";
+    }
+    
+    // 중식 페이지로 이동
+    @GetMapping("/china")
+    public String ChinaPage() {
+    	return "china";
+    }
+    
+    // 양식 페이지로 이동
+    @GetMapping("/france")
+    public String FrancePage() {
+    	return "france";
+    }
+    
     @GetMapping("/admin")
 	public String admin() {
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -69,21 +184,5 @@ public class PageController {
 		}
 
 		return "redirect:/";
-		
-		
 	}
-
-//    @GetMapping("/company")
-//   	public String company() {
-//   		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//   		
-//   		if(authentication!=null & authentication.isAuthenticated()) {
-//   			Member member = (Member) authentication.getPrincipal();
-//   			if(member.getRole().equals("ROLE_COMPANY")) {
-//   				return "company";
-//   			}
-//   		}
-//
-//   		return "redirect:/";
-//}
 }

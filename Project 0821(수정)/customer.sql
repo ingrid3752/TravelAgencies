@@ -22,6 +22,8 @@ CREATE TABLE mem_info (
     name VARCHAR(50),
     phone VARCHAR(13)
 );
+ALTER TABLE mem_info ADD COLUMN role VARCHAR(100);
+SELECT * FROM mem_info;
 
 INSERT INTO mem_info (id, password, name, phone) VALUES('test1', '1234', 'user', '01012345678');
 DROP TABLE mem_info;

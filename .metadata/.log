@@ -5421,3 +5421,1155 @@ org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementExc
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 09:18:35.623
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 09:18:35.623
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 09:18:35.623
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 09:18:35.624
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 09:18:35.625
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 09:18:35.626
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 09:46:42.001
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 09:46:42.166
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 09:46:42.168
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:46:42.172
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:46:43.432
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:46:57.244
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:47:00.742
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:47:03.114
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:47:03.127
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:47:03.471
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 09:50:09.391
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-26 10:02:09.735
+!MESSAGE Failed to fetch type data for element witn key: Ljava/lang/String;
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-08-26 10:02:09.735
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-26 10:02:09.742
+!MESSAGE Failed to fetch type data for element witn key: Ljava/lang/String[];
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-08-26 10:02:09.742
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:07:52.541
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:07:53.104
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:07:53.663
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:07:58.431
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:23:53.767
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:23:53.772
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:23:59.195
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:23:59.200
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:00.290
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:00.294
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:01.334
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:01.338
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:13.578
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:20.029
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:20.033
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:22.604
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:22.608
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:24:23.021
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:34:17.146
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:34:17.152
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:34:17.172
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:35:20.360
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:35:20.364
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:35:23.102
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:36:01.976
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:36:01.982
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:36:08.307
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:37:30.671
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:37:30.675
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:37:30.791
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:37:36.697
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:37:36.704
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:39:24.292
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 10:52:17.280
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 10:52:17.280
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 10:52:17.280
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 10:52:17.280
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 10:52:17.282
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 10:52:17.282
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 10:52:17.973
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 10:52:18.082
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 10:52:18.086
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 10:52:18.092
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/ProjectApplication.java
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-08-26 11:12:38.772
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type com.google.protobuf.GeneratedMessageV3 cannot be resolved. It is indirectly referenced from required type com.mysql.cj.x.protobuf.MysqlxExpr.Array
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:159)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:226)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2713)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5205)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2463)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:858)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.isInherited(UnresolvedElementsBaseSubProcessor.java:1015)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarTypeProposals(UnresolvedElementsBaseSubProcessor.java:983)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectTypeProposals(UnresolvedElementsBaseSubProcessor.java:742)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:144)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:455)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-08-26 11:12:38.786
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type com.google.protobuf.GeneratedMessageV3 cannot be resolved. It is indirectly referenced from required type com.mysql.cj.x.protobuf.MysqlxDatatypes.Array
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:159)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:226)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2713)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5205)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2463)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:858)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.isInherited(UnresolvedElementsBaseSubProcessor.java:1015)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.addSimilarTypeProposals(UnresolvedElementsBaseSubProcessor.java:983)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsBaseSubProcessor.collectTypeProposals(UnresolvedElementsBaseSubProcessor.java:742)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:144)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:455)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:378)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 11:13:03.063
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 11:13:03.063
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 11:13:03.064
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 11:13:03.064
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 11:13:03.065
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 11:13:03.065
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 11:13:05.576
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 11:13:05.789
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 11:13:05.793
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:13:05.798
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:13:05.813
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:13:05.852
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:16:26.912
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:16:26.916
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:16:33.313
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:16:33.316
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:16:55.599
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:16:57.514
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:17:02.206
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:17:02.209
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:17:04.713
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:17:04.716
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:17:09.091
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:17:09.096
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-26 11:17:09.339
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:04.300
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:04.306
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:06.678
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:06.685
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:08.667
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:08.673
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:11.830
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:11.834
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:14.089
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:14.092
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:15.413
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:15.420
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:18.305
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:18.310
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:20.163
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:20.169
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:22.951
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:22.955
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:23.984
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:23.989
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:27.944
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:27.950
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:29.053
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:29.059
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:30.502
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:30.509
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:37.642
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:37.647
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:38.236
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:18:38.241
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:19:05.169
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/ProjectApplication.java
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-26 11:33:50.080
+!MESSAGE Failed to fetch type data for element witn key: Ljava/lang/String;
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-08-26 11:33:50.081
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-26 11:33:50.085
+!MESSAGE Failed to fetch type data for element witn key: Ljava/lang/String[];
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-08-26 11:33:50.085
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-26 11:34:39.313
+!MESSAGE Failed to fetch type data for element witn key: Ljava/lang/Boolean;
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-08-26 11:34:39.313
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-08-26 11:34:39.317
+!MESSAGE Failed to fetch type data for element witn key: Lorg/mybatis/spring/boot/autoconfigure/MybatisProperties;
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-08-26 11:34:39.317
+!MESSAGE Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+!STACK 0
+java.lang.Exception: Resolve classpath: unable to resolve a project from : file:/D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getProject(ResourceUtils.java:66)
+	at org.springframework.tooling.jdt.ls.commons.resources.ResourceUtils.getJavaProject(ResourceUtils.java:37)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.findElement(JavaData.java:79)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.typeData(JavaData.java:67)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$16(STS4LanguageClientImpl.java:521)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:35:09.978
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/ProjectApplication.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:35:15.421
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/ProjectApplication.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 11:35:18.328
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/ProjectApplication.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:06:35.870
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:06:41.702
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:06:42.779
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:06:43.925
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:07.542
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:08.713
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:10.610
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:14.046
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:15.204
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:16.544
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:17.065
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:17.531
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:07:17.827
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/service/MemberService.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:46.664
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:46.669
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:48.259
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:48.264
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:49.838
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:49.843
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:50.505
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:50.508
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:53.074
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:53.081
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:54.233
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:54.240
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:55.295
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:55.300
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:56.906
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:56.911
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:57.442
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:57.446
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:58.078
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:58.081
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:58.828
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:58.833
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:59.411
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:14:59.413
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:00.470
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:00.476
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:01.026
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:01.029
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:02.144
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:02.148
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:02.692
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:02.695
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:06.502
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:07.421
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:09.847
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:10.814
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:12.475
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:17.853
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:15:20.523
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:18:27.646
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:18:27.650
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:18:37.699
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:18:49.136
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:13.854
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:13.857
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:13.860
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:24.807
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:24.811
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:24.815
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:28.678
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:28.681
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:28.684
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:30.786
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:30.789
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:30.793
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:35.648
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:35.651
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:35.654
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:38.515
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:38.518
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:38.521
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:46.633
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:46.637
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:48.028
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:55.991
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:56.604
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:57.186
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:57.505
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:19:58.436
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:22:31.304
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:22:31.307
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:22:33.993
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 12:27:37.933
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 12:27:37.933
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 12:27:37.933
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 12:27:37.933
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 12:27:37.935
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-08-26 12:27:37.935
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 12:27:40.225
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 12:27:40.402
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 12:27:40.407
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:27:40.410
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:27:40.415
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:27:40.421
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:27:50.699
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:27:58.590
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:27:58.593
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-26 12:28:25.513
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:30:24.102
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:30:24.107
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:30:24.110
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:30:35.783
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:30:41.163
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:30:41.166
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:31:36.154
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:31:36.157
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:31:36.161
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:31:37.731
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:31:38.363
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:31:53.340
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:36:58.164
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:36:58.882
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:36:58.884
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:37:00.181
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 12:37:00.941
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 13:38:26.091
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 13:38:26.260
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-08-26 13:38:26.263
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:38:26.265
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:38:27.005
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:59:21.333
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:59:22.045
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:59:28.883
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:59:31.468
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 13:59:31.545
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:07:55.249
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:07:55.296
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:07:55.344
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:08:17.254
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:08:17.339
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:08:17.342
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:08:41.873
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:09:00.917
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:36.194
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:39.037
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:39.041
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:44.692
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:51.610
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:54.020
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:16:59.673
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:17:00.583
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:17:01.701
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:17:05.123
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:17:05.154
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:26:44.299
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:26:46.769
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:26:49.196
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:26:56.376
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-08-26 14:26:56.859
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:26:59.331
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:27:01.338
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:27:12.819
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:34:37.718
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:34:42.581
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:40:32.823
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:40:32.881
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:40:33.178
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:40:59.474
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:41:00.272
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:41:00.276
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:41:33.899
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:41:33.977
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:41:33.983
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:43:54.358
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:43:54.922
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:43:55.003
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:04.961
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:09.944
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:11.063
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:11.689
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:11.692
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:23.069
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:50.290
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:52.540
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:55.108
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:44:57.803
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:09.367
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:09.370
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:09.374
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:33.132
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:40.083
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:41.313
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:45:48.986
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:34.593
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:36.820
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:42.421
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:45.041
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:46.802
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:49.062
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:52.289
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-08-26 14:47:53.787
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%200821(%EC%88%98%EC%A0%95)/src/main/java/com/kh/project/config/ProjectConfig.java

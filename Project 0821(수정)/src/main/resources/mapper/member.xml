@@ -1,36 +1,38 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.MemberMapper">
-	<!-- 
+	<!-- 아이디 중복 체크 -->
 	<select id="check" parameterType="String" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id}
 	</select>
 	
+	<!-- 로그인 -->
 	<select id="login" parameterType="Member" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id} AND password = #{password}
 	</select>
-
-	<update id="update" parameterType="Member">
-		UPDATE mem_info
-		SET
-		id=#{id}, password=#{password}
-		WHERE mem_code = #{mem_code}
+	
+	<!-- 회원가입 -->
+	<insert id="signUp" parameterType="Member">
+		INSERT INTO mem_info (id, password, name, phone) VALUES(#{id}, #{password}, #{name}, #{phone})
+	</insert>
+	
+	<!-- 회원정보수정 -->
+	<update id="updateId" parameterType="Member">
+		UPDATE mem_info 
+		SET id = #{id}, password = #{password}
+		WHERE id = #{id}
 	</update>
-
+	
+	<update id="updatePassword" parameterType="Member">
+		UPDATE mem_info 
+		SET id = #{id}, password = #{password}
+		WHERE password = #{password}
+	</update>
+	
+	<!-- 회원탈퇴 -->
 	<delete id="delete" parameterType="int">
 		DELETE FROM mem_info
 		WHERE mem_code =
-		#{mem_code}
+		#{MemCode}
 	</delete>
-	  -->
-	  <insert id="signUp" parameterType="Member">
-    INSERT INTO mem_info (id, password, name, phone, role)
-    VALUES (#{id}, #{password}, #{name}, #{phone}, #{role})
-</insert>
-	
-	<select id="login" parameterType="String" resultType="Member">
-		SELECT * FROM mem_info WHERE id = #{id}
-	</select>
 </mapper>
-
-
 	
