@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Basketball</title>
-<link href="${pageContext.request.contextPath}/css/basketball.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
 <!-- 폰트어썸폴더 -->
     <script
@@ -43,10 +43,21 @@
                 
                 <div class="text-wrapper"> 
                 <!-- 텍스트 내용 -->
-                <span class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, ipsum hic, voluptatem, perferendis quia debitis blanditiis dolore voluptates esse atque voluptate. Dolorum libero mollitia et temporibus nulla rem, sit animi.
-                Sed harum, impedit laudantium dolores laboriosam cumque sit nam mollitia eos, fugit voluptatibus nobis quod id repudiandae provident officia consequatur ad perspiciatis minus eveniet perferendis. Dignissimos fugit eveniet eius culpa.
-                Repellendus nemo sunt officiis cum corrupti provident voluptate similique, fugit laborum, earum dolore ad dicta excepturi. Unde fugiat ipsam dolore provident maiores quos cumque odit iure inventore. Dolor, placeat? Non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempore unde in voluptate quasi veniam beatae at doloremque nobis reiciendis earum odit eveniet architecto, omnis ad fugiat vitae alias quas?</span>     
-                <span class="more-text">더보기</span>
+						<span class="text">Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Et, ipsum hic, voluptatem, perferendis quia
+							debitis blanditiis dolore voluptates esse atque voluptate.
+							Dolorum libero mollitia et temporibus nulla rem, sit animi. Sed
+							harum, impedit laudantium dolores laboriosam cumque sit nam
+							mollitia eos, fugit voluptatibus nobis quod id repudiandae
+							provident officia consequatur ad perspiciatis minus eveniet
+							perferendis. Dignissimos fugit eveniet eius culpa. Repellendus
+							nemo sunt officiis cum corrupti provident voluptate similique,
+							fugit laborum, earum dolore ad dicta excepturi. Unde fugiat ipsam
+							dolore provident maiores quos cumque odit iure inventore. Dolor,
+							placeat? Non. Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Illum tempore unde in voluptate quasi veniam beatae at
+							doloremque nobis reiciendis earum odit eveniet architecto, omnis
+							ad fugiat vitae alias quas?</span> <span class="more-text">더보기</span>
                 <span class="less-text">줄이기</span>      
             </div>
             </div>
@@ -141,11 +152,12 @@
         </div>
     </div>
     <br><br><br>
-	<div>
+	<div class="function">
 		<a href="<%=request.getContextPath()%>/accom">숙소</a>
 		<a href="<%=request.getContextPath()%>/rest">식당</a>
 		<a href="<%=request.getContextPath()%>/goods">굿즈</a>
 	</div>
+	<br><br>
 	<div id="black">
 		<p>안녕</p>
 		<div id="top">
@@ -166,6 +178,6 @@
 		</div>
 	</div>
     <!-- SCRIPTS -->
-	<script src="${pageContext.request.contextPath}/js/basketball.js"></script>
+	<script src="${pageContext.request.contextPath}/js/sport.js"></script>
 </body>
 </html>

@@ -1,13 +1,15 @@
 -- 회원 정보
 CREATE TABLE mem_info (
-    mem_code INT PRIMARY KEY AUTO_INCREMENT,
-    id VARCHAR(50),
-    password VARCHAR(50), -- 정규표현식
-    name VARCHAR(50),
-    phone VARCHAR(13),
-    date_registered DATETIME DEFAULT CURRENT_TIMESTAMP
+    mem_code INT PRIMARY KEY AUTO_INCREMENT,   
+    id VARCHAR(50) NOT NULL UNIQUE,            
+    password VARCHAR(50) NOT NULL,           
+    name VARCHAR(50) NOT NULL,            
+    phone VARCHAR(13) NOT NULL,            
+    date_registered DATETIME DEFAULT CURRENT_TIMESTAMP 
 );
 SELECT * FROM mem_info;
+INSERT INTO mem_info (id, password, name, phone)
+VALUES ('test1','1234','user1','01012345678');
 -- 식당, 숙소 리뷰를 받는데 따로 받지않고 한번에 받는 리뷰 기능? 
 -- 한번에 받으려면 xml에도 테이블을 조인해서 select를 받는다면 resultmap association도 추가하여 
 -- resultmap을 받는다?
@@ -17,12 +19,13 @@ SHOW TABLES LIKE 'mem_info';
 -- 회원 구매목록
 CREATE TABLE mem_purchases (
     purchase_id INT PRIMARY KEY AUTO_INCREMENT,
+    mem_code INT,
     mem_id INT NOT NULL,              -- 사용자 ID
     goods_code INT NOT NULL,           -- 구매한 상품 코드
     theme_code INT NOT NULL,           -- 테마파크 코드 (구매한 상품의 테마와 연결)
     purchase_date DATETIME NOT NULL,   -- 구매 날짜
     FOREIGN KEY (goods_code) REFERENCES goods(goods_code),
-    FOREIGN KEY (mem_id) REFERENCES members (mem_id)
+	FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
 );
 
 INSERT INTO mem_info (id, password, name, phone) VALUES('test1', '1234', 'user', '01012345678');
@@ -133,14 +136,19 @@ CREATE TABLE accom_reservation (
 );
 
 -- 리뷰
-CREATE TABLE reviews (
-	review_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_code INT NOT NULL,
-    entity_type VARCHAR(20) NOT NULL,
-    entity_id INT NOT NULL,
-    rating INT CHECK (rating >= 1 AND rating <= 5),
-    review_text TEXT,
-    review_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code)
+CREATE TABLE review (
+    review_id BIGINT PRIMARY KEY AUTO_INCREMENT, 
+    mem_code INT NOT NULL,                        
+    entity_type VARCHAR(20) NOT NULL,          
+    entity_id INT NOT NULL,                     
+    rating INT NOT NULL CHECK (rating >= 1 AND rating <= 5), 
+    review_text TEXT,                            
+    review_date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code) ON DELETE CASCADE,  
+    INDEX entity_index (entity_type, entity_id)
 );
+SELECT * FROM review;
+INSERT INTO review (mem_code, entity_type, entity_id, rating, review_text)
+VALUES ('1','숙소','1','5','3.1415926535897932384626');
+
 

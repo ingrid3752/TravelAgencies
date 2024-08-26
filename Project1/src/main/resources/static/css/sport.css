@@ -348,3 +348,22 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.function {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px; /* 네모박스의 너비 */
+        padding: 20px; /* 내부 여백 */
+        margin: 0 auto; /* 정가운데 정렬 */
+        background-color: white; /* 박스 배경색 */
+        border-radius: 8px; /* 모서리를 둥글게 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 얕은 그림자 */
+    }
+
+.function a {
+        text-decoration: none; /* 링크의 밑줄 제거 */
+        color: black; /* 링크의 글자색 */
+        margin: 10px 0; /* 링크들 사이에 간격 추가 */
+        font-weight: bold; /* 글자를 굵게 */
+    }

@@ -66,6 +66,12 @@ public class PageController {
     	return "review";
     }
     
+    // 리뷰 작성 페이지로 이동
+    @GetMapping("/reviewForm")
+    public String ReviewFormPage() {
+    	return "reviewForm";
+    }
+    
     // 예약 페이지로 이동
     @GetMapping("/reservation")
     public String ReservationPage() {

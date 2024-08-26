@@ -11,8 +11,8 @@ import com.kh.project.model.vo.ReviewEntity;
 public interface ReviewMapper {
 	
 	void insertReview(Review review);
-	List<Review> getReviewsByEntity(ReviewEntity entity);
-	List<Review> getReviewsByMember(int memCode);
+	List<Review> getReviewByEntity(ReviewEntity entity);
+	List<Review> getReviewByMember(int memCode);
 	double getAverageRatingByEntity(ReviewEntity entity);
 	
 }
