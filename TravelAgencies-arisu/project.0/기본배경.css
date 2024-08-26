@@ -1,0 +1,117 @@
+#header {
+  background-color: black;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 30px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.5)),
+    url();
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#KHTRAVLE {
+  color: white;
+  font-size: 2rem;
+}
+
+#login {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#sign {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 150px;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#checkbox3 {
+  position: fixed;
+  top: 45%;
+  left: 43%;
+  width: 230px;
+  height: 140px;
+  background-color: #ffffff85;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.menu {
+  position: fixed;
+  width: 100px;
+  top: 25px;
+  right: 20px;
+  max-width: 100px;
+  background-color: #fcf7f7;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+
+  font-weight: 500;
+  font-style: normal;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu a {
+  color: #f8f0f0;
+}
+
+.submenu > li {
+  line-height: 50px;
+
+  background-color: #0000003a;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #000000;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+  background-color: #000000;
+}

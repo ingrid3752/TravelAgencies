@@ -1,0 +1,147 @@
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.5)),
+    url("Untitled\ design.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p {
+  margin-bottom: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+  color: rgba(255, 255, 255, 0.719);
+  right: 47%;
+}
+
+h2 {
+  font-size: 5.157em;
+}
+
+h3 {
+  font-size: 2.369em;
+}
+
+h4 {
+  font-size: 1.777em;
+}
+
+h5 {
+  font-size: 1.333em;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.intro {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+}
+.intro__title {
+  color: white;
+  max-width: 45%;
+  text-align: center;
+  mix-blend-mode: difference;
+  z-index: 2;
+  transform: translateY(40px);
+}
+.intro__background {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  transform: scaleX(0);
+}
+.intro__background--left {
+  left: 0;
+  transform-origin: left center;
+}
+.intro__background--right {
+  left: 50%;
+  transform-origin: right center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo .dot {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-color: #7a3828;
+  border-radius: 50%;
+}
+.header__logo .dot:last-child {
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+}
+.header__nav {
+  font-family: "Ageo", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+.header__nav > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.hero {
+}
+.hero__col {
+  background-color: #7a3828;
+  background-size: cover;
+}
+.hero__col--1 {
+  padding-top: 20%;
+}
+.hero__col--1 h1 {
+  position: relative;
+  font-size: 220px;
+  transform: translateX(50%);
+  z-index: 3;
+}
+.hero__col--2 img {
+  object-fit: cover;
+  height: 100%;
+}

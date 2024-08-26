@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <title>111</title>
     <link rel="stylesheet" href="../css/농구.css" />
     <link rel="stylesheet" href="../reset.css" />
     <!-- 폰트어썸폴더 -->
@@ -18,7 +18,7 @@
   <body style="overflow-x: hidden">
     <header id="header">
       <div id="Binggrae_font">
-        <a href="" id="KHTRAVLE">KHTRAVEL</a>
+        <a href="" id="KHTRAVEL">KHTRAVEL</a>
       </div>
       <div>
         <a href="./로그인.html" id="login">Login</a>
@@ -28,13 +28,13 @@
           <li>
             <a href="#">☰</a>
             <ul class="submenu">
-              <li><a href="./로그인.html">로그인</a></li>
-              <li><a href="./마이페이지.html">마이페이지</a></li>
-              <li><a href="#">관광지</a></li>
+              <li><a href="./로그인.html">예약</a></li>
+              <li><a href="./마이페이지.html">오시는길</a></li>
+              <li><a href="#">리뷰</a></li>
               <li><a href="#">굿즈</a></li>
-              <li><a href="#">submenu05</a></li>
           </ul>
       </li>
+      </ul>
     </header>  
       <div style="display: flex;">
       <div class="ticket-container">
@@ -53,8 +53,7 @@
                 <span class="less-text">줄이기</span>      
             </div>
             </div>
-            <div>
-             <p>이미지</p>
+             <img src="#" alt="이미지">
             </div>
         </div>
       </div>
@@ -85,7 +84,10 @@
         <div class="ticket3">
             <div class="ticket-icon"></div>
             <div class="ticket-info">
-                <h1>티켓 A</h1>    
+                <h1>티켓 A</h1>  
+                <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 10:24</p>  
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="text1">&nbsp;잠실월드컵경기장</span>
             </div>
             <div class="itembu">
                 <div class="control">
@@ -95,7 +97,6 @@
                 </div>
                 <div class="price">
                     <p>TotalPrice : <span id="totalPrice">500</span> Won ₩</p>
-                    <br>
                     <button type="submit" class="ticket-pay">티켓구매</button>
                 </div>
             </div>
@@ -106,7 +107,9 @@
         <div class="ticket3">
             <div class="ticket-icon"></div>
             <div class="ticket-info">
-                <h1>티켓 B</h1>    
+                <h1>티켓 B</h1>
+                <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 11:35</p>  
+                <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
             </div>
             <div class="itembu">
                 <div class="control">
@@ -116,7 +119,6 @@
                 </div>
                 <div class="price">
                     <p>TotalPrice : <span id="totalPrice1">400</span> Won ₩</p>
-                    <br>
                     <button type="submit" class="ticket-pay">티켓구매</button>
                 </div>
             </div>
@@ -127,7 +129,9 @@
         <div class="ticket3">
             <div class="ticket-icon"></div>
             <div class="ticket-info">
-                <h1>티켓 C</h1>    
+                <h1>티켓 C</h1>
+                <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 12:25</p>  
+                <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
             </div>
             <div class="itembu">
                 <div class="control">
@@ -137,14 +141,122 @@
                 </div>
                 <div class="price">
                     <p>TotalPrice : <span id="totalPrice2">300</span> Won ₩</p>
-                    <br>
                     <button type="submit" class="ticket-pay">티켓구매</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="ticket-container">
+      <div class="ticket3">
+          <div class="ticket-icon"></div>
+          <div class="ticket-info">
+              <h1>티켓 D</h1>
+              <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 12:50</p>  
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
+          </div>
+          <div class="itembu">
+              <div class="control">
+                  <button id="minus3" class="butt">-</button>
+                  <input type="number" id="quantity3" value="1" min="1" class="quantity" readonly />
+                  <button id="plus3" class="butt">+</button>
+              </div>
+              <div class="price">
+                  <p>TotalPrice : <span id="totalPrice3">600</span> Won ₩</p>
+                  <button type="submit" class="ticket-pay">티켓구매</button>
+              </div>
+          </div>
       </div>
+    </div>
+    
+    <div class="ticket-container">
+      <div class="ticket3">
+          <div class="ticket-icon"></div>
+          <div class="ticket-info">
+              <h1>티켓 E</h1>
+              <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 13:14</p>  
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
+          </div>
+          <div class="itembu">
+              <div class="control">
+                  <button id="minus4" class="butt">-</button>
+                  <input type="number" id="quantity4" value="1" min="1" class="quantity" readonly />
+                  <button id="plus4" class="butt">+</button>
+              </div>
+              <div class="price">
+                  <p>TotalPrice : <span id="totalPrice4">700</span> Won ₩</p>
+                  <button type="submit" class="ticket-pay">티켓구매</button>
+              </div>
+          </div>
       </div>
+    </div>
+    
+    <div class="ticket-container">
+      <div class="ticket3">
+          <div class="ticket-icon"></div>
+          <div class="ticket-info">
+              <h1>티켓 F</h1>
+              <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 14:00</p>  
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
+          </div>
+          <div class="itembu">
+              <div class="control">
+                  <button id="minus5" class="butt">-</button>
+                  <input type="number" id="quantity5" value="1" min="1" class="quantity" readonly />
+                  <button id="plus5" class="butt">+</button>
+              </div>
+              <div class="price">
+                  <p>TotalPrice : <span id="totalPrice5">800</span> Won ₩</p>
+                  <button type="submit" class="ticket-pay">티켓구매</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="ticket-container">
+      <div class="ticket3">
+          <div class="ticket-icon"></div>
+          <div class="ticket-info">
+              <h1>티켓 G</h1>
+              <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 14:50</p>  
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
+          </div>
+          <div class="itembu">
+              <div class="control">
+                  <button id="minus6" class="butt">-</button>
+                  <input type="number" id="quantity6" value="1" min="1" class="quantity" readonly />
+                  <button id="plus6" class="butt">+</button>
+              </div>
+              <div class="price">
+                  <p>TotalPrice : <span id="totalPrice6">900</span> Won ₩</p>
+                  <button type="submit" class="ticket-pay">티켓구매</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="ticket-container">
+      <div class="ticket3">
+          <div class="ticket-icon"></div>
+          <div class="ticket-info">
+              <h1>티켓 H</h1>
+              <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 15:50</p>  
+              <p><i class="fa-solid fa-location-dot"></i>&nbsp;잠실월드컵경기장</p>    
+          </div>
+          <div class="itembu">
+              <div class="control">
+                  <button id="minus7" class="butt">-</button>
+                  <input type="number" id="quantity7" value="1" min="1" class="quantity" readonly />
+                  <button id="plus7" class="butt">+</button>
+              </div>
+              <div class="price">
+                  <p>TotalPrice : <span id="totalPrice7">1000</span> Won ₩</p>
+                  <button type="submit" class="ticket-pay">티켓구매</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
       </div>
       </div>

@@ -75,7 +75,135 @@ function updateTotalPriceC(quantity) {
   const totalPrice = quantity * pricePerUnitC;
   totalPriceElementC.textContent = totalPrice;
 }
+// 티켓 D
+const quantityInputD = document.getElementById("quantity3");
+const totalPriceElementD = document.getElementById("totalPrice3");
+const pricePerUnitD = 600; // 티켓 D의 단위 가격
 
+document.getElementById("plus3").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputD.value);
+  quantity++;
+  quantityInputD.value = quantity;
+  updateTotalPriceD(quantity);
+});
+
+document.getElementById("minus3").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputD.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInputD.value = quantity;
+    updateTotalPriceD(quantity);
+  }
+});
+
+function updateTotalPriceD(quantity) {
+  const totalPrice = quantity * pricePerUnitD;
+  totalPriceElementD.textContent = totalPrice;
+}
+
+// 티켓 E
+const quantityInputE = document.getElementById("quantity4");
+const totalPriceElementE = document.getElementById("totalPrice4");
+const pricePerUnitE = 700; // 티켓 E의 단위 가격
+
+document.getElementById("plus4").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputE.value);
+  quantity++;
+  quantityInputE.value = quantity;
+  updateTotalPriceE(quantity);
+});
+
+document.getElementById("minus4").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputE.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInputE.value = quantity;
+    updateTotalPriceE(quantity);
+  }
+});
+
+function updateTotalPriceE(quantity) {
+  const totalPrice = quantity * pricePerUnitE;
+  totalPriceElementE.textContent = totalPrice;
+}
+
+// 티켓 F
+const quantityInputF = document.getElementById("quantity5");
+const totalPriceElementF = document.getElementById("totalPrice5");
+const pricePerUnitF = 800; // 티켓 F의 단위 가격
+
+document.getElementById("plus5").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputF.value);
+  quantity++;
+  quantityInputF.value = quantity;
+  updateTotalPriceF(quantity);
+});
+
+document.getElementById("minus5").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputF.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInputF.value = quantity;
+    updateTotalPriceF(quantity);
+  }
+});
+
+function updateTotalPriceF(quantity) {
+  const totalPrice = quantity * pricePerUnitF;
+  totalPriceElementF.textContent = totalPrice;
+}
+
+// 티켓 G
+const quantityInputG = document.getElementById("quantity6");
+const totalPriceElementG = document.getElementById("totalPrice6");
+const pricePerUnitG = 900; // 티켓 G의 단위 가격
+
+document.getElementById("plus6").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputG.value);
+  quantity++;
+  quantityInputG.value = quantity;
+  updateTotalPriceG(quantity);
+});
+
+document.getElementById("minus6").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputG.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInputG.value = quantity;
+    updateTotalPriceG(quantity);
+  }
+});
+
+function updateTotalPriceG(quantity) {
+  const totalPrice = quantity * pricePerUnitG;
+  totalPriceElementG.textContent = totalPrice;
+}
+
+// 티켓 H
+const quantityInputH = document.getElementById("quantity7");
+const totalPriceElementH = document.getElementById("totalPrice7");
+const pricePerUnitH = 1000; // 티켓 H의 단위 가격
+
+document.getElementById("plus7").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputH.value);
+  quantity++;
+  quantityInputH.value = quantity;
+  updateTotalPriceH(quantity);
+});
+
+document.getElementById("minus7").addEventListener("click", () => {
+  let quantity = parseInt(quantityInputH.value);
+  if (quantity > 1) {
+    quantity--;
+    quantityInputH.value = quantity;
+    updateTotalPriceH(quantity);
+  }
+});
+
+function updateTotalPriceH(quantity) {
+  const totalPrice = quantity * pricePerUnitH;
+  totalPriceElementH.textContent = totalPrice;
+}
 // 코드에 필요한 요소들 변수에 할당 (전체 ui를 감싸는 div, 내용 텍스트, 더보기/줄이기 텍스트)
 const textWrapper = document.querySelector(".text-wrapper");
 const text = document.querySelector(".text");
