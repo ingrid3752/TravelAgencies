@@ -1,0 +1,32 @@
+.event8 .hoverBox span p {
+  color: #fff;
+}
+.event8 .hoverBox span.span1 {
+  display: block;
+  position: absolute;
+  top: -90px;
+  transition: 0.5s;
+  width: 120%;
+  height: 100px;
+  line-height: 100px;
+  background: #000;
+  transform: rotate(10deg);
+}
+.event8 .hoverBox span.span2 {
+  display: block;
+  position: absolute;
+  bottom: -90px;
+  transition: 0.5s;
+  left: -20px;
+  width: 120%;
+  height: 100px;
+  line-height: 100px;
+  background: #000;
+  transform: rotate(10deg);
+}
+.event8:hover .hoverBox span.span1 {
+  top: -40px;
+}
+.event8:hover .hoverBox span.span2 {
+  bottom: -40px;
+}
