@@ -1,3 +1,4 @@
+/* 기본 스타일 */
 html, body {
     margin: 0;
     padding: 0;
@@ -88,8 +89,7 @@ a {
     margin: 20px auto;
     max-width: 70%;
     padding: 30px;
-    border-color: #555;
-    border-radius: 10px;
+    background: white;
     display: flex;
     flex-direction: column; /* 수직 정렬 */
     gap: 20px; /* 요소 간 간격 */
@@ -98,6 +98,7 @@ a {
 #reviewFormContent {
     display: flex;
     flex-direction: column; /* 요소들을 수직으로 배치 */
+    border-radius: 10px;
     gap: 15px; /* 요소 간 간격 */
 }
 
@@ -112,7 +113,7 @@ a {
 #reviewForm textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid;  
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 16px;
@@ -139,6 +140,7 @@ a {
     border-radius: 6px;
     margin-left: auto; /* 버튼을 오른쪽으로 이동 */
     height: 50px;
+    cursor: pointer;
 }
 
 #reviewForm button:hover {
@@ -168,19 +170,19 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.tab-button.active, .tab-button:hover {
-    background: #fff;
-    color: #000; /* 활성화된 탭 버튼의 텍스트 색상 */
+.tab-button.active {
+    background: green;
+    color: #fff; /* 활성화된 탭 버튼의 텍스트 색상 */
     border-bottom: 2px solid transparent;
 }
 
+.tab-button:hover {
+    background: greenyellow;
+}
+
+/* 탭 콘텐츠 스타일 */
 .tab-content {
     display: none;
-    border: 1px solid #ddd; /* 경계선 색상 설정 */
-    border-top: none; /* 상단 경계선 제거 */
-    border-radius: 0 0 6px 6px; /* 하단 모서리 둥글게 */
-    padding: 15px;
-    background: #fff; /* 배경 색상 설정 */
 }
 
 .tab-content.active {
@@ -203,9 +205,10 @@ a {
     margin-bottom: 10px;
 }
 
-.review-title {
-    font-size: 18px;
-    font-weight: bold;
+.review-author {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
 }
 
 .review-rating {
@@ -219,11 +222,37 @@ a {
     margin-bottom: 10px;
 }
 
-.review-author, .review-date {
+.review-date {
     margin-right: 15px;
 }
 
 .review-body {
     font-size: 16px;
     color: #333;
+}
+
+.review-buttons {
+    margin-top: 10px;
+}
+
+.review-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.review-buttons .like-button {
+    color: green;
+}
+
+.review-buttons .dislike-button {
+    color: red;
+}
+
+/* 버튼 활성화 상태 스타일 */
+.review-buttons button.active {
+    font-weight: bold;
 }
