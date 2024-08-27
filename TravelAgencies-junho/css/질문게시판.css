@@ -1,21 +1,10 @@
+/* 기본 스타일 */
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
-  overflow-x: hidden; /* 수평 스크롤 방지 */
-}
-
-
-
-/* 기본 스타일 */
-body {
   font-family: 'Sunflower', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #f5f5f5; /* 배경색 설정 */
-  background-image: url("/IMG/question-mark-2492009_1920.jpg");
+  overflow-x: hidden; /* 수평 스크롤 방지 */
 }
 
 /* 헤더 스타일 */
@@ -25,7 +14,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  width: 100%;
   padding-left: 30px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -41,7 +29,6 @@ body {
   font-size: 1.3rem;
   font-family: "Sunflower", sans-serif;
   font-weight: 500;
-  padding-right: 20px; /* padding-right 값을 통일 */
 }
 
 #sign {
@@ -53,10 +40,11 @@ a {
   color: inherit; /* 링크 색상 상속 */
 }
 
+/* 메뉴 스타일 */
 .menu {
   position: fixed;
   right: 20px;
-  top: 20px; /* fixed 위치 조정 */
+  top: 20px;
   width: 100px;
 }
 
@@ -64,7 +52,7 @@ a {
   width: 100%;
   text-align: center;
   line-height: 40px;
-  background-color: #000000;
+  background-color: #000;
   font-family: "Sunflower", sans-serif;
   font-weight: 500;
 }
@@ -80,127 +68,91 @@ a {
 }
 
 .menu > li:hover {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .menu > li:hover .submenu {
   height: 250px;
 }
 
-
-/* 컨테이너 스타일 */
-.container {
-  width: 90%;
-  max-width: 1000px; /* 최대 너비 증가 */
-  margin: 20px auto; /* 중앙 정렬 및 상하 여백 추가 */
+/* 질문 게시판 스타일 */
+.section {
+  margin-top: 80px;
   padding: 20px;
-  
-  background-color: rgba(255, 127, 80, 0.5);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
 }
 
-.container h1, .container h2 {
-  margin: 0 0 20px;
-  font-size: 1.8rem;
+.posts-container {
+  margin-top: 20px;
 }
 
-.question-form {
-  background: rgba(144, 238, 144, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.navbar {
+  display: flex;
+  background-color: #333;
+  color: #f2f2f2;
 }
 
-.question-form h2 {
-  margin-top: 0;
-  font-size: 1.5rem; /* 제목 크기 조정 */
-}
-
-.question-form textarea {
-  width: 100%;
-  height: 120px; /* 높이 증가 */
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  font-size: 16px;
-  resize: vertical; /* 수직으로만 크기 조절 가능 */
-}
-
-.question-form input[type="file"] {
+.navbar a {
   display: block;
-  margin-bottom: 10px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex: 1;
+  border-right: 1px solid #444;
 }
 
-#photoPreview {
-  max-width: 100%;
-  max-height: 200px;
+.navbar a:last-child {
+  border-right: none; /* 마지막 항목의 오른쪽 테두리 제거 */
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 질문 리스트 구역 */
+.navbar2 {
+  display: flex;
+  background-color: whitesmoke;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd; /* 항목 구분을 위한 하단 테두리 */
+}
+
+.navbar2 a {
   display: block;
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  object-fit: cover; /* 이미지 비율 유지 */
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  height: 50px;
+  text-decoration: none;
+  flex: 1;
+  border-right: 1px solid #ddd; /* 항목 구분을 위한 오른쪽 테두리 */
 }
 
-.question-form button {
-  background-color: #007bff;
-  color: #fff;
+.navbar2 a:last-child {
+  border-right: none; /* 마지막 항목의 오른쪽 테두리 제거 */
+}
+
+.navbar2 a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 질문 작성 페이지에서 돌아가기 버튼 스타일 */
+.button-link {
+  text-decoration: none;
+}
+
+.button-link button {
+  background-color: #007BFF;
+  color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.question-form button:hover {
+.button-link button:hover {
   background-color: #0056b3;
-}
-
-.questions-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.questions-list li {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.question-item {
-  margin-bottom: 15px; /* 질문 항목 간의 간격 추가 */
-}
-
-.question-item img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-top: 10px;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-  .container {
-    width: 95%; /* 작은 화면에서 너비 증가 */
-  }
-
-  .question-form textarea {
-    height: 100px; /* 작은 화면에서 높이 조정 */
-  }
-  
-  #header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #login, #sign {
-    margin-left: 0;
-    margin-top: 10px;
-  }
 }
