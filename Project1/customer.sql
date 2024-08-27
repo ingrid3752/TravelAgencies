@@ -1,3 +1,15 @@
+INSERT INTO mem_info (id, password, name, phone) VALUES('test1', '1234', 'user', '01012345678');
+DROP TABLE mem_info;
+SELECT id, password, name, CONCAT(SUBSTR(phone, 1, 3), '-', SUBSTR(phone, 4, 4), '-', SUBSTR(phone, 8, 4)) AS phone
+FROM mem_info;
+INSERT INTO mem_info (id, password, name, phone)
+VALUES ('test1','1234','user1','01012345678');
+-- 식당, 숙소 리뷰를 받는데 따로 받지않고 한번에 받는 리뷰 기능? 
+-- 한번에 받으려면 xml에도 테이블을 조인해서 select를 받는다면 resultmap association도 추가하여 
+-- resultmap을 받는다?
+
+SET foreign_key_checks = 0;
+
 -- 회원 정보
 CREATE TABLE mem_info (
     mem_code INT PRIMARY KEY AUTO_INCREMENT,   
@@ -6,44 +18,6 @@ CREATE TABLE mem_info (
     name VARCHAR(50) NOT NULL,            
     phone VARCHAR(13) NOT NULL,            
     date_registered DATETIME DEFAULT CURRENT_TIMESTAMP 
-);
-SELECT * FROM mem_info;
-INSERT INTO mem_info (id, password, name, phone)
-VALUES ('test1','1234','user1','01012345678');
--- 식당, 숙소 리뷰를 받는데 따로 받지않고 한번에 받는 리뷰 기능? 
--- 한번에 받으려면 xml에도 테이블을 조인해서 select를 받는다면 resultmap association도 추가하여 
--- resultmap을 받는다?
-
-USE project;
-SHOW TABLES LIKE 'mem_info';
--- 회원 구매목록
-CREATE TABLE mem_purchases (
-    purchase_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_code INT,
-    mem_id INT NOT NULL,              -- 사용자 ID
-    goods_code INT NOT NULL,           -- 구매한 상품 코드
-    theme_code INT NOT NULL,           -- 테마파크 코드 (구매한 상품의 테마와 연결)
-    purchase_date DATETIME NOT NULL,   -- 구매 날짜
-    FOREIGN KEY (goods_code) REFERENCES goods(goods_code),
-	FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
-);
-
-INSERT INTO mem_info (id, password, name, phone) VALUES('test1', '1234', 'user', '01012345678');
-DROP TABLE mem_info;
-SELECT id, password, name, CONCAT(SUBSTR(phone, 1, 3), '-', SUBSTR(phone, 4, 4), '-', SUBSTR(phone, 8, 4)) AS phone
-FROM mem_info;
-
-UPDATE mem_info 
-SET id = 'test2', password = '1234', phone= '01012345678'
-WHERE mem_code = '3';
-
--- 경기장
-CREATE TABLE stadium (
-    stadium_code INT PRIMARY KEY AUTO_INCREMENT,
-    stadium_event VARCHAR(20),
-    date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    price INT,
-    game VARCHAR(20)
 );
 
 -- 관광지
@@ -57,15 +31,36 @@ CREATE TABLE theme_park (
 -- 굿즈
 CREATE TABLE goods (
     goods_code INT PRIMARY KEY AUTO_INCREMENT,
-    goods_name VARCHAR(50) NOT NULL, -- 상품 이름
-    price DECIMAL(10, 2) NOT NULL, -- 상품 가격
-    stock INT DEFAULT 0, -- 재고량
-    description TEXT, -- 상품 설명
-    category VARCHAR(50), -- 상품 카테고리
-    theme_code INT, -- 테마파크 코드
-    mem_code INT, -- 회원 코드 (추가된 컬럼)
+    goods_name VARCHAR(50) NOT NULL, 
+    price DECIMAL(10, 2) NOT NULL, 
+    stock INT DEFAULT 0, 
+    description TEXT, 
+    category VARCHAR(50), 
+    theme_code INT, 
+    mem_code INT, 
     FOREIGN KEY (theme_code) REFERENCES theme_park(theme_code),
     FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
+);
+
+-- 회원 구매목록
+CREATE TABLE mem_purchases (
+    purchase_id INT PRIMARY KEY AUTO_INCREMENT,
+    mem_code INT,
+    mem_id INT NOT NULL,             
+    goods_code INT NOT NULL,           
+    theme_code INT NOT NULL,           
+    purchase_date DATETIME NOT NULL,   
+    FOREIGN KEY (goods_code) REFERENCES goods(goods_code),
+	FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
+);
+
+-- 경기장
+CREATE TABLE stadium (
+    stadium_code INT PRIMARY KEY AUTO_INCREMENT,
+    stadium_event VARCHAR(20),
+    date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    price INT,
+    game VARCHAR(20)
 );
 
 -- 식당
@@ -138,17 +133,18 @@ CREATE TABLE accom_reservation (
 -- 리뷰
 CREATE TABLE review (
     review_id BIGINT PRIMARY KEY AUTO_INCREMENT, 
-    mem_code INT NOT NULL,                        
+    mem_code INT NOT NULL,
+    title VARCHAR(50), 
     entity_type VARCHAR(20) NOT NULL,          
-    entity_id INT NOT NULL,                     
+    entity_id INT,
     rating INT NOT NULL CHECK (rating >= 1 AND rating <= 5), 
-    review_text TEXT,                            
+    review_text TEXT,
     review_date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code) ON DELETE CASCADE,  
-    INDEX entity_index (entity_type, entity_id)
+    INDEX entity_index (entity_type, entity_id),
+    FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code)
 );
-SELECT * FROM review;
-INSERT INTO review (mem_code, entity_type, entity_id, rating, review_text)
-VALUES ('1','숙소','1','5','3.1415926535897932384626');
 
+DROP TABLE review;
+SELECT * FROM review;
+SELECT * FROM mem_info;
 

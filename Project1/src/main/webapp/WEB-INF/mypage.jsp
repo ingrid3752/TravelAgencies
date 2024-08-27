@@ -4,7 +4,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>mypage</title>
+<title>마이페이지</title>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/css/mypage.css" rel="stylesheet">
@@ -23,7 +23,7 @@
         <p><a href="tiketinfo.html">경기예약정보</a></p>
       </div>
       <div class="user-info-box">
-        <p><a href="<%=request.getContextPath()%>/update">회원정보변경</a></p>
+        <p><a href="/update">회원정보변경</a></p>
       </div>
      </div>
    

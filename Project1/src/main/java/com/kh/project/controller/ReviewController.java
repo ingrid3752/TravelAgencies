@@ -25,46 +25,33 @@ public class ReviewController {
 	
 	// 리뷰 작성
 	@PostMapping("/add")
-	@ResponseBody
-	public void addReview(@RequestBody Review review) {
-		reviewService.addReview(review);
-	}
-	
-	// 특정 엔티티의 리뷰 목록 조회
-	@GetMapping("/entity")
-    @ResponseBody
-    public List<Review> getReviewsByEntity(String entityType, int entityId) {
-        return reviewService.getReviewByEntity(entityType, entityId);
+    public String addReview(Review review) {
+        reviewService.addReview(review);
+        return "redirect:/review/entity/" + review.getEntityType() + "/" + review.getEntityId();
     }
 	
-	// 특정 회원이 작성한 리뷰 목록 조회
-	@GetMapping("/member")
-    @ResponseBody
-    public List<Review> getReviewsByMember(int memCode) {
-        return reviewService.getReviewByMember(memCode);
+	// 특정 엔티티의 리뷰 목록 및 평균 평점 조회 후 JSP로 이동
+    @GetMapping("/entity/{entityType}/{entityId}")
+    public String showReviewsByEntity(@PathVariable String entityType, @PathVariable int entityId, Model model) {
+        List<Review> reviews = reviewService.getReviewByEntity(entityType, entityId);
+        double averageRating = reviewService.getAverageRatingByEntity(entityType, entityId);
+        model.addAttribute("reviews", reviews);
+        model.addAttribute("averageRating", averageRating);
+        return "review";  
     }
 	
-	// 특정 엔티티의 평균 평점 조회
-	@GetMapping("/averageRating")
-    @ResponseBody
-    public double getAverageRatingByEntity(String entityType, int entityId) {
-        return reviewService.getAverageRatingByEntity(entityType, entityId);
+    // 특정 회원이 작성한 리뷰 목록 조회 (JSP로 이동 필요시 활용)
+    @GetMapping("/member/{memCode}")
+    public String getReviewsByMember(@PathVariable int memCode, Model model) {
+        List<Review> reviews = reviewService.getReviewByMember(memCode);
+        model.addAttribute("reviews", reviews);
+        return "review";  // 특정 회원의 리뷰를 표시할 JSP로 이동
     }
-	
-	// 특정 엔티티의 리뷰 보기
-	@GetMapping("/entity/{entityType}/{entityId}")
-	public String showReviewsByEntity(@PathVariable String entityType, @PathVariable int entityId, Model model) {
-	    List<Review> reviews = reviewService.getReviewByEntity(entityType, entityId);
-	    double averageRating = reviewService.getAverageRatingByEntity(entityType, entityId);
-	    model.addAttribute("reviews", reviews);
-	    model.addAttribute("averageRating", averageRating);
-	    return "review";  
-	}
-
-	
+    
 	// 리뷰 목록으로 다시 보내기
 	@PostMapping("/submit")
 	public String submitReview(Review review) {
+		System.out.println(review);
 	    reviewService.saveReview(review);
 	    return "redirect:/review/entity/" + review.getEntityType() + "/" + review.getEntityId();
 	}
@@ -73,9 +60,9 @@ public class ReviewController {
 	// 리뷰를 작성한 후, 작성한 리뷰 목록 보여주기
 	@GetMapping("/review/{entityType}/{entityId}")
 	public String showReviewList(@PathVariable String entityType, @PathVariable int entityId, Model model) {
-	    List<Review> reviews = reviewService.getReviewByEntity(entityType, entityId);
+	    List<Review> review = reviewService.getReviewByEntity(entityType, entityId);
 	    double averageRating = reviewService.getAverageRatingByEntity(entityType, entityId);
-	    model.addAttribute("reviews", reviews);
+	    model.addAttribute("review", review);
 	    model.addAttribute("averageRating", averageRating);
 	    return "review";
 	}

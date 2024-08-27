@@ -13,8 +13,8 @@
 
     <!-- 리뷰 작성 -->
     <insert id="insertReview" parameterType="Review">
-        INSERT INTO review (mem_code, entity_type, entity_id, rating, review_text)
-        VALUES (#{memCode}, #{entityType}, #{entityId}, #{rating}, #{reviewText})
+        INSERT INTO review (mem_code, title, entity_type, entity_id, rating, review_text)
+        VALUES (#{memCode}, #{title}, #{entityType}, #{entityId}, #{rating}, #{reviewText})
     </insert>
 
     <!-- 특정 엔티티(식당 또는 숙소)의 리뷰 목록 조회 -->

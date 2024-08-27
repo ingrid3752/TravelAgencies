@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>중식</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/china.css" rel="stylesheet">
     <style>

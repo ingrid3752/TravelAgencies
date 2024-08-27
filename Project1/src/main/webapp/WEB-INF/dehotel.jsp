@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Dehotel</title>
+<title>포르테 데 베르사유 호텔</title>
 	 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/dehotel.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

@@ -139,9 +139,10 @@ label[for="label-c"] {
 
 .submit {
 	background-color: rgba(0, 0, 0, 0.24);
+	color: black;
 	border-color: rgba(0, 0, 0, 0.726);
 	border-radius: 10px;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 600;
 }
 

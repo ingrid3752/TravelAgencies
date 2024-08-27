@@ -1,7 +1,7 @@
 /*new font*/
 /*헤더*/
 @font-face {
-  src: url("../html/font/Paris2024-Variable.ttf");
+  src: url("/fonts/Paris2024-Variable.ttf");
   font-family: "Binggrae";
 }
 #Binggrae_font {

@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
+<title>로그인</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/css/login.css" rel="stylesheet">
 </head>
 <body>
     <div id="login-form">
         <h2>로그인</h2>
-        <form action="<%= request.getContextPath() %>/login" method="post">
+        <form action="/login" method="post">
             <div class="form-group">
                 <label for="id">아이디 : </label>
                 <input type="text" id="id" name="id" required>

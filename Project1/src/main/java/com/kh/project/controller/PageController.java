@@ -1,6 +1,7 @@
 package com.kh.project.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -68,7 +69,8 @@ public class PageController {
     
     // 리뷰 작성 페이지로 이동
     @GetMapping("/reviewForm")
-    public String ReviewFormPage() {
+    public String ReviewFormPage(Model model) {
+    	model.addAttribute("memCode", 1);
     	return "reviewForm";
     }
     

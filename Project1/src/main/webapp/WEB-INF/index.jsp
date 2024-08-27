@@ -24,7 +24,7 @@ pageEncoding="UTF-8"%>
 <body style="overflow: hidden" id="body">
 	<header id="header">
 		<div class="paris-font">
-			<a href="<%=request.getContextPath()%>/" id="KHTRAVEL">KHTRAVEL</a>
+			<a href="/" id="KHTRAVEL">KHTRAVEL</a>
 		</div>
 		<%@ page session="true"%>
 		<%
@@ -33,27 +33,27 @@ pageEncoding="UTF-8"%>
 		<div id="login">
 			<% if (loginUser != null) { %>
 			<!-- 로그인 후 버튼 -->
-			<a href="<%=request.getContextPath()%>/mypage">MyPage</a>&nbsp;&nbsp;
-			<a href="<%=request.getContextPath()%>/logout">LogOut</a>
+			<a href="/mypage">MyPage</a>&nbsp;&nbsp;
+			<a href="/logout">LogOut</a>
 			<% } else { %>
 			<!-- 로그인 전 버튼 -->
-			<a href="<%=request.getContextPath()%>/login">Login</a>&nbsp;&nbsp; <a
-				href="<%=request.getContextPath()%>/signUp">SignUp</a>
+			<a href="/login">Login</a>&nbsp;&nbsp; <a
+				href="/signUp">SignUp</a>
 			<% } %>
 		</div>
 		<ul class="menu">
 			<li><a href="#">☰</a>
 				<ul class="submenu">
-					<li><a href="<%=request.getContextPath()%>/reservation">예약</a></li>
-					<li><a href="<%=request.getContextPath()%>/stadium">오시는 길</a></li>
-					<li><a href="<%=request.getContextPath()%>/review">리뷰</a></li>
-					<li><a href="<%=request.getContextPath()%>/goods">굿즈</a></li>
+					<li><a href="/reservation">예약</a></li>
+					<li><a href="/stadium">경기장</a></li>
+					<li><a href="/review">리뷰</a></li>
+					<li><a href="/goods">굿즈</a></li>
 				</ul></li>
 		</ul>
 	</header>
 
 	<section id="mainpage">
-		<div id="Binggrae_font">
+		<div id="Binggrae">
 			<h2 id="h2main">KHTRAVEL</h2>
 			<br>
 			<p>
@@ -67,7 +67,7 @@ pageEncoding="UTF-8"%>
 			<br>
 			<br>
 			<br>
-
+		<a href="/reservation" id="bububu">지금 바로 예약하세요!</a>
 		</div>
 	</section>
 	<!-- SCRIPTS -->

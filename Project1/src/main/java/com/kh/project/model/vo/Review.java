@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class Review {
 	
 	private Long reviewId;
+	private String title;
 	private int memCode;
 	private String entityType;
 	private Integer entityId;
@@ -25,5 +26,6 @@ public class Review {
     	this.entityId = entityId;
     	this.rating = rating;
     	this.reviewText = reviewText;
+    	
     }
 }

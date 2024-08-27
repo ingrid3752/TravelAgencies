@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Update</title>
+<title>회원정보수정</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet"/>
     <link href="${pageContext.request.contextPath}/css/update.css" rel="stylesheet"/>
     <!-- 폰트어썸폴더 -->

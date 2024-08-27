@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Reservation</title>
+<title>예약</title>
 <link href="${pageContext.request.contextPath}/css/reservation.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/Paris.css" rel="stylesheet"/>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
@@ -28,19 +28,21 @@
 </head>
 <body style="overflow-x: hidden">
 	<header id="header">
-		<div id="Binggrae_font">
-			<a href="<%=request.getContextPath()%>/" id="KHTRAVEL">KHTRAVEL</a>
-		</div>
-		<ul class="menu">
-			<li><a href="#">☰</a>
-				<ul class="submenu">
-					<li><a href="<%=request.getContextPath()%>/reservation">예약</a></li>
-					<li><a href="<%=request.getContextPath()%>/stadium">오시는 길</a></li>
-					<li><a href="<%=request.getContextPath()%>/review">리뷰</a></li>
-					<li><a href="<%=request.getContextPath()%>/goods">굿즈</a></li>
-				</ul></li>
-		</ul>
-	</header>
+      <div id="Binggrae_font">
+        <a href="/" id="KHTRAVEL">KHTRAVEL</a>
+      </div>
+      <ul class="menu">
+          <li>
+            <a href="#">☰</a>
+            <ul class="submenu">
+              <li><a href="/reservation">예약</a></li>
+					<li><a href="/stadium">경기장</a></li>
+					<li><a href="/review">리뷰</a></li>
+					<li><a href="/goods">굿즈</a></li>
+          </ul>
+      </li>
+     </ul>
+    </header>
 	<div id="olym">
 		<img src="../IMG/image-removebg-preview.png" alt="">
 	</div>

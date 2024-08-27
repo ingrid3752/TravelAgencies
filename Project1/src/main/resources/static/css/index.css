@@ -1,7 +1,6 @@
-/*new font*/
 /*헤더*/
 @font-face {
-  src: url("../html/font/Paris2024-Variable.ttf");
+  src: url("/fonts/Paris2024-Variable.ttf");
   font-family: "Binggrae";
 }
 #Binggrae_font {
@@ -20,7 +19,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 #KHTRAVEL {
   color: white;
   font-size: 2rem;
@@ -34,8 +32,8 @@
   font-style: normal;
 }
 #login a {
-	color: white;
-	font-size: 1.3rem;
+  color: white;
+  font-size: 1.3rem;
 }
 #sign {
   color: white;
@@ -66,7 +64,6 @@ a {
   text-decoration: none;
   font-size: 14px;
 }
-
 .menu {
   position: fixed;
   right: 20px;
@@ -79,7 +76,6 @@ a {
   overflow: hidden;
   margin: 150px auto;
 }
-
 .menu > li {
   width: 20%; /*20*5=100%*/
   float: left;
@@ -90,16 +86,13 @@ a {
   font-weight: 500;
   font-style: normal;
 }
-
 .menu a {
   color: #fff;
 }
-
 .submenu > li {
   line-height: 50px;
   background-color: #000000;
 }
-
 .submenu {
   height: 0; /*ul의 높이를 안보이게 처리*/
   overflow: hidden;
@@ -108,19 +101,16 @@ a {
   background-color: #000000;
   transition-duration: 0.5s;
 }
-
 .menu > li:hover .submenu {
   height: 200px; /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
-
 .menu > li {
   width: 100%;
   text-align: center;
   line-height: 40px;
   background-color: #000000;
 }
-
 /*바디*/
 section p {
   font-size: 2rem;
@@ -130,6 +120,11 @@ section p {
 }
 section h2 {
   font-size: 4rem;
+}
+section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mainpage {
   display: flex;
@@ -167,18 +162,6 @@ section h2 {
   font-style: normal;
   text-align: center;
 }
-#button {
-  height: 42px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-left: 0px;
-  outline: none;
-  color: rgb(243, 236, 204);
-  background-color: rgba(255, 255, 255, 0.274);
-  border: solid 0px;
-  font-size: 1rem;
-}
-
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.5)),
     url(/IMG/Untitled\ design.png);
@@ -197,4 +180,17 @@ body {
   justify-content: center;
   align-content: center;
   color: white;
+}
+#bububu {
+  width: 500px;
+  height: 70px;
+  font-size: 1.3rem;
+  background-color: rgba(255, 184, 103, 0.521);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-left: 25%;
+}
+#bububu:hover {
+  background-color: rgba(110, 202, 255, 0.479);
+  color: rgb(0, 0, 0);
 }

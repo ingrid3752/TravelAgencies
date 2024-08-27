@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Fencing</title>
+<title>펜싱</title>
 <link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
 <!-- 폰트어썸폴더 -->
@@ -19,20 +19,20 @@
 <body style="overflow-x: hidden">
     <header id="header">
       <div id="Binggrae_font">
-        <a href="<%=request.getContextPath()%>/" id="KHTRAVEL">KHTRAVEL</a>
+        <a href="/" id="KHTRAVEL">KHTRAVEL</a>
       </div>
       <ul class="menu">
           <li>
             <a href="#">☰</a>
             <ul class="submenu">
-              <li><a href="<%=request.getContextPath()%>/reservation">예약</a></li>
-					<li><a href="<%=request.getContextPath()%>/stadium">경기장</a></li>
-					<li><a href="<%=request.getContextPath()%>/review">리뷰</a></li>
-					<li><a href="<%=request.getContextPath()%>/goods">굿즈</a></li>
+              <li><a href="/reservation">예약</a></li>
+					<li><a href="/stadium">경기장</a></li>
+					<li><a href="/review">리뷰</a></li>
+					<li><a href="/goods">굿즈</a></li>
           </ul>
       </li>
      </ul>
-    </header>  
+    </header> 
       <div style="display: flex;">
       <div class="ticket-container">
         <div class="ticket">

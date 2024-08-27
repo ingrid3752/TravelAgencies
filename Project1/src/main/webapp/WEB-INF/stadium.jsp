@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Stadium</title>
+<title>경기장</title>
 </head>
 <body>
-	<h1>Stadium</h1>
+	<h1>경기장</h1>
 </body>
 </html>
