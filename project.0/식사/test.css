@@ -84,38 +84,38 @@ ul {
   line-height: 50px;
   border-top-left-radius: 60%;
   border-top-right-radius: 60%;
-  background-color: #fa9639;
+  background-color: #fa9639ce;
 }
 .submenu > li.cc > a {
-  color: #fffb00;
+  color: #fffb00c7;
 }
 .submenu > li.bb > a {
-  color: red;
+  color: rgba(255, 0, 0, 0.808);
 }
 .submenu > li.cc > a {
-  color: #fffb00;
+  color: #fffb00c9;
 }
 .submenu > li.bb {
   border-bottom-left-radius: 60%;
   border-bottom-right-radius: 60%;
-  background-color: #fa9639;
+  background-color: #fa9639c0;
 }
 .submenu > li.aa:hover,
 .submenu > li.cc:hover,
 .submenu > li.bb:hover {
   border-radius: 35%;
-  background-color: #dbdd458c;
+  background-color: #dbdd4573;
 }
 .submenu > li.cc {
-  background-color: rgb(221, 122, 55);
+  background-color: rgba(221, 121, 55, 0.658);
 }
 .menu > li.aa:hover {
-  background-color: #ce393900;
+  background-color: #ce393957;
   transition-duration: 0.5s;
 }
 .menu > li.aa {
   border-radius: 50%;
-  background-color: #e60000b9;
+  background-color: #e6000083;
 }
 
 .menu > li:hover .submenu {
@@ -132,7 +132,7 @@ ul {
   background-color: rgba(0, 0, 0, 0);
 }
 .menu > li:hover {
-  background-color: #ff3232;
+  background-color: #ff3232c7;
   transition-duration: 0.5s;
   border-radius: 65%;
 }
@@ -154,19 +154,19 @@ ul {
 
 .food1 {
   right: 1000px;
-  background-color: #cea268c4;
+  background-color: #cea268a8;
 }
 .food2 {
   right: 900px;
-  background-color: #f07676c0;
+  background-color: #f07676a8;
 }
 .food3 {
   right: 800px;
-  background-color: #69aaffc5;
+  background-color: #69aaffa6;
 }
 .food4 {
   left: 100px;
-  background-color: #535353c7;
+  background-color: #535353a6;
 }
 
 .food-info-box1,
@@ -184,22 +184,22 @@ ul {
   align-items: center;
   font-size: 6rem;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.637);
+  color: rgba(255, 255, 255, 0.5);
 }
 .food-info-box1:hover {
-  background-color: #d6a565d5;
+  background-color: #d6a565b0;
 }
 
 .food-info-box2:hover {
-  background-color: #ec5d5dce;
+  background-color: #ec5d5dab;
 }
 
 .food-info-box3:hover {
-  background-color: #5cabecce;
+  background-color: #5cabeca9;
 }
 
 .food-info-box4:hover {
-  background-color: #4e4d4cd2;
+  background-color: #4e4d4ca8;
 }
 .food a {
   font-size: 1.3rem;
@@ -208,80 +208,114 @@ ul {
 }
 /* 호버애니메이션 */
 
-.box1 .hover-box,
-.box2 .hover-box,
-.box3 .hover-box,
-.box4 .hover-box {
+.box1 .hover-box {
   position: absolute;
-  width: 390px;
-  height: 10px;
-  top: 450px;
-  left: 650px;
-  padding: 20px;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -350px;
   z-index: -1;
   transform: scale(0.4, 0.35);
 }
 .box2 .hover-box {
-  left: 770px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -210px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
 }
 .box3 .hover-box {
-  left: 890px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -70px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
 }
 .box4 .hover-box {
-  left: 1010px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: 70px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
 }
 
 .box1:hover .hover-box {
-  transform: scale(0.65, 0.6);
+  transform: scale(0.55, 0.55);
   animation-name: file1;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   z-index: 1;
 }
 .box2:hover .hover-box {
-  transform: scale(0.65, 0.6);
-  animation-name: file4;
-  animation-duration: 1s;
+  transform: scale(0.55, 0.55);
+  animation-name: file2;
+  animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   z-index: 1;
 }
 .box3:hover .hover-box {
-  transform: scale(0.65, 0.6);
-  animation-name: file1;
-  animation-duration: 1s;
+  transform: scale(0.55, 0.55);
+  animation-name: file3;
+  animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   z-index: 1;
 }
 .box4:hover .hover-box {
-  transform: scale(0.65, 0.6);
+  transform: scale(0.55, 0.55);
   animation-name: file4;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   z-index: 1;
 }
 @keyframes file1 {
   0% {
-    margin-left: -50px;
+    margin-left: -350px;
   }
   50% {
   }
   100% {
-    top: 340px;
+    top: 400px;
+  }
+}
+@keyframes file2 {
+  0% {
+    margin-left: -210px;
+  }
+  50% {
+  }
+  100% {
+    top: 400px;
+  }
+}
+@keyframes file3 {
+  0% {
+    margin-left: -70px;
+  }
+  50% {
+  }
+  100% {
+    top: 400px;
   }
 }
 
 @keyframes file4 {
   0% {
-    margin-left: -60px;
+    margin-left: 70px;
   }
   30% {
   }
   100% {
-    top: 550px;
+    top: 400px;
   }
 }
 
@@ -289,13 +323,14 @@ ul {
 
 #food {
   position: absolute;
+
   top: 19%;
   left: 39%;
   display: inline-block;
-  color: rgb(255, 55, 55);
+  color: rgba(255, 55, 55, 0.808);
   font-family: "Righteous", serif;
   font-size: 11em;
-  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+  text-shadow: 0.03em 0.03em 0 rgba(77, 94, 179, 0.815);
 }
 #food::after {
   content: attr(data-shadow);
