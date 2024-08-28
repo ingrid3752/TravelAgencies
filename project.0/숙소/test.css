@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+#header {
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 30px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: url(img/식당배경.jpg);
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#KHTRAVLE {
+  color: white;
+  font-size: 2rem;
+}
+
+#login {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#sign {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 150px;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.menu {
+  position: fixed;
+  width: 100px;
+  top: 25px;
+  right: 20px;
+  max-width: 100px;
+  background-color: #e7787800;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+
+  font-weight: 500;
+  font-style: normal;
+  background-color: #e2343470;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu a {
+  color: #ffffff;
+}
+/* 핫도그 */
+.submenu > li.aa > a {
+  color: red;
+}
+.submenu > li.aa {
+  line-height: 50px;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+  background-color: #fa9639ce;
+}
+.submenu > li.cc > a {
+  color: #fffb00c7;
+}
+.submenu > li.bb > a {
+  color: rgba(255, 0, 0, 0.808);
+}
+.submenu > li.cc > a {
+  color: #fffb00c9;
+}
+.submenu > li.bb {
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  background-color: #fa9639c0;
+}
+.submenu > li.aa:hover,
+.submenu > li.cc:hover,
+.submenu > li.bb:hover {
+  border-radius: 35%;
+  background-color: #dbdd4573;
+}
+.submenu > li.cc {
+  background-color: rgba(221, 121, 55, 0.658);
+}
+.menu > li.aa:hover {
+  background-color: #ce393957;
+  transition-duration: 0.5s;
+}
+.menu > li.aa {
+  border-radius: 50%;
+  background-color: #e6000083;
+}
+
+.menu > li:hover .submenu {
+  height: 278px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 2s;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.sumbent li {
+  background-color: rgba(0, 0, 0, 0);
+}
+.menu > li:hover {
+  background-color: #ff3232c7;
+  transition-duration: 0.5s;
+  border-radius: 65%;
+}
+
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000000;
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+.food1 {
+  right: 1000px;
+  background-color: #cea268a8;
+}
+.food2 {
+  right: 900px;
+  background-color: #f07676a8;
+}
+.food3 {
+  right: 800px;
+  background-color: #69aaffa6;
+}
+.food4 {
+  left: 100px;
+  background-color: #535353a6;
+}
+
+.food-info-box1,
+.food-info-box2,
+.food-info-box3,
+.food-info-box4 {
+  height: 450px;
+  width: 350px;
+  margin-bottom: 10px;
+  border: 2px solid #fbfffe63;
+  border-radius: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5);
+}
+.food-info-box1:hover {
+  background-color: #d6a565b0;
+}
+
+.food-info-box2:hover {
+  background-color: #ec5d5dab;
+}
+
+.food-info-box3:hover {
+  background-color: #5cabeca9;
+}
+
+.food-info-box4:hover {
+  background-color: #4e4d4ca8;
+}
+.food a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* 호버애니메이션 */
+
+.box1 .hover-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -350px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
+}
+.box2 .hover-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -210px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
+}
+.box3 .hover-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -70px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
+}
+.box4 .hover-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: 70px;
+  z-index: -1;
+  transform: scale(0.4, 0.35);
+}
+
+.box1:hover .hover-box {
+  transform: scale(0.55, 0.55);
+  animation-name: file1;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+.box2:hover .hover-box {
+  transform: scale(0.55, 0.55);
+  animation-name: file2;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+.box3:hover .hover-box {
+  transform: scale(0.55, 0.55);
+  animation-name: file3;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+.box4:hover .hover-box {
+  transform: scale(0.55, 0.55);
+  animation-name: file4;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+@keyframes file1 {
+  0% {
+    margin-left: -350px;
+  }
+  50% {
+  }
+  100% {
+    top: 400px;
+  }
+}
+@keyframes file2 {
+  0% {
+    margin-left: -210px;
+  }
+  50% {
+  }
+  100% {
+    top: 400px;
+  }
+}
+@keyframes file3 {
+  0% {
+    margin-left: -70px;
+  }
+  50% {
+  }
+  100% {
+    top: 400px;
+  }
+}
+
+@keyframes file4 {
+  0% {
+    margin-left: 70px;
+  }
+  30% {
+  }
+  100% {
+    top: 400px;
+  }
+}
+
+/* 애니메이션 */
+
+#food {
+  position: absolute;
+
+  top: 19%;
+  left: 39%;
+  display: inline-block;
+  color: rgba(255, 55, 55, 0.808);
+  font-family: "Righteous", serif;
+  font-size: 11em;
+  text-shadow: 0.03em 0.03em 0 rgba(77, 94, 179, 0.815);
+}
+#food::after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    220deg,
+    transparent 45%,
+    rgba(0, 26, 255, 0.644) 45%,
+    rgba(255, 0, 0, 0.671) 55%,
+    transparent 0
+  );
+  background-size: 0.01em 0.01em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 11s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}

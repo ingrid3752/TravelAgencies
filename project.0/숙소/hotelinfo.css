@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: url(/img/호텔메인배경.jpg);
+  background-image: url(img/호텔메인배경.jpg);
   background-size: 100% 120%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -174,4 +174,11 @@ a {
 }
 .hotel-info-box:hover {
   background-color: #615e5e85;
+}
+label {
+}
+.price {
+  position: absolute;
+  font-size: 11px;
+  line-height: 40px;
 }
