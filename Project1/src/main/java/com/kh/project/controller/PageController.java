@@ -176,4 +176,22 @@ public class PageController {
     	return "france";
     }
     
+    // info 페이지
+    @GetMapping("/info")
+    public String InfoPage() {
+    	return "info";
+    }
+    
+    // hotelinfo 페이지
+    @GetMapping("/hotelinfo")
+    public String HotelInfoPage() {
+    	return "hotelinfo";
+    }
+    
+    // ticketinfo 페이지
+    @GetMapping("/ticketinfo")
+    public String TicketInfoPage() {
+    	return "ticketinfo";
+    }
+    
 }

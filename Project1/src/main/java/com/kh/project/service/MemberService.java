@@ -41,6 +41,7 @@ public class MemberService {
             return false;
         }
     }
+    
     public void delete(int no) {
     	memberMapper.delete(no);
     }

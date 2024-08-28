@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(30deg, #d3965e, #c8c8c8) no-repeat;
+  background: #d3965e no-repeat;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -17,11 +17,11 @@ body {
   width: 100px;
   height: 70px;
   border-radius: 9px;
-  background: linear-gradient(100deg, #ce8e52, #c8c8c8);
-  border: solid 0.1px #ce9f73;
+  background: #cca37c;
+  border: solid 0.1px #000000;
 }
 .button:hover {
-  background: linear-gradient(100deg, #c8c8c8, #cca37c);
+  background: #cca37cb7;
 }
 
 .slider {
@@ -55,11 +55,11 @@ body {
 .rating-container {
   position: absolute;
   top: 130px;
-  border: 0.1px solid #ce9d70;
+  border: 0.1px solid #000000;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background: linear-gradient(45deg, #cca37c, #c8c8c8);
+  background: #cca37c;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -88,7 +88,7 @@ body {
 
 .rating-fill {
   height: 100%;
-  background: linear-gradient(210deg, #c58549, #c5b8b8);
+  background: #c58549;
   border-radius: 6px;
   transition: width 0.4s ease-in-out;
 }
@@ -102,13 +102,13 @@ body {
 .review {
   position: absolute;
   top: 350px;
-  border: 0.1px solid #ce9d70;
+  border: 0.1px solid #000000;
   width: 80%;
   height: 520px;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background: linear-gradient(190deg, #cca37c, #c8c8c8);
+  background: #cca37c;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }

@@ -40,36 +40,36 @@
       <div class="rating-item">
         <span>숙소 청결 상태</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 94.5%"></div>
+          <span class="rating-score">9.45</span>
         </div>
       </div>
       <div class="rating-item">
         <span>부대시설</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 80%"></div>
-          <span class="rating-score">8.0</span>
+          <div class="rating-fill" style="width: 91.2%"></div>
+          <span class="rating-score">9.12</span>
         </div>
       </div>
       <div class="rating-item">
         <span>위치</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 95.6%"></div>
+          <span class="rating-score">9.56</span>
         </div>
       </div>
       <div class="rating-item">
         <span>서비스</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 95.5%"></div>
+          <span class="rating-score">9.55</span>
         </div>
       </div>
       <div class="rating-item">
         <span>가격 대비 만족도</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 87.3%"></div>
+          <span class="rating-score">8.73 </span>
         </div>
       </div>
     </div>

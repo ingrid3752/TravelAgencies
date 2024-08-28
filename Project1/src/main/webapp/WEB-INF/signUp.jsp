@@ -11,7 +11,7 @@
 <body>
     <div id="signup-form">
         <h2>회원가입</h2>
-        <form action="<%= request.getContextPath() %>/signUp" method="post">
+        <form action="/signUp" method="post">
             <div class="form-group">
                 <label for="id">아이디 : </label>
                 <input type="text" id="id" name="id" required>

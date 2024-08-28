@@ -12,30 +12,30 @@ SET foreign_key_checks = 0;
 
 -- 회원 정보
 CREATE TABLE mem_info (
-    mem_code INT PRIMARY KEY AUTO_INCREMENT,   
-    id VARCHAR(50) NOT NULL UNIQUE,            
-    password VARCHAR(50) NOT NULL,           
-    name VARCHAR(50) NOT NULL,            
-    phone VARCHAR(13) NOT NULL,            
+    mem_code INT PRIMARY KEY AUTO_INCREMENT UNIQUE,   
+    id VARCHAR(255) NOT NULL UNIQUE,            
+    password VARCHAR(255) NOT NULL,           
+    name VARCHAR(255) NOT NULL,            
+    phone VARCHAR(255) NOT NULL,            
     date_registered DATETIME DEFAULT CURRENT_TIMESTAMP 
 );
 
 -- 관광지
 CREATE TABLE theme_park (
     theme_code INT PRIMARY KEY AUTO_INCREMENT,
-    theme_name VARCHAR(50) NOT NULL,
-    location VARCHAR(100) NOT NULL,
-    theme_phone VARCHAR(13)
+    theme_name VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    theme_phone VARCHAR(255)
 );
 
 -- 굿즈
 CREATE TABLE goods (
     goods_code INT PRIMARY KEY AUTO_INCREMENT,
-    goods_name VARCHAR(50) NOT NULL, 
+    goods_name VARCHAR(255) NOT NULL, 
     price DECIMAL(10, 2) NOT NULL, 
     stock INT DEFAULT 0, 
     description TEXT, 
-    category VARCHAR(50), 
+    category VARCHAR(255), 
     theme_code INT, 
     mem_code INT, 
     FOREIGN KEY (theme_code) REFERENCES theme_park(theme_code),
@@ -57,18 +57,18 @@ CREATE TABLE mem_purchases (
 -- 경기장
 CREATE TABLE stadium (
     stadium_code INT PRIMARY KEY AUTO_INCREMENT,
-    stadium_event VARCHAR(20),
+    stadium_event VARCHAR(255),
     date DATETIME DEFAULT CURRENT_TIMESTAMP,
     price INT,
-    game VARCHAR(20)
+    game VARCHAR(255)
 );
 
 -- 식당
 CREATE TABLE rest (
     rest_code INT PRIMARY KEY AUTO_INCREMENT,
-    rest_name VARCHAR(20),
-    rest_location VARCHAR(100),
-    rest_phone VARCHAR(13),
+    rest_name VARCHAR(255),
+    rest_location VARCHAR(255),
+    rest_phone VARCHAR(255),
     avg_price INT,
     date DATETIME DEFAULT CURRENT_TIMESTAMP,
     people INT,
@@ -92,7 +92,7 @@ CREATE TABLE meal_history (
 	history_id INT PRIMARY KEY AUTO_INCREMENT,
     mem_code INT NOT NULL,            
     rest_code INT NOT NULL,           
-    menu_name VARCHAR(100),           
+    menu_name VARCHAR(255),           
     order_date DATETIME DEFAULT CURRENT_TIMESTAMP, 
     FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code),
     FOREIGN KEY (rest_code) REFERENCES rest(rest_code)
@@ -101,12 +101,12 @@ CREATE TABLE meal_history (
 -- 숙소
 CREATE TABLE accom (
     accom_code INT PRIMARY KEY AUTO_INCREMENT,
-    accom_phone VARCHAR(15),
-    location VARCHAR(70),
+    accom_phone VARCHAR(255),
+    location VARCHAR(255),
     accom_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     head_count INT,
     price INT,
-    accom_name VARCHAR(70)
+    accom_name VARCHAR(255)
 );
 
 -- 숙소 즐겨찾기
@@ -134,8 +134,8 @@ CREATE TABLE accom_reservation (
 CREATE TABLE review (
     review_id BIGINT PRIMARY KEY AUTO_INCREMENT, 
     mem_code INT NOT NULL,
-    title VARCHAR(50), 
-    entity_type VARCHAR(20) NOT NULL,          
+    title VARCHAR(255), 
+    entity_type VARCHAR(255) NOT NULL,          
     entity_id INT,
     rating INT NOT NULL CHECK (rating >= 1 AND rating <= 5), 
     review_text TEXT,

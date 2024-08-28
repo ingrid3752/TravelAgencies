@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(235, 124, 73);
+  background-color: #cceeff8c;
   font-weight: 600;
 }
 .button {
@@ -13,11 +13,11 @@ body {
   width: 100px;
   height: 70px;
   border-radius: 9px;
-  background: rgb(252, 180, 180);
-  border: solid 0.1px #e6a328;
+  background: #77cdf848;
+  border: solid 0.1px #50c5ff8c;
 }
 .button:hover {
-  background: rgb(243, 182, 108);
+  background: #4dc3ff8c;
 }
 #logo {
   display: flex;
@@ -29,7 +29,7 @@ body {
 
 h2 > div {
   font-size: 4rem;
-  color: rgb(159, 198, 238);
+  color: #8dd7fc8c;
 }
 #img {
   position: relative;
@@ -46,11 +46,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.308);
+  background-color: #85d6ff6c;
   font-size: 1.5rem;
 }
 .menu:hover {
-  background: rgba(252, 232, 53, 0.637);
+  background: #4dc4ff75;
 }
 #review {
   padding-top: 40px;

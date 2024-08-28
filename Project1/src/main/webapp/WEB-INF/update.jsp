@@ -18,7 +18,7 @@
 </head>
 <body>
   <div id="update-form">
-        <form action="<%= request.getContextPath() %>/update" method="post">
+        <form action="/update" method="post">
         <div>
         	<h1 class="update-title">회원정보 변경</h1>
         </div>

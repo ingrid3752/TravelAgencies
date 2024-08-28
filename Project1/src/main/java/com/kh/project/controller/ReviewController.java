@@ -59,7 +59,7 @@ public class ReviewController {
 	
 	// 리뷰를 작성한 후, 작성한 리뷰 목록 보여주기
 	@GetMapping("/review/{entityType}/{entityId}")
-	public String showReviewList(@PathVariable String entityType, @PathVariable int entityId, Model model) {
+	public String showReviewList(@PathVariable String entityType, @PathVariable Integer entityId, Model model) {
 	    List<Review> review = reviewService.getReviewByEntity(entityType, entityId);
 	    double averageRating = reviewService.getAverageRatingByEntity(entityType, entityId);
 	    model.addAttribute("review", review);

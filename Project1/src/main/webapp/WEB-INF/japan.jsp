@@ -57,14 +57,14 @@
           ><img src="img/타키내부.png" width="800" height="600" />
         </div>
         <div>
-          <a href="#"></a><img src="img/타키.png" width="650" height="500" />
-          <a href="#"></a><img src="img/타키1.png" width="750" height="500" />
+          <a href="#"></a><img src="img/타키.png" width="650" height="400" />
+          <a href="#"></a><img src="img/타키2.png" width="375" height="400" />
+          <a href="#"></a><img src="img/타키3.png" width="375" height="400" />
         </div>
 
         <div id="img">
-          <a href="#"></a><img src="img/타키2.png" width="368" height="300" />
-          <a href="#"></a><img src="img/타키3.png" width="363" height="300" />
-          <a href="#"></a><img src="img/타키4.png" width="663" height="300" />
+          <a href="#"></a><img src="img/타키1.png" width="700" height="600" />
+          <a href="#"></a><img src="img/타키4.jpg" width="700" height="600" />
         </div>
       </ul>
     </nav>
@@ -94,7 +94,7 @@
           신선하고 품질 좋은 회를 맛보려면 파리에서는 금액이 상당히 올라가는데
           <br />
           그에 비해 타끼는 금액도 적당하고 퀄리티 높은 음식들이 나옵니다.
-        </p>
+        </p><br />
       </div>
     </div>
     <br /><br /><br /><br />

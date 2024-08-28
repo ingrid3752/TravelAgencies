@@ -14,13 +14,13 @@
       <h3>마이페이지</h3>
        
       <div class="user-info-box">
-        <p><a href="info.html">예약현황</a></p>
+        <p><a href="/info">예약현황</a></p>
       </div>
       <div class="user-info-box">
-        <p><a href="hotelinfo.html">호텔예약정보</a></p>
+        <p><a href="/hotelinfo">호텔예약정보</a></p>
       </div>
       <div class="user-info-box">
-        <p><a href="tiketinfo.html">경기예약정보</a></p>
+        <p><a href="/ticketinfo">경기예약정보</a></p>
       </div>
       <div class="user-info-box">
         <p><a href="/update">회원정보변경</a></p>

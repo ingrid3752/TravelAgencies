@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>식당</title>
-    <link href="${pageContext.request.contextPath}/css/rest.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/css/rest.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- 폰트어썸폴더 -->
     <script
@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
-<body>
-    <header id="header">
+ <header id="header">
       <div id="Binggrae_font">
         <a href="/" id="KHTRAVEL">KHTRAVEL</a>
       </div>
@@ -33,22 +32,62 @@
       </li>
      </ul>
     </header>
-<div>
-		<div class="food">
-			<a href="<%=request.getContextPath()%>/korea"><div class="food-info-box">
-					<p>한식</p>
-				</div></a> <a href="<%=request.getContextPath()%>/china">
-				<div class="food-info-box">
-					<p>중식</p>
+<body>
+
+	<div class="food">
+		<div class="box1">
+			<div class="hover-box">
+				<div class="food1">
+					<a href="/korea"><div class="food-info-box1">
+							<p>한식</p>
+						</div></a>
 				</div>
-			</a> <a href="<%=request.getContextPath()%>/japan">
-				<div class="food-info-box">
-					<p>일식</p>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="hover-box">
+				<div class="food2">
+					<a href="/china"><div class="food-info-box2">
+							<p>중식</p>
+						</div></a>
 				</div>
-			</a> <a href="<%=request.getContextPath()%>/france">
-				<div class="food-info-box">
-					<p>양식</p>
+			</div>
+		</div>
+		<div class="box3">
+			<div class="hover-box">
+				<div class="food3">
+					<a href="/japan">
+						<div class="food-info-box3">
+							<p>일식</p>
+						</div>
+					</a>
 				</div>
-			</a>
-		</div></body>
+			</div>
+		</div>
+		<div class="box4">
+			<div class="hover-box">
+				<div class="food4">
+					<a href="/france">
+						<div class="food-info-box4">
+							<p>양식</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="box5">
+			<div class="hover-box">
+				<div class="food5">
+					<a href="/goods"><div class="food-info-box5">
+							<p>굿즈</p>
+						</div> </a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div id="box">
+    <h1 id="food" data-shadow='Food!'>Food!</h1>
+  </div>
+    <script src="rest.js"></script></body>
 </html>

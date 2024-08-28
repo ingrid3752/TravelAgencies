@@ -58,7 +58,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/basketball" class="ticket-button">Tickets</a>
+				<a href="/basketball" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -74,7 +74,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/gymnastics" class="ticket-button">Tickets</a>
+				<a href="/gymnastics" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -90,7 +90,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/badminton" class="ticket-button">Tickets</a>
+				<a href="/badminton" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -106,7 +106,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/shooting" class="ticket-button">Tickets</a>
+				<a href="/shooting" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -122,7 +122,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/surfing" class="ticket-button">Tickets</a>
+				<a href="/surfing" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -139,7 +139,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/taekwondo" class="ticket-button">Tickets</a>
+				<a href="/taekwondo" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -155,7 +155,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/tennis" class="ticket-button">Tickets</a>
+				<a href="/tennis" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>
@@ -171,7 +171,7 @@
 			</div>
 			<div class="ticket-action">
 				<p>300 won￦</p>
-				<a href="<%=request.getContextPath()%>/fencing" class="ticket-button">Tickets</a>
+				<a href="/fencing" class="ticket-button">Tickets</a>
 			</div>
 		</div>
 	</div>

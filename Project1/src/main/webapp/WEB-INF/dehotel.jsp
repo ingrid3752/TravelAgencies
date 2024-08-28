@@ -50,36 +50,36 @@
       <div class="rating-item">
         <span>숙소 청결 상태</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 95.5%"></div>
+          <span class="rating-score">9.55</span>
         </div>
       </div>
       <div class="rating-item">
         <span>부대시설</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 80%"></div>
-          <span class="rating-score">8.0</span>
+          <div class="rating-fill" style="width: 88.8%"></div>
+          <span class="rating-score">8.88</span>
         </div>
       </div>
       <div class="rating-item">
         <span>위치</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 94.2%"></div>
+          <span class="rating-score">9.42</span>
         </div>
       </div>
       <div class="rating-item">
         <span>서비스</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 94.5%"></div>
+          <span class="rating-score">9.45</span>
         </div>
       </div>
       <div class="rating-item">
         <span>가격 대비 만족도</span>
         <div class="rating-bar">
-          <div class="rating-fill" style="width: 100%"></div>
-          <span class="rating-score">10.0</span>
+          <div class="rating-fill" style="width: 92.2%"></div>
+          <span class="rating-score">9.22</span>
         </div>
       </div>
     </div>
@@ -90,10 +90,11 @@
       <div class="tag">
         <p>
           <li>
-            파리(15구)에 위치한 포르테 데 베르사유의 겅우 차로 5분 정도 이동하면
-            파리 엑스포 및 롤랑 가로스 스타디움에 가실 수 있습니다. 이 업스케일
+            <p>파리(15구)에 위치한 포르테 데 베르사유의 겅우 차로 5분 정도 이동하면
+            파리 엑스포 및 롤랑 가로스 스타디움에 가실 수 있습니다.</p>
+            <p> 이 업스케일
             호텔에서 에펠탑까지는 3.5km 떨어져 있으며, 7.1km 거리에는 뤽상부르
-            공원도 있습니다.
+            공원도 있습니다.</p>
           </li>
         </p>
       </div>

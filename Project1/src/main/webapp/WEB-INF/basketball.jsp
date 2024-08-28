@@ -153,7 +153,7 @@
     </div>
     <br><br><br>
 	<div class="function">
-		<a href="<%=request.getContextPath()%>/accom">숙소</a>
+		<a href="<%=request.getContextPath()%>/hotelinfo">숙소</a>
 		<a href="<%=request.getContextPath()%>/rest">식당</a>
 		<a href="<%=request.getContextPath()%>/goods">굿즈</a>
 	</div>
