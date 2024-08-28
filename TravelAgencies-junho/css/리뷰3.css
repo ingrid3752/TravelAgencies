@@ -92,7 +92,7 @@ a {
     margin: 20px auto;
     max-width: 70%;
     padding: 30px;
-    background: #fff;
+    background: whitesmoke;
     border-radius: 10px; /* 테두리 둥글게 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 섀도우 추가 */
     display: flex;
@@ -159,109 +159,3 @@ a {
     outline-offset: 2px;
 }
 
-/* 리뷰 리스트 탭 스타일 */
-.tabs {
-    display: flex;
-    border-bottom: 2px solid #ddd;
-    margin-bottom: 20px;
-}
-
-.tab-button {
-    background: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    margin-right: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px 6px 0 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.tab-button.active {
-    background: green;
-    color: #fff; /* 활성화된 탭 버튼의 텍스트 색상 */
-    border-bottom: 2px solid transparent;
-}
-
-.tab-button:hover {
-    background: greenyellow;
-}
-
-/* 탭 콘텐츠 스타일 */
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* 리뷰 항목 스타일 */
-.review-item {
-    padding: 15px;
-    margin-bottom: 15px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 섀도우 추가 */
-}
-
-.review-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.review-author {
-    font-size: 16px;
-    color: #333;
-    font-weight: 500;
-}
-
-.review-rating {
-    font-size: 18px;
-    color: #FFD700; /* 별점 색상 */
-}
-
-.review-meta {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.review-date {
-    margin-right: 15px;
-}
-
-.review-body {
-    font-size: 16px;
-    color: #333;
-}
-
-.review-buttons {
-    margin-top: 10px;
-}
-
-.review-buttons button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-    transition: color 0.3s;
-}
-
-.review-buttons .like-button {
-    color: green;
-}
-
-.review-buttons .dislike-button {
-    color: red;
-}
-
-/* 버튼 활성화 상태 스타일 */
-.review-buttons button.active {
-    font-weight: bold;
-    color: #000; /* 활성화된 버튼 색상 */
-}
