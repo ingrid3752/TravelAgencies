@@ -1,11 +1,8 @@
 package com.kh.project.controller;
 
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import com.kh.project.model.vo.Member;
 
 @Controller
 public class PageController {
@@ -32,12 +29,6 @@ public class PageController {
     @GetMapping("/mypage")
     public String mypage() {
     	return "mypage";
-    }
-    
-    // 로그인 후 메인 페이지로 이동
-    @GetMapping("/login/success")
-    public String loginSuccess() {
-        return "index"; 
     }
 
     // 회원가입 후 로그인 페이지로 이동
@@ -68,6 +59,13 @@ public class PageController {
     @GetMapping("/review")
     public String ReviewPage() {
     	return "review";
+    }
+    
+    // 리뷰 작성 페이지로 이동
+    @GetMapping("/reviewForm")
+    public String ReviewFormPage(Model model) {
+    	model.addAttribute("memCode", 1);
+    	return "reviewForm";
     }
     
     // 예약 페이지로 이동
@@ -172,17 +170,4 @@ public class PageController {
     	return "france";
     }
     
-    @GetMapping("/admin")
-	public String admin() {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		
-		if(authentication!=null & authentication.isAuthenticated()) {
-			Member member = (Member) authentication.getPrincipal();
-			if(member.getRole().equals("ROLE_ADMIN")) {
-				return "admin";
-			}
-		}
-
-		return "redirect:/";
-	}
 }

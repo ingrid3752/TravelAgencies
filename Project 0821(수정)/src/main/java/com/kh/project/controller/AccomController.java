@@ -3,6 +3,8 @@ package com.kh.project.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kh.project.model.vo.Accom;
 import com.kh.project.model.vo.AccomReservation;
+import com.kh.project.model.vo.Member;
 import com.kh.project.service.AccomService;
 
 @Controller
@@ -26,6 +29,8 @@ public class AccomController {
     @GetMapping("/favorites")
     @ResponseBody
     public List<Accom> getFavorites(int memId) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return accomService.getFavorites(memId);
     }
 
@@ -33,6 +38,8 @@ public class AccomController {
     @PostMapping("/favorites")
     @ResponseBody
     public void addFavorite(int memId, int accomId) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         accomService.addFavorite(memId, accomId);
     }
 
@@ -40,6 +47,8 @@ public class AccomController {
     @DeleteMapping("/favorites")
     @ResponseBody
     public void removeFavorite(int memId, int accomId) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         accomService.removeFavorite(memId, accomId);
     }
 
@@ -47,6 +56,8 @@ public class AccomController {
     @PostMapping("/reservation")
     @ResponseBody
     public void addReservation(@RequestBody AccomReservation reservation) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         accomService.addReservation(reservation);
     }
 
@@ -54,6 +65,8 @@ public class AccomController {
     @GetMapping("/reservations")
     @ResponseBody
     public List<AccomReservation> getReservationsByMember(int memId) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return accomService.getReservationsByMember(memId);
     }
 
@@ -61,6 +74,8 @@ public class AccomController {
     @PutMapping("/reservation")
     @ResponseBody
     public void modifyReservation(@RequestBody AccomReservation reservation) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         accomService.modifyReservation(reservation);
     }
 
@@ -68,6 +83,8 @@ public class AccomController {
     @DeleteMapping("/reservation")
     @ResponseBody
     public void cancelReservation(int reservationId, int memId) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         accomService.cancelReservation(reservationId, memId);
     }
 }

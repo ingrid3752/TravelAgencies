@@ -21,6 +21,7 @@ public class ProjectConfig {
 					login
 						.loginPage("/login") // 로그인 페이지 등록
 						.defaultSuccessUrl("/", true) // 로그인 성공했을때
+						.failureHandler(new DomainFailureHandler()) // 로그인 실패했을때 에러 처리
 						.permitAll()
 				)
 				.logout(logout ->
@@ -32,8 +33,8 @@ public class ProjectConfig {
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
 				.authorizeHttpRequests(authorize ->
 					authorize
-						.requestMatchers("/mypage", "/company").authenticated()
-						.anyRequest().permitAll()
+						//.requestMatchers("/mypage", "/company").authenticated()
+						.anyRequest().permitAll() // 여기는 마지막까지 건들지 않기! permitAll! 이거 그대로 쓰시고 
 				)
 				.build();
 	}

@@ -3,6 +3,8 @@ package com.kh.project.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.kh.project.model.vo.Member;
 import com.kh.project.model.vo.Review;
 import com.kh.project.service.ReviewService;
 
@@ -24,6 +27,8 @@ public class ReviewController {
 	@PostMapping("/add")
 	@ResponseBody
 	public void addReview(@RequestBody Review review) {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
 		reviewService.addReview(review);
 	}
 	
@@ -31,6 +36,9 @@ public class ReviewController {
 	@GetMapping("/entity")
     @ResponseBody
     public List<Review> getReviewsByEntity(String entityType, int entityId) {
+		// 컨트롤러 단에서 멤버 정보 필요할 때 즉 로그인 정보!!! 로그인한 사람 정보
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return reviewService.getReviewsByEntity(entityType, entityId);
     }
 	
@@ -38,6 +46,8 @@ public class ReviewController {
 	@GetMapping("/member")
     @ResponseBody
     public List<Review> getReviewsByMember(int memCode) {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return reviewService.getReviewsByMember(memCode);
     }
 	
@@ -45,6 +55,8 @@ public class ReviewController {
 	@GetMapping("/averageRating")
     @ResponseBody
     public double getAverageRatingByEntity(String entityType, int entityId) {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return reviewService.getAverageRatingByEntity(entityType, entityId);
     }
 	

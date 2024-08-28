@@ -5,6 +5,8 @@ import java.util.List;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kh.project.model.vo.MealHistory;
+import com.kh.project.model.vo.Member;
 import com.kh.project.model.vo.RecommendedMenu;
 import com.kh.project.service.RestService;
 
@@ -27,6 +30,8 @@ public class RestController {
     @PostMapping("/addMealHistory")
     @ResponseBody
     public void addMealHistory(@RequestBody MealHistory mealHistory) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         restService.addMealHistory(mealHistory);
     }
 
@@ -34,6 +39,8 @@ public class RestController {
     @GetMapping("/recommendMenu")
     @ResponseBody
     public List<RecommendedMenu> getPersonalizedMenuRecommendations(int memCode) {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return restService.getPersonalizedMenuRecommendations(memCode);
     }
     

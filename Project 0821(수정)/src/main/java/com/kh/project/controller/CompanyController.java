@@ -24,27 +24,12 @@
 //		return companyService.check(Comid);
 //	}
 //
-//	@PostMapping("/ComLogin")
-//	public String login(Company vo,HttpServletRequest request ) {
-//		Company result = companyService.login(vo);
-//		if(result != null) {
-//			HttpSession session = request.getSession();
-//			session.setAttribute("vo", result);
-//			return "redirect:/";
-//		}
-//		return "ComLogin";
-//	}
 //	
-//	@GetMapping("/ComLogout")
-//	public String logout(HttpServletRequest request) {
-//		HttpSession session = request.getSession();
-//		session.invalidate();
-//		return "redirect:/";
-//	}
 //	
 //	@PostMapping("/ComSignUp")
 //	public String signUp(Company vo, HttpServletRequest request) {
 //		try {
+//			vo.setRole("ROLE_COMPANY");
 //			boolean isRegistered = companyService.signUp(vo);
 //			if(isRegistered) {
 //				return "redirect:/ComLogin";

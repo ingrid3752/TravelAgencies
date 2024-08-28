@@ -26,30 +26,12 @@ public class MemberController {
 		return memberService.check(id);
 	}
 	
-	// 로그인
-	@PostMapping("/login")
-	public String login(Member vo, HttpServletRequest request) {
-		Member result = memberService.login(vo);
-		if(result != null) {
-			HttpSession session = request.getSession();
-			session.setAttribute("vo", result);
-			return "redirect:/";
-		}
-		return "login";
-	}
-	
-	// 로그아웃
-	@GetMapping("/logout")
-	public String logout(HttpServletRequest request) {
-		HttpSession session = request.getSession();
-		session.invalidate();
-		return "redirect:/";
-	}
-	
 	// 회원가입
 	@PostMapping("/signUp")
 	public String signUp(Member vo, HttpServletRequest request) {
 	    try {
+	    	// 회원(ROLE_MEMBER), 관리자(ROLE_ADMIN), 업체(ROLE_COMPANY) 
+	    	vo.setRole("ROLE_MEMBER");
 	        boolean isRegistered = memberService.signUp(vo);
 	        if (isRegistered) {
 	            return "redirect:/login"; // 회원가입 성공 후 로그인 페이지로 리다이렉트
