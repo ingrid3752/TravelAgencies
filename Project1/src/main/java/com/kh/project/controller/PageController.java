@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PageController {
 
-	  // 로그인 페이지 이동
+	// 로그인 페이지 이동
     @GetMapping("/login")
     public String login() {
-        return "login"; 
+        return "login"; /*application.properties prefix = /WEB-INF/ suffix= .jsp*/
     }
 
     // 회원가입 페이지 이동
