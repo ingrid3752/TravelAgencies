@@ -128,21 +128,22 @@ body {
   margin: 0;
 }
 .ticket-container {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-right: 10%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-}
-.ticket-container1 {
-  padding-top: 10px;
-  max-width: 1100px;
-  padding-left: 50px;
+  margin-left: 24%;
 }
 
+#imgbask {
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+}
 .ticket {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: rgba(233, 233, 233, 0.349);
   border-radius: 15px;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-bottom: 20px; /* 박스 사이의 간격을 더 띄움 */
@@ -151,26 +152,19 @@ body {
   width: 1000px;
 }
 
-.ticket1 {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
-  height: 250px;
-  width: 650px; /* 박스의 너비를 적절히 설정 */
-  margin-left: 410px;
+.ticket-info12 p {
+  margin-left: 250px;
+  margin-top: -200px;
 }
-.ticket2 {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
-  height: 250px;
-  width: 300px; /* 박스의 너비를 적절히 설정 */
-  margin-right: 500px;
+#sss {
+  width: 150px;
+  height: 150px;
+  margin-left: 10%;
 }
 .ticket3 {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: rgba(233, 233, 233, 0.349);
   border-radius: 15px;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-bottom: 0px; /* 박스 사이의 간격을 더 띄움 */
@@ -184,9 +178,17 @@ body {
   height: 80px;
 }
 
+#qqq {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 500px;
+}
+.ticket-icon {
+  margin: 0;
+}
 .ticket-info {
   flex: 1;
-  padding-right: 100px;
+  padding-left: 30px;
 }
 
 .ticket-info h2,
@@ -219,37 +221,16 @@ body {
   font-weight: bold;
 }
 
-.ticket-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.itembu {
+  padding-top: 70px;
 }
-
-.ticket-button:hover {
-  background-color: #333;
-}
-.box {
-  font-size: 3rem;
-  box-shadow: 0 0 10px rgb(rgba(0, 0, 0, 0.1), green, blue);
-  border: 1px #000000 solid;
-  width: 50%;
-  height: 200px;
-  text-align: center;
-}
-
 .itembu h1 {
   padding-left: 50px;
 }
 .butt {
   padding: 10px 15px;
   font-size: 16px;
-  cursor: pointer;
   border-radius: 30px;
-  font-weight: bolder;
   border: 0.1px color black solid;
 }
 
@@ -266,14 +247,16 @@ body {
   width: 150px;
   height: 150px;
 }
+
 .ticket-pay {
   background-color: rgba(146, 146, 146, 0.377);
   margin-left: 30px;
   height: 30px;
   width: 100px;
-  border: 1px solid white;
   margin-bottom: 20px;
+  visibility: hidden;
 }
+
 .control {
   padding-right: 50px;
 }
@@ -306,7 +289,15 @@ body {
   /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */
   cursor: pointer;
 }
-
+#totalbutton {
+  margin-top: 30px;
+  margin-left: 24%;
+  width: 1000px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+}
 .less-text {
   /* 글씨 크기,색상 지정 */
   font-size: 16px;
@@ -335,8 +326,8 @@ body {
 #black p {
   padding-left: 30px;
   padding-top: 30px;
-  font-size: 1.5rem;
-  padding-right: 80px;
+  font-size: 1rem;
+  padding-right: 180px;
 }
 #top {
   background-color: rgb(0, 0, 0);
@@ -344,8 +335,172 @@ body {
   width: 50px;
   margin-left: 88%;
 }
+
 .price p {
   font-family: "Gowun Batang", serif;
   font-weight: 400;
   font-style: normal;
+  margin-left: 30px;
+}
+#modal {
+  position: fixed;
+  top: 100%;
+  transition: all 1.5s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: auto;
+  background-color: white;
+}
+#modaldiv {
+  font-size: 1rem;
+  padding: 30px;
+}
+#modaldiv button {
+  font-size: 1.3rem;
+}
+
+#modal.open {
+  top: 0;
+}
+
+#modalmo {
+  width: 700px;
+  background-color: rgb(247, 246, 246);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 32%;
+}
+#modal_ {
+  border: 1px color black;
+}
+#modal_button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin-right: 100px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+#modal_button i {
+  font-size: 15px;
+}
+#modal_button span {
+  font-size: 15px;
+}
+#close_btn {
+  margin-left: 45%;
+  cursor: pointer;
+  border: none;
+  color: #252525;
+  background-color: white;
+}
+/*모달2*/
+#modal2 {
+  position: fixed;
+  top: 100%;
+  transition: all 1.5s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: auto;
+  background-color: white;
+}
+#modaldiv2 {
+  font-size: 1rem;
+  padding: 30px;
+}
+#modaldiv2 button {
+  font-size: 1.3rem;
+}
+
+#modal2.open {
+  top: 0;
+}
+
+#modalmo2 {
+  width: 700px;
+  background-color: rgb(247, 246, 246);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 32%;
+}
+#modal_2 {
+  border: 1px color black;
+}
+#modal_button2 {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-right: 0px;
+  margin-top: 100px;
+}
+#close_btn2 {
+  margin-left: 45%;
+  cursor: pointer;
+  border: none;
+  color: #252525;
+  background-color: white;
+  margin-left: 350px;
+}
+#modal_2 img {
+  width: 500px;
+  height: 500px;
+  border: 0;
+  margin-left: 13%;
+}
+#modal_2 h4 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.ticket-container6 {
+  display: flex;
+  padding-right: 10%;
+  margin: 0 auto;
+  margin-left: 24%;
+}
+.ticket6 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(233, 233, 233, 0.349);
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  margin-bottom: 20px; /* 박스 사이의 간격을 더 띄움 */
+  height: 250px;
+  border: 1px color #000000;
+  width: 700px;
+  max-width: 700px;
+  flex-shrink: 0; /* 요소가 줄어들지 않도록 설정 */
+}
+.ticket8 {
+  text-align: center;
+  background-color: rgba(233, 233, 233, 0.349);
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  height: 250px;
+  width: 270px; /* 박스의 너비를 적절히 설정 */
+  margin-left: 30px;
+  max-width: 270px;
+  flex-shrink: 0; /* 요소가 줄어들지 않도록 설정 */
+}
+.ticket8 h2 {
+  padding-right: 30px;
+  padding-top: 20px;
+}
+#totalbutton:hover {
+  background-color: white;
+  color: black;
+  border: none;
 }
