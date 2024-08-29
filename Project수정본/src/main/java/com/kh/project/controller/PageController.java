@@ -31,12 +31,7 @@ public class PageController {
     	return "mypage";
     }
     
-    // 로그인 후 메인 페이지로 이동
-    @GetMapping("/login/success")
-    public String loginSuccess() {
-        return "index"; 
-    }
-
+   
     // 회원가입 후 로그인 페이지로 이동
     @GetMapping("/register/success")
     public String registerSuccess() {
