@@ -22,14 +22,19 @@ public class ReviewService {
 	}
 	
 	// 특정 엔티티의 리뷰 목록 조회
-	public List<Review> getReviewsByEntity(String entityType, int entityId) {
+	public List<Review> getReviewByEntity(String entityType, int entityId) {
 		ReviewEntity entity = new ReviewEntity(entityType, entityId);
-		return reviewMapper.getReviewsByEntity(entity);
+		return reviewMapper.getReviewByEntity(entity);
+	}
+	
+	// 리뷰 저장
+	public void saveReview(Review review) {
+		reviewMapper.insertReview(review);
 	}
 	
 	// 특정 회원이 작성한 리뷰 목록 조회
-	public List<Review> getReviewsByMember(int memCode) {
-		return reviewMapper.getReviewsByMember(memCode);
+	public List<Review> getReviewByMember(int memCode) {
+		return reviewMapper.getReviewByMember(memCode);
 	}
 	
 	// 특정 엔티티의 평균 평점 조회

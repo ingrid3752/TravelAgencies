@@ -15,11 +15,9 @@ public class ProjectApplication {
 		SpringApplication.run(ProjectApplication.class, args);
 	}
 	
-	// DeleteMapping 인식
-	@Bean
-	public HiddenHttpMethodFilter hiddenHttpMethodFilter() {
-		return new HiddenHttpMethodFilter();
-	}
+	
+	
+	
 
 	
 }

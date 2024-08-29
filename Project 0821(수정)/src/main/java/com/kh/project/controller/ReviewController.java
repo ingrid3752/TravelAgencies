@@ -27,8 +27,7 @@ public class ReviewController {
 	@PostMapping("/add")
 	@ResponseBody
 	public void addReview(@RequestBody Review review) {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		Member member = (Member) authentication.getPrincipal();
+		
 		reviewService.addReview(review);
 	}
 	
@@ -39,24 +38,22 @@ public class ReviewController {
 		// 컨트롤러 단에서 멤버 정보 필요할 때 즉 로그인 정보!!! 로그인한 사람 정보
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		Member member = (Member) authentication.getPrincipal();
-        return reviewService.getReviewsByEntity(entityType, entityId);
+        return reviewService.getReviewByEntity(entityType, entityId);
     }
 	
 	// 특정 회원이 작성한 리뷰 목록 조회
 	@GetMapping("/member")
     @ResponseBody
     public List<Review> getReviewsByMember(int memCode) {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		Member member = (Member) authentication.getPrincipal();
-        return reviewService.getReviewsByMember(memCode);
+		
+        return reviewService.getReviewByMember(memCode);
     }
 	
 	// 특정 엔티티의 평균 평점 조회
 	@GetMapping("/averageRating")
     @ResponseBody
     public double getAverageRatingByEntity(String entityType, int entityId) {
-		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		Member member = (Member) authentication.getPrincipal();
+		
         return reviewService.getAverageRatingByEntity(entityType, entityId);
     }
 	
