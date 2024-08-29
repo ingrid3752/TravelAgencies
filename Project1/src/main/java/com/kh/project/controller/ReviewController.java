@@ -55,7 +55,7 @@ public class ReviewController {
 	    reviewService.saveReview(review);
 	    return "redirect:/review/entity/" + review.getEntityType() + "/" + review.getEntityId();
 	}
-
+	
 	
 	// 리뷰를 작성한 후, 작성한 리뷰 목록 보여주기
 	@GetMapping("/review/{entityType}/{entityId}")

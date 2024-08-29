@@ -45,31 +45,4 @@ public class AccomController {
         accomService.removeFavorite(memId, accomId);
     }
 
-    // 숙소 예약 추가
-    @PostMapping("/reservation")
-    @ResponseBody
-    public void addReservation(@RequestBody AccomReservation reservation) {
-        accomService.addReservation(reservation);
-    }
-
-    // 예약 내역 조회
-    @GetMapping("/reservations")
-    @ResponseBody
-    public List<AccomReservation> getReservationsByMember(int memId) {
-        return accomService.getReservationsByMember(memId);
-    }
-
-    // 예약 내역 변경
-    @PutMapping("/reservation")
-    @ResponseBody
-    public void modifyReservation(@RequestBody AccomReservation reservation) {
-        accomService.modifyReservation(reservation);
-    }
-
-    // 예약 내역 삭제
-    @DeleteMapping("/reservation")
-    @ResponseBody
-    public void cancelReservation(int reservationId, int memId) {
-        accomService.cancelReservation(reservationId, memId);
-    }
 }
