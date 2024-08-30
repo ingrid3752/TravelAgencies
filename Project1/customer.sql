@@ -63,6 +63,18 @@ CREATE TABLE stadium (
     game VARCHAR(255)
 );
 
+-- 경기장 예약
+CREATE TABLE stadium_reservation (
+    reservation_id INT PRIMARY KEY AUTO_INCREMENT,
+    mem_id INT NOT NULL,         
+    stadium_code INT NOT NULL,          
+    start_date DATETIME NOT NULL, 
+    end_date DATETIME NOT NULL,
+    seats INT NOT NULL,               -- 예약 인원 수
+    FOREIGN KEY (mem_id) REFERENCES mem_info(mem_code),
+    FOREIGN KEY (stadium_code) REFERENCES stadium (stadium_code)
+);
+
 -- 식당
 CREATE TABLE rest (
     rest_code INT PRIMARY KEY AUTO_INCREMENT,
@@ -73,18 +85,6 @@ CREATE TABLE rest (
     date DATETIME DEFAULT CURRENT_TIMESTAMP,
     people INT,
     amount INT
-);
-
--- 식당 예약
-CREATE TABLE rest_reservation (
-    reservation_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_id INT NOT NULL,         
-    rest_code INT NOT NULL,          
-    reservation_date DATETIME NOT NULL, 
-    seats INT NOT NULL,               -- 예약 인원 수
-    requests TEXT,                    -- 추가 요청 사항
-    FOREIGN KEY (mem_id) REFERENCES mem_info(mem_code),
-    FOREIGN KEY (rest_code) REFERENCES rest(rest_code)
 );
 
 -- 식당 식사 기록
@@ -123,9 +123,9 @@ CREATE TABLE accom_reservation (
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
     mem_id INT NOT NULL,         
     accom_code INT NOT NULL,          
-    reservation_date DATETIME NOT NULL, 
+    start_date DATETIME NOT NULL, 
+    end_date DATETIME NOT NULL,
     seats INT NOT NULL,               -- 예약 인원 수
-    requests TEXT,                    -- 추가 요청 사항
     FOREIGN KEY (mem_id) REFERENCES mem_info (mem_code),
     FOREIGN KEY (accom_code) REFERENCES accom (accom_code)
 );
