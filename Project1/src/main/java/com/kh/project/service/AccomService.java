@@ -16,53 +16,26 @@ import mapper.AccomMapper;
 public class AccomService {
 	
 	@Autowired
-	private AccomMapper accomMapper;
+	private AccomMapper mapper;
 	
-	// 즐겨찾기 목록 조회
-    public List<Accom> getFavorites(int memId) {
-        AccomFavorites accomFavorites = new AccomFavorites();
-        accomFavorites.setMemId(memId);
-        return accomMapper.getFavorites(accomFavorites);
-    }
 
-    // 즐겨찾기 추가
-    public void addFavorite(int memId, int accomId) {
-        AccomFavorites accomFavorites = new AccomFavorites();
-        accomFavorites.setMemId(memId);
-        accomFavorites.setAccomId(accomId);
-        accomMapper.insertFavorite(accomFavorites);
+    public List<AccomReservation> reservationList(AccomReservation vo){
+    	return mapper.reservationList();
     }
-
-    // 즐겨찾기 삭제
-    public void removeFavorite(int memId, int accomId) {
-        AccomFavorites accomFavorites = new AccomFavorites();
-        accomFavorites.setMemId(memId);
-        accomFavorites.setAccomId(accomId);
-        accomMapper.deleteFavorite(accomFavorites);
+    
+    public void insertReservation(AccomReservation vo) {
+    	mapper.insertReservation(vo);
     }
-
-    // 숙소 예약 추가
-    public void addReservation(AccomReservation reservation) {
-        accomMapper.insertReservation(reservation);
+    
+    public void updateStartDate(AccomReservation vo) {
+    	mapper.updateStartDate(vo);
     }
-
-    // 예약 내역 조회
-    public List<AccomReservation> getReservationsByMember(int memId) {
-        AccomReservation accomReservation = new AccomReservation();
-        accomReservation.setMemId(memId);
-        return accomMapper.getReservationsByMember(accomReservation);
+    
+    public void updateEndDate(AccomReservation vo) {
+    	mapper.updateEndDate(vo);
     }
-
-    // 예약 내역 변경
-    public void modifyReservation(AccomReservation reservation) {
-        accomMapper.updateReservation(reservation);
-    }
-
-    // 예약 내역 삭제
-    public void cancelReservation(int reservationId, int memId) {
-        AccomReservation accomReservation = new AccomReservation();
-        accomReservation.setReservationId(reservationId);
-        accomReservation.setMemId(memId);
-        accomMapper.deleteReservation(accomReservation);
+    
+    public void deleteReservation(int reservationId) {
+    	mapper.deleteReservation(reservationId);
     }
 }

@@ -16,5 +16,5 @@ public class AccomReservation {
 	private LocalDateTime startDate;
 	private LocalDateTime endDate;
 	private int seats; 
-	private String requests; 
+	
 }

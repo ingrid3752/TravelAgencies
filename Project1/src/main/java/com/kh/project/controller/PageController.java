@@ -10,7 +10,7 @@ public class PageController {
 	// 로그인 페이지 이동
     @GetMapping("/login")
     public String login() {
-        return "login"; /*application.properties prefix = /WEB-INF/ suffix= .jsp*/
+        return "login"; 
     }
 
     // 회원가입 페이지 이동
@@ -47,12 +47,6 @@ public class PageController {
     @GetMapping("/rest")
     public String RestPage() {
         return "rest"; 
-    }
-	
-    // 숙소 페이지로 이동
-    @GetMapping("/accom")
-    public String AccomPage() {
-        return "accom"; 
     }
 
     // 굿즈 페이지로 이동

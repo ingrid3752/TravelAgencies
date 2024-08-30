@@ -19,6 +19,9 @@ CREATE TABLE mem_info (
     phone VARCHAR(255) NOT NULL,            
     date_registered DATETIME DEFAULT CURRENT_TIMESTAMP 
 );
+SELECT * FROM mem_info;
+INSERT INTO mem_info (id, password, name, phone)
+VALUES ('test1','1234','user1','01012345678');
 
 -- 관광지
 CREATE TABLE theme_park (
@@ -60,7 +63,9 @@ CREATE TABLE stadium (
     stadium_event VARCHAR(255),
     date DATETIME DEFAULT CURRENT_TIMESTAMP,
     price INT,
-    game VARCHAR(255)
+    game VARCHAR(255),
+    stadium_name VARCHAR(255),
+    location VARCHAR(255)
 );
 
 -- 경기장 예약
@@ -75,6 +80,8 @@ CREATE TABLE stadium_reservation (
     FOREIGN KEY (stadium_code) REFERENCES stadium (stadium_code)
 );
 
+INSERT INTO accom_reservation (mem_id, accom_code, start_date, end_date, seats)
+VALUES ('1','1','20240726','20240811','2');
 -- 식당
 CREATE TABLE rest (
     rest_code INT PRIMARY KEY AUTO_INCREMENT,

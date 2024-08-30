@@ -1,8 +1,8 @@
 body {
-  background: url() no-repeat fixed;
+  background: url(img/식당배경.jpg) no-repeat fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: rgba(136, 133, 129, 0.61);
+
   font-weight: 600;
 }
 .button {
@@ -16,18 +16,19 @@ body {
   width: 100px;
   height: 70px;
   border-radius: 9px;
-  background: rgb(112, 118, 122);
+  background: rgb(112, 118, 122, 0.6);
   border: solid 0.1px rgb(101, 106, 109);
 }
 .button:hover {
-  background: rgb(56, 59, 61);
+  background: rgba(136, 133, 129);
 }
 #logo {
   display: flex;
   justify-content: center;
   background: url(img/다래마커2.png) no-repeat center;
   padding: 5px;
-  border: 5px solid white;
+  background-color: rgb(190, 190, 190, 0.4);
+  border: 5px solid rgba(0, 0, 0, 0.5);
 }
 h2 > div {
   font-size: 4rem;
@@ -48,17 +49,17 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(112, 118, 122);
-  font-size: 1.5rem;
+  background-color: rgb(190, 190, 190, 0.4);
+  font-size: 2rem;
 }
 .menu:hover {
-  background: rgb(56, 59, 61);
+  background: rgba(136, 133, 129);
 }
 #review {
   padding-top: 40px;
-  border: 5px solid rgb(255, 255, 255);
-  border-top: none;
-  border-bottom: none;
+  background-color: rgb(190, 190, 190);
+  border: 5px solid rgba(0, 0, 0, 0.5);
+ 
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -67,7 +68,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 5px solid rgb(255, 255, 255);
+  
 }
 #review > p {
   padding-left: 30px;
@@ -75,7 +76,7 @@ li {
   text-align: left;
 }
 ul {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 li {

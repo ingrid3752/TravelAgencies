@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>중식</title>
-<link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/css/china.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>중식</title>
+    <link
+      href="${pageContext.request.contextPath}/css/reset.css"
+      rel="stylesheet"
+    />
+    <link
+      href="${pageContext.request.contextPath}/css/china.css"
+      rel="stylesheet"
+    />
     <style>
       label.menu {
-        border: 5px solid rgb(255, 255, 255);
+        border: 5px solid rgba(253, 123, 123, 0.5);
         padding: 20px;
         line-height: 50px;
       }
@@ -25,9 +31,9 @@
         display: block;
       }
     </style>
-</head>
-<body>
- <div id="logo">
+  </head>
+  <body>
+    <div id="logo">
       <div>
         <input
           type="button"
@@ -60,8 +66,6 @@
           ><img src="img/중식당2.png" width="650" height="500" />
           <a href="#"></a><img src="img/중식당3.png" width="750" height="500" />
         </div>
-
-        
       </ul>
     </nav>
     <br />
@@ -82,9 +86,10 @@
         <p>
           에펠탑이 정말 잘보이는 야외테라스 <br />
           디너 타임에 야외 테라스 에서 식사를 하며 보는 에펠탑은 정말 아름답다.
-        </p><br />
+        </p>
+        <br />
       </div>
     </div>
     <br /><br /><br /><br />
-</body>
+  </body>
 </html>

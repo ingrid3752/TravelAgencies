@@ -22,27 +22,12 @@ import com.kh.project.service.AccomService;
 public class AccomController {
 	
 	@Autowired
-	private AccomService accomService;
+	private AccomService service;
 	
-	 // 즐겨찾기 목록 조회
-    @GetMapping("/favorites")
-    @ResponseBody
-    public List<Accom> getFavorites(int memId) {
-        return accomService.getFavorites(memId);
-    }
-
-    // 즐겨찾기 추가
-    @PostMapping("/favorites")
-    @ResponseBody
-    public void addFavorite(int memId, int accomId) {
-        accomService.addFavorite(memId, accomId);
-    }
-
-    // 즐겨찾기 삭제
-    @DeleteMapping("/favorites")
-    @ResponseBody
-    public void removeFavorite(int memId, int accomId) {
-        accomService.removeFavorite(memId, accomId);
+	// 숙소 페이지로 이동
+    @GetMapping("/accom")
+    public String AccomPage() {
+        return "accom"; 
     }
 
 }
