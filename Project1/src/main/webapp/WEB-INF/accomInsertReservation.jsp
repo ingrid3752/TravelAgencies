@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>호텔 예약 추가</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css"/>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/accomReservation.css"/>
 </head>
@@ -16,11 +16,12 @@
 	</div>
 	<h1>호텔 예약 추가</h1>
 	<form action="/accomInsertReservation" method="post">
-		<input type="text" placeholder="호텔 이름 입력" name="accomName"/>
-		<input type="text" placeholder="시작 날짜 입력" name="startDate"/>
-		<input type="text" placeholder="마지막 날짜 입력" name="endDate"/>
-		<input type="text" placeholder="인원 수 입력" name="seats">
-		<input type="submit" value="호텔 예약 추가"/>
-	</form>
+    <input type="text" placeholder="호텔 이름 입력" name="accomName"/>
+    <input type="date" placeholder="시작 날짜 입력" name="startDate"/>
+    <input type="date" placeholder="마지막 날짜 입력" name="endDate"/>
+    <input type="text" placeholder="인원 수 입력" name="seats"/>
+    <input type="submit" value="호텔 예약 추가"/>
+</form>
+
 </body>
 </html>

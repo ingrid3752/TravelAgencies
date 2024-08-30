@@ -10,27 +10,24 @@ import com.kh.project.service.AccomService;
 
 @Controller
 public class AccomController {
-	
-	@Autowired
-	private AccomService service;
-	
-    // 숙소 예약현황리스트 보여주기
+
+    @Autowired
+    private AccomService service;
+
     @GetMapping("/accomReservation")
     public String reservationList(Model model) {
-    	model.addAttribute("list", service.reservationList());
-    	return "accomReservation";
-    }
-    // 예약 추가 페이지 이동
-    @GetMapping("/accomInsertReservation")
-    public String insertReservationPage() {
-    	return "accomInsertReservation";
-    }
-    
-    // 숙소 예약 추가
-    @PostMapping("/accomInsertReservation")
-    public String addReservation(AccomReservation vo) {
-    	service.insertReservation(vo);
-    	return "redirect:/accomReservation";
+        model.addAttribute("list", service.reservationList());
+        return "accomReservation";
     }
 
+    @GetMapping("/accomInsertReservation")
+    public String insertReservationPage() {
+        return "accomInsertReservation";
+    }
+
+    @PostMapping("/accomInsertReservation")
+    public String accomInsertReservation(AccomReservation vo) {
+        service.insertReservation(vo);
+        return "redirect:/accomReservation";
+    }
 }
