@@ -14,19 +14,6 @@ function imgShow(event) {
   // 선택한 파일을 읽어들임
   reader.readAsDataURL(event.target.files[0]);
 }
-
-const btn = document.getElementById("modal_button"); // 모달 띄우는 버튼
-const modal = document.getElementById("modal"); //
-const closeBtn = document.getElementById("close_btn");
-
-btn.onclick = function () {
-  modal.classList.add("open");
-};
-
-closeBtn.onclick = function () {
-  modal.classList.remove("open");
-};
-
 // 디테일
 document.querySelectorAll("details").forEach((detail) => {
   detail.addEventListener("toggle", function () {

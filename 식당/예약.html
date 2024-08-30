@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">예약 일정</title>
+    <link rel="stylesheet" href="./예약.css" />
+  </head>
+  <body style="overflow: hidden">
+    <form action="">
+    <div class="container">
+      
+        <div class="date">
+          <label for="date">날짜:</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            min="2024-07-26"
+            max="2024-08-11"
+            required
+          />
+          
+          <input
+            type="date"
+            id="date"
+            name="date"
+            min="2024-07-26"
+            max="2024-08-11"
+            required
+          />
+        </div>
+        <button type="submit">예약하기</button>
+      </form>
+    </div>
+    <script>
+      document.getElementById('reservation-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from submitting the traditional way
+        
+        // Get the selected date
+        const selectedDate = document.getElementById('date').value;
+        
+        // Validate the date (optional, since min and max attributes handle this)
+        if (selectedDate) {
+          alert(`예약이 완료되었습니다! 선택한 날짜: ${selectedDate}`);
+        } else {
+          alert('날짜를 선택해 주세요.');
+        }
+        
+        // Here, you could add additional logic, like sending the data to a server or updating the UI.
+      });
+    </script>
+    <script src="예약.js"></script>
+  </body>
+</html>

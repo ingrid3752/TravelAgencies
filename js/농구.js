@@ -335,7 +335,7 @@ document.getElementById("plus7").addEventListener("click", () => {
 // 티켓 H 수량 감소
 minusButtonH.addEventListener("click", () => {
   let quantity = parseInt(quantityInputH.value);
-  if (quantity > 1) {
+  if (quantity > 0) {
     quantity--;
     quantityInputH.value = quantity;
     updateTotalPriceH(quantity);
