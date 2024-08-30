@@ -72,14 +72,16 @@ CREATE TABLE stadium (
 CREATE TABLE stadium_reservation (
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
     mem_id INT NOT NULL,         
-    stadium_code INT NOT NULL,          
+    stadium_code INT NOT NULL,
+    stadium_name VARCHAR(255),
     start_date DATETIME NOT NULL, 
     end_date DATETIME NOT NULL,
     seats INT NOT NULL,               -- 예약 인원 수
     FOREIGN KEY (mem_id) REFERENCES mem_info(mem_code),
     FOREIGN KEY (stadium_code) REFERENCES stadium (stadium_code)
 );
-
+SELECT * FROM stadium_reservation;
+DROP TABLE stadium_reservation;
 INSERT INTO accom_reservation (mem_id, accom_code, start_date, end_date, seats)
 VALUES ('1','1','20240726','20240811','2');
 -- 식당
@@ -129,13 +131,18 @@ CREATE TABLE accom_favorites (
 CREATE TABLE accom_reservation (
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
     mem_id INT NOT NULL,         
-    accom_code INT NOT NULL,          
+    accom_code INT NOT NULL,
+    accom_name VARCHAR(255),
     start_date DATETIME NOT NULL, 
     end_date DATETIME NOT NULL,
     seats INT NOT NULL,               -- 예약 인원 수
     FOREIGN KEY (mem_id) REFERENCES mem_info (mem_code),
     FOREIGN KEY (accom_code) REFERENCES accom (accom_code)
 );
+DROP TABLE accom_reservation;
+SELECT * FROM accom_reservation;
+ALTER TABLE accom_reservation
+add accom_name VARCHAR(255);
 
 -- 리뷰
 CREATE TABLE review (

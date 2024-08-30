@@ -18,23 +18,27 @@ public class AccomService {
 	@Autowired
 	private AccomMapper mapper;
 	
-
-    public List<AccomReservation> reservationList(AccomReservation vo){
+	// 숙소 예약 현황내역 보여주기
+    public List<AccomReservation> reservationList(){
     	return mapper.reservationList();
     }
     
+    // 숙소 예약 추가
     public void insertReservation(AccomReservation vo) {
     	mapper.insertReservation(vo);
     }
     
+    // 숙소 예약 처음 날짜 수정
     public void updateStartDate(AccomReservation vo) {
     	mapper.updateStartDate(vo);
     }
     
+    // 숙소 예약 마지막 날짜 수정
     public void updateEndDate(AccomReservation vo) {
     	mapper.updateEndDate(vo);
     }
     
+    // 숙소 예약 취소
     public void deleteReservation(int reservationId) {
     	mapper.deleteReservation(reservationId);
     }

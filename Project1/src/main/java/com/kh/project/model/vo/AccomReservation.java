@@ -12,7 +12,8 @@ public class AccomReservation {
 	
 	private int reservationId; 
 	private int memId; 
-	private int accomCode; 
+	private int accomCode;
+	private String accomName;
 	private LocalDateTime startDate;
 	private LocalDateTime endDate;
 	private int seats; 

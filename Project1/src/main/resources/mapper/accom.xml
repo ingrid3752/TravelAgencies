@@ -37,8 +37,8 @@
     
     <!-- 숙소 예약 추가 -->
     <insert id="insertReservation" parameterType="AccomReservation">
-        INSERT INTO accom_reservation (mem_id, accom_code, start_date, end_date, seats)
-		VALUES (#{memId},#{accomCode},#{startDate},#{endDate},#{seats})
+        INSERT INTO accom_reservation (mem_id, accom_code, accom_name, start_date, end_date, seats)
+		VALUES (#{memId},#{accomCode},#{accomName},#{startDate},#{endDate},#{seats})
     </insert>
 
     <!-- 숙소 시작 날짜 변경 -->

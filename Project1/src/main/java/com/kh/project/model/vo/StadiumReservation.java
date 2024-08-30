@@ -11,6 +11,7 @@ public class StadiumReservation {
 	private int reservationId;
 	private int memId;
 	private int stadiumCode;
+	private String stadiumName;
 	private LocalDateTime startDate;
 	private LocalDateTime endDate;
 	private int seats;

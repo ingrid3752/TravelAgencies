@@ -15,6 +15,7 @@
         <id column="reservation_id" property="reservationId"/>
         <result column="mem_id" property="memId"/>
         <result column="stadium_code" property="stadiumCode"/>
+        <result column="stadium_name" property="stadiumName"/>
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
         <result column="seats" property="seats"/>
@@ -30,8 +31,8 @@
      
     <!-- 경기장 예약 추가 -->
     <insert id="insertReservation" parameterType="StadiumReservation">
-    	INSERT INTO stadium_reservation (mem_id, stadium_code, start_date, end_date, seats)
-		VALUES (#{memId},#{stadiumCode},#{startDate},#{endDate},#{seats})
+    	INSERT INTO stadium_reservation (mem_id, stadium_code, stadium_name, start_date, end_date, seats)
+		VALUES (#{memId},#{stadiumCode},#{stadiumName},#{startDate},#{endDate},#{seats})
     </insert>
     
     <!-- 경기장 시작 날짜 변경 -->
