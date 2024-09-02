@@ -102,56 +102,10 @@ function updateReviewDisplays() {
     } else {
         displayReviews(reviews, allTabContent);
     }
+    
+    // 평균 평점 업데이트
+    updateAverageRating();
 }
-
-// 초기 탭 활성화 상태 설정 및 리뷰 표시
-function initialize() {
-    const defaultTab = 'best'; // 초기 탭을 'best'로 설정 (원하는 초기 탭으로 변경 가능)
-    const defaultButton = document.querySelector(`button[data-tab="${defaultTab}"]`);
-    if (defaultButton) {
-        defaultButton.classList.add('active');
-    }
-    bestTabContent.classList.add('active');
-    allTabContent.classList.remove('active');
-
-    updateReviewDisplays();
-}
-
-// DOM 요소
-const bestTabButton = document.querySelector('button[data-tab="best"]');
-const allTabButton = document.querySelector('button[data-tab="all"]');
-const bestTabContent = document.querySelector('.tab-content.best');
-const allTabContent = document.querySelector('.tab-content.all');
-
-// 리뷰 데이터 로드
-let reviews = loadReviewsFromLocalStorage();
-
-// 초기화 함수 호출
-initialize();
-
-// 이벤트 리스너 추가
-document.addEventListener('DOMContentLoaded', () => {
-    // 탭 버튼 클릭 이벤트
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', handleTabClick);
-    });
-
-    // 리뷰 목록에 대한 클릭 이벤트 (이벤트 위임)
-    document.addEventListener('click', event => {
-        const target = event.target;
-        if (target.classList.contains('like-button')) {
-            const reviewId = target.getAttribute('data-id');
-            updateReviewCount(reviewId, 'like');
-        } else if (target.classList.contains('dislike-button')) {
-            const reviewId = target.getAttribute('data-id');
-            updateReviewCount(reviewId, 'dislike');
-        } else if (target.classList.contains('delete-button')) {
-            const reviewId = target.getAttribute('data-id');
-            deleteReview(reviewId);
-        }
-    });
-});
-
 
 // 전체 리뷰의 평균 평점을 계산하는 함수
 function calculateAverageRating(reviews) {
@@ -170,19 +124,14 @@ function updateAverageRating() {
     `;
 }
 
+// DOM 요소
+const bestTabButton = document.querySelector('button[data-tab="best"]');
+const allTabButton = document.querySelector('button[data-tab="all"]');
+const bestTabContent = document.querySelector('.tab-content.best');
+const allTabContent = document.querySelector('.tab-content.all');
 
-// 리뷰 리스트 업데이트 함수
-function updateReviewDisplays() {
-    const selectedTab = document.querySelector('.tab-button.active')?.getAttribute('data-tab');
-    if (selectedTab === 'best') {
-        displayReviews(reviews.filter(review => review.isBest), bestTabContent);
-    } else {
-        displayReviews(reviews, allTabContent);
-    }
-    
-    // 평균 평점 업데이트
-    updateAverageRating();
-}
+// 리뷰 데이터 로드
+let reviews = loadReviewsFromLocalStorage();
 
 // 초기 탭 활성화 상태 설정 및 리뷰 표시
 function initialize() {
@@ -196,8 +145,6 @@ function initialize() {
 
     updateReviewDisplays();
 }
-
-
 
 // 초기화 함수 호출
 initialize();
