@@ -1,8 +1,8 @@
 body {
-  background: url() no-repeat fixed;
+  background: url(img/식당배경.jpg) no-repeat fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: rgba(255, 8, 0, 0.281);
+
   font-weight: 600;
 }
 .button {
@@ -16,8 +16,8 @@ body {
   width: 100px;
   height: 70px;
   border-radius: 9px;
-  background-color: rgb(240, 140, 140);
-  border: solid 0.1px rgb(240, 140, 140);
+  background-color: rgb(240, 140, 140, 0.6);
+  border: solid 0.1px rgba(0, 0, 0, 0.8);
 }
 .button:hover {
   background: rgb(233, 105, 105);
@@ -27,7 +27,8 @@ body {
   justify-content: center;
   background: url() no-repeat center;
   padding: 5px;
-  border: 5px solid white;
+  background-color: rgba(255, 8, 0, 0.381);
+  border: 5px solid rgba(253, 123, 123, 0.5);
 }
 h2 > div {
   font-size: 4rem;
@@ -48,17 +49,17 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(240, 140, 140);
-  font-size: 1.5rem;
+  background-color: rgba(255, 8, 0, 0.281);
+  font-size: 2rem;
 }
 .menu:hover {
-  background-color: rgb(233, 105, 105);
+  background-color: rgb(233, 105, 105, 0.7);
+  border: 5px solid rgba(253, 123, 123, 0.5);
 }
 #review {
   padding-top: 40px;
-  border: 5px solid rgb(255, 255, 255);
-  border-top: none;
-  border-bottom: none;
+  background-color: rgb(255, 75, 75);
+  border: 5px solid rgba(253, 123, 123, 0.5);
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -67,7 +68,6 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 5px solid rgb(255, 255, 255);
 }
 #review > p {
   padding-left: 30px;
@@ -75,7 +75,7 @@ li {
   text-align: left;
 }
 ul {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgba(253, 123, 123, 0.5);
   padding: 10px;
 }
 li {
