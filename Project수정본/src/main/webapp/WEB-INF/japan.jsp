@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>일식</title>
-<link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/css/japan.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>일식</title>
+    <link
+      href="${pageContext.request.contextPath}/css/reset.css"
+      rel="stylesheet"
+    />
+    <link
+      href="${pageContext.request.contextPath}/css/japan.css"
+      rel="stylesheet"
+    />
     <style>
       label.menu {
-        border: 5px solid rgb(255, 255, 255);
+        border: 5px solid rgba(52, 214, 255, 0.5);
         padding: 20px;
         line-height: 50px;
       }
@@ -25,9 +31,9 @@
         display: block;
       }
     </style>
-</head>
-<body>
- <div id="logo">
+  </head>
+  <body>
+    <div id="logo">
       <div>
         <input
           type="button"
@@ -94,9 +100,10 @@
           신선하고 품질 좋은 회를 맛보려면 파리에서는 금액이 상당히 올라가는데
           <br />
           그에 비해 타끼는 금액도 적당하고 퀄리티 높은 음식들이 나옵니다.
-        </p><br />
+        </p>
+        <br />
       </div>
     </div>
     <br /><br /><br /><br />
-</body>
+  </body>
 </html>

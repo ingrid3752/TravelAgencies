@@ -2,21 +2,18 @@ package mapper;
 
 import java.util.List;
 
+
 import org.apache.ibatis.annotations.Mapper;
 
-import com.kh.project.model.vo.Accom;
-import com.kh.project.model.vo.AccomFavorites;
 import com.kh.project.model.vo.AccomReservation;
 
 @Mapper
 public interface AccomMapper {
 	
-    List<Accom> getFavorites(AccomFavorites accomFavorites);
-    void insertFavorite(AccomFavorites accomFavorites);
-    void deleteFavorite(AccomFavorites accomFavorites);
-    void insertReservation(AccomReservation accomReservation);
-    List<AccomReservation> getReservationsByMember(AccomReservation accomReservation);
-    void updateReservation(AccomReservation accomReservation);
-    void deleteReservation(AccomReservation accomReservation);
+    List<AccomReservation> reservationList();
+    void insertReservation(AccomReservation vo);
+    void updateStartDate(AccomReservation vo);
+    void updateEndDate(AccomReservation vo);
+    void deleteReservation(int reservationId);
     
 }

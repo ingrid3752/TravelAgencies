@@ -55,10 +55,11 @@ public class MemberService implements UserDetailsService {
     public void delete(int no) {
     	memberMapper.delete(no);
     }
-
+    
+    
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		return memberMapper.check(username);
 	}
-    
 }
+	 

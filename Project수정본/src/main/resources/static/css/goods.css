@@ -1,5 +1,6 @@
 body {
-  background-color: #cceeff8c;
+  background: url(img/식당배경.jpg) no-repeat fixed;
+  background-size: 100% 100%;
   font-weight: 600;
 }
 .button {
@@ -13,18 +14,19 @@ body {
   width: 100px;
   height: 70px;
   border-radius: 9px;
-  background: #77cdf848;
+  background-color: rgba(137, 216, 253, 0.6);
   border: solid 0.1px #50c5ff8c;
 }
 .button:hover {
-  background: #4dc3ff8c;
+  background-color: rgb(205, 239, 255);
 }
 #logo {
   display: flex;
   justify-content: center;
-  background: url() no-repeat center;
+  background: url(img/굿즈로고-removebg-preview.png) no-repeat center;
   padding: 5px;
-  border: 5px solid white;
+  background-color: rgba(137, 216, 253, 0.4);
+  border: 5px solid rgba(117, 188, 255, 0.5);
 }
 
 h2 > div {
@@ -46,15 +48,16 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #85d6ff6c;
-  font-size: 1.5rem;
+  background-color: rgba(137, 216, 253, 0.4);
+  font-size: 2rem;
 }
 .menu:hover {
-  background: #4dc4ff75;
+  background-color: rgb(205, 239, 255);
 }
 #review {
   padding-top: 40px;
-  border: 5px solid rgb(255, 255, 255);
+  background-color: rgb(205, 239, 255);
+  border: 5px solid rgba(117, 188, 255, 0.5);
   border-top: none;
   border-bottom: none;
   padding-left: 100px;
@@ -65,7 +68,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgba(117, 188, 255, 0.5);
 }
 #review > p {
   padding-left: 30px;
@@ -73,7 +76,7 @@ li {
   text-align: left;
 }
 ul {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgba(117, 188, 255, 0.5);
   padding: 10px;
 }
 li {

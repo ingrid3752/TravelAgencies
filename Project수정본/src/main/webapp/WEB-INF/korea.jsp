@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>한식</title>
- <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/css/korea.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>한식</title>
+    <link
+      href="${pageContext.request.contextPath}/css/reset.css"
+      rel="stylesheet"
+    />
+    <link
+      href="${pageContext.request.contextPath}/css/korea.css"
+      rel="stylesheet"
+    />
     <style>
       label.menu {
-        border: 5px solid rgb(255, 255, 255);
+        border: 5px solid rgba(255, 151, 109, 0.5);
         padding: 20px;
         line-height: 50px;
       }
@@ -25,9 +31,9 @@
         display: block;
       }
     </style>
-</head>
-<body>
-<div id="logo">
+  </head>
+  <body>
+    <div id="logo">
       <div>
         <input
           type="button"
@@ -113,9 +119,10 @@
           매일 오후 12시부터 오후11시 까지 운영한다고 하니 시간 맞춰 한번
           다녀오시는 것을 추천합니다. <br />
           디너 타임에는 웨이팅이 있을수도 있으니 참고하시길 바랍니다.
-        </p><br />
+        </p>
+        <br />
       </div>
     </div>
     <br /><br /><br /><br />
-</body>
+  </body>
 </html>

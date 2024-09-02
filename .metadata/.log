@@ -2948,3 +2948,1599 @@ Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-29 16:45:48.025
 !MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.644
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.645
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.646
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.647
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.648
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.648
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.653
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.653
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.653
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.654
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.654
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.654
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.656
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.656
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.657
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.661
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.661
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.662
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.663
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-08-30 16:25:05.663
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-08-30 16:25:05.663
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/hotelinfo.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.640
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.640
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.643
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.644
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.645
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.646
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.652
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.652
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.652
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.652
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.653
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.653
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.654
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.getLaunchConfigurations(ServerLaunchShortcut.java:91)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:489)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:501)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:338)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.654
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.654
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.getLaunchConfigurations(ServerLaunchShortcut.java:91)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:489)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:501)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:338)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.getLaunchConfigurations(ServerLaunchShortcut.java:91)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:489)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:501)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:338)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.655
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.656
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.656
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.656
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:254)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.656
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.checkProperty(ServerPropertyTester.java:50)
+	at org.eclipse.wst.server.ui.internal.ServerPropertyTester.test(ServerPropertyTester.java:35)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:163)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.expressions.WithExpression.evaluate(WithExpression.java:84)
+	at org.eclipse.core.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:54)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:59)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:273)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getShortcutsForSelection(LaunchingResourceManager.java:468)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.pruneShortcuts(LaunchingResourceManager.java:407)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:331)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.658
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.659
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.isCactusJunitTest(WebDeployableArtifactUtil.java:259)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:166)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.getLaunchConfigurations(ServerLaunchShortcut.java:91)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:489)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:501)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:338)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.659
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.660
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:276)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.getLaunchConfigurations(ServerLaunchShortcut.java:91)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:489)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:501)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:338)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.660
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+
+!ENTRY org.eclipse.jst.jee.ui 4 0 2024-09-02 09:04:28.660
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!STACK 1
+Java Model Exception: Error in Java Model (code 979): Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1452)
+	at org.eclipse.jdt.internal.core.JavaProject.findElement(JavaProject.java:1442)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getClassNameForType(WebDeployableArtifactUtil.java:319)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getServletClassName(WebDeployableArtifactUtil.java:280)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactUtil.getModuleObject(WebDeployableArtifactUtil.java:175)
+	at org.eclipse.jst.jee.ui.internal.deployables.WebDeployableArtifactAdapterFactory.getModuleArtifact(WebDeployableArtifactAdapterFactory.java:33)
+	at org.eclipse.wst.server.core.model.ModuleArtifactAdapterDelegate.getModuleArtifacts(ModuleArtifactAdapterDelegate.java:48)
+	at org.eclipse.wst.server.core.internal.ModuleArtifactAdapter.getModuleArtifacts(ModuleArtifactAdapter.java:185)
+	at org.eclipse.wst.server.core.internal.ServerPlugin.hasModuleArtifact(ServerPlugin.java:1298)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.getLaunchConfigurations(ServerLaunchShortcut.java:91)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.getLaunchConfigurations(LaunchShortcutExtension.java:489)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:501)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:338)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:258)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-09-02 09:04:28.660
+!MESSAGE Invalid path: '/Project수정본/src/main/webapp/WEB-INF/index.jsp'
+!SESSION 2024-09-02 11:40:20.191 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\TravelAgencies
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-02 11:40:21.672
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-09-02 11:40:22.534
+!MESSAGE Logback config file: D:\TravelAgencies\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-09-02 11:40:22.781
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-02 11:40:22.781
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-09-02 11:40:22.981
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-09-02 11:40:22.981
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-02 11:40:25.389
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-02 11:40:25.580
+!MESSAGE Boot project ADDED: Project 0821(수정)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-02 11:40:25.581
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-02 11:40:25.605
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-02 11:40:25.606
+!MESSAGE Boot project ADDED: Project수정본
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-02 11:40:25.617
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre\bin\javaw.exe
+-cp
+D:\eclipse\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes;D:\eclipse\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\eclipse\plugins\org.springframework.tooling.boot.ls_1.56.0.202407191456\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/TravelAgencies/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1725244825616
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-09-02 11:40:25.617
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-09-02 11:40:25.622
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10276
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-09-02 11:42:58.173
+!MESSAGE No repository found at http://exerd.com/update.
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 12:48:19.796
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 12:48:20.428
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 12:48:20.431
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:05.324
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:14.158
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:31.758
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:33.453
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:35.387
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:36.033
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:38.074
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:56.083
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:09:56.969
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 13:10:35.499
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:07:34.373
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:07:34.373
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:07:34.373
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:07:34.374
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:07:34.376
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:07:34.377
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:17:43.677
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:17:43.678
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:17:43.678
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:17:43.678
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:17:43.679
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:17:43.680
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:19:13.896
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:19:13.983
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:19:13.985
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-02 14:19:20.197
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:70)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:42:48.295
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:42:48.391
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:42:48.393
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:42:48.394
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:42:48.394
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:42:48.395
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:42:48.395
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:42:48.396
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:42:48.397
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:42:48.947
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-02 14:42:49.366
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:43:49.753
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:43:49.753
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResolution(LSPCodeActionMarkerResolution.java:155)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.getResolutions(LSPCodeActionMarkerResolution.java:101)
+	at org.springframework.tooling.boot.ls.markers.LSPBootCodeActionMarkerResolution.getResolutions(LSPBootCodeActionMarkerResolution.java:25)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:318)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:277)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:154)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-02 14:43:50.271
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:44:08.448
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:45:50.759
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:45:57.679
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:45:59.068
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-09-02 14:46:08.180
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:46:08.476
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:46:10.017
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:48:01.947
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:48:02.045
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 14:48:02.047
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:48:02.048
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:48:02.049
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:48:02.049
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:48:02.049
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:48:02.050
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 14:48:02.051
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 14:48:02.595
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:09:32.603
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:09:32.700
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:09:32.702
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:09:32.703
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:09:32.703
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:09:32.703
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:09:32.704
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:09:32.705
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:09:32.705
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:09:33.255
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:09:33.260
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:09:33.264
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/config/ProjectConfig.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:09:43.751
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:10:01.598
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:10:01.698
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:10:01.700
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:10:01.701
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:10:01.701
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:10:01.701
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:10:01.701
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:10:01.702
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:10:01.703
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:10:02.255
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:12:20.290
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:12:20.387
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:12:20.389
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:12:20.390
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:12:20.390
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:12:20.390
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:12:20.390
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:12:20.392
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:12:20.392
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:12:20.927
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:12:21.453
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:12:23.225
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:12:25.160
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:14:20.609
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:14:20.609
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:14:20.610
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:14:20.610
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:14:20.611
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-09-02 15:14:20.611
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:14:22.214
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:14:22.313
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:14:22.314
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:14:22.318
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:14:57.368
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:14:57.372
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:36.646
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:38.187
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:38.193
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:38.198
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:39.915
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:39.921
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:39.928
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:40.899
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:40.905
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:40.910
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:43.122
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:43.125
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:43.127
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:44.329
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:44.334
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:46.953
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:46.956
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:49.442
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:49.449
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:50.650
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:50.656
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:52.800
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:52.803
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:54.831
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:54.833
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:55.936
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:15:55.942
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:15.488
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:15.492
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:49.380
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:51.182
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:53.181
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:55.398
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:57.155
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:58.560
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:16:59.566
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:01.446
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:04.846
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:05.976
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:07.710
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:09.330
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:10.513
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:12.262
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:14.535
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:15.940
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:16.846
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:17.951
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:18.792
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:23.121
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:29.822
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:31.546
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:36.849
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:38.727
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:50.628
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:51.719
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:52.721
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:53.974
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:55.257
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:56.840
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:17:58.031
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:18:00.473
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:18:02.319
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:18:04.149
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:18:05.797
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:18:16.243
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:18:19.283
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/resources/mapper/MemberMo.xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:19:49.376
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:19:49.475
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 15:19:49.476
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:19:49.479
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:19:52.160
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:19:55.962
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:19:58.994
+!MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java

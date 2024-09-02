@@ -40,8 +40,9 @@
 				<!-- ${member.id} -->
 				<!-- 로그인 후 버튼 -->
 				<a href="<%=request.getContextPath()%>/mypage">MyPage</a>&nbsp;&nbsp;
-				<a href="<%=request.getContextPath()%>/logout">LogOut</a>
+				<a href="<%=request.getContextPath()%>/logout">LogOut</a>				
 			</sec:authorize>
+			
 			<sec:authorize access="!isAuthenticated()" var="principal">
 				<!-- 로그인 전 버튼 -->
 				<a href="<%=request.getContextPath()%>/login">Login</a>&nbsp;&nbsp; 
@@ -57,10 +58,13 @@
 					<li><a href="<%=request.getContextPath()%>/goods">굿즈</a></li>
 				</ul></li>
 		</ul>
+		
 	</header>
 
+<sec:authorize access="isAuthenticated()" var="principal">
+<sec:authentication property="principal" var="member" />
 	<section id="mainpage">
-		<div id="Binggrae_font">
+		<div id="Binggrae">
 			<h2 id="h2main">KHTRAVEL</h2>
 			<br>
 			<p>
@@ -71,10 +75,36 @@
 				<span style="color: rgb(253, 236, 85);">Make a reservation
 					quickly and easily</span>
 			</p>
-			<br> <br> <br>
-
+			<br>
+			<br>
+			<br>
+		<a href="/reservation" id="bububu">지금 바로 예약하세요!</a>
 		</div>
 	</section>
+</sec:authorize>
+
+<sec:authorize access="!isAuthenticated()" var="principal">
+	<section id="mainpage">
+		<div id="Binggrae">
+			<h2 id="h2main">KHTRAVEL</h2>
+			<br>
+			<p>
+				<span style="color: rgb(253, 236, 85);">2024 Paris Olympic</span>
+			</p>
+			<br>
+			<p>
+				<span style="color: rgb(253, 236, 85);">Make a reservation
+					quickly and easily</span>
+			</p>
+			<br>
+			<br>
+			<br>
+		<a href="/login" id="bububu">로그인하여 지금 바로 예약하세요!</a>	
+		</div>
+	</section>
+</sec:authorize>	
+	
+	<!-- 
 	<script>
 	$("#ComIndex").click(() => {
 	    $.ajax({
@@ -120,6 +150,8 @@
 	});
 
 	</script>
+	 -->
+	
    <!--  <script>
     // 로컬 스토리지에 담긴 토큰 가져오기
     const token = localStorage.getItem("token");

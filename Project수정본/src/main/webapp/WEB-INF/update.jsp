@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
+
 <body>
   <div id="update-form">
         <form action="/update" method="post">
@@ -30,8 +31,10 @@
                 <label for="password">비밀번호 : </label>
                 <input type="text" id="password" name="password" required>
             </div>
-            <button type="submit">회원정보 변경</button>
+            <button type="button" onclick="location.href='memberModify'">회원정보수정</button>
         </form>
     </div>
 </body>
+
+
 </html>

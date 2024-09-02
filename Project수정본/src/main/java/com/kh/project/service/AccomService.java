@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.kh.project.model.vo.Accom;
@@ -17,53 +16,30 @@ import mapper.AccomMapper;
 public class AccomService {
 	
 	@Autowired
-	private AccomMapper accomMapper;
+	private AccomMapper mapper;
 	
-	// 즐겨찾기 목록 조회
-    public List<Accom> getFavorites(int memId) {
-        AccomFavorites accomFavorites = new AccomFavorites();
-        accomFavorites.setMemId(memId);
-        return accomMapper.getFavorites(accomFavorites);
+	// 숙소 예약 현황내역 보여주기
+    public List<AccomReservation> reservationList(){
+    	return mapper.reservationList();
     }
-
-    // 즐겨찾기 추가
-    public void addFavorite(int memId, int accomId) {
-        AccomFavorites accomFavorites = new AccomFavorites();
-        accomFavorites.setMemId(memId);
-        accomFavorites.setAccomId(accomId);
-        accomMapper.insertFavorite(accomFavorites);
-    }
-
-    // 즐겨찾기 삭제
-    public void removeFavorite(int memId, int accomId) {
-        AccomFavorites accomFavorites = new AccomFavorites();
-        accomFavorites.setMemId(memId);
-        accomFavorites.setAccomId(accomId);
-        accomMapper.deleteFavorite(accomFavorites);
-    }
-
+    
     // 숙소 예약 추가
-    public void addReservation(AccomReservation reservation) {
-        accomMapper.insertReservation(reservation);
+    public void insertReservation(AccomReservation vo) {
+    	mapper.insertReservation(vo);
     }
-
-    // 예약 내역 조회
-    public List<AccomReservation> getReservationsByMember(int memId) {
-        AccomReservation accomReservation = new AccomReservation();
-        accomReservation.setMemId(memId);
-        return accomMapper.getReservationsByMember(accomReservation);
+    
+    // 숙소 예약 처음 날짜 수정
+    public void updateStartDate(AccomReservation vo) {
+    	mapper.updateStartDate(vo);
     }
-
-    // 예약 내역 변경
-    public void modifyReservation(AccomReservation reservation) {
-        accomMapper.updateReservation(reservation);
+    
+    // 숙소 예약 마지막 날짜 수정
+    public void updateEndDate(AccomReservation vo) {
+    	mapper.updateEndDate(vo);
     }
-
-    // 예약 내역 삭제
-    public void cancelReservation(int reservationId, int memId) {
-        AccomReservation accomReservation = new AccomReservation();
-        accomReservation.setReservationId(reservationId);
-        accomReservation.setMemId(memId);
-        accomMapper.deleteReservation(accomReservation);
+    
+    // 숙소 예약 취소
+    public void deleteReservation(int reservationId) {
+    	mapper.deleteReservation(reservationId);
     }
 }
