@@ -1,13 +1,14 @@
 package com.kh.project.controller;
 
-import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import com.kh.project.model.vo.Accom;
 import com.kh.project.model.vo.AccomReservation;
 import com.kh.project.service.AccomService;
 
@@ -17,22 +18,31 @@ public class AccomController {
     @Autowired
     private AccomService service;
 
+    // GetMapping으로 accomReservation페이지에 리스트 출력요청받아서 보여주기
     @GetMapping("/accomReservation")
-    public String reservationList(Model model) {
-        model.addAttribute("list", service.reservationList());
-		return "accomReservation";
+    public String getAccomReservationList(Model model) {
+        // 예약 리스트 가져오기
+        List<AccomReservation> accomList = service.reservationList();
+        model.addAttribute("accomList", accomList); 
+        return "accomReservation"; 
     }
 
+    // 숙소 예약추가 페이지로 이동
     @GetMapping("/accomInsertReservation")
-    public String insertReservationPage(AccomReservation vo) {
-    	System.out.println(vo);
+    public String insertReservationPage(Model model) {
+    	model.addAttribute("accomCode", 1);
+    	model.addAttribute("memCode", 1);
         return "accomInsertReservation";
     }
-
+    
+    // 예약 작성
     @PostMapping("/accomInsertReservation")
-	public String accomInsertReservation(AccomReservation vo, @DateTimeFormat(pattern = "yyyy-MM-dd") Date startDate, @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate, int accomcode, int memCode) {
-    	
-        service.insertReservation(vo);
-        return "redirect:/accomReservation";
+    public String insertReservation(AccomReservation vo) {
+    	service.insertReservation(vo);
+    	return "redirect:/accomReservation";
     }
+    
+    
+    
+    
 }

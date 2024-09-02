@@ -110,14 +110,14 @@ CREATE TABLE meal_history (
 -- 숙소
 CREATE TABLE accom (
     accom_code INT PRIMARY KEY AUTO_INCREMENT,
+    accom_name VARCHAR(255),
     accom_phone VARCHAR(255),
     location VARCHAR(255),
-    accom_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    head_count INT,
-    price INT,
-    accom_name VARCHAR(255)
+    price INT
 );
-
+INSERT INTO accom (accom_name,accom_phone,location,price) VALUES ('숙소','01012345678','서울','9999');
+SELECT * FROM mem_info WHERE mem_code = '1';
+SELECT * FROM accom WHERE accom_code = '1';
 -- 숙소 즐겨찾기
 CREATE TABLE accom_favorites (
     favorite_id INT PRIMARY KEY AUTO_INCREMENT,

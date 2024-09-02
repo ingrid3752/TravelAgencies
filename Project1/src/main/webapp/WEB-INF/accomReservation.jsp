@@ -17,21 +17,25 @@
 </div>
 <h1>호텔 예약 정보</h1>
 <br>
-<table>
-	<tr>
-		<th>호텔 이름</th>
-		<th>시작 날짜</th>
-		<th>마지막 날짜</th>
-		<th>인원 수</th>
-	</tr>
-	<c:forEach items="${list}" var="accomReservation">
-		<tr>
-			<td>${accomReservation.accomName}</td>
-			<td>${accomReservation.startDate}</td>
-			<td>${accomReservation.endDate}</td>
-			<td>${accomReservation.seats}</td>
-		</tr>
-	</c:forEach>
-</table>
+<table border="1">
+        <thead>
+            <tr>
+                <th>숙소 이름</th>
+                <th>시작 날짜</th>
+                <th>종료 날짜</th>
+                <th>인원 수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <c:forEach var="reservation" items="${accomList}">
+                <tr>
+                    <td>${accomReservation.accomName}</td>
+                    <td>${accomReservation.startDate}</td>
+                    <td>${accomReservation.endDate}</td>
+                    <td>${accomReservation.seats}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+    </table>
 </body>
 </html>

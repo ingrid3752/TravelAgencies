@@ -22,16 +22,16 @@
 		<h1>호텔 예약 추가</h1>
 	</div>
 	<div>
-		<form action="/accomInsertReservation" method="post">
-			<input type="hidden" id="memCode" name="memCode" value="${memCode}">
-			<input type="hidden" id="accomCode" name="accomCode" value="${accomCode}">
-			<input type="text" placeholder="호텔 이름 입력" name="accomName" /> 
-			<input type="date" placeholder="시작 날짜 입력" name="startDate" /> 
-			<input type="date" placeholder="마지막 날짜 입력" name="endDate" /> 
-			<input type="text" placeholder="인원 수 입력" name="seats" /> 
-			<button type="submit" onclick="updateReservation()">예약하기</button>
-	
-	</form>
+		<form action="/accomInsertReservation" method="post" onsubmit="return validateForm();">
+    		<input type="hidden" id="memCode" name="memCode" value="${memCode != null ? memCode : 0}">
+    		<input type="hidden" id="accomCode" name="accomCode" value="${accomCode != null ? accomCode : 0}">
+    		<input type="text" placeholder="호텔 이름 입력" name="accomName" required /> 
+   		 	<input type="date" placeholder="시작 날짜 입력" name="startDate" required /> 
+   		 	<input type="date" placeholder="마지막 날짜 입력" name="endDate" required /> 
+   			<input type="number" placeholder="인원 수 입력" name="seats" required /> 
+    		<button type="submit">예약하기</button>
+		</form>
+
 	</div>
 	<script src="${pageContext.request.contextPath}/js/accomInsertReservation.js"></script>
 </body>

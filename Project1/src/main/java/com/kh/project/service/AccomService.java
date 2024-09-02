@@ -42,4 +42,9 @@ public class AccomService {
     public void deleteReservation(int reservationId) {
     	mapper.deleteReservation(reservationId);
     }
+    
+    // 모든 숙소 리스트 보여주기
+	public List<Accom> AllAccom() {
+		return mapper.AllAccom();
+	}
 }

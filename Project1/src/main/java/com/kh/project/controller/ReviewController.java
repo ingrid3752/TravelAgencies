@@ -3,16 +3,14 @@ package com.kh.project.controller;
 import java.util.List;
 
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.kh.project.model.vo.Review;
 import com.kh.project.service.ReviewService;
 
@@ -45,7 +43,7 @@ public class ReviewController {
     public String getReviewsByMember(@PathVariable int memCode, Model model) {
         List<Review> reviews = reviewService.getReviewByMember(memCode);
         model.addAttribute("reviews", reviews);
-        return "review";  // 특정 회원의 리뷰를 표시할 JSP로 이동
+        return "review"; 
     }
     
 	// 리뷰 목록으로 다시 보내기

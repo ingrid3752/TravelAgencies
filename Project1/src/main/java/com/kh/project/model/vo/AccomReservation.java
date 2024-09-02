@@ -17,9 +17,9 @@ public class AccomReservation {
     private int memCode; 
     private int accomCode;
     private String accomName;
-    @DateTimeFormat(pattern = "yyyyMMdd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date startDate;
-    @DateTimeFormat(pattern = "yyyyMMdd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date endDate;
     private int seats; 
 }
