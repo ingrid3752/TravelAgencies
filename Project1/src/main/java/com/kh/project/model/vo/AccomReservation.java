@@ -1,6 +1,8 @@
 package com.kh.project.model.vo;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,10 +14,12 @@ import lombok.NoArgsConstructor;
 public class AccomReservation {
 
     private int reservationId; 
-    private int memId; 
+    private int memCode; 
     private int accomCode;
     private String accomName;
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
+    @DateTimeFormat(pattern = "yyyyMMdd")
+    private Date startDate;
+    @DateTimeFormat(pattern = "yyyyMMdd")
+    private Date endDate;
     private int seats; 
 }

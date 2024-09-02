@@ -1,6 +1,6 @@
 package com.kh.project.model.vo;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +12,7 @@ public class StadiumReservation {
 	private int memId;
 	private int stadiumCode;
 	private String stadiumName;
-	private LocalDateTime startDate;
-	private LocalDateTime endDate;
+	private Date startDate;
+	private Date endDate;
 	private int seats;
 }

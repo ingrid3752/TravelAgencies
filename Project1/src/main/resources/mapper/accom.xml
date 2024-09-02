@@ -13,7 +13,7 @@
 
     <resultMap type="AccomReservation" id="accomReservationMap">
         <id column="reservation_id" property="reservationId"/>
-        <result column="mem_id" property="memId"/>
+        <result column="mem_code" property="memCode"/>
         <result column="accom_code" property="accomCode"/>
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
@@ -22,7 +22,7 @@
 
     <resultMap type="AccomFavorites" id="accomFavoritesMap">
         <id column="favorite_id" property="favoriteId"/>
-        <result column="mem_id" property="memId"/>
+        <result column="mem_code" property="memCode"/>
         <result column="accom_id" property="accomId"/>
         <result column="date_added" property="dateAdded"/>
     </resultMap>
@@ -32,33 +32,33 @@
 		SELECT r.*, accom.accom_name, accom.location, accom.accom_phone
 		FROM accom_reservation r
 		JOIN accom ON r.accom_code = accom.accom_code
-		WHERE r.mem_id = #{memId}
+		WHERE r.mem_code = #{memCode}
     </select>
     
     <!-- 숙소 예약 추가 -->
     <insert id="insertReservation" parameterType="AccomReservation">
-        INSERT INTO accom_reservation (mem_id, accom_code, accom_name, start_date, end_date, seats)
-		VALUES (#{memId},#{accomCode},#{accomName},#{startDate},#{endDate},#{seats})
+        INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
+		VALUES (#{memCode},#{accomCode},#{accomName},#{startDate},#{endDate},#{seats})
     </insert>
 
     <!-- 숙소 시작 날짜 변경 -->
     <update id="updateStartDate" parameterType="AccomReservation">
         UPDATE accom_reservation
         SET start_date = #{startDate}, seats = #{seats}
-        WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
+        WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
     </update>
     
     <!-- 숙소 마지막 날짜 변경 -->
     <update id="updateEndDate" parameterType="AccomReservation">
     	UPDATE accom_reservation
     	SET end_date = #{endDate}, seats = #{seats}
-    	WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
+    	WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
     </update>
 
     <!-- 예약 내역 삭제 -->
     <delete id="deleteReservation" parameterType="int">
         DELETE FROM accom_reservation
-        WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
+        WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
     </delete>
 
 	 

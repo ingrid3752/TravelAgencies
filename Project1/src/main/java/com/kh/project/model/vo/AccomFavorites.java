@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class AccomFavorites {
 	
 	private int favoriteId;       
-    private int memId;          
+    private int memCode;          
     private int accomId; 
     private Date dateAdded;
     

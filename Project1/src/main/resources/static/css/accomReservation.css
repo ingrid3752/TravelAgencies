@@ -28,7 +28,7 @@ input{
 	margin: 5px;
 	padding: 10px 15px;
 }
-input[type=submit]{
+button {
 	background: black;
 	color: white;
 	border: none;

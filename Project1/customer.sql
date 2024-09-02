@@ -12,7 +12,7 @@ SET foreign_key_checks = 0;
 
 -- 회원 정보
 CREATE TABLE mem_info (
-    mem_code INT PRIMARY KEY AUTO_INCREMENT UNIQUE,   
+    mem_code INT PRIMARY KEY AUTO_INCREMENT UNIQUE,
     id VARCHAR(255) NOT NULL UNIQUE,            
     password VARCHAR(255) NOT NULL,           
     name VARCHAR(255) NOT NULL,            
@@ -74,8 +74,8 @@ CREATE TABLE stadium_reservation (
     mem_id INT NOT NULL,         
     stadium_code INT NOT NULL,
     stadium_name VARCHAR(255),
-    start_date DATETIME NOT NULL, 
-    end_date DATETIME NOT NULL,
+    start_date DATE, 
+    end_date DATE,
     seats INT NOT NULL,               -- 예약 인원 수
     FOREIGN KEY (mem_id) REFERENCES mem_info(mem_code),
     FOREIGN KEY (stadium_code) REFERENCES stadium (stadium_code)
@@ -130,13 +130,13 @@ CREATE TABLE accom_favorites (
 -- 숙소 예약
 CREATE TABLE accom_reservation (
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_id INT NOT NULL,         
-    accom_code INT NOT NULL,
+    mem_code INT,         
+    accom_code INT,
     accom_name VARCHAR(255),
-    start_date DATETIME NOT NULL, 
-    end_date DATETIME NOT NULL,
+    start_date DATE, 
+    end_date DATE,
     seats INT NOT NULL,               -- 예약 인원 수
-    FOREIGN KEY (mem_id) REFERENCES mem_info (mem_code),
+    FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code),
     FOREIGN KEY (accom_code) REFERENCES accom (accom_code)
 );
 DROP TABLE accom_reservation;
