@@ -22,7 +22,7 @@
   top: 0%;
 }
 
-#KHTRAVLE {
+#KHTRAVEL {
   color: white;
   font-size: 2rem;
 }
@@ -164,30 +164,32 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
-#mainpage3 {
+.mainpage3 {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#section1 {
+.section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 450px;
+  height: 460px;
   background-color: rgba(255, 255, 255, 0.781);
   border: 1px solid color #000000;
   border-radius: 15px;
   float: left;
-  margin-left: 70px;
   margin-right: 30px;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
-#section2 {
+.section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 450px;
+  height: 460px;
   background-color: rgba(255, 255, 255, 0.781);
   float: left;
   border: 1px solid color #000000;
@@ -196,12 +198,12 @@ body {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
-#section3 {
+.section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 450px;
+  height: 460px;
   background-color: rgba(255, 255, 255, 0.781);
   border: 1px solid color #000000;
   border-radius: 15px;
@@ -209,6 +211,7 @@ body {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
+
 .img1 {
   display: flex;
   align-content: center;
@@ -220,30 +223,38 @@ body {
   width: 100%;
   border-top: 3px solid;
   border-color: rgba(0, 0, 0, 0.801);
+  padding-top: 10px;
 }
 .maininfo p {
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
+  padding-top: 20px;
 }
-
+.maininfo span {
+  padding-left: 15px;
+  line-height: 10px;
+}
+#total {
+  width: 800px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Gowun Batang", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 20px;
+}
 #mainpage4 {
   display: flex;
   justify-content: center;
   align-content: center;
   width: 100%;
   margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.116);
-}
-#section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 800px;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
-  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.041);
 }
 #line {
   display: flex;
@@ -255,14 +266,17 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(94, 145, 255);
 }
-.sect1 {
-  width: 200px;
-  height: 30px;
-}
+
 .mar {
   padding: 10px;
 }
 
+#section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
 .idid {
   margin-bottom: 10px;
   font-family: "Gowun Batang", serif;
@@ -278,7 +292,9 @@ body {
   margin-left: 10%;
 }
 .idid input {
-  width: 90%;
+  display: flex;
+  align-items: center;
+  width: 300px;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid rgba(116, 116, 116, 0.562);
@@ -288,9 +304,9 @@ body {
   color: #000000;
   margin-left: 20px;
 }
-button {
-  width: 300px;
-  padding: 10px;
+#infobu {
+  width: 500px;
+  margin: 10px;
   background-color: rgb(94, 145, 255);
   border: none;
   border-radius: 4px;
@@ -304,12 +320,12 @@ button {
   margin-left: 20px;
 }
 
-button:hover {
+#infobu :hover {
   background-color: #ffffff;
   color: black;
 }
 
-button:focus {
+#infobu :focus {
   outline: none;
   box-shadow: 0 0 0 3px #ffffff57;
 }
@@ -318,4 +334,68 @@ button:focus {
 }
 #green {
   color: rgb(94, 145, 255);
+}
+details {
+  margin-bottom: 10px;
+}
+
+details > summary {
+  background-color: rgba(255, 255, 255, 0.116);
+  padding: 1rem;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 1s;
+  text-align: center;
+}
+
+details > summary::-webkit-details-marker {
+  background-size: contain;
+  color: transparent;
+  transform: rotate3d(0, 0, 1, 90deg);
+  transition: transform 0.25s;
+}
+
+details[open] > summary::-webkit-details-marker {
+  transform: rotate3d(0, 0, 1, 180deg);
+}
+
+details[open] > summary {
+  background-color: rgba(0, 0, 0, 0.041);
+}
+
+details[open] > summary ~ * {
+  animation: reveal 0.5s;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#spancaca {
+  font-size: 1.3rem;
+}
+#cacaca {
+  font-size: 1rem;
+  margin-left: 60%;
+}
+#cdcdcd {
+  font-size: 1rem;
+  margin-left: 69%;
+}
+summary::marker {
+  content: " ";
+}
+details[open] summary::marker {
+  content: " ";
+}
+.reveal-animation {
+  animation: reveal 0.5s;
 }

@@ -8,7 +8,6 @@
   font-family: "Binggrae";
 }
 #header {
-  position: fixed;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -16,13 +15,12 @@
   height: 80px;
   width: 100%;
   padding-left: 30px;
+  font-optical-sizing: auto;
   font-family: "Gowun Batang", serif;
   font-weight: 400;
   font-style: normal;
-  top: 0%;
 }
-
-#KHTRAVLE {
+#KHTRAVEL {
   color: white;
   font-size: 2rem;
 }
@@ -46,6 +44,10 @@ a {
   text-decoration: none;
   font-size: 14px;
 }
+#loginbutton {
+  height: 30px;
+  color: rgb(155, 108, 108);
+}
 #kh {
   color: white;
   padding-left: 30px;
@@ -64,13 +66,18 @@ a {
   width: 30px;
   overflow: hidden;
   margin: 150px auto;
-  bottom: 480px;
-  height: 300px;
+  bottom: 500px;
+  height: 285px;
   width: 100px;
   overflow: hidden;
   margin: 150px auto;
+  text-align: center;
 }
-
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
 .menu > li {
   width: 20%; /*20*5=100%*/
   float: left;
@@ -81,16 +88,13 @@ a {
   font-weight: 400;
   font-style: normal;
 }
-
 .menu a {
   color: #fff;
 }
-
 .submenu > li {
   line-height: 50px;
   background-color: #000000;
 }
-
 .submenu {
   height: 0; /*ul의 높이를 안보이게 처리*/
   overflow: hidden;
@@ -99,17 +103,15 @@ a {
   background-color: #000000;
   transition-duration: 0.5s;
 }
-
 .menu > li:hover .submenu {
-  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
-
 .menu > li {
   width: 100%;
   text-align: center;
   line-height: 40px;
-  background-color: #00000017;
+  background-color: #000000;
 }
 
 /*바디*/
@@ -164,32 +166,30 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
-.mainpage3 {
+#mainpage3 {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.section1 {
+#section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 460px;
+  height: 450px;
   background-color: rgba(255, 255, 255, 0.781);
   border: 1px solid color #000000;
   border-radius: 15px;
   float: left;
+  margin-left: 70px;
   margin-right: 30px;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
-.section2 {
+#section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 460px;
+  height: 450px;
   background-color: rgba(255, 255, 255, 0.781);
   float: left;
   border: 1px solid color #000000;
@@ -198,12 +198,12 @@ body {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
-.section3 {
+#section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  height: 460px;
+  height: 450px;
   background-color: rgba(255, 255, 255, 0.781);
   border: 1px solid color #000000;
   border-radius: 15px;
@@ -211,7 +211,6 @@ body {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
-
 .img1 {
   display: flex;
   align-content: center;
@@ -223,38 +222,30 @@ body {
   width: 100%;
   border-top: 3px solid;
   border-color: rgba(0, 0, 0, 0.801);
-  padding-top: 10px;
 }
 .maininfo p {
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
-  padding-top: 20px;
 }
-.maininfo span {
-  padding-left: 15px;
-  line-height: 10px;
-}
-#total {
-  width: 800px;
-  height: 50px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  font-family: "Gowun Batang", serif;
-  font-weight: 600;
-  font-style: normal;
-  margin-left: 20px;
-}
+
 #mainpage4 {
   display: flex;
   justify-content: center;
   align-content: center;
   width: 100%;
   margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.041);
+  background-color: rgba(255, 255, 255, 0.116);
+}
+#section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  border-radius: 15px;
 }
 #line {
   display: flex;
@@ -266,17 +257,14 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(94, 145, 255);
 }
-
+.sect1 {
+  width: 200px;
+  height: 30px;
+}
 .mar {
   padding: 10px;
 }
 
-#section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 800px;
-}
 .idid {
   margin-bottom: 10px;
   font-family: "Gowun Batang", serif;
@@ -292,9 +280,7 @@ body {
   margin-left: 10%;
 }
 .idid input {
-  display: flex;
-  align-items: center;
-  width: 300px;
+  width: 90%;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid rgba(116, 116, 116, 0.562);
@@ -304,9 +290,9 @@ body {
   color: #000000;
   margin-left: 20px;
 }
-#infobu {
-  width: 500px;
-  margin: 10px;
+button {
+  width: 300px;
+  padding: 10px;
   background-color: rgb(94, 145, 255);
   border: none;
   border-radius: 4px;
@@ -320,12 +306,12 @@ body {
   margin-left: 20px;
 }
 
-#infobu :hover {
+button:hover {
   background-color: #ffffff;
   color: black;
 }
 
-#infobu :focus {
+button:focus {
   outline: none;
   box-shadow: 0 0 0 3px #ffffff57;
 }
@@ -334,68 +320,4 @@ body {
 }
 #green {
   color: rgb(94, 145, 255);
-}
-details {
-  margin-bottom: 10px;
-}
-
-details > summary {
-  background-color: rgba(255, 255, 255, 0.116);
-  padding: 1rem;
-  outline: 0;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 1s;
-  text-align: center;
-}
-
-details > summary::-webkit-details-marker {
-  background-size: contain;
-  color: transparent;
-  transform: rotate3d(0, 0, 1, 90deg);
-  transition: transform 0.25s;
-}
-
-details[open] > summary::-webkit-details-marker {
-  transform: rotate3d(0, 0, 1, 180deg);
-}
-
-details[open] > summary {
-  background-color: rgba(0, 0, 0, 0.041);
-}
-
-details[open] > summary ~ * {
-  animation: reveal 0.5s;
-}
-
-@keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -10px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-#spancaca {
-  font-size: 1.3rem;
-}
-#cacaca {
-  font-size: 1rem;
-  margin-left: 60%;
-}
-#cdcdcd {
-  font-size: 1rem;
-  margin-left: 69%;
-}
-summary::marker {
-  content: " ";
-}
-details[open] summary::marker {
-  content: " ";
-}
-.reveal-animation {
-  animation: reveal 0.5s;
 }
