@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>질문 작성하기</title>
-    <link rel="stylesheet" href="/css/질문작성.css" />
+    <title>질문 상세</title>
+    <link rel="stylesheet" href="/css/질문상세.css" />
     <link rel="stylesheet" href="../reset.css" />
     <script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,28 +35,24 @@
 
     <main>
         <section>
-            <div class="form-container">
-                <h1>질문 작성하기</h1>
-                <form id="question-form">
-                    <div class="form-group">
-                        <label for="title">제목</label>
-                        <input type="text" id="title" name="title" required placeholder="제목을 입력하세요">
-                    </div>
-                    <div class="form-group">
-                        <label for="author">작성자</label>
-                        <input type="text" id="author" name="author" required placeholder="작성자 이름">
-                    </div>
-                    <div class="form-group">
-                        <label for="content">내용</label>
-                        <textarea id="content" name="content" rows="6" required placeholder="질문 내용을 입력하세요"></textarea>
-                    </div>
-                    <button type="submit" aria-label="질문 제출">질문 제출</button>
-                </form>
+            <div class="question-detail-container">
+                <h1 id="question-title">제목</h1>
+                <div id="question-info">
+                    <span id="question-author">작성자</span>
+                    <span id="question-date">작성일</span>
+                    <span id="question-views">조회수</span>
+                </div>
+                <div id="question-content">
+                    <p>질문 내용</p>
+                </div>
+                <a href="./질문게시판.html" class="button-link" aria-label="목록으로 돌아가기">
+                    <button aria-label="목록으로 돌아가기">목록으로 돌아가기</button>
+                </a>
             </div>
+
         </section>
     </main>
 
-
-    <script src="/js/질문작성.js"></script>
+    <script src="/js/질문상세.js"></script>
 </body>
 </html>

@@ -1,41 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    const titleInput = document.getElementById("title");
-    const contentTextarea = document.getElementById("content");
+    const form = document.getElementById("question-form");
 
     form.addEventListener("submit", function(event) {
-        event.preventDefault(); // 폼 제출 방지
+        event.preventDefault(); // 폼 제출 시 페이지 새로 고침 방지
 
-        const title = titleInput.value.trim();
-        const content = contentTextarea.value.trim();
-        const date = new Date().toISOString().split('T')[0]; // YYYY-MM-DD 포맷의 현재 날짜
+        const title = document.getElementById("title").value;
+        const author = document.getElementById("author").value;
+        const content = document.getElementById("content").value;
 
-        if (title === "" || content === "") {
-            alert("제목과 내용을 모두 입력해 주세요.");
-            return;
+        if (title && author && content) {
+            // 로컬 스토리지에 질문 저장
+            const questions = JSON.parse(localStorage.getItem("questions")) || [];
+            const newQuestion = {
+                id: questions.length ? questions[questions.length - 1].id + 1 : 1,
+                title: title,
+                author: author,
+                content: content,
+                date: new Date().toISOString(),
+                views: 0
+            };
+            questions.push(newQuestion);
+            localStorage.setItem("questions", JSON.stringify(questions));
+
+            // 성공 메시지 또는 다른 페이지로 리디렉션
+            alert("질문이 성공적으로 제출되었습니다.");
+            form.reset();
+        } else {
+            alert("모든 필드를 채워야 합니다.");
         }
-
-        // 질문 데이터 생성
-        const question = {
-            title: title,
-            content: content,
-            date: date
-        };
-
-        // 로컬 스토리지에서 기존 질문 리스트 가져오기
-        const questions = JSON.parse(localStorage.getItem("questions")) || [];
-        
-        // 새로운 질문 추가
-        questions.push(question);
-
-        // 업데이트된 질문 리스트를 로컬 스토리지에 저장
-        localStorage.setItem("questions", JSON.stringify(questions));
-
-        // 폼 데이터 초기화
-        titleInput.value = "";
-        contentTextarea.value = "";
-
-        // 제출 후 질문 게시판 페이지로 이동
-        window.location.href = "./질문게시판.html";
     });
 });

@@ -1,141 +1,136 @@
 /* 기본 스타일 */
 html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Sunflower', sans-serif;
-  }
-  
-  /* 헤더 스타일 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
+  overflow-x: hidden; /* 수평 스크롤 방지 */
+}
+
+/* 헤더 스타일 */
 #header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding-left: 30px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-left: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
 #KHTRAVLE {
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 2rem;
 }
 
 #login, #sign {
-    color: white;
-    font-size: 1.3rem;
-    font-family: "Sunflower", sans-serif;
-    font-weight: 500;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+}
+
+#login {
+  margin-left: 1400px;
 }
 
 #sign {
-    padding-right: 150px;
+  padding-right: 150px;
 }
 
 a {
-    text-decoration: none;
-    color: inherit; /* 링크 색상 상속 */
+  text-decoration: none;
+  color: inherit; /* 링크 색상 상속 */
 }
 
 /* 메뉴 스타일 */
 .menu {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 100px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 100px;
 }
 
 .menu > li {
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    background-color: #000;
-    font-family: "Sunflower", sans-serif;
-    font-weight: 500;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
 }
 
 .menu a {
-    color: #fff;
+  color: #fff;
 }
 
 .submenu {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
 .menu > li:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 .menu > li:hover .submenu {
-    height: 250px;
+  height: 250px;
 }
-  
-  /* 질문 작성 폼 스타일 */
-  .form-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"], textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .button-link {
-    text-decoration: none;
-  }
-  
-  .button-link button {
-    background-color: #6c757d;
-    color: white;
-    border: none;
-  }
-  
-  .button-link button:hover {
-    background-color: #5a6268;
-  }
+
+/* 폼 스타일 */
+.form-container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"], 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical; /* 세로로 크기 조절 가능 */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

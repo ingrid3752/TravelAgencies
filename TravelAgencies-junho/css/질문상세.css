@@ -1,0 +1,133 @@
+/* 기본 스타일 */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
+    overflow-x: hidden; /* 수평 스크롤 방지 */
+}
+
+/* 헤더 스타일 */
+#header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-left: 30px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+#KHTRAVLE {
+    color: white;
+    font-size: 2rem;
+}
+
+#login, #sign {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+}
+
+#login {
+    margin-left: 1400px;
+}
+
+#sign {
+    padding-right: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* 링크 색상 상속 */
+}
+
+/* 메뉴 스타일 */
+.menu {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+}
+
+.menu > li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #000;
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.menu > li:hover {
+    background-color: #000;
+}
+
+.menu > li:hover .submenu {
+    height: 250px;
+}
+
+/* 질문 상세 페이지 스타일 */
+.question-detail-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* 하얀 배경색으로 변경 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    border: 1px solid #ddd; /* 경계선 추가 */
+}
+
+.question-detail-container h1 {
+    font-size: 2.2rem; /* 제목 폰트 크기 조정 */
+    margin-bottom: 10px;
+    color: #333; /* 제목 색상 변경 */
+}
+
+#question-info {
+    font-size: 0.9rem;
+    color: #777; /* 더 연한 회색으로 변경 */
+    margin-bottom: 20px;
+}
+
+#question-info span {
+    margin-right: 15px; /* 간격 조정 */
+}
+
+#question-content {
+    font-size: 1rem;
+    color: #333;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.button-link button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-link button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* 버튼에 살짝 떠보이게 효과 추가 */
+}
