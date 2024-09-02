@@ -4544,3 +4544,12 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.lsp4e 4 0 2024-09-02 15:19:58.994
 !MESSAGE [Error]	Unexpected resource file:///D:/TravelAgencies/Project%EC%88%98%EC%A0%95%EB%B3%B8/src/main/java/com/kh/project/controller/MemberMoController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 18:58:11.198
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 18:58:11.246
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-09-02 18:58:11.250
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}
