@@ -133,7 +133,7 @@ CREATE TABLE accom_reservation (
     mem_code INT,         
     accom_code INT,
     accom_name VARCHAR(255),
-    start_date DATE, 
+    start_date DATE,
     end_date DATE,
     seats INT NOT NULL,               -- 예약 인원 수
     FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code),
@@ -141,8 +141,6 @@ CREATE TABLE accom_reservation (
 );
 DROP TABLE accom_reservation;
 SELECT * FROM accom_reservation;
-ALTER TABLE accom_reservation
-add accom_name VARCHAR(255);
 
 -- 리뷰
 CREATE TABLE review (

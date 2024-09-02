@@ -3,18 +3,17 @@
 
 	 <resultMap type="Accom" id="accomMap">
         <id column="accom_code" property="accomCode"/>
+        <result column="accom_name" property="accomName"/>
         <result column="accom_phone" property="accomPhone"/>
         <result column="location" property="location"/>
-        <result column="accom_date" property="accomDate"/>
-        <result column="head_count" property="headCount"/>
         <result column="price" property="price"/>
-        <result column="accom_name" property="accomName"/>
     </resultMap>
 
     <resultMap type="AccomReservation" id="accomReservationMap">
         <id column="reservation_id" property="reservationId"/>
         <result column="mem_code" property="memCode"/>
         <result column="accom_code" property="accomCode"/>
+        <result column="accom_name" property="accomName"/>
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
         <result column="seats" property="seats"/>
@@ -29,7 +28,7 @@
     
     <!-- 예약 내역 조회 -->
     <select id="reservationList" parameterType="int" resultType="AccomReservation">
-		SELECT r.*, accom.accom_name, accom.location, accom.accom_phone
+		SELECT r.accom_name,r.start_date,r.end_date,r.seats
 		FROM accom_reservation r
 		JOIN accom ON r.accom_code = accom.accom_code
 		WHERE r.mem_code = #{memCode}
