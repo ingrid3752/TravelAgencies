@@ -78,56 +78,56 @@ a {
 .menu > li:hover .submenu {
     height: 250px;
 }
-
-/* 질문 상세 페이지 스타일 */
-.question-detail-container {
-    max-width: 1200px;
-    margin: 20px auto;
+/* 메인 섹션 스타일 */
+main {
     padding: 20px;
-    background-color: #fff; /* 하얀 배경색으로 변경 */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
-    border: 1px solid #ddd; /* 경계선 추가 */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.question-detail-container h1 {
-    font-size: 2.2rem; /* 제목 폰트 크기 조정 */
+.question-detail-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#question-title {
+    font-size: 28px;
+    font-weight: 500;
     margin-bottom: 10px;
-    color: #333; /* 제목 색상 변경 */
 }
 
 #question-info {
-    font-size: 0.9rem;
-    color: #777; /* 더 연한 회색으로 변경 */
+    font-size: 14px;
+    color: #777;
     margin-bottom: 20px;
 }
 
 #question-info span {
-    margin-right: 15px; /* 간격 조정 */
+    margin-right: 15px;
 }
 
 #question-content {
-    font-size: 1rem;
-    color: #333;
+    margin-bottom: 20px;
 }
 
 .button-link {
+    display: inline-block;
     text-decoration: none;
 }
 
-.button-link button {
-    display: inline-block;
-    padding: 10px 20px;
+button {
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
 }
 
-.button-link button:hover {
+button:hover {
     background-color: #0056b3;
-    transform: translateY(-2px); /* 버튼에 살짝 떠보이게 효과 추가 */
 }

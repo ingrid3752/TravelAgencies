@@ -33,6 +33,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const questions = getQuestions();
     console.log("Questions from Local Storage:", questions); // 로컬 스토리지에서 가져온 질문 확인
 
+    // 날짜를 "YYYY-MM-DD HH:MM" 형식으로 포맷팅하는 함수
+    const formatDateTime = (date) => {
+        const d = new Date(date);
+        const year = d.getFullYear();
+        const month = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        const hours = String(d.getHours()).padStart(2, '0');
+        const minutes = String(d.getMinutes()).padStart(2, '0');
+        return `${year}-${month}-${day} ${hours}:${minutes}`;
+    };
+
     // 질문 데이터를 가져와서 페이지에 표시합니다.
     const displayQuestion = () => {
         const question = questions.find(q => q.id === questionIdNumber);
@@ -41,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (question) {
             questionTitleElement.textContent = question.title;
             questionAuthorElement.textContent = question.author;
-            questionDateElement.textContent = question.date;
+            questionDateElement.textContent = formatDateTime(question.date); // 날짜 포맷팅
             questionViewsElement.textContent = question.views;
             questionContentElement.innerHTML = question.content; // 내용이 HTML로 삽입되도록 수정
         } else {

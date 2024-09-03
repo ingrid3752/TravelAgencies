@@ -1,24 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // 버튼 클릭 시 모든 질문 삭제 함수
-    const deleteAllQuestions = () => {
-        localStorage.removeItem("questions"); // 로컬 스토리지에서 'questions' 항목 제거
-        alert("모든 질문이 삭제되었습니다."); // 삭제 완료 메시지 표시
-        // 필요시 페이지를 새로 고침하거나 다른 처리를 추가
-        // location.reload(); // 페이지 새로 고침 (선택 사항)
-    };
-
-    // 예시: 특정 버튼을 클릭하면 모든 질문 삭제
-    const deleteAllButton = document.getElementById("delete-all-button");
-    if (deleteAllButton) {
-        deleteAllButton.addEventListener("click", deleteAllQuestions);
-    }
-});
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
     const postsContainer = document.getElementById("posts-container");
     const searchInput = document.getElementById("search");
     const filterSelect = document.getElementById("filter");
@@ -26,13 +6,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 기본 페이지 설정
     let currentPage = 1;
-    const itemsPerPage = 10;
+    const itemsPerPage = 5;
+
+    // 날짜를 "YYYY-MM-DD" 형식으로 포맷팅하는 함수
+    const formatDate = (date) => {
+        const d = new Date(date);
+        const year = d.getFullYear();
+        const month = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
 
     // 로컬 스토리지에서 질문 리스트 가져오기
     const getQuestions = () => JSON.parse(localStorage.getItem("questions")) || [];
 
     // 로컬 스토리지에 질문 리스트 저장하기
     const saveQuestions = (questions) => localStorage.setItem("questions", JSON.stringify(questions));
+
+    // 질문의 조회수를 증가시키는 함수
+    const incrementViews = (id) => {
+        let questions = getQuestions();
+        const question = questions.find(q => q.id === id);
+        if (question) {
+            question.views += 1;
+            saveQuestions(questions);
+        }
+    };
 
     // 페이지에 표시할 질문을 가져오는 함수
     const getPaginatedQuestions = (questions) => {
@@ -47,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         paginationContainer.innerHTML = `
             <a href="#" class="prev" ${currentPage === 1 ? 'style="pointer-events: none;"' : ''}>이전</a>
             ${Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNumber =>
-                `<a href="#" class="page-number" data-page="${pageNumber}">${pageNumber}</a>`
+                `<a href="#" class="page-number ${pageNumber === currentPage ? 'active' : ''}" data-page="${pageNumber}">${pageNumber}</a>`
             ).join('')}
             <a href="#" class="next" ${currentPage === totalPages ? 'style="pointer-events: none;"' : ''}>다음</a>
         `;
@@ -65,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function() {
             postElement.className = "post-item";
             postElement.innerHTML = `
                 <span class="post-id">${index + 1 + (currentPage - 1) * itemsPerPage}</span>
-                <span class="post-title"><a href="./질문상세.html?id=${question.id}">${question.title}</a></span>
+                <span class="post-title"><a href="./질문상세.html?id=${question.id}" class="view-link">${question.title}</a></span>
                 <span class="post-author">${question.author}</span>
-                <span class="post-date">${question.date}</span>
+                <span class="post-date">${formatDate(question.date)}</span>
                 <span class="post-views">${question.views}</span>
                 <button class="delete-button" data-id="${question.id}">삭제</button>
             `;
@@ -80,7 +79,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let questions = getQuestions();
         questions = questions.filter(q => q.id !== id);
         saveQuestions(questions);
-        applySearchFilter(); // 삭제 후 검색 및 필터링 적용
+        // 삭제 후 페이지를 초기화
+        currentPage = 1;
+        applySearchFilter(); // 검색 및 필터링 적용
     };
 
     // 검색 및 필터 적용 함수
@@ -124,8 +125,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 applySearchFilter();
             }
         } else if (event.target.classList.contains("next")) {
-            currentPage++;
-            applySearchFilter();
+            const totalItems = getQuestions().length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                applySearchFilter();
+            }
         }
     });
 
@@ -134,6 +139,14 @@ document.addEventListener("DOMContentLoaded", function() {
         if (event.target.classList.contains("delete-button")) {
             const id = parseInt(event.target.getAttribute("data-id"));
             deleteQuestion(id);
+        }
+    });
+
+    // 게시글 링크 클릭 시 조회수 증가
+    postsContainer.addEventListener("click", function(event) {
+        if (event.target.classList.contains("view-link")) {
+            const id = parseInt(new URL(event.target.href).searchParams.get("id"));
+            incrementViews(id);
         }
     });
 
