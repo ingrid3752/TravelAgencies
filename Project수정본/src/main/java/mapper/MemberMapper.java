@@ -10,7 +10,7 @@ public interface MemberMapper {
     Member check(String id);
     Member login(Member vo);
     int signUp(Member vo);
-    int update(Member vo);
+    int updateId(Member vo);
     void delete(int no);
     
 }

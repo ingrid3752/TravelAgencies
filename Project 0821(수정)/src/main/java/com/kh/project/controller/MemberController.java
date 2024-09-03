@@ -1,6 +1,8 @@
 package com.kh.project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -48,6 +50,9 @@ public class MemberController {
 	// 회원정보수정 (아이디)
     @PostMapping("/update")
     public String update(Member vo, HttpServletRequest request) {
+    	// 컨트롤러 단에서 멤버 정보 필요할 때 즉 로그인 정보!!! 로그인한 사람 정보
+    			Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    			Member member = (Member) authentication.getPrincipal();
         try {
             HttpSession session = request.getSession();
             Member currentMember = (Member) session.getAttribute("vo");

@@ -119,7 +119,11 @@
 		<artifactId>spring-security-taglibs</artifactId>
 		</dependency>
 		
-	</dependencies>
+		
+		
+		</dependencies>
+	
+	
 
 	<build>
 		<plugins>

@@ -28,10 +28,14 @@
                 <input type="text" id="id" name="id" required>
             </div>
             <div class="form-group">
-                <label for="password">비밀번호 : </label>
-                <input type="text" id="password" name="password" required>
+                <label for="password">기존비밀번호 : </label>
+                <input type="text" id="password" name="pwd" required>
             </div>
-            <button type="button" onclick="location.href='memberModify'">회원정보수정</button>
+           <div class="form-group">
+                <label for="password">새비밀번호 : </label>
+                <input type="text" id="password" name="password" required>
+            </div>    
+            <button type="submit">회원정보 변경</button>
         </form>
     </div>
 </body>

@@ -45,7 +45,9 @@ public class ReviewController {
 	@GetMapping("/member")
     @ResponseBody
     public List<Review> getReviewsByMember(int memCode) {
-		
+		// 컨트롤러 단에서 멤버 정보 필요할 때 즉 로그인 정보!!! 로그인한 사람 정보
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
         return reviewService.getReviewByMember(memCode);
     }
 	
@@ -53,7 +55,9 @@ public class ReviewController {
 	@GetMapping("/averageRating")
     @ResponseBody
     public double getAverageRatingByEntity(String entityType, int entityId) {
-		
+		// 컨트롤러 단에서 멤버 정보 필요할 때 즉 로그인 정보!!! 로그인한 사람 정보
+				Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+				Member member = (Member) authentication.getPrincipal();
         return reviewService.getAverageRatingByEntity(entityType, entityId);
     }
 	

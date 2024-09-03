@@ -18,6 +18,7 @@ public class Member implements UserDetails {
 	
 	private int memCode;
 	private String id;
+	private String pwd; // 기존패스워드
 	private String password;
 	private String name;
 	private String phone;

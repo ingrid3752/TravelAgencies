@@ -24,6 +24,12 @@ public class PageController {
     public String update() {
     	return "update";
     }
+    // 회원정보 수정후 메인페이지로 이동
+//    @GetMapping("/update/success")
+//    	public String updateSuccess() {
+//    		return "index";
+//    	}
+    
     
     // 마이페이지 이동
     @GetMapping("/mypage")

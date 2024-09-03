@@ -43,7 +43,7 @@ public class MemberService implements UserDetailsService {
     // 회원정보 수정(아이디)
     public boolean update(Member vo) {
         try {
-            int result = memberMapper.update(vo);
+            int result = memberMapper.updateId(vo);
             return result > 0;
         } catch (Exception e) {
             e.printStackTrace();
@@ -55,7 +55,7 @@ public class MemberService implements UserDetailsService {
     public void delete(int no) {
     	memberMapper.delete(no);
     }
-    
+   
     
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
