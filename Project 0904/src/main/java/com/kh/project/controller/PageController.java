@@ -1,8 +1,14 @@
 package com.kh.project.controller;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.kh.project.model.vo.Member;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class PageController {
@@ -24,17 +30,25 @@ public class PageController {
     public String update() {
     	return "update";
     }
-    // 회원정보 수정후 메인페이지로 이동
-//    @GetMapping("/update/success")
-//    	public String updateSuccess() {
-//    		return "index";
-//    	}
-    
+
     
     // 마이페이지 이동
     @GetMapping("/mypage")
-    public String mypage() {
-    	return "mypage";
+    public String mypage(HttpServletRequest request) {
+    	
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
+    	String role = member.getRole();
+    	
+    	System.out.println(role);
+    	if(role.equals("ROLE_COMPANY")) {
+    		
+    		return "compamyMypage";
+    	}else if(role.equals("ROLE_MEMBER")) {
+    		return "mypage";
+    	}
+    	
+    	return "review";
     }
     
    

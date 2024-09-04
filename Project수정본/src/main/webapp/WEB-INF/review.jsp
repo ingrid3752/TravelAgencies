@@ -2,6 +2,8 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.kh.project.model.vo.Review" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -57,5 +59,6 @@
             <p>평균 평점 : ${averageRating}</p>
         </div>
     </div>
+    
 </body>
 </html>

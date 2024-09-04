@@ -26,6 +26,8 @@ public class DomainFailureHandler implements AuthenticationFailureHandler {
 	// 실패로직 핸들링
         exception.printStackTrace();
         writePrintErrorResponse(response, exception);
+        
+        response.sendRedirect("/login"); // 로그인시 비밀번호 불일치시 다시 로그인페이지로 가게해줌
     }
     private void writePrintErrorResponse(HttpServletResponse response, AuthenticationException exception) {
         try {
@@ -35,6 +37,7 @@ public class DomainFailureHandler implements AuthenticationFailureHandler {
             responseMap.put("status", 401);
             responseMap.put("message", message);
             response.getOutputStream().println(objectMapper.writeValueAsString(responseMap));
+               
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -62,5 +65,7 @@ public class DomainFailureHandler implements AuthenticationFailureHandler {
         	System.out.println("확인된 에러가 없습니다.");
             return "확인된 에러가 없습니다.";
         }
+        
+        
     }
 }

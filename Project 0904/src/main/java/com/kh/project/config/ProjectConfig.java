@@ -38,7 +38,9 @@ public class ProjectConfig {
 				.authorizeHttpRequests(authorize ->
 					authorize
 						//.requestMatchers("/mypage", "/company").authenticated()
-						.anyRequest().permitAll() // 여기는 마지막까지 건들지 않기! permitAll! 이거 그대로 쓰시고 
+						.anyRequest().permitAll() // 여기는 마지막까지 건들지 않기! permitAll! 이거 그대로 쓰시고
+//						.requestMatchers("/mypage").hasRole("ADMIN")
+					
 				)
 				.build();
 	}

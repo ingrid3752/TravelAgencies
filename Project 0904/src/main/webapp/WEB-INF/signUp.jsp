@@ -28,6 +28,13 @@
                 <label for="phone">전화번호 : </label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
+            <div class="form-group">
+    			<label for="role">사용자 유형 : </label>
+    			<select id="role" name="role" required>
+        			<option value="member">일반회원</option>
+        			<option value="company">회사회원</option>
+    			</select>
+			</div>
             <button type="submit">회원가입</button>
         </form>
     </div>

@@ -20,9 +20,6 @@
     <div id="Binggrae_font">
       <a href="/" id="KHTRAVEL">KHTRAVEL</a>
     </div>
-    <div>
-      <a href="/" id="login">로그아웃</a>
-</div>
   </header>  
   <!-- //style="overflow: hidden" -->
   <body  style="overflow-x: hidden; overflow-y:auto;" id="body">

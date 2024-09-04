@@ -21,10 +21,26 @@ import com.kh.project.service.ReviewService;
 
 @Controller
 @RequestMapping("/review")
+
 public class ReviewController {
 	
 	@Autowired
 	private ReviewService reviewService;
+	
+	// 리뷰 페이지로 이동시 리스트도 출력
+	@GetMapping("/review")
+	public String ReviewPage(String entityType, Integer entityId, Model model) {
+		if (entityId == null) {
+				entityId = 1;
+		}
+		if (entityType == null) {
+				entityType = "1";
+		}
+		model.addAttribute("reviews", reviewService.getReviewByEntity(entityType, entityId));
+		model.addAttribute("averageRating", reviewService.getAverageRatingByEntity(entityType, entityId));
+		return "review";
+	}
+		
 	
 	// 리뷰 작성
 	@PostMapping("/add")
@@ -63,7 +79,6 @@ public class ReviewController {
 	// 리뷰 목록으로 다시 보내기
 	@PostMapping("/submit")
 	public String submitReview(Review review) {
-		System.out.println(review);
 	    reviewService.saveReview(review);
 	    return "redirect:/review/entity/" + review.getEntityType() + "/" + review.getEntityId();
 	}

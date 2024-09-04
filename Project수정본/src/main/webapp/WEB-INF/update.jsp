@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>회원정보수정</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet"/>
-    <link href="${pageContext.request.contextPath}/css/update.css" rel="stylesheet"/>
+<link href="${pageContext.request.contextPath}/css/update.css" rel="stylesheet"/>
     <!-- 폰트어썸폴더 -->
     <script
       src="https://kit.fontawesome.com/071562b1d0.js"

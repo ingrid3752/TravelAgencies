@@ -38,8 +38,15 @@ public class MemberController {
 	@PostMapping("/signUp")
 	public String signUp(Member vo, HttpServletRequest request) {
 	    try {
-	    	// 회원(ROLE_MEMBER), 관리자(ROLE_ADMIN), 업체(ROLE_COMPANY) 
-	    	vo.setRole("ROLE_MEMBER");
+	    	System.out.println("##############33");
+	    	// 회원(ROLE_MEMBER), 관리자(ROLE_ADMIN), 업체(ROLE_COMPANY)
+	    	String chk = vo.getRole();
+	    	System.out.println(chk);
+	    	if(chk.equals("member")) {
+	    		vo.setRole("ROLE_MEMBER");
+	    	}else {
+	    		vo.setRole("ROLE_COMPANY");
+	    	}
 	        boolean isRegistered = memberService.signUp(vo);
 	        if (isRegistered) {
 	            return "redirect:/login"; // 회원가입 성공 후 로그인 페이지로 리다이렉트
@@ -64,10 +71,18 @@ public class MemberController {
 	                Member mb = (Member) authentication.getPrincipal();
 	                String username = mb.getUsername();
 	                
+	                
+	                
 	                // 현재 사용자의 ID로 회원 정보를 가져옴
 	                UserDetails currentMember = memberService.loadUserByUsername(username);
 	                
 	                if (currentMember != null) {
+	                    
+	                	boolean chkPwd = bcpe.matches(vo.getPwd(), currentMember.getPassword());
+	                	
+	                	if(!chkPwd) {
+	                		return "update";
+	                	}
 	                	
 	                	vo.setPassword(bcpe.encode(vo.getPassword()));
 	                    vo.setId(currentMember.getUsername()); // 현재 사용자의 ID를 유지
