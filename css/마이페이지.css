@@ -126,7 +126,7 @@ body {
   height: 100vh;
   flex-direction: column;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.041);
+  background-color: rgba(245, 245, 245, 0.911);
   font-family: "Gowun Batang", serif;
   font-weight: 600;
   font-style: normal;
@@ -304,8 +304,9 @@ body {
   color: #000000;
   margin-left: 20px;
 }
-#infobu {
+.infobu {
   width: 500px;
+  height: 40px;
   margin: 10px;
   background-color: rgb(94, 145, 255);
   border: none;
@@ -330,17 +331,19 @@ body {
   box-shadow: 0 0 0 3px #ffffff57;
 }
 #red {
-  color: rgb(99, 255, 99);
+  color: rgb(231, 223, 114);
 }
 #green {
-  color: rgb(94, 145, 255);
+  color: rgb(107, 152, 250);
 }
 details {
   margin-bottom: 10px;
 }
 
-details > summary {
-  background-color: rgba(255, 255, 255, 0.116);
+details summary {
+  background-color: #ffffffd2;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  color: black;
   padding: 1rem;
   outline: 0;
   border-radius: 5px;
