@@ -83,7 +83,7 @@ a {
     margin: 20px auto;
     max-width: 50%;
     padding: 20px;
-    background: whitesmoke;
+    background: #555;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -121,7 +121,7 @@ a {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.8); /* 검은색 반투명 배경 */
+    background: linear-gradient(to bottom right, #000000, #333333);
     color: white; /* 텍스트 색상도 흰색으로 설정 */
 }
 
