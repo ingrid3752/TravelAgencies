@@ -18,8 +18,8 @@ public interface ReviewMapper {
 	 * */
 	
 	void insertReview(Review review);
-	List<Review> getReviewByEntity(ReviewEntity entity);
+	List<Review> getReviewByEntity(String entityType, int entityId);
 	List<Review> getReviewByMember(int memCode);
-	double getAverageRatingByEntity(ReviewEntity entity);
+	Double getAverageRatingByEntity(String entityType, int entityId);
 	
 }

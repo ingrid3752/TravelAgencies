@@ -32,24 +32,16 @@ public class ReviewController {
     @GetMapping("/entity/{entityType}/{entityId}")
     public String showReviewsByEntity(@PathVariable String entityType, @PathVariable int entityId, Model model) {
         List<Review> reviews = reviewService.getReviewByEntity(entityType, entityId);
-        double averageRating = reviewService.getAverageRatingByEntity(entityType, entityId);
+        Double averageRating = reviewService.getAverageRatingByEntity(entityType, entityId);
         model.addAttribute("reviews", reviews);
         model.addAttribute("averageRating", averageRating);
         return "review";  
     }
 	
-    // 특정 회원이 작성한 리뷰 목록 조회 (JSP로 이동 필요시 활용)
-    @GetMapping("/member/{memCode}")
-    public String getReviewsByMember(@PathVariable int memCode, Model model) {
-        List<Review> reviews = reviewService.getReviewByMember(memCode);
-        model.addAttribute("reviews", reviews);
-        return "review"; 
-    }
     
 	// 리뷰 목록으로 다시 보내기
 	@PostMapping("/submit")
 	public String submitReview(Review review) {
-		System.out.println(review);
 	    reviewService.saveReview(review);
 	    return "redirect:/review/entity/" + review.getEntityType() + "/" + review.getEntityId();
 	}
@@ -64,5 +56,5 @@ public class ReviewController {
 	    model.addAttribute("averageRating", averageRating);
 	    return "review";
 	}
-
+	
 }

@@ -21,8 +21,7 @@ public class AccomController {
     @GetMapping("/accomReservation")
     public String getAccomReservationList(Model model) {
         // 예약 리스트 가져오기
-        List<AccomReservation> accomList = service.reservationList();
-        model.addAttribute("accomList", accomList); 
+        model.addAttribute("accomList", service.reservationList()); 
         return "accomReservation"; 
     }
 

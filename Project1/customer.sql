@@ -155,6 +155,8 @@ CREATE TABLE review (
     INDEX entity_index (entity_type, entity_id),
     FOREIGN KEY (mem_code) REFERENCES mem_info (mem_code)
 );
+SELECT * FROM review WHERE entity_type = '1' AND entity_id = 1;
+SELECT AVG(rating) FROM review WHERE entity_type = '1' AND entity_id = 1;
 
 DROP TABLE review;
 SELECT * FROM review;

@@ -183,7 +183,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 won￦</p>
+            <p>300 ￦</p>
             <a href="/fencing" class="ticket-button">Tickets</a>
           </div>
         </div>

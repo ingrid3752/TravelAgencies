@@ -26,6 +26,12 @@
         <result column="date_added" property="dateAdded"/>
     </resultMap>
     
+    <!-- 숙소 예약 추가 -->
+    <insert id="insertReservation" parameterType="AccomReservation">
+        INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
+		VALUES (#{memCode},#{accomCode},#{accomName},#{startDate},#{endDate},#{seats})
+    </insert>
+    
     <!-- 예약 내역 조회 -->
     <select id="reservationList" parameterType="int" resultType="AccomReservation">
 		SELECT r.accom_name,r.start_date,r.end_date,r.seats
@@ -33,12 +39,6 @@
 		JOIN accom ON r.accom_code = accom.accom_code
 		WHERE r.mem_code = #{memCode}
     </select>
-    
-    <!-- 숙소 예약 추가 -->
-    <insert id="insertReservation" parameterType="AccomReservation">
-        INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
-		VALUES (#{memCode},#{accomCode},#{accomName},#{startDate},#{endDate},#{seats})
-    </insert>
 
     <!-- 숙소 시작 날짜 변경 -->
     <update id="updateStartDate" parameterType="AccomReservation">
