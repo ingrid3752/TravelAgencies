@@ -1,13 +1,11 @@
 package com.kh.project.service;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kh.project.model.vo.Accom;
-import com.kh.project.model.vo.AccomFavorites;
 import com.kh.project.model.vo.AccomReservation;
 
 import mapper.AccomMapper;
@@ -38,9 +36,9 @@ public class AccomService {
     	mapper.updateEndDate(vo);
     }
     
-    // 숙소 예약 취소
+    // 숙소 예약 삭제
     public void deleteReservation(int reservationId) {
-    	mapper.deleteReservation(reservationId);
+        mapper.deleteReservation(reservationId);
     }
     
     // 모든 숙소 리스트 보여주기

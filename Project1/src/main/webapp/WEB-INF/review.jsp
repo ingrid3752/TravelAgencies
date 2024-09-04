@@ -2,6 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.kh.project.model.vo.Review" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -44,7 +45,7 @@
 					<h3>리뷰 제목 : ${review.title}</h3>
 					<p>리뷰 내용 : ${review.reviewText}</p>
 					<p>평점 : ${review.rating}</p>
-					<p>작성일 : ${review.reviewDate}</p>
+					<p>작성일 : <fmt:formatDate value="${review.reviewDate}" pattern="yyyy년 M월 d일 EEEE HH시 mm분 ss초" /></p>
 				</div>
 			</c:forEach>
         </div>
