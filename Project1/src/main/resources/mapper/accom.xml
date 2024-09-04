@@ -37,7 +37,8 @@
 		SELECT r.accom_name,r.start_date,r.end_date,r.seats
 		FROM accom_reservation r
 		JOIN accom ON r.accom_code = accom.accom_code
-		WHERE r.mem_code = #{memCode}
+        JOIN mem_info ON mem_info.mem_code = r.accom_code
+		WHERE r.mem_code = #{memCode};
     </select>
 
     <!-- 숙소 시작 날짜 변경 -->

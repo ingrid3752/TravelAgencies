@@ -141,6 +141,12 @@ CREATE TABLE accom_reservation (
 );
 DROP TABLE accom_reservation;
 SELECT * FROM accom_reservation;
+SELECT r.accom_name,r.start_date,r.end_date,r.seats
+		FROM accom_reservation r
+		JOIN accom ON r.accom_code = accom.accom_code
+        JOIN mem_info ON mem_info.mem_code = r.accom_code
+		WHERE r.mem_code = '1';
+SELECT * FROM mem_info WHERE mem_code = '1';
 
 -- 리뷰
 CREATE TABLE review (
@@ -162,3 +168,4 @@ DROP TABLE review;
 SELECT * FROM review;
 SELECT * FROM mem_info;
 
+DELETE FROM review WHERE review_id = '11';

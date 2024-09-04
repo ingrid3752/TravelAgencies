@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>호텔</title>
-<link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
-<link href="${pageContext.request.contextPath}/css/hotelinfo.css" rel="stylesheet" />
+<link href="/css/reset.css" rel="stylesheet" />
+<link href="/css/hotelinfo.css" rel="stylesheet" />
 </head>
  <header id="header">
 		<div id="Binggrae_font">
@@ -17,7 +17,6 @@
 			<li><a href="#">☰</a>
 				<ul class="submenu">
 					<li><a href="/reservation">예약</a></li>
-					<li><a href="/stadium">오시는 길</a></li>
 					<li><a href="/review">리뷰</a></li>
 					<li><a href="/goods">굿즈</a></li>
 				</ul></li>

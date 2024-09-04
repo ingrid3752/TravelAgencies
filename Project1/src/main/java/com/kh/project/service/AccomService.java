@@ -1,13 +1,11 @@
 package com.kh.project.service;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kh.project.model.vo.Accom;
-import com.kh.project.model.vo.AccomFavorites;
 import com.kh.project.model.vo.AccomReservation;
 
 import mapper.AccomMapper;
@@ -18,7 +16,7 @@ public class AccomService {
 	@Autowired
 	private AccomMapper mapper;
 	
-	// 숙소 예약 현황내역 보여주기
+	// 숙소 예약 현황내역 보여주기 리뷰 참고하여 작성
     public List<AccomReservation> reservationList(){
     	return mapper.reservationList();
     }

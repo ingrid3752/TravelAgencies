@@ -15,11 +15,11 @@ public class AccomController {
     @Autowired
     private AccomService service;
 
-    // GetMapping으로 accomReservation페이지에 리스트 출력요청받아서 보여주기
+    // 숙소 예약 페이지로 이동시 리스트도 출력
     @GetMapping("/accomReservation")
     public String getAccomReservationList(Model model) {
-        // 예약 리스트 가져오기
         model.addAttribute("accomList", service.reservationList()); 
+        System.out.println(model);
         return "accomReservation"; 
     }
 

@@ -23,7 +23,6 @@ public class ReviewService {
 	// 특정 엔티티의 리뷰 목록 조회
 	public List<Review> getReviewByEntity(String entityType, int entityId) {
 		List<Review> reviews = reviewMapper.getReviewByEntity(entityType, entityId);
-		System.out.println("Review List : " + reviews); 
 		return reviews;
 	}
 	
@@ -35,7 +34,6 @@ public class ReviewService {
 	// 특정 엔티티의 평균 평점 조회
 	public Double getAverageRatingByEntity(String entityType, int entityId) {
 		Double averageRating = reviewMapper.getAverageRatingByEntity(entityType, entityId);
-		System.out.println("Average Rating : " + averageRating);
 		return averageRating;
 	}
 	

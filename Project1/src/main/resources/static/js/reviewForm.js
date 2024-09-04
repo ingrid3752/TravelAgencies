@@ -1,7 +1,9 @@
 function updateEntityId() {
-	var entityIdField = document.getElementById("entityId");
-	var entityType = document.getElementById("entityType").value;
-	
-	entityIdField.value = entityType;
+    var entityType = document.getElementById("entityType").value;
+    var entityIdField = document.getElementById("entityId");
+    if (entityType === "1") {
+        entityIdField.value = "1";  
+    } else if (entityType === "2") {
+        entityIdField.value = "2";  
+    }
 }
-

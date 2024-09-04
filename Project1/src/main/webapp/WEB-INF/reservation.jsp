@@ -166,7 +166,7 @@
           </div>
           <div class="ticket-action">
             <p>300 ￦</p>
-            <a href="tennis" class="ticket-button">Tickets</a>
+            <a href="/tennis" class="ticket-button">Tickets</a>
           </div>
         </div>
       </div>
@@ -188,25 +188,23 @@
           </div>
         </div>
       </div>
-      <div id="black">
-        <p>안녕</p>
-        <div id="top">
-          <div class="bottom">
-            <a href="https://www.instagram.com/kh_iei/">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-          <div class="bottom">
-            <a href="https://www.facebook.com/khacademy1998/">
-              <i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <div class="bottom">
-            <a href="https://khedu.co.kr/main/main.kh">KH</a>
-          </div>
-          <div class="bottom">
-            <a href="#"><i class="fa-brands fa-github"> </i></a>
-          </div>
+       <div style="display: flex">
+        <div id="main6">
+          <p class="qqq">https://github.com/jochanghyeon</p>
+          <p class="qqq">010-1234-5678</p>
+          <p class="qqq">(Fax)02-1234-5678</p>
+          <p class="qqq">서울특별시 도봉구 도봉로152가길 176 (도봉동)</p>
+          <p class="qqq">176 Dobong-ro 152ga-gil, Dobong-gu, Seoul</p>
+        </div>
+        <div id="main5">
+          <a href="https://www.instagram.com/kh_iei/" class="bottom">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/khacademy1998/" class="bottom">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://khedu.co.kr/main/main.kh" class="bottom">KH</a>
+          <a href="#" class="bottom"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
     </div>
