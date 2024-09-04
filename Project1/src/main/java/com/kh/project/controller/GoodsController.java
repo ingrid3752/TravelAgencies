@@ -20,14 +20,12 @@ public class GoodsController {
 	
 	// 개인별 추천 기능
     @GetMapping("/recommendations")
-    @ResponseBody
     public List<Goods> getPersonalizedRecommendations(int memId) {
         return goodsService.getPersonalizedRecommendations(memId);
     }
 
     // 유사한 상품 추천 기능
     @GetMapping("/similar")
-    @ResponseBody
     public List<Goods> getSimilarGoods(int goodsCode) {
         return goodsService.getSimilarGoods(goodsCode);
     }

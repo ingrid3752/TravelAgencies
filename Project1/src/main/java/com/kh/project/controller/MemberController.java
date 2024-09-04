@@ -1,11 +1,10 @@
 package com.kh.project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.kh.project.model.vo.Member;
 import com.kh.project.service.MemberService;
 
@@ -19,7 +18,6 @@ public class MemberController {
 	private MemberService memberService;
 	
 	// 중복체크
-	@ResponseBody
 	@PostMapping("/check")
 	public boolean check(String id) {
 		System.out.println(id);
