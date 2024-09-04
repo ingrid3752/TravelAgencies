@@ -1,0 +1,21 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.RestMapper">
+	
+	<!-- 식사 기록 -->
+	<insert id="insertMealHistory" parameterType="MealHistory">
+		INSERT INTO meal_history (mem_code, rest_code, menu_name)
+		VALUES (#{memCode}, #{restCode}, #{menuName})
+	</insert>
+	
+	<!-- 맞춤형 메뉴 추천 -->
+	<select id="getPersonalizedMenuRecommendations" parameterType="int" resultType="RecommendedMenu">
+        SELECT menu_name AS menuName, COUNT(*) AS orderCount
+        FROM meal_history
+        WHERE mem_code = #{memCode}
+        GROUP BY menu_name
+        ORDER BY orderCount DESC
+        LIMIT 5
+    </select>
+	
+    
+</mapper>

@@ -1,12 +1,16 @@
 package com.kh.project.controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class PageController {
+	
+	
 
+	
 	// 로그인 페이지 이동
     @GetMapping("/login")
     public String login() {
@@ -24,11 +28,6 @@ public class PageController {
     public String update() {
     	return "update";
     }
-    // 회원정보 수정후 메인페이지로 이동
-//    @GetMapping("/update/success")
-//    	public String updateSuccess() {
-//    		return "index";
-//    	}
     
     
     // 마이페이지 이동
@@ -62,11 +61,7 @@ public class PageController {
         return "goods"; 
     }
     
-    // 리뷰 페이지로 이동
-    @GetMapping("/review")
-    public String ReviewPage() {
-    	return "review";
-    }
+    
     
     // 리뷰 작성 페이지로 이동
     @GetMapping("/reviewForm")
@@ -74,7 +69,6 @@ public class PageController {
     	model.addAttribute("memCode", 1);
     	return "reviewForm";
     }
-    
     // 예약 페이지로 이동
     @GetMapping("/reservation")
     public String ReservationPage() {

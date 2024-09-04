@@ -1,0 +1,222 @@
+#header {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 30px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#KHTRAVEL {
+  color: white;
+  font-size: 2rem;
+}
+
+body {
+  background-image: url(img/호텔메인배경.jpg);
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#login {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+#sign {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 150px;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu {
+  position: fixed;
+  width: 100px;
+  top: 15px;
+  right: 20px;
+  max-width: 100px;
+  background-color: #fcf7f7;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+
+  font-weight: 500;
+  font-style: normal;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu a {
+  color: #f8f0f0;
+}
+
+.submenu > li {
+  line-height: 50px;
+
+  background-color: #0000003a;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #000000;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+  background-color: #000000;
+}
+
+#hotel {
+  margin: 0 auto;
+  margin-top: 150px;
+
+  background-color: #00000085;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+.hotel-info-box {
+  height: 60px;
+  margin-bottom: 10px;
+
+  background-color: rgba(73, 73, 73, 0.514);
+  border: 2px solid #00000052;
+  border-radius: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[id="checkbox-a"] {
+  position: relative;
+  top: 12px;
+  right: 140px;
+}
+input[id="checkbox-b"] {
+  position: relative;
+  top: 12px;
+  right: 140px;
+}
+input[id="checkbox-c"] {
+  position: relative;
+  top: 12px;
+  right: 140px;
+}
+label[for="label-a"] {
+  position: relative;
+  top: -8px;
+}
+.submit {
+  background-color: rgba(0, 0, 0, 0.24);
+  border-color: rgba(0, 0, 0, 0.562);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.submit:hover {
+  background-color: rgba(0, 0, 0, 0.726);
+}
+li {
+  list-style: none;
+}
+a {
+  color: rgba(255, 255, 255, 0.658);
+  text-decoration: none;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.hotel {
+  margin: auto;
+  margin-top: 200px;
+  height: 390px;
+  width: 330px;
+  background-color: #615e5e85;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.hotel-info-box {
+  margin-bottom: 10px;
+  border: 2px solid #fbfffe52;
+  border-radius: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hotel-info-box:hover {
+  background-color: #13131385;
+}
+
+.price {
+  position: absolute;
+  font-size: 11px;
+  line-height: 40px;
+}
+
+.container {
+  background-color: rgba(red, green, blue, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.date {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+}
+#date {
+  position: absolute;
+  max-width: 220px;
+  margin-left: 10px;
+  margin-top: -10px;
+}

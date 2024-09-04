@@ -1,0 +1,84 @@
+body {
+  background: url(img/식당배경.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  font-weight: 600;
+}
+.button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+  width: 100px;
+  height: 70px;
+  border-radius: 9px;
+  background-color: rgba(137, 216, 253, 0.6);
+  border: solid 0.1px #50c5ff8c;
+}
+.button:hover {
+  background-color: rgb(205, 239, 255);
+}
+#logo {
+  display: flex;
+  justify-content: center;
+  background: url(img/굿즈로고-removebg-preview.png) no-repeat center;
+  padding: 5px;
+  background-color: rgba(137, 216, 253, 0.4);
+  border: 5px solid rgba(117, 188, 255, 0.5);
+}
+
+h2 > div {
+  font-size: 4rem;
+  color: #8dd7fc8c;
+}
+#img {
+  position: relative;
+}
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-align: justify;
+  padding-left: 30px;
+  font-size: 1.7rem;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(137, 216, 253, 0.4);
+  font-size: 2rem;
+}
+.menu:hover {
+  background-color: rgb(205, 239, 255);
+}
+#review {
+  padding-top: 40px;
+  background-color: rgb(205, 239, 255);
+  border: 5px solid rgba(117, 188, 255, 0.5);
+  border-top: none;
+  border-bottom: none;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#review-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid rgba(117, 188, 255, 0.5);
+}
+#review > p {
+  padding-left: 30px;
+  line-height: 25px;
+  text-align: left;
+}
+ul {
+  border: 5px solid rgba(117, 188, 255, 0.5);
+  padding: 10px;
+}
+li {
+  line-height: 75px;
+}

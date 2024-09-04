@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.kh.project.model.vo.Member;
 import com.kh.project.service.MemberService;
 
+
 import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
@@ -24,6 +25,7 @@ public class MemberController {
 	@Autowired
 	private PasswordEncoder bcpe;
    
+	
 	
 	// 중복체크
 	@ResponseBody

@@ -20,25 +20,12 @@
     <div id="Binggrae_font">
       <a href="/" id="KHTRAVEL">KHTRAVEL</a>
     </div>
-    <div>
-      <a href="/login" id="login">로그아웃</a>
-      <a href="/signUp" id="sign">회원가입</a>
-    <ul class="menu">
-        <li>
-          <a href="#">☰</a>
-          <ul class="submenu">
-            <li><a href="./로그인.html">로그인</a></li>
-            <li><a href="#">마이페이지</a></li>
-            <li><a href="#">관광지</a></li>
-            <li><a href="#">굿즈</a></li>
-        </ul>
-    </li>
-</div>
+ 
   </header>  
   <!-- //style="overflow: hidden" -->
   <body  style="overflow-x: hidden; overflow-y:auto;" id="body">
     <div id="mainpage">
-    <div id="image_container" style="margin-top: 20px;"><img src="../IMG/제목 없는 디자인.png" alt=""></div>
+    <div id="image_container" style="margin-top: 20px;"><img src="../IMG/Untitled design.png" alt=""></div>
   </div><br>
     <div id="imgpage2">
     <label for="input-file" class="input-file"><i class="fa-solid fa-camera-retro"></i>&nbsp;이미지 추가</label>

@@ -53,7 +53,6 @@
 			<li><a href="#">☰</a>
 				<ul class="submenu">
 					<li><a href="<%=request.getContextPath()%>/reservation">예약</a></li>
-					<li><a href="<%=request.getContextPath()%>/stadium">경기장</a></li>
 					<li><a href="<%=request.getContextPath()%>/review">리뷰</a></li>
 					<li><a href="<%=request.getContextPath()%>/goods">굿즈</a></li>
 				</ul></li>
@@ -104,100 +103,7 @@
 	</section>
 </sec:authorize>	
 	
-	<!-- 
-	<script>
-	$("#ComIndex").click(() => {
-	    $.ajax({
-	        url: '${pageContext.request.contextPath}/ComIndex',
-	        type: 'get',
-	        success: function(data) {
-	            $('body').html(data);
-	        },
-	        error: function() {
-	            alert('업체만 접근 가능합니다!');
-	            location.href = "${pageContext.request.contextPath}/login";
-	        }
-	    });
-	});
 
-	$("#logout").click(() => {
-	    $.ajax({
-	        url: '${pageContext.request.contextPath}/logout',
-	        type: 'post',
-	        success: function() {
-	            location.href = "${pageContext.request.contextPath}/login";
-	        },
-	        error: function() {
-	            alert("로그아웃 중 오류가 발생했습니다.");
-	        }
-	    });
-	});
-
-	$("#member").click((e) => {
-	    e.preventDefault();
-	    $.ajax({
-	        url: '${pageContext.request.contextPath}/member',
-	        type: 'get',
-	        success: function(data) {
-	            console.log(data);
-	            $('body').html(data);
-	        },
-	        error: function() {
-	            alert("로그인 후 접근 가능합니다!");
-	            location.href = "${pageContext.request.contextPath}/login";
-	        }
-	    });
-	});
-
-	</script>
-	 -->
-	
-   <!--  <script>
-    // 로컬 스토리지에 담긴 토큰 가져오기
-    const token = localStorage.getItem("token");
-
-    $("#ComIndex").click(() => {
-        $.ajax({
-            url: '${pageContext.request.contextPath}/ComIndex',
-            type: 'get',
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader('Authorization', 'Bearer ' + token);
-            },
-            success: function(data) {
-                $('body').html(data);
-            },
-            error: function() {
-                alert('업체만 접근 가능합니다!');
-                location.href = "${pageContext.request.contextPath}/login";
-            }
-        });
-    });
-
-    $("#logout").click(() => {
-        localStorage.removeItem("token");
-    });
-
-    $("#member").click((e) => {
-        e.preventDefault();
-        $.ajax({
-            url: '${pageContext.request.contextPath}/member',
-            type: 'get',
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader('Authorization', 'Bearer ' + token);
-            },
-            success: function(data) {
-                console.log(data);
-                $('body').html(data);
-            },
-            error: function() {
-                alert("로그인 후 접근 가능합니다!");
-                location.href = "${pageContext.request.contextPath}/login";
-            }
-        });
-    });
-</script> -->
-   
-	<!-- SCRIPTS -->
 	<script src="${pageContext.request.contextPath}/js/index.js"></script>
 </body>
 </html>
