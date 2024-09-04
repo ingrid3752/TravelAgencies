@@ -1,18 +1,12 @@
 package com.kh.project.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import com.kh.project.service.ReviewService;
 
 @Controller
 public class PageController {
-	
-	@Autowired
-	private ReviewService reviewService;
+
 	
 	// 로그인 페이지 이동
     @GetMapping("/login")
@@ -61,21 +55,6 @@ public class PageController {
     public String GoodsPage() {
         return "goods"; 
     }
-    
-    // 리뷰 페이지로 이동시 리스트도 출력
-    @GetMapping("/review")
-    public String ReviewPage(String entityType, Integer entityId, Model model) {
-        if (entityId == null) {
-            entityId = 1;
-        }
-        if (entityType == null) {
-            entityType = "1"; 
-        }
-        model.addAttribute("reviews", reviewService.getReviewByEntity(entityType, entityId));
-        model.addAttribute("averageRating", reviewService.getAverageRatingByEntity(entityType, entityId));
-        return "review";
-    }
-
     
     // 리뷰 작성 페이지로 이동
     @GetMapping("/reviewForm")

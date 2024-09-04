@@ -10,32 +10,43 @@
 <link href="${pageContext.request.contextPath}/css/accomReservation.css" rel="stylesheet" />
 </head>
 <body>
-<div>
-	<a href="/hotelinfo">호텔 예약</a>
-	<a href="/accomReservation">호텔 예약 현황</a>
-	<a href="/accomInsertReservation">호텔 예약 추가</a>
+<header id="header">
+      <div id="Binggrae_font">
+        <a href="/" id="KHTRAVEL">KHTRAVEL</a>
+      </div>
+      <ul class="menu">
+          <li>
+            <a href="#">☰</a>
+            <ul class="submenu">
+              <li><a href="/reservation">예약</a></li>
+					<li><a href="/review">리뷰</a></li>
+					<li><a href="/goods">굿즈</a></li>
+          </ul>
+      </li>
+     </ul>
+    </header>
+<div class="container">
+	<div class="header">
+	<h1>호텔 예약 현황</h1>
+	<div class="reservation-form-button">
+		<a href="/hotelinfo"><button>호텔 리스트</button></a>
+		<a href="/accomReservation"><button>호텔 예약 현황</button></a>
+		<a href="/accomInsertReservation"><button>호텔 예약 추가</button></a>
+	</div>
+	</div>
+<div class="reservation-info">
+	<p>호텔 예약 정보</p>
 </div>
-<h1>호텔 예약 정보</h1>
-<br>
-<table border="1">
-        <thead>
-            <tr>
-                <th>숙소 이름</th>
-                <th>시작 날짜</th>
-                <th>종료 날짜</th>
-                <th>인원 수</th>
-            </tr>
-        </thead>
-        <tbody>
+	<div class="reservation-list">
             <c:forEach var="reservation" items="${accomList}">
-                <tr>
-                    <td>${accomReservation.accomName}</td>
-                    <td>${accomReservation.startDate}</td>
-                    <td>${accomReservation.endDate}</td>
-                    <td>${accomReservation.seats}</td>
-                </tr>
+            <div class="reservation-item">
+                    <h3>숙소 이름 : ${accomReservation.accomName}</h3>
+                    <p>시작 날짜 : ${accomReservation.startDate}</p>
+                    <p>종료 날짜 : ${accomReservation.endDate}</p>
+                    <p>인원 수 : ${accomReservation.seats}</p>
+                </div>
             </c:forEach>
-        </tbody>
-    </table>
+        </div>
+	</div>
 </body>
 </html>

@@ -10,16 +10,28 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import com.kh.project.model.vo.Review;
 import com.kh.project.service.ReviewService;
 
 @Controller
-@RequestMapping("/review")
 public class ReviewController {
 	
 	@Autowired
 	private ReviewService reviewService;
+	
+	// 리뷰 페이지로 이동시 리스트도 출력
+    @GetMapping("/review")
+    public String ReviewPage(String entityType, Integer entityId, Model model) {
+        if (entityId == null) {
+            entityId = 1;
+        }
+        if (entityType == null) {
+            entityType = "1"; 
+        }
+        model.addAttribute("reviews", reviewService.getReviewByEntity(entityType, entityId));
+        model.addAttribute("averageRating", reviewService.getAverageRatingByEntity(entityType, entityId));
+        return "review";
+    }
 	
 	// 리뷰 작성
 	@PostMapping("/add")
@@ -56,5 +68,7 @@ public class ReviewController {
 	    model.addAttribute("averageRating", averageRating);
 	    return "review";
 	}
+	
+	
 	
 }
