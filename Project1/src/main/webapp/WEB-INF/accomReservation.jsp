@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="com.kh.project.model.vo.AccomReservation" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,14 +41,12 @@
 	<div class="reservation-list">
     <c:forEach var="reservation" items="${accomList}">
     <div>
-        <h3>숙소 이름: ${reservation.accomName}</h3>
-        <p>시작 날짜: ${reservation.startDate}</p>
-        <p>종료 날짜: ${reservation.endDate}</p>
-        <p>예약 인원: ${reservation.seats}</p>
+        <h3>숙소 이름: ${AccomReservation.accomName}</h3>
+        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일 EEEE HH시 mm분 ss초" /></p>
+        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일 EEEE HH시 mm분 ss초" /></p>
+        <p>예약 인원: ${AccomReservation.seats}</p>
         
-        <!-- 예약 취소 폼 -->
         <form action="/deleteReservation" method="post">
-            <!-- 숨겨진 필드로 각 예약의 ID를 전달 -->
             <input type="hidden" name="reservationId" value="${reservation.reservationId}">
             <button type="submit">예약 취소</button>
         </form>

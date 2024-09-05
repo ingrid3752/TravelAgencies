@@ -56,6 +56,7 @@ public class ReviewController {
 	    return "review";
 	}
 	
+	
 	// 리뷰 페이지로 이동시 리스트도 출력
     @GetMapping("/review")
     public String ReviewPage(String entityType, Integer entityId, Model model) {

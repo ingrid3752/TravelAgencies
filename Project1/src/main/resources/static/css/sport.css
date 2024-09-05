@@ -128,7 +128,7 @@ body {
 }
 .ticket-container {
   padding-top: 25px;
-  padding-right: 10%;
+  
   max-width: 1000px;
   margin: 0 auto;
   margin-left: 24%;
@@ -322,6 +322,7 @@ body {
 #main6 {
   display: flex;
   flex-direction: column;
+  margin-left: 458px;
   width: 500px;
   height: 200px;
   background-color: black;
@@ -330,8 +331,9 @@ body {
   font-size: 1.1rem;
 }
 #main6 p {
-  margin: 0px;
+  margin: 10px;
 }
+
 
 .price p {
   font-family: "Gowun Batang", serif;
@@ -463,8 +465,7 @@ body {
   font-size: 1.8rem;
 }
 .ticket-container6 {
-  display: flex;
-  padding-right: 10%;
+  display: flex;  
   margin: 0 auto;
   margin-left: 24%;
 }

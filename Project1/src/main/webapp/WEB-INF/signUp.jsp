@@ -28,6 +28,10 @@
                 <label for="phone">전화번호 : </label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
+            <div class="form-group">
+            	<label for="email">이메일 : </label>
+            	<input type="email" id="email" name="email" required>
+            </div>
             <button type="submit">회원가입</button>
         </form>
     </div>

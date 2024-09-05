@@ -2,10 +2,10 @@ package com.kh.project.service;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kh.project.model.vo.Accom;
 import com.kh.project.model.vo.AccomReservation;
 
 import mapper.AccomMapper;
@@ -16,13 +16,18 @@ public class AccomService {
 	@Autowired
 	private AccomMapper mapper;
 	
-	// 숙소 예약 현황내역 보여주기 리뷰 참고하여 작성
-    public List<AccomReservation> reservationList(){
-    	return mapper.reservationList();
+	// 숙소 예약 목록 조회
+    public List<AccomReservation> ReservationList(int memCode){
+    	return mapper.ReservationList(memCode);
     }
     
     // 숙소 예약 추가
-    public void insertReservation(AccomReservation vo) {
+    public void addReservation(AccomReservation vo) {
+    	mapper.insertReservation(vo);
+    }
+    
+    // 숙소 예약 저장
+    public void saveReservation(AccomReservation vo) {
     	mapper.insertReservation(vo);
     }
     
@@ -37,12 +42,8 @@ public class AccomService {
     }
     
     // 숙소 예약 삭제
-    public void deleteReservation(int reservationId) {
-        mapper.deleteReservation(reservationId);
+    public void deleteReservation(int reservationId, int memCode) {
+        mapper.deleteReservation(reservationId, memCode);
     }
     
-    // 모든 숙소 리스트 보여주기
-	public List<Accom> AllAccom() {
-		return mapper.AllAccom();
-	}
 }

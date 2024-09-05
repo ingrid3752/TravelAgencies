@@ -1,9 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %> <%@ page
 import="java.util.List" %> <%@ page import="com.kh.project.model.vo.Review" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> <<<<<<< HEAD <%@
-taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> ======= <%@ taglib
-uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> >>>>>>>
-f2ff6d86772686c019fc63932864b724a9586b1e
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="ko">
   <head>

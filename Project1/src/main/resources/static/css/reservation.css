@@ -119,12 +119,15 @@ body {
 }
 
 #olym img {
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
   width: 600px;
   height: 500px;
 }
 
 .ticket-container {
-  padding-right: 10%;
+  
   max-width: 800px;
   margin: 0 auto;
 }
@@ -132,6 +135,7 @@ body {
 .ticket {
   display: flex;
   align-items: center;
+  margin-left: -10%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
@@ -184,7 +188,7 @@ body {
 .ticket-button {
   display: inline-block;
   width: 100px;
-  height: 30px;
+  height: 35px;
   background-color: black;
   color: white;
   text-decoration: none;

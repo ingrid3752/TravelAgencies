@@ -1,5 +1,4 @@
 INSERT INTO mem_info (id, password, name, phone) VALUES('test1', '1234', 'user', '01012345678');
-DROP TABLE mem_info;
 SELECT id, password, name, CONCAT(SUBSTR(phone, 1, 3), '-', SUBSTR(phone, 4, 4), '-', SUBSTR(phone, 8, 4)) AS phone
 FROM mem_info;
 INSERT INTO mem_info (id, password, name, phone)
@@ -10,19 +9,23 @@ VALUES ('test1','1234','user1','01012345678');
 
 SET foreign_key_checks = 0;
 
+DROP TABLE mem_info;
+DROP TABLE accom;
+DROP TABLE accom_reservation;
+DROP TABLE review;
+
 -- 회원 정보
 CREATE TABLE mem_info (
     mem_code INT PRIMARY KEY AUTO_INCREMENT UNIQUE,
     id VARCHAR(255) NOT NULL UNIQUE,            
     password VARCHAR(255) NOT NULL,           
     name VARCHAR(255) NOT NULL,            
-    phone VARCHAR(255) NOT NULL,            
-    date_registered DATETIME DEFAULT CURRENT_TIMESTAMP 
+    phone VARCHAR(255) NOT NULL,  
+    email VARCHAR(255) NOT NULL
 );
 SELECT * FROM mem_info;
-INSERT INTO mem_info (id, password, name, phone)
-VALUES ('test1','1234','user1','01012345678');
-
+INSERT INTO mem_info (id, password, name, phone, email) 
+VALUES('test','1234','user','01012345678','test1234@naver.com');
 -- 관광지
 CREATE TABLE theme_park (
     theme_code INT PRIMARY KEY AUTO_INCREMENT,
@@ -43,18 +46,6 @@ CREATE TABLE goods (
     mem_code INT, 
     FOREIGN KEY (theme_code) REFERENCES theme_park(theme_code),
     FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
-);
-
--- 회원 구매목록
-CREATE TABLE mem_purchases (
-    purchase_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_code INT,
-    mem_id INT NOT NULL,             
-    goods_code INT NOT NULL,           
-    theme_code INT NOT NULL,           
-    purchase_date DATETIME NOT NULL,   
-    FOREIGN KEY (goods_code) REFERENCES goods(goods_code),
-	FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
 );
 
 -- 경기장
@@ -118,14 +109,6 @@ CREATE TABLE accom (
 INSERT INTO accom (accom_name,accom_phone,location,price) VALUES ('숙소','01012345678','서울','9999');
 SELECT * FROM mem_info WHERE mem_code = '1';
 SELECT * FROM accom WHERE accom_code = '1';
--- 숙소 즐겨찾기
-CREATE TABLE accom_favorites (
-    favorite_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_id INT NOT NULL, 
-    accom_id INT NOT NULL,
-    date_added DATETIME DEFAULT CURRENT_TIMESTAMP, 
-    FOREIGN KEY (accom_id) REFERENCES accom(accom_code)
-);
 
 -- 숙소 예약
 CREATE TABLE accom_reservation (
@@ -140,11 +123,16 @@ CREATE TABLE accom_reservation (
     FOREIGN KEY (accom_code) REFERENCES accom (accom_code)
 );
 DROP TABLE accom_reservation;
+SET foreign_key_checks = 1;
+INSERT INTO accom_reservation (accom_code, mem_code, accom_name, start_date, end_date, seats)
+VALUES ('1','1','르 르믹스 호텔','20240528','20241113','5');
 SELECT * FROM accom_reservation;
+SELECT r.mem_code, r.accom_name, r.start_date,r.end_date,r.seats
+FROM accom_reservation r;
 SELECT r.accom_name,r.start_date,r.end_date,r.seats
 		FROM accom_reservation r
 		JOIN accom ON r.accom_code = accom.accom_code
-        JOIN mem_info ON mem_info.mem_code = r.accom_code
+        JOIN mem_info ON mem_info.mem_code = r.mem_code
 		WHERE r.mem_code = '1';
 SELECT * FROM mem_info WHERE mem_code = '1';
 

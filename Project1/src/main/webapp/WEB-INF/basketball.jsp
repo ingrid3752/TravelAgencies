@@ -380,37 +380,36 @@
       </div>
     </div>
     <div id="grandTotalContainer">
-      <button type="submit" id="totalbutton">
+      <a href="/hotelinfo"><button type="submit" id="totalbutton">
         <i class="fa-solid fa-cart-shopping"></i> &nbsp;total :
         <span id="grandTotal">0</span>&nbsp;₩ &nbsp;&nbsp;&nbsp;
         <i
           class="fa-solid fa-arrow-right"
-        ></i
-        >&nbsp;&nbsp;호텔예약으로
-      </button>
+        ></i> &nbsp;&nbsp;호텔예약으로
+      </button></a>
     </div>
     <br /><br /><br />
-    <div id="black">
-      <p>안녕</p>
-      <div id="top">
-        <div class="bottom">
-          <a href="https://www.instagram.com/kh_iei/">
+     <div style="display: flex">
+        <div id="main6">
+          <p class="qqq">https://github.com/jochanghyeon</p>
+          <p class="qqq">010-1234-5678</p>
+          <p class="qqq">(Fax)02-1234-5678</p>
+          <p class="qqq">서울특별시 도봉구 도봉로152가길 176 (도봉동)</p>
+          <p class="qqq">176 Dobong-ro 152ga-gil, Dobong-gu, Seoul</p>
+        </div>
+        <div id="main5">
+          <a href="https://www.instagram.com/kh_iei/" class="bottom">
             <i class="fa-brands fa-instagram"></i
           ></a>
-        </div>
-        <div class="bottom">
-          <a href="https://www.facebook.com/khacademy1998/">
+          <a href="https://www.facebook.com/khacademy1998/" class="bottom">
             <i class="fa-brands fa-facebook"></i
           ></a>
-        </div>
-        <div class="bottom">
-          <a href="https://khedu.co.kr/main/main.kh">KH</a>
-        </div>
-        <div class="bottom">
-          <a href="#"><i class="fa-brands fa-github"> </i></a>
+          <a href="https://khedu.co.kr/main/main.kh" class="bottom">KH</a>
+          <a href="https://github.com/jochanghyeon" class="bottom"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-    </div>
+      <br><br><br>
+   
     <!-- SCRIPTS -->
 	<script src="${pageContext.request.contextPath}/js/sport.js"></script>
 </body>

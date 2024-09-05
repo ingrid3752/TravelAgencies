@@ -7,8 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>호텔 예약 추가</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/accomReservation.css" />
+<link rel="stylesheet" href="/css/reset.css" />
+<link rel="stylesheet" href="/css/accomReservation.css" />
 </head>
 <body>
 	<div>
@@ -22,18 +22,14 @@
 		<h1>호텔 예약 추가</h1>
 	</div>
 	<div>
-		<form action="/accomInsertReservation" method="post">
+		<form action="/accom/addReservation" method="post">
 			<input type="hidden" name="memCode" value="${memCode}"> 
 			<input type="hidden" name="accomCode" value="${accomCode}"> 
-			<label for="accomName">숙소 이름 : </label> 
-			<input type="text" id="accomName" name="accomName" required> 
-			<label for="startDate">시작 날짜 : </label> 
-			<input type="date" id="startDate" name="startDate" required>
-			<label for="endDate">종료 날짜: </label> 
-			<input type="date" id="endDate" name="endDate" required> 
-			<label for="seats">예약 인원: </label>
-			<input type="number" id="seats" name="seats" required>
-			<button type="submit">예약 추가</button>
+			<label for="accomName">숙소 이름 : <input type="text" id="accomName" name="accomName" required></label> 
+			<label for="startDate">시작 날짜 : <input type="date" id="startDate" name="startDate" required></label> 
+			<label for="endDate">종료 날짜 : <input type="date" id="endDate" name="endDate" required> </label> 
+			<label for="seats">예약 인원 : <input type="number" id="seats" name="seats" required></label>
+			<button type="submit" onclick="updateId()">예약하기</button>
 		</form>
 
 

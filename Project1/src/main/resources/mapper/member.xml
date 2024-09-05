@@ -1,5 +1,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.MemberMapper">
+	<resultMap type="Member" id="MemberMap">
+        <id column="mem_code" property="memCode"/>
+        <result column="id" property="id"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+    </resultMap>
+
+
 	<!-- 아이디 중복 체크 -->
 	<select id="check" parameterType="String" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id}
@@ -12,7 +22,7 @@
 	
 	<!-- 회원가입 -->
 	<insert id="signUp" parameterType="Member">
-		INSERT INTO mem_info (id, password, name, phone) VALUES(#{id}, #{password}, #{name}, #{phone})
+		INSERT INTO mem_info (id, password, name, phone, email) VALUES(#{id}, #{password}, #{name}, #{phone}, #{email})
 	</insert>
 	
 	<!-- 회원정보수정 -->
@@ -32,6 +42,6 @@
 	<delete id="delete" parameterType="int">
 		DELETE FROM mem_info
 		WHERE mem_code =
-		#{MemCode}
+		#{memCode}
 	</delete>
 </mapper>

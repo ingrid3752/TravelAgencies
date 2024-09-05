@@ -1,8 +1,12 @@
-function updateReservation() {
-	var accomCode = document.getElementById("accomCode");
+function updateId() {
+	var accomCode = document.getElementById("accomCode").value;
 	var memCode = document.getElementById("memCode").value;
-	
-	entityIdField.value = entityType;
+	if (accomCode === "1") {
+		accomIdField.value = "1";
+	}
+	if (memCode === "1") {
+		memIdField.value = "1";
+	}
 }
 
 function validateForm() {

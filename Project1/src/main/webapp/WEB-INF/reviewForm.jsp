@@ -19,9 +19,7 @@
                 <!-- 사용자 코드 숨겨진 필드로 설정 -->
                 <input type="hidden" id="memCode" name="memCode" value="${memCode}">
 				<!-- 제목 입력 -->
-				<label for="title">제목 : 
-				<input type="text" id="title" name="title"></label>
-				<!-- 엔티티 타입 선택 -->
+				<label for="title">제목 : <input type="text" id="title" name="title"></label>
 				<label for="entityType">리뷰할 컨텐츠 : </label> 
 				<select id="entityType" name="entityType" required>
 					<option value="1">숙소</option>
