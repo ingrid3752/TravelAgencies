@@ -17,12 +17,6 @@
         <p><a href="/info">예약현황</a></p>
       </div>
       <div class="user-info-box">
-        <p><a href="/hotelinfo">호텔예약정보</a></p>
-      </div>
-      <div class="user-info-box">
-        <p><a href="/ticketinfo">경기예약정보</a></p>
-      </div>
-      <div class="user-info-box">
         <p><a href="/update">회원정보변경</a></p>
       </div>
      </div>

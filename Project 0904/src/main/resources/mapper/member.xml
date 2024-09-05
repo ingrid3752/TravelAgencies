@@ -7,6 +7,7 @@
 		<result column="password" property="password"/>
 		<result column="name" property="name"/>
 		<result column="phone" property="phone"/>
+		<result column="email" property="email"/>
 		<result column="role" property="role"/>
 	</resultMap>
 
@@ -17,7 +18,7 @@
 	
 	<!-- 회원가입 : role 역할 추가 -->
 	<insert id="signUp" parameterType="Member">
-		INSERT INTO mem_info (id, password, name, phone, role) VALUES(#{id}, #{password}, #{name}, #{phone}, #{role})
+		INSERT INTO mem_info (id, password, name, phone, email, role) VALUES(#{id}, #{password}, #{name}, #{phone}, #{email}, #{role})
 	</insert>
 	
 	<!-- 회원정보수정 -->
@@ -25,6 +26,13 @@
 		UPDATE mem_info 
 		SET password = #{password}
 		WHERE id = #{id}
+    </update>
+    
+    <!-- 이름, 전화번호, 이메일 변경 -->
+    <update id="updateNPE" parameterType="Member">
+    	UPDATE mem_info
+    	SET name = #{name}, phone = #{phone}, email = #{email}
+    	WHERE id = #{id}
     </update>
     <!-- 
     <update id="updatePassword" parameterType="Member">

@@ -40,7 +40,7 @@ public class MemberService implements UserDetailsService {
         }
     }
     
-    // 회원정보 수정(아이디)
+    // 회원정보 수정 비밀번호(아이디)
     public boolean update(Member vo) {
         try {
             int result = memberMapper.updateId(vo);
@@ -49,6 +49,16 @@ public class MemberService implements UserDetailsService {
             e.printStackTrace();
             return false;
         }
+    }
+    //회원정보 수정 이름,이메일,번호(아이디)
+    public boolean updateNPE(Member vo) {
+    try {	
+    	int result =memberMapper.updateNPE(vo);
+    	return result > 0;
+    } catch (Exception e) {
+    	e.printStackTrace();
+		return false;
+       }
     }
     
     

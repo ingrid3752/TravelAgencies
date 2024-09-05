@@ -22,6 +22,7 @@ public class Member implements UserDetails {
 	private String password;
 	private String name;
 	private String phone;
+	private String email;
 	private String role; // 회원(ROLE_MEMBER), 관리자(ROLE_ADMIN), 업체(ROLE_COMPANY) 
 	
 	@Override

@@ -43,12 +43,12 @@ public class PageController {
     	System.out.println(role);
     	if(role.equals("ROLE_COMPANY")) {
     		
-    		return "compamyMypage";
+    		return "compage";
     	}else if(role.equals("ROLE_MEMBER")) {
     		return "mypage";
     	}
     	
-    	return "review";
+    	return "adpage";
     }
     
    

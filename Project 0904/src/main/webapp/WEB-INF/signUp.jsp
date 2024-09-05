@@ -29,6 +29,10 @@
                 <input type="tel" id="phone" name="phone" required>
             </div>
             <div class="form-group">
+            <label for="email">이메일 : </label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
     			<label for="role">사용자 유형 : </label>
     			<select id="role" name="role" required>
         			<option value="member">일반회원</option>
