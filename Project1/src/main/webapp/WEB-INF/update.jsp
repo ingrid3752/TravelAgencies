@@ -32,6 +32,6 @@
             </div>
             <button type="submit">회원정보 변경</button>
         </form>
-    </div>
+    </div> 
 </body>
 </html>

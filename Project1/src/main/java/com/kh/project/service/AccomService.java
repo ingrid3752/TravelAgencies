@@ -36,9 +36,9 @@ public class AccomService {
     	mapper.updateEndDate(vo);
     }
     
-    // 숙소 예약 취소
+    // 숙소 예약 삭제
     public void deleteReservation(int reservationId) {
-    	mapper.deleteReservation(reservationId);
+        mapper.deleteReservation(reservationId);
     }
     
     // 모든 숙소 리스트 보여주기

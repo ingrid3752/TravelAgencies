@@ -25,7 +25,6 @@
             <a href="#">☰</a>
             <ul class="submenu">
               <li><a href="/reservation">예약</a></li>
-					<li><a href="/stadium">경기장</a></li>
 					<li><a href="/review">리뷰</a></li>
 					<li><a href="/goods">굿즈</a></li>
           </ul>

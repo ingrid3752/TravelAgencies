@@ -39,14 +39,23 @@
 	<p>호텔 예약 정보</p>
 </div>
 	<div class="reservation-list">
-            <c:forEach var="reservation" items="${accomList}">
-            <div class="reservation-item">
-                    <h3>숙소 이름 : ${accomReservation.accomName}</h3>
-                    <p>시작 날짜 : ${accomReservation.startDate}</p>
-                    <p>종료 날짜 : ${accomReservation.endDate}</p>
-                    <p>인원 수 : ${accomReservation.seats}</p>
-                </div>
-            </c:forEach>
+    <c:forEach var="reservation" items="${accomList}">
+    <div>
+        <h3>숙소 이름: ${reservation.accomName}</h3>
+        <p>시작 날짜: ${reservation.startDate}</p>
+        <p>종료 날짜: ${reservation.endDate}</p>
+        <p>예약 인원: ${reservation.seats}</p>
+        
+        <!-- 예약 취소 폼 -->
+        <form action="/deleteReservation" method="post">
+            <!-- 숨겨진 필드로 각 예약의 ID를 전달 -->
+            <input type="hidden" name="reservationId" value="${reservation.reservationId}">
+            <button type="submit">예약 취소</button>
+        </form>
+    </div>
+	</c:forEach>
+
+
         </div>
 	</div>
 </body>

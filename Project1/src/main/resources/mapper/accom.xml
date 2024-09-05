@@ -28,38 +28,40 @@
     
     <!-- 숙소 예약 추가 -->
     <insert id="insertReservation" parameterType="AccomReservation">
-        INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
-		VALUES (#{memCode},#{accomCode},#{accomName},#{startDate},#{endDate},#{seats})
-    </insert>
+    INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
+    VALUES (#{memCode}, #{accomCode}, #{accomName}, #{startDate}, #{endDate}, #{seats})
+	</insert>
     
     <!-- 예약 내역 조회 -->
-    <select id="reservationList" parameterType="int" resultType="AccomReservation">
-		SELECT r.accom_name,r.start_date,r.end_date,r.seats
-		FROM accom_reservation r
-		JOIN accom ON r.accom_code = accom.accom_code
-        JOIN mem_info ON mem_info.mem_code = r.accom_code
-		WHERE r.mem_code = #{memCode};
-    </select>
-
-    <!-- 숙소 시작 날짜 변경 -->
-    <update id="updateStartDate" parameterType="AccomReservation">
-        UPDATE accom_reservation
-        SET start_date = #{startDate}, seats = #{seats}
-        WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
-    </update>
+	<select id="reservationList" resultMap="accomReservationMap">
+   	SELECT r.reservation_id, r.accom_name, r.start_date, r.end_date, r.seats
+    FROM accom_reservation r
+    JOIN accom a ON r.accom_code = a.accom_code
+    WHERE r.mem_code = #{memCode}
+	</select>
     
-    <!-- 숙소 마지막 날짜 변경 -->
-    <update id="updateEndDate" parameterType="AccomReservation">
+
+   <!-- 시작 날짜 수정 -->
+	<update id="updateStartDate" parameterType="AccomReservation">
     	UPDATE accom_reservation
+    	SET start_date = #{startDate}, seats = #{seats}
+    	WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
+	</update>
+
+	<!-- 종료 날짜 수정 -->
+	<update id="updateEndDate" parameterType="AccomReservation">
+   		UPDATE accom_reservation
     	SET end_date = #{endDate}, seats = #{seats}
     	WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
-    </update>
+	</update>
+
 
     <!-- 예약 내역 삭제 -->
     <delete id="deleteReservation" parameterType="int">
-        DELETE FROM accom_reservation
-        WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
-    </delete>
+   		DELETE FROM accom_reservation
+    	WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
+	</delete>
+
 
 	 
 </mapper>

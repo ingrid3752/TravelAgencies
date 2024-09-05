@@ -15,7 +15,8 @@ public class AccomController {
     @Autowired
     private AccomService service;
 
-    // 숙소 예약 페이지로 이동시 리스트도 출력
+
+    // 예약 리스트 가져오기
     @GetMapping("/accomReservation")
     public String getAccomReservationList(Model model) {
         model.addAttribute("accomList", service.reservationList()); 
@@ -23,21 +24,27 @@ public class AccomController {
         return "accomReservation"; 
     }
 
-    // 숙소 예약추가 페이지로 이동
+    // 숙소 예약 추가 페이지로 이동
     @GetMapping("/accomInsertReservation")
     public String insertReservationPage(Model model) {
-    	model.addAttribute("accomCode", 1);
-    	model.addAttribute("memCode", 1);
+        model.addAttribute("accomCode", 1);  
+        model.addAttribute("memCode", 1);   
         return "accomInsertReservation";
     }
-    
+
     // 예약 작성
     @PostMapping("/accomInsertReservation")
     public String insertReservation(AccomReservation vo) {
-    	service.insertReservation(vo);
-    	return "redirect:/accomReservation";
+        service.insertReservation(vo);
+        return "redirect:/accomReservation";
     }
     
+    // 예약 삭제
+    @PostMapping("/deleteReservation")
+    public String deleteReservation(int reservationId) {
+        service.deleteReservation(reservationId);
+        return "redirect:/accomReservation";
+    }
     
     
     

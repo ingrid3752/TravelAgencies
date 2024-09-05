@@ -225,7 +225,9 @@ h1 {
 }
 
 .reservation-form-button {
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .reservation-form-button a {
@@ -233,7 +235,7 @@ h1 {
 }
 
 button {
-    display: flex;
+    display: inline-block;
     background-color: #ee9e26;
     color: white;
     padding: 10px 20px;
@@ -250,7 +252,7 @@ button:hover {
     padding: 15px;
     margin: 15px 0;
     background-color: #f7f7f7;
-    border-left: 5px solid #ff8040;
+    border-left: 5px solid rgb(255, 128, 0);
     border-radius: 4px;
 }
 
