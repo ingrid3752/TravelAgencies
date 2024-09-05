@@ -1,6 +1,7 @@
 package com.kh.project.controller;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -32,7 +33,12 @@ public class AccomController {
     	if (memCode == null) {
     		memCode = 1;
     	}
-    	model.addAttribute("accomReservationList" , service.ReservationList(memCode));
+    	List<AccomReservation> AR = service.ReservationList(memCode);
+    	if (AR == null || AR.isEmpty()) {
+    		model.addAttribute("message", "예약 목록이 없습니다");
+    	} else {
+    		model.addAttribute("accomReservationList", AR);
+    	}
     	System.out.println(model);
     	return "accomReservation";
     }

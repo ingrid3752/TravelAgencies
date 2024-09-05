@@ -39,11 +39,11 @@
 	<p>호텔 예약 정보</p>
 </div>
 	<div class="reservation-list">
-    <c:forEach var="reservation" items="${accomList}">
+    <c:forEach var="AccomReservation" items="${accomList}">
     <div>
         <h3>숙소 이름: ${AccomReservation.accomName}</h3>
-        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일 EEEE HH시 mm분 ss초" /></p>
-        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일 EEEE HH시 mm분 ss초" /></p>
+        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일" /></p>
+        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일" /></p>
         <p>예약 인원: ${AccomReservation.seats}</p>
         
         <form action="/deleteReservation" method="post">
