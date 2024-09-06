@@ -17,7 +17,7 @@
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
         <result column="seats" property="seats"/>
-        <association property="member" column="mem_code" javaType="Member" resultMap="mapper.MemberMapper.MemberMap" />
+        <association column="mem_code" property="member" javaType="Member" resultMap="mapper.MemberMapper.MemberMap" />
     </resultMap>
     
     <!-- 예약 목록 조회 -->

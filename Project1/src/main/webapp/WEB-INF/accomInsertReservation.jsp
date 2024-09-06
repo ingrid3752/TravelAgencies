@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/css/accomReservation.css" />
 </head>
 <body>
+<%@ include file="./header.jsp" %>
 	<div>
 		<a href="/hotelinfo">호텔 목록</a> 
 		<a href="/accomReservation">호텔 예약 현황</a> 

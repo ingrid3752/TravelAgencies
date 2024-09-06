@@ -11,21 +11,7 @@
 <link href="${pageContext.request.contextPath}/css/accomReservation.css" rel="stylesheet" />
 </head>
 <body>
-<header id="header">
-      <div id="Binggrae_font">
-        <a href="/" id="KHTRAVEL">KHTRAVEL</a>
-      </div>
-      <ul class="menu">
-          <li>
-            <a href="#">☰</a>
-            <ul class="submenu">
-              <li><a href="/reservation">예약</a></li>
-					<li><a href="/review">리뷰</a></li>
-					<li><a href="/goods">굿즈</a></li>
-          </ul>
-      </li>
-     </ul>
-    </header>
+<%@ include file="./header.jsp" %>
 <div class="container">
 	<div class="header">
 	<h1>호텔 예약 현황</h1>

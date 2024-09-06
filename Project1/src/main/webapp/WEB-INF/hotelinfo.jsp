@@ -9,20 +9,8 @@
 <link href="/css/reset.css" rel="stylesheet" />
 <link href="/css/hotelinfo.css" rel="stylesheet" />
 </head>
- <header id="header">
-		<div id="Binggrae_font">
-			<a href="/" id="KHTRAVEL">KHTRAVEL</a>
-		</div>
-		<ul class="menu">
-			<li><a href="#">☰</a>
-				<ul class="submenu">
-					<li><a href="/reservation">예약</a></li>
-					<li><a href="/review">리뷰</a></li>
-					<li><a href="/goods">굿즈</a></li>
-				</ul></li>
-		</ul>
-	</header>
 <body>
+<%@ include file="./header.jsp" %>
       <div class="hotel">
         <a href="/lehotel"><div class="hotel-info-box">
         <p>

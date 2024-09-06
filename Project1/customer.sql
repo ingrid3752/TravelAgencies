@@ -26,7 +26,7 @@ CREATE TABLE mem_info (
 SELECT * FROM mem_info;
 SELECT * FROM mem_info WHERE id = 'test';
 INSERT INTO mem_info (id, password, name, phone, email) 
-VALUES('test','1234','user','01012345678','test1234@naver.com');
+VALUES('qwer1234','1234','user','01012345678','test1234@naver.com');
 -- 관광지
 CREATE TABLE theme_park (
     theme_code INT PRIMARY KEY AUTO_INCREMENT,
@@ -34,7 +34,7 @@ CREATE TABLE theme_park (
     location VARCHAR(255) NOT NULL,
     theme_phone VARCHAR(255)
 );
-
+SELECT * FROM review;
 -- 굿즈
 CREATE TABLE goods (
     goods_code INT PRIMARY KEY AUTO_INCREMENT,
@@ -125,7 +125,7 @@ CREATE TABLE accom_reservation (
 );
 DROP TABLE accom_reservation;
 SET foreign_key_checks = 1;
-INSERT INTO accom_reservation (accom_code, mem_code, accom_name, start_date, end_date, seats)
+INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
 VALUES ('1','1','르 르믹스 호텔','20240528','20241113','5');
 SELECT * FROM accom_reservation;
 SELECT r.mem_code, r.accom_name, r.start_date,r.end_date,r.seats

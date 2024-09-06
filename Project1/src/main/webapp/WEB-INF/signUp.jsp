@@ -10,6 +10,7 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+
     <div id="signup-form">
         <h2>회원가입</h2>
         <form action="/signUp" method="post">
@@ -31,8 +32,23 @@
             </div>
             <div class="form-group">
             	<label for="email">이메일 : </label>
-            	<input type="email" id="email" name="email" required>
+            	<input type="email" id="email" class="purple" name="email" placeholder="이메일" required>&nbsp;@
+            	<input class="box" id="emailtxt" type="text" value="naver.com" class="purple">
+            	<select class="box" id="emaillist" style="height: 40px;">
+            	<option value="naver.com">naver.com</option>
+          		<option value="gmail.com">gmail.com</option>
+          		<option value="hanmail.net">hanmail.net</option>
+          		<option value="nate.com">nate.com</option>
+          		<option value="kakao.com">kakao.com</option>
+          		<option value="type">직접 입력</option>
+            	</select>
             </div>
+                  <div class="signdiv">
+        <input type="text" id="phone" class="purple" value="010" style="width: 50px; text-align: center; height: 40px;"> -
+        <input type="text" id="pHone" class="purple" name="pHone" style="width:230px; height: 40px; font-size: 1rem;" placeholder="휴대폰 번호입력">
+        <br>
+        <span id="pHoneSpan" class="spanspan"></span>
+      </div>
             <button type="submit">회원가입</button>
             
             아이디 : <input type="text" id="id">

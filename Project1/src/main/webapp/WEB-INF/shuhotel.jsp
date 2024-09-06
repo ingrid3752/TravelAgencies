@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+
 <div>
     <input type="button" id="button" class="button" value="뒤로가기" onclick="history.go(-1)" /></div>
     <div class="slider">
