@@ -24,6 +24,7 @@ CREATE TABLE mem_info (
     email VARCHAR(255) NOT NULL
 );
 SELECT * FROM mem_info;
+SELECT * FROM mem_info WHERE id = 'test';
 INSERT INTO mem_info (id, password, name, phone, email) 
 VALUES('test','1234','user','01012345678','test1234@naver.com');
 -- 관광지
@@ -129,11 +130,14 @@ VALUES ('1','1','르 르믹스 호텔','20240528','20241113','5');
 SELECT * FROM accom_reservation;
 SELECT r.mem_code, r.accom_name, r.start_date,r.end_date,r.seats
 FROM accom_reservation r;
-SELECT r.accom_name,r.start_date,r.end_date,r.seats
+SELECT 
+   		r.accom_name AS accomName, 
+   		r.start_date AS startDate, 
+   		r.end_date AS endDate, 
+   		r.seats AS seats
 		FROM accom_reservation r
-		JOIN accom ON r.accom_code = accom.accom_code
-        JOIN mem_info ON mem_info.mem_code = r.mem_code
-		WHERE r.mem_code = '1';
+		JOIN mem_info m ON r.mem_code = m.mem_code
+		WHERE m.mem_code = '1';
 SELECT * FROM mem_info WHERE mem_code = '1';
 
 -- 리뷰
@@ -157,3 +161,32 @@ SELECT * FROM review;
 SELECT * FROM mem_info;
 
 DELETE FROM review WHERE review_id = '11';
+
+-- 업체 (경기장, 숙소, 식당) <-- 구분할 컬럼 하나만 추가!
+CREATE TABLE company (
+    com_code INT PRIMARY KEY AUTO_INCREMENT,
+    com_id VARCHAR(50),
+    com_password VARCHAR(50),
+    com_name VARCHAR(50),
+    com_phone VARCHAR(13),
+    com_type VARCHAR(20) -- 경기장, 숙소, 식당
+);
+-- SELECT를 사용한다고 했을 때 --> 경기장 업체들만 가지고 오고 싶을 수도 있죠
+SELECT * FROM company
+WHERE com_type = "숙소";
+INSERT INTO company (com_id, com_password, com_name, com_phone, com_type)
+VALUES ('com1', '1234', 'comname', '01012345678', '숙소');
+
+-- 관리자
+CREATE TABLE admin (
+ad_code INT PRIMARY KEY AUTO_INCREMENT,
+ad_id VARCHAR(255),
+ad_password VARCHAR(255),
+ad_name VARCHAR(255),
+ad_phone VARCHAR(255),
+ad_role VARCHAR(255)
+);
+
+SELECT * FROM admin;
+DROP TABLE admin;
+SET foreign_key_checks = 1;

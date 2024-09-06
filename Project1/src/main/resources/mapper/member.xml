@@ -11,7 +11,7 @@
 
 
 	<!-- 아이디 중복 체크 -->
-	<select id="check" parameterType="String" resultType="Member">
+	<select id="idCheck" parameterType="Member" resultType="Member">
 		SELECT * FROM mem_info WHERE id = #{id}
 	</select>
 	

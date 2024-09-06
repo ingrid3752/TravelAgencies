@@ -27,7 +27,7 @@ public class ReviewController {
         return "redirect:/review/entity/" + review.getEntityType() + "/" + review.getEntityId();
     }
 	
-	// 특정 엔티티의 리뷰 목록 및 평균 평점 조회 후 JSP로 이동
+	// 리뷰 목록 및 평균 평점 조회 후 JSP로 이동
     @GetMapping("/review/entity/{entityType}/{entityId}")
     public String showReviewsByEntity(@PathVariable String entityType, @PathVariable int entityId, Model model) {
         List<Review> reviews = reviewService.getReviewByEntity(entityType, entityId);

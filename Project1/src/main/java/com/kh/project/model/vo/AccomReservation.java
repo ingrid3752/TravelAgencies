@@ -24,4 +24,5 @@ public class AccomReservation {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date endDate;
     private int seats; 
+    private Member member;
 }

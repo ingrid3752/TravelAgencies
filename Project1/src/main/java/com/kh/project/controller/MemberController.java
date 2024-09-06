@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import com.kh.project.model.vo.Member;
 import com.kh.project.service.MemberService;
 
@@ -18,12 +20,21 @@ public class MemberController {
 	@Autowired
 	private MemberService memberService;
 	
-	// 중복체크
-	@PostMapping("/check")
-	public boolean check(String id) {
-		System.out.println(id);
-		return memberService.check(id);
-	}
+	// 아이디 중복체크
+	// /check로 id 값 넘겨서 결과값(boolean)을 받아서
+		@ResponseBody
+		@PostMapping("/check")
+		public boolean check(String id) {
+			//아이디가 있으면 ID 사용 불가, 없으면 ID 사용 가능
+			Member member = memberService.idCheck(id);
+			if(member != null) {
+				System.out.println("ID 사용 불가");
+				return true;
+			} else {
+				System.out.println("ID 사용 가능");
+				return false;
+			}
+		}
 	
 	// 로그인
 	@PostMapping("/login")

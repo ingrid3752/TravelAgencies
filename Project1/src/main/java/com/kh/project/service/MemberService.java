@@ -12,10 +12,9 @@ public class MemberService {
     @Autowired
     private MemberMapper memberMapper;
    
-    public boolean check(String id) {
-        Member vo = memberMapper.check(id);
-        return vo != null; // ID가 이미 존재하면 true
-    }
+    public Member idCheck(String id) {
+		return memberMapper.idCheck(id);
+	}
     
     public Member login(Member vo) {
         return memberMapper.login(vo);

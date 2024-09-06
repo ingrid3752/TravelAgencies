@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import com.kh.project.model.vo.MealHistory;
 import com.kh.project.model.vo.RecommendedMenu;
 import com.kh.project.service.RestService;
@@ -22,7 +21,7 @@ public class RestController {
 
 	// 식사 기록 추가
     @PostMapping("/addMealHistory")
-    public void addMealHistory(@RequestBody MealHistory mealHistory) {
+    public void addMealHistory(MealHistory mealHistory) {
         restService.addMealHistory(mealHistory);
     }
 

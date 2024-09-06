@@ -46,4 +46,6 @@ public class AccomService {
         mapper.deleteReservation(reservationId, memCode);
     }
     
+    
+    
 }

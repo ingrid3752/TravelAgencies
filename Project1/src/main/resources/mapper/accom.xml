@@ -9,7 +9,7 @@
         <result column="price" property="price"/>
     </resultMap>
 
-    <resultMap type="AccomReservation" id="accomReservationMap">
+    <resultMap type="AccomReservation" id="accomReservationMap" extends="accomMap">
         <id column="reservation_id" property="reservationId"/>
         <result column="mem_code" property="memCode"/>
         <result column="accom_code" property="accomCode"/>
@@ -17,6 +17,7 @@
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
         <result column="seats" property="seats"/>
+        <association property="member" column="mem_code" javaType="Member" resultMap="mapper.MemberMapper.MemberMap" />
     </resultMap>
     
     <!-- 예약 목록 조회 -->
@@ -27,7 +28,8 @@
    		r.end_date AS endDate, 
    		r.seats AS seats
 		FROM accom_reservation r
-		WHERE r.mem_code = #{memCode}
+		JOIN mem_info m ON r.mem_code = m.mem_code
+		WHERE m.mem_code = #{memCode}
 	</select>
 	
 	<!-- 숙소 예약 추가 -->
@@ -56,5 +58,14 @@
    		DELETE FROM accom_reservation
     	WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
 	</delete>
+	 
+	 <!-- 
+	 	<resultMap>의 extends 속성은 다른 resultMap을 확장할 수 있게 해준다.
+	 	extends에 할당하는 값은 다른 resultMap의 id이다.
+	 	
+	 	<association>의 resultMap은 다른 resultMap을 id를 이용해서 참조할 수 있다,
+	 	만약 참조하려는 resultMap이 다른 mapper.xml에 있을 경우 
+	 	-> 해당 mapper의 namespace까지 추가해야한다.
+	  -->
 	 
 </mapper>
