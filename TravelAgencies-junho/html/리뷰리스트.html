@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js 추가 -->
 </head>
 <body>
     <header id="header">
@@ -35,6 +36,7 @@
         <section id="averageRating">
             <h2>전체 리뷰 평균 평점</h2>
             <div id="averageRatingValue">평균 평점: 계산 중...</div>
+            <canvas id="ratingChart" width="400" height="200"></canvas> <!-- 그래프 캔버스 추가 -->
         </section>
 
         <!-- 리뷰 탭 및 콘텐츠 -->
@@ -43,7 +45,6 @@
             <button class="tab-button" data-tab="all">모든 리뷰</button>
             <div class="tab-content best active"></div>
             <div class="tab-content all"></div>
-            
         </section>
     </main>
 

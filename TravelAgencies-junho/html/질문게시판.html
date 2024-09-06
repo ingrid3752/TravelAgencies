@@ -16,7 +16,7 @@
         <div id="Binggrae_font">
             <a href="#" id="KHTRAVLE">KHTRAVLE</a>
         </div>
-        <div>
+        <nav>
             <a href="#" id="login" aria-label="로그인">로그인</a>
             <a href="#" id="sign" aria-label="회원가입">회원가입</a>
             <ul class="menu">
@@ -30,38 +30,33 @@
                     </ul>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <section>
-           
-            <div class="table-container">
-                <div class="navbar">
-                    <span class="header-item">번호</span>
-                    <span class="header-item">제목</span>
-                    <span class="header-item">작성자</span>
-                    <span class="header-item">작성일</span>
-                    <span class="header-item">조회수</span>
+        <section class="table-container">
+            <div class="navbar">
+                <span class="header-item">번호</span>
+                <span class="header-item">제목</span>
+                <span class="header-item">작성자</span>
+                <span class="header-item">작성일</span>
+                <span class="header-item">조회수</span>
+            </div>
+
+            <div id="posts-container" class="posts-container">
+                <!-- 예시 질문 -->
+                <div class="post-item">
+                    <a href="./질문상세.html?id=1" class="post-link">
+                        <span class="post-id">1</span>
+                        <span class="post-title">질문 제목 1</span>
+                        <span class="post-author">작성자 1</span>
+                        <span class="post-date">2024-09-01</span>
+                        <span class="post-views">10</span>
+                    </a>
                 </div>
+                <!-- 다른 질문들... -->
+            </div>
 
-                <div id="posts-container" class="posts-container">
-                    <!-- 예시 질문 -->
-                    <div class="post-item">
-                        <a href="./질문상세.html?id=1" class="post-link">
-                            <span class="post-id">1</span>
-                            <span class="post-title">질문 제목 1</span>
-                            <span class="post-author">작성자 1</span>
-                            <span class="post-date">2024-09-01</span>
-                            <span class="post-views">10</span>
-                        </a>
-                    </div>
-                    <!-- 다른 질문들... -->
-                </div>
-                
-
-
-            
             <div class="pagination">
                 <a href="#" class="prev">이전</a>
                 <a href="#" class="page-number">1</a>
@@ -78,19 +73,17 @@
                     <option value="popular">인기순</option>
                     <option value="oldest">오래된 순</option>
                 </select>
+                <button type="button" aria-label="검색 확인">확인</button>
             </div>
+
             <div class="button-container">
-                <button aria-label="검색 확인">확인</button>
                 <a href="./질문작성.html" class="button-link" aria-label="질문 작성하기">
-                    <button aria-label="질문 작성하기">질문작성하기</button>
+                    <button type="button" aria-label="질문 작성하기">질문작성하기</button>
                 </a>
             </div>
+
+            <button id="delete-all-button" type="button">모든 질문 삭제</button>
         </section>
-        <button id="delete-all-button">모든 질문 삭제</button>
-
-
-
-
     </main>
 
     <script src="/js/질문게시판.js"></script>
