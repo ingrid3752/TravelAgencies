@@ -208,3 +208,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add event listener for the add review button
     addReviewButton.addEventListener('click', addReview);
 });
+
+
