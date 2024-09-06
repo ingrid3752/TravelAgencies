@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/회원가입3.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <!-- 폰트어썸폴더 -->
+<script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script> 
+    <!-- 구글 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+  </head>
+  
+  <header id="header">
+    <div id="Binggrae_font">
+      <a href="" id="KHTRAVLE">KHTRAVEL</a>
+    </div>
+    <div>
+      <a href="./로그인.html" id="login">Login</a>
+      <a href="./회원가입.html" id="sign">Signup</a>
+    <ul class="menu">
+        <li>
+          <a href="#">☰</a>
+          <ul class="submenu">
+            <li><a href="./로그인.html">로그인</a></li>
+            <li><a href="./마이페이지.html">마이페이지</a></li>
+            <li><a href="#">관광지</a></li>
+            <li><a href="#">굿즈</a></li>
+            <li><a href="#">submenu05</a></li>
+        </ul>
+    </li>
+</div>
+  </header>  
+  <!-- //style="overflow: hidden" -->
+  <body style="overflow: hidden" id="body">
+    <form action="">    
+      <div id="main">
+      <h1>회원 가입</h1>
+      <br>
+      <div>
+        <input type="text" id="userName" class="purple" name="userName" placeholder="이름"><br>
+        <span id="userNameSpan" class="spanspan" style="margin:1px;"></span>
+      </div>
+        <div id="bubb">
+        <input type="text" id="userId" name="userId" placeholder="아이디 입력(6~20글자)" class="purple" required ><br>
+        <span id="userIdSpan" class="spanspan" style="margin:10px;"></span>
+      <button id="bubu">중복확인</button>
+    </div>
+
+    <div>
+        <input type="password" id="userPwd" class="pwd" name="userPwd" placeholder="비밀번호"><br>
+        <span id="userPwdSpan" class="spanspan"style="margin:10px;" ></span>
+      </div>
+      <div>
+        <input type="password" id="userPwdCheck" class="pwd" name="userPwdCheck" placeholder="비밀번호확인"><br>
+        <span id="userPwdCheckSpan" class="spanspan" style="margin:10px;"></span>
+      </div>
+        <div>
+        <input type="text" id="email" class="purple" placeholder="이메일">&nbsp;@
+        <input class="box" id="emailtxt" type="text" value="naver.com" class="purple">
+        <select class="box" id="emaillist" style="height: 45px;">
+          <option value="이메일을 선택해주세요">이메일을 선택해주세요</option>
+          <option value="naver.com">naver.com</option>
+          <option value="google.com">google.com</option>
+          <option value="hanmail.net">hanmail.net</option>
+          <option value="nate.com">nate.com</option>
+          <option value="kakao.com">kakao.com</option>
+          <option value="type">직접 입력</option>
+        </select>
+      </div>
+      <div style="margin-top: 3px;">
+        <input type="text" id="phone" class="purple" value="010" style="width: 50px; text-align: center; height: 40px;"> -
+        <input type="text" id="pHone" class="purple" name="pHone" style="width:230px; height: 40px; font-size: 1rem;" placeholder="휴대폰 번호입력">
+        <br>
+        <span id="pHoneSpan" class="spanspan" style="margin:10px;"></span>
+      </div>
+      <br><br>
+      <button type="submit" id="signbutton">회원가입 완료!</button>
+     </div>
+    </form>
+
+    <form name="join" method="post" action="join" autocomplete="off" encType="utf-8">
+      <h3>아이디</h3>
+      <input type="text" id="user_id" name="id" placeholder="4자이상" minlength="4" maxlength="15" required autofocus required>
+      <button id="overlappedID" type="button">중복확인</button><br>
+      <span id="olmessage"></span>
+      <!-- 중략 -->
+    </form>
+      <script src="../js/회원가입2.js"></script>
+   
+
+  </body>
+</html>
