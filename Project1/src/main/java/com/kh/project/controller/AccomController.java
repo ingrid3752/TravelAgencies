@@ -53,9 +53,16 @@ public class AccomController {
     }
 
     // 숙소 예약 추가
-    @PostMapping("/accom/addReservation")
-    public String addReservation(AccomReservation vo) {
-    	service.addReservation(vo);
+    @PostMapping("/accom/insertReservation")
+    public String insertReservation(Integer memCode, AccomReservation vo) {
+    	System.out.println("memCode: " + vo.getMemCode());
+    	if(vo.getMemCode() == null) {
+    		return "errorPage";
+    	}
+    	if (memCode == null) {
+    		memCode = 1;
+    	}
+    	service.insertReservation(vo);
     	return "redirect:/accomReservation/" + vo.getMemCode();
     }
     

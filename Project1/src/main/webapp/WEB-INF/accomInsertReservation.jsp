@@ -23,9 +23,9 @@
 		<h1>호텔 예약 추가</h1>
 	</div>
 	<div>
-		<form action="/accom/addReservation" method="post">
-			<input type="hidden" name="memCode" value="${memCode}"> 
-			<input type="hidden" name="accomCode" value="${accomCode}"> 
+		<form action="/accom/insertReservation" method="post">
+			<input type="hidden" id="memCode" name="memCode" value="${accomReservation.memCode}"> 
+			<input type="hidden" id="accomCode" name="accomCode" value="${accomReservation.accomCode}"> 
 			<label for="accomName">숙소 이름 : <input type="text" id="accomName" name="accomName" required></label> 
 			<label for="startDate">시작 날짜 : <input type="date" id="startDate" name="startDate" required></label> 
 			<label for="endDate">종료 날짜 : <input type="date" id="endDate" name="endDate" required> </label> 

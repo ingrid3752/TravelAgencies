@@ -24,7 +24,7 @@ public class AccomService {
     }
     
     // 숙소 예약 추가
-    public void addReservation(AccomReservation vo) {
+    public void insertReservation(AccomReservation vo) {
     	mapper.insertReservation(vo);
     }
     

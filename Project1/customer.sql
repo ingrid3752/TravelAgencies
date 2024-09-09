@@ -124,7 +124,9 @@ CREATE TABLE accom_reservation (
 DROP TABLE accom_reservation;
 SET foreign_key_checks = 1;
 INSERT INTO accom_reservation (mem_code, accom_code, accom_name, start_date, end_date, seats)
-VALUES ('1','1','르 르믹스 호텔','20240528','20241113','5');
+VALUES (1,1,'르 르믹스 호텔','20240528','20241113','5');
+SELECT * FROM mem_info WHERE mem_code = 1;
+SELECT * FROM accom_reservation WHERE accom_code = 1;
 SELECT * FROM accom_reservation;
 SELECT r.mem_code, r.accom_name, r.start_date,r.end_date,r.seats
 FROM accom_reservation r;

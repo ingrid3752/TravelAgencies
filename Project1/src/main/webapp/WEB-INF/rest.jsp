@@ -17,9 +17,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <%@ include file="./header.jsp" %>
-<body>
+<style>
 
-	<div class="food">
+</style>
+ <body>
+ 
+  
+  
+  <div class="food">
 		<div class="box1">
 			<div class="hover-box">
 				<div class="food1">
@@ -73,6 +78,6 @@
 	</div>
 	<div id="box">
     <h1 id="food" data-shadow='Food!'>Food!</h1>
-  </div>
+</body>
     <script src="rest.js"></script></body>
 </html>

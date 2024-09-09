@@ -1,10 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 body {
   background-image: url(img/식당배경.jpg);
-  background-size: 100% 120%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: hidden;
+  
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+	background-attachment: fixed;
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 370px;
 }
 @font-face {
   src: url("../html/font/Paris2024-Variable.ttf");
@@ -110,7 +120,7 @@ ul {
   transition-duration: 0.5s;
 }
 .menu > li:hover .submenu {
-  height: 150px; /*서브메뉴 li한개의 높이 50*5*/
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
 .menu > li {
@@ -285,9 +295,10 @@ ul {
     margin-left: -350px;
   }
   50% {
+   
   }
   100% {
-    top: 400px;
+    top: -100px;
   }
 }
 @keyframes file2 {
@@ -297,7 +308,7 @@ ul {
   50% {
   }
   100% {
-    top: 400px;
+   top: -100px;
   }
 }
 @keyframes file3 {
@@ -307,7 +318,7 @@ ul {
   50% {
   }
   100% {
-    top: 400px;
+    top: -100px;
   }
 }
 
@@ -318,7 +329,7 @@ ul {
   30% {
   }
   100% {
-    top: 400px;
+   top: -100px;
   }
 }
 
@@ -329,17 +340,18 @@ ul {
   30% {
   }
   100% {
-    top: 400px;
+    top: -100px;
   }
 }
 
 /* 애니메이션 */
 
 #food {
+background-attachment: fixed;
   position: absolute;
-
-  top: 19%;
-  left: 39%;
+	
+  margin-left: 40%;
+  margin-top: 60px;
   display: inline-block;
   color: rgba(255, 0, 0, 0.856);
   font-family: "Righteous", serif;

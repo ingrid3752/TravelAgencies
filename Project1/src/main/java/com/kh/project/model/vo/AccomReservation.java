@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 public class AccomReservation {
 
     private int reservationId; 
-    private int memCode; 
-    private int accomCode;
+    private Integer memCode; 
+    private Integer accomCode;
     private String accomName;
     
     @DateTimeFormat(pattern = "yyyy-MM-dd")
