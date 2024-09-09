@@ -1,36 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const bestTabButton = document.querySelector('button[data-tab="best"]');
-    const allTabButton = document.querySelector('button[data-tab="all"]');
-    const bestTabContent = document.querySelector('.tab-content.best');
-    const allTabContent = document.querySelector('.tab-content.all');
-    const addReviewButton = document.getElementById('addReviewButton');
-    const reviewRatingInput = document.getElementById('reviewRating');
-    const reviewTextInput = document.getElementById('reviewText');
-    const reviewImageUrlInput = document.getElementById('reviewImageUrl');
-    const addReviewFeedback = document.getElementById('addReviewFeedback');
+    // DOMContentLoaded 이벤트가 발생하면 실행되는 코드
+    const bestTabButton = document.querySelector('button[data-tab="best"]'); // '베스트 리뷰' 탭 버튼
+    const allTabButton = document.querySelector('button[data-tab="all"]'); // '모든 리뷰' 탭 버튼
+    const bestTabContent = document.querySelector('.tab-content.best'); // '베스트 리뷰' 콘텐츠
+    const allTabContent = document.querySelector('.tab-content.all'); // '모든 리뷰' 콘텐츠
+    const addReviewButton = document.getElementById('addReviewButton'); // 리뷰 추가 버튼
+    const reviewRatingInput = document.getElementById('reviewRating'); // 평점 입력 필드
+    const reviewTextInput = document.getElementById('reviewText'); // 리뷰 텍스트 입력 필드
+    const reviewImageUrlInput = document.getElementById('reviewImageUrl'); // 리뷰 이미지 URL 입력 필드
+    const addReviewFeedback = document.getElementById('addReviewFeedback'); // 리뷰 추가 피드백 메시지
 
-    let reviews = loadReviewsFromLocalStorage();
+    let reviews = loadReviewsFromLocalStorage(); // 로컬 스토리지에서 리뷰를 불러옴
 
+    // 로컬 스토리지에서 리뷰를 로드하는 함수
     function loadReviewsFromLocalStorage() {
         try {
             const reviewsFromStorage = localStorage.getItem('reviews');
-            return reviewsFromStorage ? JSON.parse(reviewsFromStorage) : [];
+            return reviewsFromStorage ? JSON.parse(reviewsFromStorage) : []; // 리뷰가 있으면 파싱, 없으면 빈 배열
         } catch (error) {
-            console.error('Error loading reviews from localStorage:', error);
+            console.error('Error loading reviews from localStorage:', error); // 에러 발생 시 로그
             return [];
         }
     }
 
+    // 리뷰를 로컬 스토리지에 저장하는 함수
     function saveReviewsToLocalStorage(reviews) {
         try {
-            localStorage.setItem('reviews', JSON.stringify(reviews));
+            localStorage.setItem('reviews', JSON.stringify(reviews)); // 리뷰를 JSON으로 변환하여 저장
         } catch (error) {
-            console.error('Error saving reviews to localStorage:', error);
+            console.error('Error saving reviews to localStorage:', error); // 에러 발생 시 로그
         }
     }
 
+    // 리뷰를 화면에 표시하는 함수
     function displayReviews(reviews, container) {
-        container.innerHTML = ''; // Clear existing reviews
+        container.innerHTML = ''; // 기존 리뷰를 클리어
         reviews.forEach(review => {
             const reviewElement = document.createElement('div');
             reviewElement.classList.add('review-item');
@@ -50,10 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="delete-button" data-id="${review.id}">🗑️ 삭제</button>
                 </div>
             `;
-            container.appendChild(reviewElement);
+            container.appendChild(reviewElement); // 새 리뷰를 컨테이너에 추가
         });
     }
 
+    // 탭 클릭 이벤트 핸들러
     function handleTabClick(event) {
         const selectedTab = event.target.getAttribute('data-tab');
         if (!selectedTab) return;
@@ -65,13 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bestTabContent) bestTabContent.classList.toggle('active', selectedTab === 'best');
         if (allTabContent) allTabContent.classList.toggle('active', selectedTab === 'all');
 
-        updateReviewDisplays();
+        updateReviewDisplays(); // 리뷰 디스플레이 업데이트
     }
 
+    // 리뷰의 좋아요 또는 싫어요 수를 업데이트하는 함수
     function updateReviewCount(id, type) {
         const reviewId = String(id);
         const review = reviews.find(review => String(review.id) === reviewId);
-    
+
         if (review) {
             if (type === 'like') {
                 review.likes = (review.likes || 0) + 1;
@@ -81,23 +87,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error(`Invalid type ${type}. Expected 'like' or 'dislike'.`);
                 return;
             }
-    
+
             saveReviewsToLocalStorage(reviews);
-            updateBestReviews(); // Check if reviews should be marked as best after update
+            updateBestReviews(); // 리뷰가 '베스트'로 표시될지 확인
             updateReviewDisplays();
         } else {
             console.error(`Review with ID ${id} not found.`);
         }
     }
 
+    // 리뷰를 삭제하는 함수
     function deleteReview(id) {
         const reviewId = String(id);
         reviews = reviews.filter(review => String(review.id) !== reviewId);
         saveReviewsToLocalStorage(reviews);
-        updateBestReviews(); // Check if reviews should be marked as best after deletion
+        updateBestReviews(); // 리뷰가 '베스트'로 표시될지 확인
         updateReviewDisplays();
     }
 
+    // 리뷰 디스플레이를 업데이트하는 함수
     function updateReviewDisplays() {
         const selectedTab = document.querySelector('.tab-button.active')?.getAttribute('data-tab');
         if (selectedTab === 'best') {
@@ -108,11 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
         updateAverageRating();
     }
 
+    // 평균 평점을 계산하는 함수
     function calculateAverageRating(reviews) {
         const totalRating = reviews.reduce((acc, review) => acc + review.rating, 0);
-        return reviews.length ? (totalRating / reviews.length).toFixed(1) : '0.0';
+        return reviews.length ? (totalRating / reviews.length).toFixed(1) : '0.0'; // 평점 계산
     }
 
+    // 평균 평점을 업데이트하는 함수
     function updateAverageRating() {
         const averageRating = calculateAverageRating(reviews);
         const stars = '⭐'.repeat(Math.round(averageRating));
@@ -125,14 +135,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // '베스트' 리뷰를 업데이트하는 함수
     function updateBestReviews() {
-        // Mark reviews as 'best' if they meet the conditions
         reviews.forEach(review => {
-            review.isBest = review.rating >= 5 && (review.likes || 0) >= 10;
+            review.isBest = review.rating >= 5 && (review.likes || 0) >= 10; // 리뷰가 '베스트'인지 확인
         });
         saveReviewsToLocalStorage(reviews);
     }
 
+    // 새 리뷰를 추가하는 함수
     function addReview() {
         const rating = parseInt(reviewRatingInput.value, 10);
         const text = reviewTextInput.value.trim();
@@ -148,21 +159,21 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const id = new Date().getTime(); // Unique ID based on timestamp
+        const id = new Date().getTime(); // 타임스탬프 기반의 고유 ID 생성
         const newReview = {
             id,
             rating,
             text,
             imageUrl: imageUrl || '',
-            date: new Date().toISOString().split('T')[0],
+            date: new Date().toISOString().split('T')[0], // 현재 날짜를 문자열로 저장
             likes: 0,
             dislikes: 0,
-            isBest: false // Initially not marked as best
+            isBest: false // 초기에는 '베스트'로 표시되지 않음
         };
 
         reviews.push(newReview);
         saveReviewsToLocalStorage(reviews);
-        updateBestReviews(); // Check if new review should be marked as 'best'
+        updateBestReviews(); // 새 리뷰가 '베스트'로 표시될지 확인
         updateReviewDisplays();
 
         reviewRatingInput.value = '';
@@ -171,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addReviewFeedback.textContent = '리뷰가 추가되었습니다!';
     }
 
+    // 초기화 함수
     function initialize() {
         const defaultTab = 'best';
         const defaultButton = document.querySelector(`button[data-tab="${defaultTab}"]`);
@@ -180,16 +192,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bestTabContent) bestTabContent.classList.add('active');
         if (allTabContent) allTabContent.classList.remove('active');
 
-        updateBestReviews(); // Ensure 'best' reviews are updated
+        updateBestReviews(); // '베스트' 리뷰 업데이트
         updateReviewDisplays();
     }
 
-    initialize();
+    initialize(); // 페이지 로드 시 초기화
 
+    // 탭 버튼 클릭 이벤트 리스너 추가
     document.querySelectorAll('.tab-button').forEach(button => {
         button.addEventListener('click', handleTabClick);
     });
 
+    // 리뷰에 대한 좋아요, 싫어요, 삭제 버튼 클릭 이벤트 리스너 추가
     document.addEventListener('click', event => {
         const target = event.target;
 
@@ -205,8 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Add event listener for the add review button
+    // 리뷰 추가 버튼 클릭 이벤트 리스너 추가
     addReviewButton.addEventListener('click', addReview);
 });
-
-

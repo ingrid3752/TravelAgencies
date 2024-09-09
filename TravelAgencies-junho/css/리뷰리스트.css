@@ -190,3 +190,35 @@ a {
 #averageRatingValue .stars {
     font-size: 4rem; /* 별 크기 조절 */
 }
+
+.review-list-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* 버튼 배경색 */
+    color: #fff; /* 버튼 텍스트 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    font-weight: bold; /* 글자 두껍게 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.review-list-button:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변경 */
+}
+
+.write-review-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745; /* 버튼 배경색 */
+    color: #fff; /* 버튼 텍스트 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    font-weight: bold; /* 글자 두껍게 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.write-review-button:hover {
+    background-color: #218838; /* 호버 시 배경색 변경 */
+}
