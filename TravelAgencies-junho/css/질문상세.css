@@ -130,3 +130,20 @@ a {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+  /* 질문 상세 페이지 CSS (질문상세.css) */
+
+.question-detail-container {
+  padding: 20px;
+}
+
+#question-image {
+  margin-top: 20px;
+}
+
+#attached-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

@@ -89,6 +89,7 @@ a {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 24px; /* 제목의 가독성을 높이기 위해 폰트 크기 추가 */
 }
 
 .form-group {
@@ -99,6 +100,7 @@ h1 {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  color: #333; /* 레이블의 색상을 지정하여 가독성을 높임 */
 }
 
 input[type="text"], textarea {
@@ -108,6 +110,7 @@ input[type="text"], textarea {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+  background-color: #fff; /* 배경색을 흰색으로 지정하여 입력 필드의 가독성을 높임 */
 }
 
 textarea {
@@ -116,7 +119,8 @@ textarea {
 
 .button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* 버튼이 오른쪽 정렬되도록 변경 */
+  gap: 10px; /* 버튼 간의 간격 추가 */
   margin-top: 20px;
 }
 
@@ -135,4 +139,8 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.9);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.3); /* 포커스 시 외곽선을 추가하여 접근성 개선 */
 }

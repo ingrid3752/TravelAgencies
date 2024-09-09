@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const paginationContainer = document.querySelector(".pagination");
 
     // 기본 페이지 설정
-    let currentPage = 1;
+    let currentPage = parseInt(localStorage.getItem("currentPage")) || 1;
     const itemsPerPage = 5;
 
     // 날짜를 "YYYY-MM-DD" 형식으로 포맷팅하는 함수
@@ -76,12 +76,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 질문 삭제 함수
     const deleteQuestion = (id) => {
-        let questions = getQuestions();
-        questions = questions.filter(q => q.id !== id);
-        saveQuestions(questions);
-        // 삭제 후 페이지를 초기화
-        currentPage = 1;
-        applySearchFilter(); // 검색 및 필터링 적용
+        if (confirm('정말로 이 질문을 삭제하시겠습니까?')) {
+            let questions = getQuestions();
+            questions = questions.filter(q => q.id !== id);
+            saveQuestions(questions);
+            // 삭제 후 페이지를 초기화
+            currentPage = 1;
+            localStorage.setItem("currentPage", currentPage); // 현재 페이지 저장
+            applySearchFilter(); // 검색 및 필터링 적용
+        }
     };
 
     // 검색 및 필터 적용 함수
@@ -118,10 +121,12 @@ document.addEventListener("DOMContentLoaded", function() {
     paginationContainer.addEventListener("click", function(event) {
         if (event.target.classList.contains("page-number")) {
             currentPage = parseInt(event.target.getAttribute("data-page"));
+            localStorage.setItem("currentPage", currentPage); // 현재 페이지 저장
             applySearchFilter();
         } else if (event.target.classList.contains("prev")) {
             if (currentPage > 1) {
                 currentPage--;
+                localStorage.setItem("currentPage", currentPage); // 현재 페이지 저장
                 applySearchFilter();
             }
         } else if (event.target.classList.contains("next")) {
@@ -129,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const totalPages = Math.ceil(totalItems / itemsPerPage);
             if (currentPage < totalPages) {
                 currentPage++;
+                localStorage.setItem("currentPage", currentPage); // 현재 페이지 저장
                 applySearchFilter();
             }
         }
@@ -153,5 +159,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // 초기 질문 데이터 렌더링
     applySearchFilter();
 });
-
-

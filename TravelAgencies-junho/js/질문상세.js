@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionDateElement = document.getElementById("question-date");
     const questionViewsElement = document.getElementById("question-views");
     const questionContentElement = document.getElementById("question-content");
+    const attachedImageElement = document.getElementById("attached-image"); // 이미지 요소 추가
 
     // URL에서 쿼리 파라미터를 통해 질문 ID를 가져옵니다.
     const urlParams = new URLSearchParams(window.location.search);
@@ -55,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
             questionDateElement.textContent = formatDateTime(question.date); // 날짜 포맷팅
             questionViewsElement.textContent = question.views;
             questionContentElement.innerHTML = question.content; // 내용이 HTML로 삽입되도록 수정
+            attachedImageElement.src = question.image; // 이미지 URL 설정
         } else {
             // 질문을 찾지 못한 경우 처리
             questionTitleElement.textContent = "질문을 찾을 수 없습니다.";
@@ -62,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             questionDateElement.textContent = "";
             questionViewsElement.textContent = "";
             questionContentElement.innerHTML = ""; // 내용 제거
+            attachedImageElement.src = ""; // 이미지 URL 제거
         }
     };
 
