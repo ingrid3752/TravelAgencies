@@ -165,22 +165,32 @@ public class PageController {
     	return "france";
     }
     
-    // info 페이지
+    // info 페이지로 이동
     @GetMapping("/info")
     public String InfoPage() {
     	return "info";
     }
     
-    // hotelinfo 페이지
+    // hotel info 페이지로 이동
     @GetMapping("/hotelinfo")
     public String HotelInfoPage() {
     	return "hotelinfo";
     }
     
-    // ticketinfo 페이지
+    // ticket info 페이지로 이동
     @GetMapping("/ticketinfo")
     public String TicketInfoPage() {
     	return "ticketinfo";
     }
     
+    // 마이페이지 관리자
+    @GetMapping("/mypageAdmin")
+    public String mypageAdminPage() {
+    	return "mypageAdmin";
+    }
+    // 마이페이지 업체
+    @GetMapping("/mypageCompany")
+    public String mypageCompanyPage() {
+    	return "mypageCompany";
+    }
 }
