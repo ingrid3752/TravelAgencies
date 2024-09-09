@@ -102,7 +102,7 @@ ul {
   transition-duration: 0.5s;
 }
 .menu > li:hover .submenu {
-  height: 150px; /*서브메뉴 li한개의 높이 50*5*/
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
 .menu > li {
@@ -119,15 +119,12 @@ body {
 }
 
 #olym img {
-	display: flex;
-	justify-content: center;
-	margin:0 auto;
   width: 600px;
   height: 500px;
 }
 
 .ticket-container {
-  
+  padding-right: 10%;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -135,7 +132,6 @@ body {
 .ticket {
   display: flex;
   align-items: center;
-  margin-left: -10%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
@@ -188,7 +184,7 @@ body {
 .ticket-button {
   display: inline-block;
   width: 100px;
-  height: 35px;
+  height: 30px;
   background-color: black;
   color: white;
   text-decoration: none;

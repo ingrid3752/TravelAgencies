@@ -28,114 +28,116 @@
 </head>
 <body style="overflow-x: hidden">
 <%@ include file="./header.jsp" %>
-	<div id="olym">
-      <img src="../IMG/image-removebg-preview.png" alt="" />
-    </div>
-    <div class="ticket-container">
-      <div class="ticket">
-        <div class="ticket-icon">
-          <img src="../IMG/농구.png" alt="Boccia Icon" />
-        </div>
-        <div class="ticket-info">
-          <h2>농구</h2>
-          <p>
-            PBOC01 M/W - Individual: group play stage Join the Fan Corners,
-            sponsored by EDF, and take your place in a festive zone
-          </p>
-        </div>
-        <div class="ticket-action">
-          <p>300 ￦</p>
-          <a href="/basketball" class="ticket-button">Tickets</a>
+	<div style="display: flex; align-items: center; flex-direction: column">
+      <div id="olym">
+        <img src="../IMG/image-removebg-preview.png" alt="" />
+      </div>
+      <div class="ticket-container">
+        <div class="ticket">
+          <div class="ticket-icon">
+            <img src="../IMG/농구.png" alt="Boccia Icon" />
+          </div>
+          <div class="ticket-info">
+            <h2>농구</h2>
+            <p>
+              PBOC01 M/W - Individual: group play stage Join the Fan Corners,
+              sponsored by EDF, and take your place in a festive zone
+            </p>
+          </div>
+          <div class="ticket-action">
+            <p>300 ￦</p>
+            <a href="/basketball" class="ticket-button">Tickets</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ticket-container">
-      <div class="ticket">
-        <div class="ticket-icon">
-          <img src="../IMG/리듬체조.png" alt="Boccia Icon" />
-        </div>
-        <div class="ticket-info">
-          <h2>리듬체조</h2>
-          <p>
-            PBOC01 M/W - Individual: group play stage Join the Fan Corners,
-            sponsored by EDF, and take your place in a festive zone
-          </p>
-        </div>
-        <div class="ticket-action">
-          <p>300 ￦</p>
-          <a href="/gymnastics" class="ticket-button">Tickets</a>
-        </div>
-      </div>
-    </div>
-    <div class="ticket-container">
-      <div class="ticket">
-        <div class="ticket-icon">
-          <img src="../IMG/배드민턴.png" alt="Boccia Icon" />
-        </div>
-        <div class="ticket-info">
-          <h2>배드민턴</h2>
-          <p>
-            PBOC01 M/W - Individual: group play stage Join the Fan Corners,
-            sponsored by EDF, and take your place in a festive zone
-          </p>
-        </div>
-        <div class="ticket-action">
-          <p>300 ￦</p>
-          <a href="/badminton" class="ticket-button">Tickets</a>
+      <div class="ticket-container">
+        <div class="ticket">
+          <div class="ticket-icon">
+            <img src="../IMG/리듬체조.png" alt="Boccia Icon" />
+          </div>
+          <div class="ticket-info">
+            <h2>리듬체조</h2>
+            <p>
+              PBOC01 M/W - Individual: group play stage Join the Fan Corners,
+              sponsored by EDF, and take your place in a festive zone
+            </p>
+          </div>
+          <div class="ticket-action">
+            <p>300 ￦</p>
+            <a href="/gymnastics" class="ticket-button">Tickets</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ticket-container">
-      <div class="ticket">
-        <div class="ticket-icon">
-          <img src="../IMG/사격.png" alt="Boccia Icon" />
-        </div>
-        <div class="ticket-info">
-          <h2>사격</h2>
-          <p>
-            PBOC01 M/W - Individual: group play stage Join the Fan Corners,
-            sponsored by EDF, and take your place in a festive zone
-          </p>
-        </div>
-        <div class="ticket-action">
-          <p>300 ￦</p>
-          <a href="/shooting" class="ticket-button">Tickets</a>
-        </div>
-      </div>
-    </div>
-    <div class="ticket-container">
-      <div class="ticket">
-        <div class="ticket-icon">
-          <img src="../IMG/서핑.png" alt="Boccia Icon" />
-        </div>
-        <div class="ticket-info">
-          <h2>서핑</h2>
-          <p>
-            PBOC01 M/W - Individual: group play stage Join the Fan Corners,
-            sponsored by EDF, and take your place in a festive zone
-          </p>
-        </div>
-        <div class="ticket-action">
-          <p>300 ￦</p>
-          <a href="/surfing" class="ticket-button">Tickets</a>
+      <div class="ticket-container">
+        <div class="ticket">
+          <div class="ticket-icon">
+            <img src="../IMG/배드민턴.png" alt="Boccia Icon" />
+          </div>
+          <div class="ticket-info">
+            <h2>배드민턴</h2>
+            <p>
+              PBOC01 M/W - Individual: group play stage Join the Fan Corners,
+              sponsored by EDF, and take your place in a festive zone
+            </p>
+          </div>
+          <div class="ticket-action">
+            <p>300 ￦</p>
+            <a href="/badminton" class="ticket-button">Tickets</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ticket-container">
-      <div class="ticket">
-        <div class="ticket-icon">
-          <img src="../IMG/태권도.png" alt="Boccia Icon" />
+      <div class="ticket-container">
+        <div class="ticket">
+          <div class="ticket-icon">
+            <img src="../IMG/사격.png" alt="Boccia Icon" />
+          </div>
+          <div class="ticket-info">
+            <h2>사격</h2>
+            <p>
+              PBOC01 M/W - Individual: group play stage Join the Fan Corners,
+              sponsored by EDF, and take your place in a festive zone
+            </p>
+          </div>
+          <div class="ticket-action">
+            <p>300 ￦</p>
+            <a href="/shooting" class="ticket-button">Tickets</a>
+          </div>
         </div>
-        <div class="ticket-info">
-          <h2>태권도</h2>
-          <p>
-            PBOC01 M/W - Individual: group play stage Join the Fan Corners,
-            sponsored by EDF, and take your place in a festive zone
-          </p>
+      </div>
+      <div class="ticket-container">
+        <div class="ticket">
+          <div class="ticket-icon">
+            <img src="../IMG/서핑.png" alt="Boccia Icon" />
+          </div>
+          <div class="ticket-info">
+            <h2>서핑</h2>
+            <p>
+              PBOC01 M/W - Individual: group play stage Join the Fan Corners,
+              sponsored by EDF, and take your place in a festive zone
+            </p>
+          </div>
+          <div class="ticket-action">
+            <p>300 ￦</p>
+            <a href="/surfing" class="ticket-button">Tickets</a>
+          </div>
         </div>
-        <div class="ticket-action">
-          <p>300 ￦</p>
-          <a href="/taekwondo" class="ticket-button">Tickets</a>
+      </div>
+      <div class="ticket-container">
+        <div class="ticket">
+          <div class="ticket-icon">
+            <img src="../IMG/태권도.png" alt="Boccia Icon" />
+          </div>
+          <div class="ticket-info">
+            <h2>태권도</h2>
+            <p>
+              PBOC01 M/W - Individual: group play stage Join the Fan Corners,
+              sponsored by EDF, and take your place in a festive zone
+            </p>
+          </div>
+          <div class="ticket-action">
+            <p>300 ￦</p>
+            <a href="/taekwondo" class="ticket-button">Tickets</a>
+          </div>
         </div>
       </div>
       <div class="ticket-container">
@@ -169,12 +171,12 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p>300 won￦</p>
             <a href="/fencing" class="ticket-button">Tickets</a>
           </div>
         </div>
       </div>
-       <div style="display: flex">
+      <div style="display: flex">
         <div id="main6">
           <p class="qqq">https://github.com/jochanghyeon</p>
           <p class="qqq">010-1234-5678</p>
