@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AccomReservation {
 
-    private int reservationId; 
+    private Integer reservationId; 
     private Integer memCode; 
     private Integer accomCode;
     private String accomName;
@@ -23,6 +23,6 @@ public class AccomReservation {
     
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date endDate;
-    private int seats; 
+    private Integer seats; 
     private Member member;
 }

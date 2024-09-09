@@ -18,8 +18,6 @@ public class AccomService {
 	
 	// 숙소 예약 목록 조회
     public List<AccomReservation> ReservationList(int memCode){
-    	System.out.println("21 : " + memCode);
-    	System.out.println("22 : " + mapper.ReservationList(memCode));
     	return mapper.ReservationList(memCode);
     }
     

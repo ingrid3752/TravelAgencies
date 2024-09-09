@@ -24,8 +24,8 @@
 	</div>
 	<div>
 		<form action="/accom/insertReservation" method="post">
-			<input type="hidden" id="memCode" name="memCode" value="${accomReservation.memCode}"> 
-			<input type="hidden" id="accomCode" name="accomCode" value="${accomReservation.accomCode}"> 
+			<input type="hidden" id="memCode" name="memCode" value="${accomReservation.memCode != null ? accomReservation.memCode : 1}"> 
+			<input type="hidden" id="accomCode" name="accomCode" value="${accomReservation.accomCode != null ? accomReservation.accomCode : 1}"> 
 			<label for="accomName">숙소 이름 : <input type="text" id="accomName" name="accomName" required></label> 
 			<label for="startDate">시작 날짜 : <input type="date" id="startDate" name="startDate" required></label> 
 			<label for="endDate">종료 날짜 : <input type="date" id="endDate" name="endDate" required> </label> 

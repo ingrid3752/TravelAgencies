@@ -130,6 +130,10 @@ SELECT * FROM accom_reservation WHERE accom_code = 1;
 SELECT * FROM accom_reservation;
 SELECT r.mem_code, r.accom_name, r.start_date,r.end_date,r.seats
 FROM accom_reservation r;
+SHOW CREATE TABLE accom_reservation;
+SELECT * FROM accom WHERE accom_code = 1;
+INSERT INTO accom (accom_code, accom_name, accom_phone, location, price)
+VALUES (1, '르 르믹스 호텔', '01012345678','프랑스 파리',150000);
 SELECT 
    		r.accom_name AS accomName, 
    		r.start_date AS startDate, 

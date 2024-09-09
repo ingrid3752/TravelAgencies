@@ -41,6 +41,7 @@
             <input type="hidden" name="reservationId" value="${reservation.reservationId}">
             <button type="submit">예약 취소</button>
         </form>
+        <br>
     </div>
 	</c:forEach>
 

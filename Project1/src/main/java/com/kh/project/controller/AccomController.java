@@ -9,6 +9,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -38,11 +39,9 @@ public class AccomController {
     	if (AR == null || AR.isEmpty()) {
     		model.addAttribute("message", "예약 목록이 없습니다");
     	} else {
-    		System.out.println("AR : " + AR);
     		model.addAttribute("accomReservationList", AR);
     	}
-    	System.out.println(memCode);
-    	System.out.println(model);
+
     	return "accomReservation";
     }
 
@@ -55,7 +54,6 @@ public class AccomController {
     // 숙소 예약 추가
     @PostMapping("/accom/insertReservation")
     public String insertReservation(Integer memCode, AccomReservation vo) {
-    	System.out.println("memCode: " + vo.getMemCode());
     	if(vo.getMemCode() == null) {
     		return "errorPage";
     	}
@@ -64,6 +62,19 @@ public class AccomController {
     	}
     	service.insertReservation(vo);
     	return "redirect:/accomReservation/" + vo.getMemCode();
+    }
+    
+    // 예약 후 돌아와서 리스트 보여주기
+    @GetMapping("/accomReservation/{memCode}")
+    public String reservationList(@PathVariable("memCode")int memCode,Model model) {
+    	List<AccomReservation> AR = service.ReservationList(memCode);
+    	if(AR == null || AR.isEmpty()) {
+    		model.addAttribute("message", "예약된 숙소가 없습니다");
+    	} else {
+    		model.addAttribute("reservation", AR);
+    	}
+    	System.out.println(model);
+    	return "accomReservation";
     }
     
     // 시작 날짜 수정
