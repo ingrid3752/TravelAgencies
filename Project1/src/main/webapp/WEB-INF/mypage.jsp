@@ -14,15 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
   </head>
+  <!-- //style="overflow: hidden" -->
+  <body  style="overflow-x: hidden; overflow-y:auto;" id="body">
   <header id="header">
     <div id="Binggrae_font">
       <a href="/" id="KHTRAVEL">KHTRAVEL</a>
     </div>
-    
   </header>
-  <!-- //style="overflow: hidden" -->
-  <body  style="overflow-x: hidden; overflow-y:auto;" id="body">
-    <div id="mainpage">
+   <div id="mainpage">
     <div id="image_container" style="margin-top: 20px;"><img src="../IMG/제목 없는 디자인.png" alt=""></div>
   </div><br>
     <div id="imgpage2">
@@ -45,6 +44,7 @@
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolorum dicta corrupti veritatis nemo fuga eum est saepe corporis quod eaque atque beatae maiores eius autem illum, obcaecati aliquid distinctio?</p>
 </div>
   </section>
+
   <section class="section2"><h2>경기2</h2>
     <div>
     <img src="#" alt="" class="img1">
@@ -56,6 +56,7 @@
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolorum dicta corrupti veritatis nemo fuga eum est saepe corporis quod eaque atque beatae maiores eius autem illum, obcaecati aliquid distinctio?</p>
 </div>
   </section>
+
   <section class="section3"><h2>경기3</h2>
     <div>
     <img src="#" alt="" class="img1">
@@ -84,6 +85,7 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolorum dicta corrupti veritatis nemo fuga eum est saepe corporis quod eaque atque beatae maiores eius autem illum, obcaecati aliquid distinctio?</p>
   </div>
     </section>
+
     <section class="section2"><h2>경기5</h2>
       <div>
       <img src="#" alt="" class="img1">
@@ -95,6 +97,7 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolorum dicta corrupti veritatis nemo fuga eum est saepe corporis quod eaque atque beatae maiores eius autem illum, obcaecati aliquid distinctio?</p>
   </div>
     </section>
+
     <section class="section3"><h2>경기6</h2>
       <div>
       <img src="#" alt="" class="img1">
@@ -107,6 +110,7 @@
   </div>
     </section>
 </div>
+
 <div class="mainpage3">
       <section class="section1"><h2>경기7</h2>
         <div>
@@ -119,6 +123,7 @@
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolorum dicta corrupti veritatis nemo fuga eum est saepe corporis quod eaque atque beatae maiores eius autem illum, obcaecati aliquid distinctio?</p>
 </div>
   </section>
+
       <section class="section2"><h2>경기8</h2>
         <div>
         <img src="#" alt="" class="img1">
@@ -157,6 +162,7 @@
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolorum dicta corrupti veritatis nemo fuga eum est saepe corporis quod eaque atque beatae maiores eius autem illum, obcaecati aliquid distinctio?</p>
 </div>
 </section>
+
   <section class="section2"><h2>숙소2</h2>
     <div>
     <img src="#" alt="" class="img1">
@@ -207,15 +213,15 @@
               <label for="phone">전화번호</label>
               <input type="text" id="phone" name="phone" class="name" required>
           </div>
-        <!-- 이메일 현재 사용 안함  -->
-        <!--   <div class="idid">
+          <div class="idid">
             <label for ="Email">이메일</label>
             <input type="text" id="email" name="email" class="name" required>
-        </div><br><br> -->
+        </div><br><br>
           <button type="submit" class="infobu">회원 정보 수정</button>
   </details>
+  <br>
   <details>
-    <summary><span id="more"> <h1><i class="fa-solid fa-lock" style="color: #62865F;"></i>&nbsp;비밀번호 변경</h1></span></summary>
+    <summary><span id="more"> <h1><i class="fa-solid fa-lock" style="color: #62865f;"></i>&nbsp;비밀번호 변경</h1></span></summary>
     <div id="mainpage4">
       <section id="section4" class="sect">
         <div id="line">
@@ -233,7 +239,7 @@
           <div class="idid">
             <label for ="password">변경할 비밀번호 확인</label>
             <input type="password" id="pwdcheck" name="pwdcheck" class="name" required>
-        </div>
+        </div><br><br>
           <button type="submit" class="infobu">회원 정보 수정</button>
   </div>
   </section>
