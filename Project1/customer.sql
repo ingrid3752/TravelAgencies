@@ -69,7 +69,7 @@ CREATE TABLE stadium_reservation (
     start_date DATE, 
     end_date DATE,
     seats INT NOT NULL,               -- 예약 인원 수
-    FOREIGN KEY (mem_id) REFERENCES mem_info(mem_code),
+    FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code),
     FOREIGN KEY (stadium_code) REFERENCES stadium (stadium_code)
 );
 SELECT * FROM stadium_reservation;
@@ -82,10 +82,8 @@ CREATE TABLE rest (
     rest_name VARCHAR(255),
     rest_location VARCHAR(255),
     rest_phone VARCHAR(255),
-    avg_price INT,
     date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    people INT,
-    amount INT
+    seats INT
 );
 
 -- 식당 식사 기록
