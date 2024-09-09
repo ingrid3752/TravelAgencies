@@ -207,9 +207,8 @@
         <h2>기본 정보 수정</h2>
       </div>
       <br><br>
-      
+       <form action="mypage/submit" method="post">
        <div class="idid">
-        <form action="mypage/submit" method="post">
               <label for ="id">아이디</label>
               <input type="id" id="id" name="id" required>
        </div>
@@ -236,8 +235,8 @@
         <h2>비밀번호 변경</h2>
       </div>
       <br><br>
-      <div class="idid">
       <form action="mypage" method="post">
+      <div class="idid">
       <label for ="id">아이디</label>
       <input type="text" id="id" name= "id" required>
       </div>
@@ -251,6 +250,8 @@
           </div>
           <button type="submit" class="infobu">회원 정보 수정</button>
           </form>
+          
+          
   </div>
   </section>
   </details>
