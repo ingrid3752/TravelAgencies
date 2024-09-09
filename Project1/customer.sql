@@ -135,7 +135,8 @@ SELECT
    		r.seats AS seats
 		FROM accom_reservation r
 		JOIN mem_info m ON r.mem_code = m.mem_code
-		WHERE m.mem_code = '1';
+		WHERE m.mem_code = 1;
+        
 SELECT * FROM mem_info WHERE mem_code = '1';
 
 -- 리뷰

@@ -38,8 +38,10 @@ public class AccomController {
     	if (AR == null || AR.isEmpty()) {
     		model.addAttribute("message", "예약 목록이 없습니다");
     	} else {
+    		System.out.println("AR : " + AR);
     		model.addAttribute("accomReservationList", AR);
     	}
+    	System.out.println(memCode);
     	System.out.println(model);
     	return "accomReservation";
     }

@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
-<link href="${pageContext.request.contextPath}/css/signUp.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/update.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
     <!-- 폰트어썸폴더 -->
 <script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script> 

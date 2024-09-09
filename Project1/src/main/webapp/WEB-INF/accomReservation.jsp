@@ -23,14 +23,19 @@
 	</div>
 <div class="reservation-info">
 	<p>호텔 예약 정보</p>
+	<br>
 </div>
 	<div class="reservation-list">
-    <c:forEach var="AccomReservation" items="${accomList}">
+    <c:forEach var="AccomReservation" items="${accomReservationList}">
     <div>
         <h3>숙소 이름: ${AccomReservation.accomName}</h3>
+        <br>
         <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일" /></p>
+        <br>
         <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일" /></p>
+        <br>
         <p>예약 인원: ${AccomReservation.seats}</p>
+        <br>
         
         <form action="/deleteReservation" method="post">
             <input type="hidden" name="reservationId" value="${reservation.reservationId}">
