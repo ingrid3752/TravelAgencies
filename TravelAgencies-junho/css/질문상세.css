@@ -1,140 +1,169 @@
 /* 기본 스타일 */
 html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
-    overflow-x: hidden; /* 수평 스크롤 방지 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sunflower', sans-serif; /* 기본 폰트 */
+  overflow-x: hidden; /* 수평 스크롤 방지 */
 }
 
 /* 헤더 스타일 */
 #header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding-left: 30px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px; /* 좌우 패딩 추가 */
+  font-family: 'Sunflower', sans-serif; /* 통일된 폰트 */
+  color: white; /* 기본 텍스트 색상 */
 }
 
 #KHTRAVLE {
-    color: white;
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #login, #sign {
-    color: white;
-    font-size: 1.3rem;
-    font-family: "Sunflower", sans-serif;
-    font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 #login {
-    margin-left: 1400px;
+  margin-right: 20px; /* 오른쪽 여백 조정 */
 }
 
 #sign {
-    padding-right: 150px;
+  margin-right: 20px; /* 오른쪽 여백 조정 */
 }
 
 a {
-    text-decoration: none;
-    color: inherit; /* 링크 색상 상속 */
+  text-decoration: none;
+  color: inherit; /* 링크 색상 상속 */
 }
 
 /* 메뉴 스타일 */
 .menu {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    width: 100px;
+  position: relative; /* 절대 위치 제거 */
+  width: 100px;
 }
 
 .menu > li {
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    background-color: #000;
-    font-family: "Sunflower", sans-serif;
-    font-weight: 500;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 500;
+  position: relative;
 }
 
 .menu a {
-    color: #fff;
+  color: #fff;
+  display: block; /* 링크 클릭 영역 확대 */
 }
 
 .submenu {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s;
-}
-
-.menu > li:hover {
-    background-color: #000;
+  display: none; /* 기본적으로 숨김 처리 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  transition: opacity 0.5s ease;
 }
 
 .menu > li:hover .submenu {
-    height: 250px;
+  display: block; /* 메뉴 호버 시 표시 */
 }
-/* 질문 상세 스타일 */
-.question-detail-container {
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 0 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #question-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  #question-info {
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
-  }
-  
-  #question-info span {
-    margin-right: 15px;
-  }
-  
-  #question-content {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .button-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-  }
-  
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
 
-  /* 질문 상세 페이지 CSS (질문상세.css) */
+/* 질문 작성 페이지 스타일 */
+.form-container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"], textarea, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 질문 상세 페이지 CSS */
 .question-detail-container {
   padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#question-info {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+#question-info span {
+  margin-right: 15px;
+}
+
+#question-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.button-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
 
 #question-image {
@@ -145,5 +174,4 @@ a {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
 }

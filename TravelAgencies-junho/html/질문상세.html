@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="질문 상세 페이지 - 질문의 제목, 작성자, 작성일, 조회수 및 내용이 포함된 페이지입니다." />
+    <meta name="keywords" content="질문, 상세, 질문 게시판" />
     <title>질문 상세</title>
     <link rel="stylesheet" href="/css/질문상세.css" />
     <link rel="stylesheet" href="../reset.css" />
@@ -14,43 +16,44 @@
 <body>
     <header id="header">
         <div id="Binggrae_font">
-            <a href="#" id="KHTRAVLE">KHTRAVLE</a>
+            <a href="#" id="KHTRAVLE" aria-label="홈 페이지로 이동">KHTRAVLE</a>
         </div>
-        <div>
-            <a href="#" id="login" aria-label="로그인">로그인</a>
-            <a href="#" id="sign" aria-label="회원가입">회원가입</a>
+        <nav>
+            <a href="#" id="login" aria-label="로그인 페이지로 이동">로그인</a>
+            <a href="#" id="sign" aria-label="회원가입 페이지로 이동">회원가입</a>
             <ul class="menu">
                 <li>
                     <a href="#" aria-label="메뉴 열기">☰</a>
                     <ul class="submenu">
                         <li><a href="./로그인.html" aria-label="로그인 페이지">로그인</a></li>
                         <li><a href="/예약페이지/project.html" aria-label="예약 페이지">예약페이지</a></li>
-                        <li><a href="./질문게시판.html" aria-label="질문 게시판">질문게시판</a></li>
+                        <li><a href="./질문게시판.html" aria-label="질문 게시판 페이지">질문게시판</a></li>
                         <li><a href="./리뷰3.html" aria-label="리뷰 작성 페이지">리뷰 작성</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main>
         <section>
             <div class="question-detail-container">
-                <h1 id="question-title">제목</h1>
+                <h1 id="question-title">질문 제목</h1>
                 <div id="question-info">
-                    <span id="question-author">작성자</span>
-                    <span id="question-date">작성일</span>
-                    <span id="question-views">조회수</span>
+                    <span id="question-author">작성자: 작성자 이름</span>
+                    <span id="question-date">작성일: YYYY-MM-DD</span>
+                    <span id="question-views">조회수: 숫자</span>
                 </div>
                 <div id="question-content">
-                    <p>질문 내용</p>
+                    <p>질문 내용이 여기에 표시됩니다. 사용자가 질문을 자세히 읽을 수 있도록 작성하세요.</p>
                     <!-- 이미지가 첨부된 경우를 위한 부분 -->
                     <div id="question-image">
-                        <img src="path/to/image.jpg" alt="첨부된 이미지" id="attached-image">
+                        <img src="images/actual-image.jpg" alt="첨부된 이미지 설명" id="attached-image">
                     </div>
+                    
                 </div>
-                <a href="./질문게시판.html" class="button-link">
-                    <button aria-label="목록으로 돌아가기">목록으로 돌아가기</button>
+                <a href="./질문게시판.html" class="button-link" aria-label="질문 게시판 목록으로 돌아가기">
+                    <button type="button" aria-label="목록으로 돌아가기">목록으로 돌아가기</button>
                 </a>
             </div>
         </section>

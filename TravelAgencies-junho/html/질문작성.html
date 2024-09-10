@@ -14,30 +14,32 @@
 <body>
     <header id="header">
         <div id="Binggrae_font">
-            <a href="#" id="KHTRAVLE">KHTRAVLE</a>
+            <a href="#" id="KHTRAVLE" aria-label="홈으로 이동">KHTRAVLE</a>
         </div>
-        <div>
-            <a href="#" id="login" aria-label="로그인">로그인</a>
-            <a href="#" id="sign" aria-label="회원가입">회원가입</a>
-            <ul class="menu">
+        <nav>
+            <a href="#" id="login" aria-label="로그인 페이지로 이동">로그인</a>
+            <a href="#" id="sign" aria-label="회원가입 페이지로 이동">회원가입</a>
+            <ul class="menu" role="navigation">
                 <li>
-                    <a href="#" aria-label="메뉴 열기">☰</a>
-                    <ul class="submenu">
-                        <li><a href="./로그인.html" aria-label="로그인 페이지">로그인</a></li>
-                        <li><a href="/예약페이지/project.html" aria-label="예약 페이지">예약페이지</a></li>
-                        <li><a href="./질문게시판.html" aria-label="질문 게시판">질문게시판</a></li>
-                        <li><a href="./리뷰3.html" aria-label="리뷰 작성 페이지">리뷰 작성</a></li>
+                    <button aria-label="메뉴 열기" aria-expanded="false">
+                        ☰
+                    </button>
+                    <ul class="submenu" role="menu">
+                        <li><a href="./로그인.html" aria-label="로그인 페이지로 이동">로그인</a></li>
+                        <li><a href="/예약페이지/project.html" aria-label="예약 페이지로 이동">예약페이지</a></li>
+                        <li><a href="./질문게시판.html" aria-label="질문 게시판으로 이동">질문게시판</a></li>
+                        <li><a href="./리뷰3.html" aria-label="리뷰 작성 페이지로 이동">리뷰 작성</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main>
         <section>
             <div class="form-container">
                 <h1>질문 작성하기</h1>
-                <form id="question-form">
+                <form id="question-form" action="/submit-question" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="title">제목</label>
                         <input type="text" id="title" name="title" required placeholder="제목을 입력하세요">
@@ -59,7 +61,6 @@
                         <button type="button" onclick="window.location.href='./질문게시판.html';" aria-label="취소">취소</button>
                     </div>
                 </form>
-                
             </div>
         </section>
     </main>

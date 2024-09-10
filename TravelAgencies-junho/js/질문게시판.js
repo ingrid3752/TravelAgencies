@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const searchTerm = searchInput.value.toLowerCase();
         const filterValue = filterSelect.value;
 
+        // 검색 적용
         if (searchTerm) {
             questions = questions.filter(q => 
                 q.title.toLowerCase().includes(searchTerm) ||
@@ -101,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
             );
         }
 
+        // 필터 적용
         if (filterValue === "latest") {
             questions.sort((a, b) => new Date(b.date) - new Date(a.date));
         } else if (filterValue === "popular") {
@@ -140,17 +142,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // 질문 삭제 버튼 클릭 이벤트 리스너
+    // 게시글 링크 클릭 시 조회수 증가 및 삭제 버튼 클릭 시 삭제
     postsContainer.addEventListener("click", function(event) {
         if (event.target.classList.contains("delete-button")) {
             const id = parseInt(event.target.getAttribute("data-id"));
             deleteQuestion(id);
-        }
-    });
-
-    // 게시글 링크 클릭 시 조회수 증가
-    postsContainer.addEventListener("click", function(event) {
-        if (event.target.classList.contains("view-link")) {
+        } else if (event.target.classList.contains("view-link")) {
             const id = parseInt(new URL(event.target.href).searchParams.get("id"));
             incrementViews(id);
         }

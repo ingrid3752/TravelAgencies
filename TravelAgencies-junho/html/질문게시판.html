@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="질문 게시판 - 사용자들이 질문을 올리고 답변을 받을 수 있는 게시판입니다." />
+    <meta name="keywords" content="질문, 게시판, 커뮤니티, 질문 작성" />
     <title>질문 게시판</title>
     <link rel="stylesheet" href="/css/질문게시판.css" />
     <link rel="stylesheet" href="../reset.css" />
@@ -14,18 +16,18 @@
 <body>
     <header id="header">
         <div id="Binggrae_font">
-            <a href="#" id="KHTRAVLE">KHTRAVLE</a>
+            <a href="#" id="KHTRAVLE" aria-label="홈 페이지로 이동">KHTRAVLE</a>
         </div>
         <nav>
-            <a href="#" id="login" aria-label="로그인">로그인</a>
-            <a href="#" id="sign" aria-label="회원가입">회원가입</a>
+            <a href="#" id="login" aria-label="로그인 페이지로 이동">로그인</a>
+            <a href="#" id="sign" aria-label="회원가입 페이지로 이동">회원가입</a>
             <ul class="menu">
                 <li>
                     <a href="#" aria-label="메뉴 열기">☰</a>
                     <ul class="submenu">
                         <li><a href="./로그인.html" aria-label="로그인 페이지">로그인</a></li>
                         <li><a href="/예약페이지/project.html" aria-label="예약 페이지">예약페이지</a></li>
-                        <li><a href="./질문게시판.html" aria-label="질문 게시판">질문게시판</a></li>
+                        <li><a href="./질문게시판.html" aria-label="질문 게시판 페이지">질문게시판</a></li>
                         <li><a href="./리뷰3.html" aria-label="리뷰 작성 페이지">리뷰 작성</a></li>
                     </ul>
                 </li>
@@ -46,7 +48,7 @@
             <div id="posts-container" class="posts-container">
                 <!-- 예시 질문 -->
                 <div class="post-item">
-                    <a href="./질문상세.html?id=1" class="post-link">
+                    <a href="./질문상세.html?id=1" class="post-link" aria-label="질문 제목 1 상세 페이지">
                         <span class="post-id">1</span>
                         <span class="post-title">질문 제목 1</span>
                         <span class="post-author">작성자 1</span>
@@ -58,26 +60,26 @@
             </div>
 
             <div class="pagination">
-                <a href="#" class="prev">이전</a>
-                <a href="#" class="page-number">1</a>
-                <a href="#" class="page-number">2</a>
-                <a href="#" class="page-number">3</a>
-                <a href="#" class="next">다음</a>
+                <a href="#" class="prev" aria-label="이전 페이지">이전</a>
+                <a href="#" class="page-number" aria-label="페이지 1">1</a>
+                <a href="#" class="page-number" aria-label="페이지 2">2</a>
+                <a href="#" class="page-number" aria-label="페이지 3">3</a>
+                <a href="#" class="next" aria-label="다음 페이지">다음</a>
             </div>
 
             <div class="search-bar">
                 <label for="search">검색: </label>
                 <input type="text" id="search" placeholder="검색어 입력" aria-label="검색 입력 필드">
-                <select id="filter" aria-label="검색 필터">
+                <select id="filter" aria-label="검색 필터 선택">
                     <option value="latest">최신순</option>
                     <option value="popular">인기순</option>
                     <option value="oldest">오래된 순</option>
                 </select>
-                <button type="button" aria-label="검색 확인">확인</button>
+                <button type="button" aria-label="검색 실행">확인</button>
             </div>
 
             <div class="button-container">
-                <a href="./질문작성.html" class="button-link" aria-label="질문 작성하기">
+                <a href="./질문작성.html" class="button-link" aria-label="질문 작성 페이지로 이동">
                     <button type="button" aria-label="질문 작성하기">질문작성하기</button>
                 </a>
             </div>
