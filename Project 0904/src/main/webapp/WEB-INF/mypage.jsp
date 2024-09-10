@@ -210,20 +210,25 @@
        <form action="mypage/submit" method="post">
        <div class="idid">
               <label for ="id">아이디</label>
-              <input type="id" id="id" name="id" required>
+              <input type="id" id="id" name="id" class="name" required>
        </div>
+       <span id="idSpan" class="spanspan"></span>
         <div class="idid">
               <label for ="text">변경할 이름</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name" class="name" required>
           </div>
+          <span id="nameSpan" class="spanspan"></span>
           <div class="idid">
               <label for="phone"> 변경할 전화번호</label>
-              <input type="text" id="phone" name="phone"  required>
+              <input type="text" id="phone" name="phone"  class="name" required>
           </div>
+          <span id="phoneSpan" class="spanspan"></span>
            <div class="idid">
-            <label for ="Email">변경할 이메일</label>
-            <input type="text" id="email" name="email"  required>
-        </div><br><br> 
+            <label for ="email">변경할 이메일</label>
+            <input type="text" id="email" name="email"  class="name" required>
+        </div>
+        <span id="emailSpan" class="spanspan"></span>
+        <br><br> 
           <button type="submit" class="infobu">회원 정보 수정</button>
         </form>  
   </details>
@@ -240,13 +245,13 @@
       <label for ="id">아이디</label>
       <input type="text" id="id" name= "id" required>
       </div>
-       <div class="idid">
-              <label for ="password">비밀번호</label>
-              <input type="text" id="password" name="pwd" required>
-          </div>
           <div class="idid">
               <label for="password">변경할 비밀번호</label>
               <input type="text" id="pwdupdate" name="password" required>
+          </div>
+          <div class="idid">
+          <label for="password"> 변경할 비밀번호 확인</label>
+          <input type="text" id="pwdupdatecheck" name="pwdupdatecheck" required>
           </div>
           <button type="submit" class="infobu">회원 정보 수정</button>
           </form>
@@ -258,6 +263,6 @@
   <div style="width: 100%; height: 100px;"></div>
   </details>
   
-    <script src="../js/마이페이지12.js"></script>
+    <script src="../js/mypage.js"></script>
   </body>
 </html>

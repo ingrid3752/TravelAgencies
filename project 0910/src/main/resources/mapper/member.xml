@@ -1,0 +1,52 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.MemberMapper">
+
+	<resultMap type="Member" id="memberMap">
+		<id column="mem_code" property="memCode"/>
+		<result column="id" property="id" />
+		<result column="password" property="password"/>
+		<result column="name" property="name"/>
+		<result column="phone" property="phone"/>
+		<result column="email" property="email"/>
+		<result column="role" property="role"/>
+	</resultMap>
+
+	<!-- 아이디 중복 체크 -->
+	<select id="check" parameterType="String" resultMap="memberMap">
+		SELECT * FROM mem_info WHERE id = #{id}
+	</select>
+	
+	<!-- 회원가입 : role 역할 추가 -->
+	<insert id="signUp" parameterType="Member">
+		INSERT INTO mem_info (id, password, name, phone, email, role) VALUES(#{id}, #{password}, #{name}, #{phone}, #{email}, #{role})
+	</insert>
+	
+	<!-- 회원정보수정 -->
+	<update id="updateId" parameterType="Member">
+		UPDATE mem_info 
+		SET password = #{password}
+		WHERE id = #{id}
+    </update>
+    
+    <!-- 이름, 전화번호, 이메일 변경 -->
+    <update id="updateNPE" parameterType="Member">
+    	UPDATE mem_info
+    	SET name = #{name}, phone = #{phone}, email = #{email}
+    	WHERE id = #{id}
+    </update>
+    <!-- 
+    <update id="updatePassword" parameterType="Member">
+		UPDATE mem_info 
+		SET id = #{id}, password = #{password}
+		WHERE password = #{password}
+	</update> 
+     -->
+	 	
+	
+	<!-- 회원탈퇴 -->
+	<delete id="delete" parameterType="int">
+		DELETE FROM mem_info
+		WHERE mem_code =
+		#{MemCode}
+	</delete>
+</mapper>

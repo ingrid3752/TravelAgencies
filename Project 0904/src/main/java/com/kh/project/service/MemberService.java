@@ -31,6 +31,7 @@ public class MemberService implements UserDetailsService {
 
     public boolean signUp(Member vo) {
         try {
+        	System.out.println("34 : " + vo.getPassword());
         	vo.setPassword(bcpe.encode(vo.getPassword()));
             int result = memberMapper.signUp(vo);
             return result == 1; // 삽입된 레코드 수가 1이면 성공
@@ -43,6 +44,7 @@ public class MemberService implements UserDetailsService {
     // 회원정보 수정 비밀번호(아이디)
     public boolean update(Member vo) {
         try {
+        	System.out.println("47 : " + vo.getPassword());
             int result = memberMapper.updateId(vo);
             return result > 0;
         } catch (Exception e) {
@@ -53,6 +55,8 @@ public class MemberService implements UserDetailsService {
     //회원정보 수정 이름,이메일,번호(아이디)
     public boolean updateNPE(Member vo) {
     try {	
+    	
+    	
     	int result =memberMapper.updateNPE(vo);
     	return result > 0;
     } catch (Exception e) {

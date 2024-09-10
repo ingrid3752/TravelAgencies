@@ -46,6 +46,7 @@ public class MemberController {
 			} else {
 				vo.setRole("ROLE_COMPANY");
 			}
+			//vo.setPassword(bcpe.encode(vo.getPassword()));
 			boolean isRegistered = memberService.signUp(vo);
 			if (isRegistered) {
 				return "redirect:/login"; // 회원가입 성공 후 로그인 페이지로 리다이렉트
@@ -57,8 +58,10 @@ public class MemberController {
 			request.setAttribute("errorMessage", "회원가입 중 오류가 발생했습니다: " + e.getMessage());
 			return "signUp"; // 예외 발생 시 다시 회원가입 페이지로 이동
 		}
-	}
 
+}
+	
+	 
 	// 회원정보수정 이름,전화번호,이메일(아이디)
 	@PostMapping("/mypage/submit")
 	public String up(Member vo, HttpServletRequest request, Model jmodel) {
@@ -122,7 +125,7 @@ public class MemberController {
 					return "mypage";
 				}
 
-				vo.setPassword(bcpe.encode(vo.getPassword()));
+				//vo.setPassword(bcpe.encode(vo.getPassword()));
 				vo.setId(currentMember.getUsername()); // 현재 사용자의 ID를 유지
 				vo.setMemCode(((Member) currentMember).getMemCode()); // 고유 회원 코드 유지
 
