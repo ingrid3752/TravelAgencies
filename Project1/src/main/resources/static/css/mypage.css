@@ -1,5 +1,3 @@
-/*new font*/
-/*헤더*/
 @font-face {
   src: url("../html/font/Paris2024-Variable.ttf");
   font-family: "Binggrae";
@@ -21,7 +19,6 @@
   font-style: normal;
   top: 0%;
 }
-
 #KHTRAVEL {
   color: white;
   font-size: 2rem;
@@ -70,7 +67,6 @@ a {
   overflow: hidden;
   margin: 150px auto;
 }
-
 .menu > li {
   width: 20%; /*20*5=100%*/
   float: left;
@@ -81,16 +77,13 @@ a {
   font-weight: 400;
   font-style: normal;
 }
-
 .menu a {
   color: #fff;
 }
-
 .submenu > li {
   line-height: 50px;
   background-color: #000000;
 }
-
 .submenu {
   height: 0; /*ul의 높이를 안보이게 처리*/
   overflow: hidden;
@@ -99,19 +92,16 @@ a {
   background-color: #000000;
   transition-duration: 0.5s;
 }
-
 .menu > li:hover .submenu {
   height: 250px; /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
-
 .menu > li {
   width: 100%;
   text-align: center;
   line-height: 40px;
   background-color: #00000017;
 }
-
 /*바디*/
 /* 기본 폰트 설정 */
 @font-face {
@@ -149,14 +139,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 #image_container img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* 이미지가 컨테이너를 완전히 채우도록 설정 */
   border-radius: 50%; /* 이미지도 원형으로 만들기 */
 }
-
 .input-file {
   padding: 6px 25px;
   background-color: #85acff93;
@@ -211,7 +199,6 @@ body {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   margin-top: 30px;
 }
-
 .img1 {
   display: flex;
   align-content: center;
@@ -266,11 +253,9 @@ body {
   color: rgb(255, 255, 255);
   background-color: rgb(94, 145, 255);
 }
-
 .mar {
   padding: 10px;
 }
-
 #section4 {
   display: flex;
   flex-direction: column;
@@ -283,8 +268,8 @@ body {
   font-weight: 600;
   font-style: normal;
   color: rgb(0, 0, 0);
+  margin-top: 15px;
 }
-
 .idid label {
   display: block;
   margin-bottom: 5px;
@@ -311,7 +296,7 @@ body {
   background-color: rgb(94, 145, 255);
   border: none;
   border-radius: 4px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -320,12 +305,10 @@ body {
   font-style: normal;
   margin-left: 20px;
 }
-
 #infobu :hover {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   color: black;
 }
-
 #infobu :focus {
   outline: none;
   box-shadow: 0 0 0 3px #ffffff57;
@@ -339,7 +322,6 @@ body {
 details {
   margin-bottom: 10px;
 }
-
 details summary {
   background-color: #ffffffd2;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
@@ -351,26 +333,21 @@ details summary {
   transition: background 1s;
   text-align: center;
 }
-
 details > summary::-webkit-details-marker {
   background-size: contain;
   color: transparent;
   transform: rotate3d(0, 0, 1, 90deg);
   transition: transform 0.25s;
 }
-
 details[open] > summary::-webkit-details-marker {
   transform: rotate3d(0, 0, 1, 180deg);
 }
-
 details[open] > summary {
   background-color: rgba(0, 0, 0, 0.041);
 }
-
 details[open] > summary ~ * {
   animation: reveal 0.5s;
 }
-
 @keyframes reveal {
   from {
     opacity: 0;
@@ -381,15 +358,14 @@ details[open] > summary ~ * {
     transform: translate3d(0, 0, 0);
   }
 }
-
 #spancaca {
   font-size: 1.3rem;
 }
-#cacaca {
+#CACACA {
   font-size: 1rem;
   margin-left: 60%;
 }
-#cdcdcd {
+#CDCDCD {
   font-size: 1rem;
   margin-left: 69%;
 }
@@ -401,4 +377,7 @@ details[open] summary::marker {
 }
 .reveal-animation {
   animation: reveal 0.5s;
+}
+.spanspan {
+  height: 15px;
 }

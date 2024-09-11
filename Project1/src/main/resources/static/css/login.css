@@ -1,225 +1,97 @@
-/*new font*/
-/*헤더*/
-@font-face {
-  src: url("../html/font/Paris2024-Variable.ttf");
-  font-family: "Binggrae";
-}
-#Binggrae_font {
-  font-family: "Binggrae";
-}
-#header {
-  position: fixed;
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  padding-left: 30px;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-  top: 0%;
-}
-
-#KHTRAVEL {
-  color: white;
-  font-size: 2rem;
-}
-#login {
-  color: white;
-  font-size: 1.3rem;
-  padding-right: 10px;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-#sign {
-  color: white;
-  font-size: 1.3rem;
-  padding-right: 150px;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-a {
-  text-decoration: none;
-  font-size: 14px;
-}
-#kh {
-  color: white;
-  padding-left: 30px;
-  font-size: 3rem;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  font-size: 14px;
-}
-.menu {
-  position: fixed;
-  right: 20px;
-  width: 30px;
-  overflow: hidden;
-  margin: 150px auto;
-  bottom: 480px;
-  height: 300px;
-  width: 100px;
-  overflow: hidden;
-  margin: 150px auto;
-}
-
-.menu > li {
-  width: 20%; /*20*5=100%*/
-  float: left;
-  text-align: center;
-  line-height: 40px;
-  background-color: #000000;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.menu a {
-  color: #fff;
-}
-
-.submenu > li {
-  line-height: 50px;
-  background-color: #000000;
-}
-
-.submenu {
-  height: 0; /*ul의 높이를 안보이게 처리*/
-  overflow: hidden;
-}
-.menu > li:hover {
-  background-color: #000000;
-  transition-duration: 0.5s;
-}
-
-.menu > li:hover .submenu {
-  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
-  transition-duration: 1s;
-}
-
-.menu > li {
-  width: 100%;
-  text-align: center;
-  line-height: 40px;
-  background-color: #00000017;
-}
-
-/*바디*/
-* {
-  font-weight: bolder;
-}
-body {
-  font-family: "Paris2024", sans-serif;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* 기본 폰트 설정 */
 @font-face {
-  font-family: "Paris2024";
-  src: url("/fonts/Paris2024-Variable.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Paris2024';
+    src: url('/fonts/Paris2024-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* 로그인 */
-#mainlogin {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.123);
-  width: 400px;
-  box-sizing: border-box;
-  color: #000000;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-  height: 700px;
-  line-height: 10px;
-}
-#mainlogin p {
-  font-size: 1.2rem;
-  color: #000000;
-  padding-left: 70px;
-  line-height: 10px;
+body {
+    font-family: 'Paris2024', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url('/IMG/Untitled\ design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.idid {
-  margin-bottom: 15px;
-  font-family: "Gowun Batang", serif;
-  font-weight: 600;
-  font-style: normal;
-  color: rgb(0, 0, 0);
+/* 로그인 폼 컨테이너 */
+#login-form {
+    background-color: transparent; /* 폼을 완전히 투명하게 설정 */
+    box-shadow: none; /* 그림자 제거 */
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    color: #ffffff; /* 폼 내부 텍스트 색상을 흰색으로 변경 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.idid label {
-  display: block;
-  margin-bottom: 5px;
-  color: #000000;
+#login-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff; /* 제목 색상도 흰색으로 변경 */
 }
 
-.idid input {
-  width: 90%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid rgba(78, 78, 78, 0.692);
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #000000;
-  margin-left: 20px;
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
 }
-.idid label {
-  margin-bottom: 10px;
-  margin-left: 30px;
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff; /* 레이블 색상도 흰색으로 변경 */
+    font-family: "Sunflower", sans-serif;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ffffff; /* 입력 필드 테두리를 흰색으로 변경 */
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: transparent; /* 입력 필드를 투명하게 설정 */
+    color: #ffffff; /* 입력 필드 텍스트 색상을 흰색으로 변경 */
 }
 
 .form-group input:focus {
-  border-color: #ffffff54;
+    border-color: #007bff;
+    outline: none;
 }
 
 button {
-  width: 90%;
-  padding: 10px;
-  background-color: #fdcc63;
-  border: none;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Gowun Batang", serif;
-  font-weight: 600;
-  font-style: normal;
-  margin-left: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 button:hover {
-  background-color: #8dabff;
-  color: black;
+    background-color: #0056b3;
 }
 
 button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px #ffffff57;
-}
-#mainlogo {
-  width: 200px;
-  height: 200px;
-  margin-left: 25%;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }

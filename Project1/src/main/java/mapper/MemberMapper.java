@@ -7,10 +7,10 @@ import com.kh.project.model.vo.Member;
 @Mapper
 public interface MemberMapper {
 	
-	Member idCheck(String id);
+	Member check(String id);
     Member login(Member vo);
     int signUp(Member vo);
-    int update(Member vo);
-    void delete(int no);
+    int updateId(Member vo);
+    int updateNPE(Member vo);
     
 }

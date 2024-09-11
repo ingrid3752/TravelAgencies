@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 
 import com.kh.project.model.vo.Review;
+import com.kh.project.model.vo.ReviewEntity;
 
 @Mapper
 public interface ReviewMapper {
@@ -18,8 +19,8 @@ public interface ReviewMapper {
 	 * */
 	
 	void insertReview(Review review);
-	List<Review> getReviewByEntity(String entityType, int entityId);
+	List<Review> getReviewByEntity(ReviewEntity entity);
 	List<Review> getReviewByMember(int memCode);
-	Double getAverageRatingByEntity(String entityType, int entityId);
+	Double getAverageRatingByEntity(ReviewEntity entity);
 	
 }

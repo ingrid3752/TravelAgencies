@@ -1,17 +1,22 @@
 package com.kh.project.controller;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.kh.project.model.vo.Member;
+
+import jakarta.servlet.http.HttpServletRequest;
+
 @Controller
 public class PageController {
 
-	
 	// 로그인 페이지 이동
     @GetMapping("/login")
     public String login() {
-        return "login"; 
+        return "login"; /*application.properties prefix = /WEB-INF/ suffix= .jsp*/
     }
 
     // 회원가입 페이지 이동
@@ -25,19 +30,28 @@ public class PageController {
     public String update() {
     	return "update";
     }
+
     
     // 마이페이지 이동
     @GetMapping("/mypage")
-    public String mypage() {
-    	return "mypage";
+    public String mypage(HttpServletRequest request) {
+    	
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
+    	String role = member.getRole();
+    	
+    	System.out.println(role);
+    	if(role.equals("ROLE_COMPANY")) {
+    		
+    		return "compage";
+    	}else if(role.equals("ROLE_MEMBER")) {
+    		return "mypage";
+    	}
+    	
+    	return "adpage";
     }
     
-    // 로그인 후 메인 페이지로 이동
-    @GetMapping("/login/success")
-    public String loginSuccess() {
-        return "index"; 
-    }
-
+   
     // 회원가입 후 로그인 페이지로 이동
     @GetMapping("/register/success")
     public String registerSuccess() {
@@ -49,11 +63,23 @@ public class PageController {
     public String RestPage() {
         return "rest"; 
     }
+	
+    // 숙소 페이지로 이동
+    @GetMapping("/accom")
+    public String AccomPage() {
+        return "accom"; 
+    }
 
     // 굿즈 페이지로 이동
     @GetMapping("/goods")
     public String GoodsPage() {
         return "goods"; 
+    }
+    
+    // 리뷰 페이지로 이동
+    @GetMapping("/review")
+    public String ReviewPage() {
+    	return "review";
     }
     
     // 리뷰 작성 페이지로 이동
@@ -165,32 +191,22 @@ public class PageController {
     	return "france";
     }
     
-    // info 페이지로 이동
+    // info 페이지
     @GetMapping("/info")
     public String InfoPage() {
     	return "info";
     }
     
-    // hotel info 페이지로 이동
+    // hotelinfo 페이지
     @GetMapping("/hotelinfo")
     public String HotelInfoPage() {
     	return "hotelinfo";
     }
     
-    // ticket info 페이지로 이동
+    // ticketinfo 페이지
     @GetMapping("/ticketinfo")
     public String TicketInfoPage() {
     	return "ticketinfo";
     }
     
-    // 마이페이지 관리자
-    @GetMapping("/mypageAdmin")
-    public String mypageAdminPage() {
-    	return "mypageAdmin";
-    }
-    // 마이페이지 업체
-    @GetMapping("/mypageCompany")
-    public String mypageCompanyPage() {
-    	return "mypageCompany";
-    }
 }
