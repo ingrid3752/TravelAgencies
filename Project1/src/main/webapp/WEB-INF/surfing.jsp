@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>농구</title>
-<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
+<title>서핑</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <!-- 구글 폰트-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,35 +40,24 @@
           <div class="text-wrapper">
             <!-- 텍스트 내용 -->
             <span class="text"
-              >구기 종목 중 하나로, 공을 링(림)에 넣는 것을 득점으로 하여,
-              제한 시간 안에 득점을 해 점수가 1점이라도 더 높은 쪽이 승리하는
-              경기이다. 한 팀당 5명의 선수가 선발된다. 주로 전후반전, 혹은
-              4쿼터로 진행되며, 전후반의 경우 20분씩 총 40분, 4쿼터의 경우 한
-              쿼터당 10분, 총 40분이 경기 규정 시간이다. 변종 종목으로 3X3
-              농구라 하는, 하프 코트(Half Court)에서 골대 하나를 놓고 하는
-              농구도 있다. 일명 길거리 농구 혹은 Street Ball. 또한, 여성 전용
-              구기인 넷볼이 19세기 말 농구에서 파생되었다.</span
+              >서프보드를 타고서 파도의 경사진 면을 오르내리며 높이와 속도, 기술을 겨루는 스포츠로, 고도의 평형감각과 정확한 타이밍이 요구된다. 자연 그대로의 파도만을 이용하기 때문에 즐길 수 있는 장소가 한정되어 있고,위험하지만 매력있는 스포츠이다. 다른말로는 '파도타기'라고도 한다.</span
             >
             <span class="more-text">더보기</span>
             <span class="less-text">줄이기</span>
           </div>
         </div>
         <div class="ticket-icon"></div>
-        <img src="../IMG/농구.png" alt="이미지" id="imgbask" />
+        <img src="../IMG/서핑.png" alt="이미지" id="imgbask" />
       </div>
     </div>
     <!--------------------------------------------------------------------------->
     <div class="ticket-container6">
       <div class="ticket6">
         <div id="modaldiv">
-          <h2>선택한 티켓의 설명</h2>
+          <img src="../IMG/서핑마스코트.png" alt="이미지" id="imgbask" />
         </div>
         <div class="ticket-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            corrupti, ex odit veritatis nihil incidunt laboriosam sit tempore
-            nobis debitis saepe beatae maxime fugiat! Alias cum dignissimos
-          </p>
+          <a href="https://isasurf.org/"><img src="../IMG/서핑주관단체.png" alt="이미지" id="imgbask" /></a>
         </div>
         <div class="ticket-icon"></div>
       </div>

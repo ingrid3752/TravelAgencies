@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>농구</title>
-<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
+<title>사격</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <!-- 구글 폰트-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,36 +39,27 @@
         <div class="ticket-info">
           <div class="text-wrapper">
             <!-- 텍스트 내용 -->
-            <span class="text"
-              >구기 종목 중 하나로, 공을 링(림)에 넣는 것을 득점으로 하여,
-              제한 시간 안에 득점을 해 점수가 1점이라도 더 높은 쪽이 승리하는
-              경기이다. 한 팀당 5명의 선수가 선발된다. 주로 전후반전, 혹은
-              4쿼터로 진행되며, 전후반의 경우 20분씩 총 40분, 4쿼터의 경우 한
-              쿼터당 10분, 총 40분이 경기 규정 시간이다. 변종 종목으로 3X3
-              농구라 하는, 하프 코트(Half Court)에서 골대 하나를 놓고 하는
-              농구도 있다. 일명 길거리 농구 혹은 Street Ball. 또한, 여성 전용
-              구기인 넷볼이 19세기 말 농구에서 파생되었다.</span
-            >
+            <span class="text">
+              스포츠로서의 사격의 역사는 총의 발명과 그 역사를 같이 한다고 할 수 있다. 그러나 오늘날 올림픽 종목으로서의 국제적인 스포츠 사격의 역사는, 1896년 제1회 아테네 올림픽에서 사격이 정식 종목으로 채택되고 1907년 국제사격연맹(ISSF, International Shooting Sport Federation)이 설립된 이후부터라 할 수 있을 것이다.
+
+사격은 스포츠로서 널리 인정되고 있으나, 총이라는 장비를 사용하는 이상 전투기술 내지는 사냥을 위한 기술로서의 사격과 관련되어 생각되는 경우가 많다. 제2차 세계 대전 이전에는 그러한 측면이 있어, 조지 S. 패튼 같은 군인[3]이 올림픽에 참가하기도 했으며, 사람이나 동물의 형체를 가진 표적을 사용한 적도 있고 또한 반대로 군사 훈련으로서의 사격 역시 스포츠 사격과 크게 다르지 않은 모습을 가지고 있었다. 심지어 아래 사진 같이 사람과 사람이 서로 사격하는 사격 결투 종목도 있었다.
+              </span>
             <span class="more-text">더보기</span>
             <span class="less-text">줄이기</span>
           </div>
         </div>
         <div class="ticket-icon"></div>
-        <img src="../IMG/농구.png" alt="이미지" id="imgbask" />
+        <img src="../IMG/사격.png" alt="이미지" id="imgbask" />
       </div>
     </div>
     <!--------------------------------------------------------------------------->
     <div class="ticket-container6">
       <div class="ticket6">
         <div id="modaldiv">
-          <h2>선택한 티켓의 설명</h2>
+          <img src="../IMG/사격마스코트.png" alt="이미지" id="imgbask" />
         </div>
         <div class="ticket-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            corrupti, ex odit veritatis nihil incidunt laboriosam sit tempore
-            nobis debitis saepe beatae maxime fugiat! Alias cum dignissimos
-          </p>
+          <a href="https://www.issf-sports.org/"><img src="../IMG/사격주관단체.png" alt="이미지" id="imgbask" /></a>
         </div>
         <div class="ticket-icon"></div>
       </div>

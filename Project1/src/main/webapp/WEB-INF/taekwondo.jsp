@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>농구</title>
-<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
+<title>태권도</title>
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <!-- 구글 폰트-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,35 +40,24 @@
           <div class="text-wrapper">
             <!-- 텍스트 내용 -->
             <span class="text"
-              >구기 종목 중 하나로, 공을 링(림)에 넣는 것을 득점으로 하여,
-              제한 시간 안에 득점을 해 점수가 1점이라도 더 높은 쪽이 승리하는
-              경기이다. 한 팀당 5명의 선수가 선발된다. 주로 전후반전, 혹은
-              4쿼터로 진행되며, 전후반의 경우 20분씩 총 40분, 4쿼터의 경우 한
-              쿼터당 10분, 총 40분이 경기 규정 시간이다. 변종 종목으로 3X3
-              농구라 하는, 하프 코트(Half Court)에서 골대 하나를 놓고 하는
-              농구도 있다. 일명 길거리 농구 혹은 Street Ball. 또한, 여성 전용
-              구기인 넷볼이 19세기 말 농구에서 파생되었다.</span
+              >태권도는 대한민국에서 1950년대에 창안되고 발전한 현대 무술로, 대한민국의 국기이다.발차기를 중심으로 손과 발 및 기타 신체부위를 이용해서 상대를 효과적으로 제압하는 것을 지향한다. 한국에서 매년 9월 4일은 기념일인 '태권도의 날'로 지정되어 있다. 전세계적인 규정으로 경기 진행에서 한국어를 사용한다.</span
             >
             <span class="more-text">더보기</span>
             <span class="less-text">줄이기</span>
           </div>
         </div>
         <div class="ticket-icon"></div>
-        <img src="../IMG/농구.png" alt="이미지" id="imgbask" />
+        <img src="../IMG/태권도.png" alt="이미지" id="imgbask" />
       </div>
     </div>
     <!--------------------------------------------------------------------------->
     <div class="ticket-container6">
       <div class="ticket6">
         <div id="modaldiv">
-          <h2>선택한 티켓의 설명</h2>
+          <img src="../IMG/태권도마스코트.png" alt="이미지" id="imgbask" />
         </div>
         <div class="ticket-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            corrupti, ex odit veritatis nihil incidunt laboriosam sit tempore
-            nobis debitis saepe beatae maxime fugiat! Alias cum dignissimos
-          </p>
+          <a href="https://www.worldtaekwondo.org/index.html"><img src="../IMG/태권도주관단체.png" alt="이미지" id="imgbask" /></a>
         </div>
         <div class="ticket-icon"></div>
       </div>

@@ -39,14 +39,7 @@
           <div class="text-wrapper">
             <!-- 텍스트 내용 -->
             <span class="text"
-              >구기 종목 중 하나로, 공을 링(림)에 넣는 것을 득점으로 하여,
-              제한 시간 안에 득점을 해 점수가 1점이라도 더 높은 쪽이 승리하는
-              경기이다. 한 팀당 5명의 선수가 선발된다. 주로 전후반전, 혹은
-              4쿼터로 진행되며, 전후반의 경우 20분씩 총 40분, 4쿼터의 경우 한
-              쿼터당 10분, 총 40분이 경기 규정 시간이다. 변종 종목으로 3X3
-              농구라 하는, 하프 코트(Half Court)에서 골대 하나를 놓고 하는
-              농구도 있다. 일명 길거리 농구 혹은 Street Ball. 또한, 여성 전용
-              구기인 넷볼이 19세기 말 농구에서 파생되었다.</span
+              >체조는 오늘날에도 여전히 행해지는 가장 오래된 스포츠 중 하나로서 그 기원은 고대 문명으로 거슬러 올라갑니다. 실제로, 1881년 창설된 국제체조연맹(FIG)은 세계에서 가장 오래된 국제 스포츠 연맹이기도 합니다. 그러나 리듬체조의 경우 19세기 말과 20세기 초에 유럽에서 유행했던 그룹체조에서 발전한 훨씬 새로운 스포츠라고 할 수 있습니다.</span
             >
             <span class="more-text">더보기</span>
             <span class="less-text">줄이기</span>
@@ -60,14 +53,10 @@
     <div class="ticket-container6">
       <div class="ticket6">
         <div id="modaldiv">
-          <h2>선택한 티켓의 설명</h2>
+          <img src="../IMG/리듬체조마스코트.png" alt="이미지" id="imgbask" />
         </div>
         <div class="ticket-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            corrupti, ex odit veritatis nihil incidunt laboriosam sit tempore
-            nobis debitis saepe beatae maxime fugiat! Alias cum dignissimos
-          </p>
+          <a href="https://www.gymnastics.sport/site/"><img src="../IMG/리듬체조주관단체.png" alt="이미지" id="imgbask" /></a>
         </div>
         <div class="ticket-icon"></div>
       </div>

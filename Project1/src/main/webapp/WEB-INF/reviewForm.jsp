@@ -10,9 +10,10 @@
     <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
 </head>
 <body>
+
     <div class="container">
         <h1>리뷰 작성하기</h1>
-
+	
         <div class="review-form">
             <form action="/review/submit" method="post">
                
@@ -43,6 +44,7 @@
                 <button type="submit" onclick="updateEntityId()">리뷰 제출</button>
             </form>
         </div>
+        
     </div>
     <script src="${pageContext.request.contextPath}/js/reviewForm.js"></script>
 </body>

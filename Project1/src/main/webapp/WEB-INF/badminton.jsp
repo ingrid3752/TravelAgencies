@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>배드민턴</title>
-<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <!-- 구글 폰트-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,36 +39,26 @@
         <div class="ticket-info">
           <div class="text-wrapper">
             <!-- 텍스트 내용 -->
-            <span class="text"
-              >구기 종목 중 하나로, 공을 링(림)에 넣는 것을 득점으로 하여,
-              제한 시간 안에 득점을 해 점수가 1점이라도 더 높은 쪽이 승리하는
-              경기이다. 한 팀당 5명의 선수가 선발된다. 주로 전후반전, 혹은
-              4쿼터로 진행되며, 전후반의 경우 20분씩 총 40분, 4쿼터의 경우 한
-              쿼터당 10분, 총 40분이 경기 규정 시간이다. 변종 종목으로 3X3
-              농구라 하는, 하프 코트(Half Court)에서 골대 하나를 놓고 하는
-              농구도 있다. 일명 길거리 농구 혹은 Street Ball. 또한, 여성 전용
-              구기인 넷볼이 19세기 말 농구에서 파생되었다.</span
-            >
-            <span class="more-text">더보기</span>
+		<span class="text">배드민턴은 라켓으로 셔틀콕을 쳐서 네트를 넘겨 주고받는 스포츠 경기이다. 네트를 사이에 두고 양측 경기자들의 구획이 명확해야 하고, 매우
+			가벼운 셔틀콕의 특성상 바람의 영향에 취약하기 때문에 실내 운동이 원칙이다. 그럼에도 대표적인 공격 기술
+			스매시를 구사했을 때 상대에게 날아가는 셔틀콕의 순간 속도는 프로 선수의 경우 시속 300km가 넘을
+			정도로 빠르며, 이 때문에 구속이 가장 빠른 구기종목으로 기네스북에 등재되어 있다.</span> 
+			<span class="more-text">더보기</span>
             <span class="less-text">줄이기</span>
           </div>
         </div>
         <div class="ticket-icon"></div>
-        <img src="../IMG/농구.png" alt="이미지" id="imgbask" />
+        <img src="../IMG/배드민턴.png" alt="이미지" id="imgbask" />
       </div>
     </div>
     <!--------------------------------------------------------------------------->
     <div class="ticket-container6">
       <div class="ticket6">
         <div id="modaldiv">
-          <h2>선택한 티켓의 설명</h2>
+          <img src="../IMG/배드민턴마스코트.png" alt="이미지" id="imgbask" />
         </div>
         <div class="ticket-info">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            corrupti, ex odit veritatis nihil incidunt laboriosam sit tempore
-            nobis debitis saepe beatae maxime fugiat! Alias cum dignissimos
-          </p>
+          <a href="https://bwfbadminton.com/"><img src="../IMG/배드민턴주관단체.png" alt="이미지" id="imgbask" /></a>
         </div>
         <div class="ticket-icon"></div>
       </div>
