@@ -1,5 +1,7 @@
 package mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 
 import com.kh.project.model.vo.Member;
@@ -12,5 +14,6 @@ public interface MemberMapper {
     int signUp(Member vo);
     int updateId(Member vo);
     int updateNPE(Member vo);
+    List<Member> memberList(Member vo);
     
 }

@@ -24,6 +24,8 @@ public class ReviewService {
 	// 특정 엔티티의 리뷰 목록 조회
 	public List<Review> getReviewByEntity(String entityType, int entityId) {
 		ReviewEntity entity = new ReviewEntity(entityType, entityId);
+		System.out.println("ET : " + entityType);
+		System.out.println("EI : " + entityId);
 		return reviewMapper.getReviewByEntity(entity);
 	}
 	

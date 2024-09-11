@@ -1,5 +1,6 @@
 package com.kh.project.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -7,12 +8,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.kh.project.model.vo.Member;
+import com.kh.project.service.ReviewService;
 
 import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class PageController {
-
+	
+	@Autowired
+	private ReviewService reviewService;
 	// 로그인 페이지 이동
     @GetMapping("/login")
     public String login() {
@@ -78,15 +82,30 @@ public class PageController {
     
     // 리뷰 페이지로 이동
     @GetMapping("/review")
-    public String ReviewPage() {
-    	return "review";
+    public String ReviewPage(String entityType, Integer entityId, Model model) {
+        if (entityId == null) {
+            entityId = 1;
+        }
+        if (entityType == null) {
+            entityType = "1"; 
+        }
+        
+        model.addAttribute("reviews", reviewService.getReviewByEntity(entityType, entityId));
+        model.addAttribute("averageRating", reviewService.getAverageRatingByEntity(entityType, entityId));
+        return "review";
     }
     
     // 리뷰 작성 페이지로 이동
     @GetMapping("/reviewForm")
     public String ReviewFormPage(Model model) {
+    	try {
+    	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		Member member = (Member) authentication.getPrincipal();
     	model.addAttribute("memCode", 1);
     	return "reviewForm";
+    	} catch (Exception e) {
+    		return "redirect:/login";
+    	}
     }
     
     // 예약 페이지로 이동

@@ -14,17 +14,14 @@
 <!-- 구글 폰트-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap"
-	rel="stylesheet">
-	<!-- 폰트어썸폴더 -->
-    <script
-      src="https://kit.fontawesome.com/071562b1d0.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- 구글 폰트-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <style>
+   	body {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}   	
+   </style>
 </head>
 <body style="overflow-x: hidden">
 <%@ include file="./header.jsp" %>
@@ -171,7 +168,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 won￦</p>
+            <p>300 ￦</p>
             <a href="/fencing" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -179,10 +176,10 @@
       <div style="display: flex">
         <div id="main6">
           <p class="qqq">https://github.com/jochanghyeon</p>
-          <p class="qqq">010-1234-5678</p>
-          <p class="qqq">(Fax)02-1234-5678</p>
-          <p class="qqq">서울특별시 도봉구 도봉로152가길 176 (도봉동)</p>
-          <p class="qqq">176 Dobong-ro 152ga-gil, Dobong-gu, Seoul</p>
+          <p class="qqq">1544-9970</p>
+          <p class="qqq">(Fax)1544-9970</p>
+          <p class="qqq">서울특별시 강남구 테헤란로14길 6</p>
+          <p class="qqq">6, Teheran-ro 14-gil, Gangnam-gu, Seoul</p>
         </div>
         <div id="main5">
           <a href="https://www.instagram.com/kh_iei/" class="bottom">
@@ -192,7 +189,7 @@
             <i class="fa-brands fa-facebook"></i
           ></a>
           <a href="https://khedu.co.kr/main/main.kh" class="bottom">KH</a>
-          <a href="#" class="bottom"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/jochanghyeon" class="bottom"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
     </div>

@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="com.kh.project.model.vo.AccomReservation" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>마이페이지</title>
-    <link rel="stylesheet" href="../css/mypage.css" />
-    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/mypage.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/reset.css" />
     <!-- 폰트어썸폴더 -->
 <script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script> 
     <!-- 구글 폰트-->
@@ -34,8 +36,43 @@
   <details>
     <summary style="padding-left:55px; padding-right: 55px;"><span id="more"><h1><i class="fa-regular fa-calendar-check" id="red"></i>&nbsp;예약정보</h1></span></summary>
 <!---------------------------------------------------------------------->
-  <div class="mainpage3">
-  
+  <div class="mainpage3"><!-- 1. mainpage3 accomReservation.css container,header,reservation-form-button,reservation-info -->
+  <div class="container">
+	<div class="header">
+	<h1>호텔 예약 현황</h1>
+	<div class="reservation-form-button">
+		<a href="/hotelinfo"><button>호텔 리스트</button></a>
+		<a href="/accomReservation"><button>호텔 예약 현황</button></a>
+		<a href="/accomInsertReservation"><button>호텔 예약 추가</button></a>
+	</div>
+	</div>
+<div class="reservation-info">
+	<p>호텔 예약 정보</p>
+	<br>
+</div>
+	<div class="reservation-list">
+    <c:forEach var="AccomReservation" items="${accomReservationList}">
+    <div>
+        <h3>숙소 이름: ${AccomReservation.accomName}</h3>
+        <br>
+        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일" /></p>
+        <br>
+        <p>마지막 날짜 :<fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일" /></p>
+        <br>
+        <p>예약 인원: ${AccomReservation.seats}</p>
+        <br>
+        
+        <form action="/deleteReservation" method="post">
+            <input type="hidden" name="reservationId" value="${AccomReservation.reservationId}">
+            <button type="submit">예약 취소</button>
+        </form>
+        <br>
+    </div>
+	</c:forEach>
+
+
+        </div>
+	</div>
   <div style="text-align: center;">
     <h1>총 요금</h1>
       <button id="total">Total :  ₩</button>

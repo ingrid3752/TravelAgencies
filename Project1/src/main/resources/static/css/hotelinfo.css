@@ -120,6 +120,7 @@ ul {
   border-radius: 5px;
   text-align: center;
   padding: 20px;
+  font-size: 1.5rem; 
 }
 
 .hotel-info-box {
@@ -137,11 +138,12 @@ ul {
 
 
 .submit {
-   background-color: rgba(206, 173, 124, 0.24);
+   background-color: rgba(206, 173, 124, 0.04);
   border-color: rgba(0, 0, 0, 0.726);
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
+  border-radius: 7px;
+  padding: 2px;
+font-size: 1.2rem;
+margin-top: 5px; 
 }
 .submit:hover {
   background-color: rgba(82, 74, 63, 0.24);
@@ -159,13 +161,12 @@ a {
 .hotel {
   margin: auto;
   margin-top: 300px;
-  height: 345px;
+  height: 375px;
   width: 300px;
   background-color: #fafafa85;
   border-radius: 5px;
   text-align: center;
   padding: 10px;
-  font-weight: bold;
 }
 .hotel-info-box {
   margin-bottom: 10px;
@@ -190,8 +191,8 @@ body {
   background-image: url(img/호텔메인배경.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-height: 100vh;
- overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
  
   
 }
@@ -227,7 +228,7 @@ label[for="label-b"] {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  font-weight: bold;
+  
   margin: 10px;
   height: 25px;
   width: 292px;

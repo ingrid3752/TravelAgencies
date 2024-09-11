@@ -42,8 +42,8 @@ public class AccomService {
     }
     
     // 숙소 예약 삭제
-    public void deleteReservation(int reservationId, int memCode) {
-        mapper.deleteReservation(reservationId, memCode);
+    public void deleteReservation(int reservationId) {
+        mapper.deleteReservation(reservationId);
     }
     
     

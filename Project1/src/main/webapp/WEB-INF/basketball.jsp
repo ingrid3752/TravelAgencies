@@ -124,7 +124,9 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon">
+        <img src="../IMG/농구.png" alt="이미지" id="imgbask" />
+        </div>
         <div class="ticket-info">
           <h1>티켓 A</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 10:24</p>
@@ -156,7 +158,7 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 B</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 11:35</p>
@@ -187,7 +189,7 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 C</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 12:25</p>
@@ -217,7 +219,7 @@
     </div>
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 D</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 12:50</p>
@@ -248,7 +250,7 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 E</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 13:14</p>
@@ -279,7 +281,7 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 F</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 14:00</p>
@@ -310,7 +312,7 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 G</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 14:50</p>
@@ -341,7 +343,7 @@
 
     <div class="ticket-container">
       <div class="ticket3">
-        <div class="ticket-icon"></div>
+        <div class="ticket-icon"><img src="../IMG/농구.png" alt="이미지" id="imgbask" /></div>
         <div class="ticket-info">
           <h1>티켓 H</h1>
           <p><i class="fa-regular fa-calendar"></i>&nbsp;08-24 15:50</p>
@@ -382,10 +384,10 @@
      <div style="display: flex">
         <div id="main6">
           <p class="qqq">https://github.com/jochanghyeon</p>
-          <p class="qqq">010-1234-5678</p>
-          <p class="qqq">(Fax)02-1234-5678</p>
-          <p class="qqq">서울특별시 도봉구 도봉로152가길 176 (도봉동)</p>
-          <p class="qqq">176 Dobong-ro 152ga-gil, Dobong-gu, Seoul</p>
+          <p class="qqq">1544-9970</p>
+          <p class="qqq">(Fax)1544-9970</p>
+          <p class="qqq">서울특별시 강남구 테헤란로14길 6</p>
+          <p class="qqq">6, Teheran-ro 14-gil, Gangnam-gu, Seoul</p>
         </div>
         <div id="main5">
           <a href="https://www.instagram.com/kh_iei/" class="bottom">

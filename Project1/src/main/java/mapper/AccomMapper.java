@@ -15,5 +15,5 @@ public interface AccomMapper {
     void insertReservation(AccomReservation vo);
     void updateStartDate(AccomReservation vo);
     void updateEndDate(AccomReservation vo);
-    void deleteReservation(int reservationId, int memCode);
+    void deleteReservation(int reservationId);
 }

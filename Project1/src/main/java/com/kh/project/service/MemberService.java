@@ -1,5 +1,7 @@
 package com.kh.project.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -61,6 +63,9 @@ public class MemberService implements UserDetailsService {
        }
     }
     
+    public List<Member> memberList(Member vo) {
+    	return memberMapper.memberList(vo);
+    }
     
     
 	@Override

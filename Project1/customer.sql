@@ -145,6 +145,8 @@ SELECT
         
 SELECT * FROM mem_info WHERE mem_code = '1';
 
+
+
 -- 리뷰
 CREATE TABLE review (
     review_id BIGINT PRIMARY KEY AUTO_INCREMENT, 

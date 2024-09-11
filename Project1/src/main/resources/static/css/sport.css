@@ -166,8 +166,9 @@ ul {
 }
 
 .ticket-icon img {
-  width: 80px;
-  height: 80px;
+  max-width: 100px;
+  max-height: 100px;
+  margin-left:35px;
 }
 
 .ticket-icon {
@@ -228,8 +229,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
 }
 
 .ticket-pay {

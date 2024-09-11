@@ -41,7 +41,7 @@
 				<!-- 로그인 후 버튼 -->
 				<style>
 				.menu>li:hover .submenu {
-					height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+					height: 150px; /*서브메뉴 li한개의 높이 50*5*/
 					transition-duration: 1s;
 				}
 				</style>
