@@ -63,8 +63,8 @@ public class MemberService implements UserDetailsService {
        }
     }
     
-    public List<Member> memberList(Member vo) {
-    	return memberMapper.memberList(vo);
+    public List<Member> memberList() {
+    	return memberMapper.memberList();
     }
     
     

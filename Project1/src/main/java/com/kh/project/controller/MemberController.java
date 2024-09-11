@@ -1,5 +1,7 @@
 package com.kh.project.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -150,10 +152,10 @@ public class MemberController {
 
 	
 	@GetMapping("/allMember")
-	public String index(Model model, Member vo) {
-		System.out.println(model);
-		model.addAttribute("list", memberService.memberList(vo));
-		return "allMember";
-	}
+    public String memberList(Model model) {
+        List<Member> list = memberService.memberList();
+        model.addAttribute("list", list);
+        return "memberList"; // memberList.jsp로 이동
+    }
 	
 }
