@@ -49,5 +49,7 @@ import="java.util.List" %> <%@ page import="com.kh.project.model.vo.Review" %>
         </c:forEach>
       </div>
     </div>
+    
+    
   </body>
 </html>

@@ -73,7 +73,7 @@
           required
         />
       </div>
-      <input type="submit"  class="submit" value="호텔예약하기" />
+      <a href="/rest"><input type="submit"  class="submit" value="호텔예약하기" /></a>
     </div>
 </body>
 </html>

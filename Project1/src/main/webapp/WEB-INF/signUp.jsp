@@ -57,13 +57,9 @@
      </div>
     </form>
 
-    <form name="join" method="post" action="join" autocomplete="off" encType="utf-8">
-      <h3>아이디</h3>
-      <input type="text" id="user_id" name="id" placeholder="4자이상" minlength="4" maxlength="15" required autofocus required>
-      <button id="overlappedID" type="button">중복확인</button><br>
-      <span id="olmessage"></span>
+    
       <!-- 중략 -->
-    </form>
+    
     <script src="${pageContext.request.contextPath}/js/signUp.js"></script>
 </body>
 </html>

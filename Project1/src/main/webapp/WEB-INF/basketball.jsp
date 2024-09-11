@@ -5,16 +5,24 @@
 <head>
 <meta charset="UTF-8">
 <title>농구</title>
-<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
 <link href="${pageContext.request.contextPath}/css/reset.css" rel="stylesheet" />
-<!-- 폰트어썸폴더 -->
+<link href="${pageContext.request.contextPath}/css/sport.css" rel="stylesheet" />
+<!-- 구글 폰트-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <style>
+   	body {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}   	
+   </style>
     <script
       src="https://kit.fontawesome.com/071562b1d0.js"
       crossorigin="anonymous"
     ></script>
-    <!-- 구글 폰트-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
 </head>
 <body style="overflow-x: hidden">
 <%@ include file="./header.jsp" %>

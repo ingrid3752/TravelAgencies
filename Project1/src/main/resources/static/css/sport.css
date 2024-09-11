@@ -1,12 +1,8 @@
-/*new font*/
+h2{
+	font-size: 2rem;
+}
+
 /*헤더*/
-@font-face {
-  src: url("../html/font/Paris2024-Variable.ttf");
-  font-family: "Binggrae";
-}
-#Binggrae_font {
-  font-family: "Binggrae";
-}
 #header {
   background-color: black;
   display: flex;
@@ -16,7 +12,7 @@
   width: 100%;
   padding-left: 30px;
   font-optical-sizing: auto;
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
 }
@@ -29,7 +25,7 @@
   color: white;
   font-size: 1.3rem;
   padding-right: 10px;
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
 }
@@ -37,7 +33,7 @@
   color: white;
   font-size: 1.3rem;
   padding-right: 150px;
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
 }
@@ -85,7 +81,7 @@ ul {
   text-align: center;
   line-height: 40px;
   background-color: #000000;
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
 }
@@ -120,12 +116,9 @@ ul {
   background-color: #000000;
 }
 
-/*바디*/
-body {
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
+
+
 .ticket-container {
   padding-top: 25px;
   padding-right: 10%;
@@ -143,12 +136,12 @@ body {
   display: flex;
   align-items: center;
   background-color: rgba(233, 233, 233, 0.349);
-  border-radius: 15px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+
   margin-bottom: 20px; /* 박스 사이의 간격을 더 띄움 */
   height: 250px;
-  border: 1px color #000000;
+
   width: 1000px;
+  border: 3px solid black;
 }
 
 .ticket-info12 p {
@@ -164,12 +157,12 @@ body {
   display: flex;
   align-items: center;
   background-color: rgba(233, 233, 233, 0.349);
-  border-radius: 15px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+
   margin-bottom: 0px; /* 박스 사이의 간격을 더 띄움 */
   height: 150px;
-  border: 1px color #000000;
+
   width: 1000px;
+  border: 3px solid black;
 }
 
 .ticket-icon img {
@@ -187,21 +180,18 @@ body {
 
 .ticket-info h2,
 .ticket-info h1 {
-  font-size: 1.3em;
+  font-size: 1.7em;
   margin: 0 0 10px 0;
   color: #000000;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
+  
+ 
 }
 
 .ticket-info p {
   margin: 5px 0;
   color: #555;
   line-height: 1.4;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
-  font-style: normal;
+ 
 }
 
 .ticket-action {
@@ -269,9 +259,9 @@ body {
   -webkit-line-clamp: 3;
   /* 텍스트 양쪽정렬 */
   text-align: justify;
-  line-height: 18px;
-  font-family: "Gowun Batang", serif;
-  font-weight: 400;
+  line-height: 19px;
+  font-size: 18px;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -318,6 +308,7 @@ body {
   color: white;
   padding: 5px;
   font-size: 1.5rem;
+  
 }
 #main6 {
   display: flex;
@@ -327,14 +318,16 @@ body {
   background-color: black;
   color: rgba(235, 234, 234, 0.699);
   justify-content: center;
+  margin-left: 460px;
   font-size: 1.1rem;
 }
+
 #main6 p {
-  margin: 0px;
+  margin: 10px;
 }
 
 .price p {
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
   margin-left: 30px;
@@ -377,7 +370,7 @@ body {
 #modal_button {
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
@@ -437,7 +430,7 @@ body {
 #modal_button2 {
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  font-family: "Gowun Batang", serif;
+  
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -472,11 +465,12 @@ body {
   display: flex;
   align-items: center;
   background-color: rgba(233, 233, 233, 0.349);
-  border-radius: 15px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+
+  border: 3px solid black;
+
   margin-bottom: 20px;
   height: 250px;
-  border: 1px color #000000;
+
   width: 700px;
   max-width: 700px;
   flex-shrink: 0;
@@ -484,8 +478,7 @@ body {
 .ticket8 {
   text-align: center;
   background-color: rgba(233, 233, 233, 0.349);
-  border-radius: 15px;
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid black;
   height: 250px;
   width: 270px;
   margin-left: 30px;
@@ -499,5 +492,5 @@ body {
 #totalbutton:hover {
   background-color: white;
   color: black;
-  border: none;
+  border: 3px solid black;
 }
