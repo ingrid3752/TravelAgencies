@@ -14,6 +14,6 @@ public interface MemberMapper {
     int signUp(Member vo);
     int updateId(Member vo);
     int updateNPE(Member vo);
-    List<Member> memberList();
+    List<Member> memberList(int memCode);
     
 }

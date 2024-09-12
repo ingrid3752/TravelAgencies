@@ -10,10 +10,12 @@
 		<result column="role" property="role"/>
 	</resultMap>
 	
-	<select id="allMember" parameterType="Member">
-		SELECT id, name, phone, email, role
+	<!-- 회원 목록 -->
+	<select id="memberList" resultType="Member">
+		SELECT id, name, phone, email, role, mem_code AS memCode, password
     	FROM mem_info
 	</select>
+	
 	<!-- 아이디 중복 체크 -->
 	<select id="check" parameterType="String" resultMap="memberMap">
 		SELECT * FROM mem_info WHERE id = #{id}

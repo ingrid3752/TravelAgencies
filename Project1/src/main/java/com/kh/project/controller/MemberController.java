@@ -151,11 +151,5 @@ public class MemberController {
 	}
 
 	
-	@GetMapping("/allMember")
-    public String memberList(Model model) {
-        List<Member> list = memberService.memberList();
-        model.addAttribute("list", list);
-        return "memberList"; // memberList.jsp로 이동
-    }
 	
 }

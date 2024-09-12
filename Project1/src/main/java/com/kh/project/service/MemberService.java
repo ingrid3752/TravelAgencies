@@ -63,8 +63,8 @@ public class MemberService implements UserDetailsService {
        }
     }
     
-    public List<Member> memberList() {
-    	return memberMapper.memberList();
+    public List<Member> memberList(int memCode) {
+    	return memberMapper.memberList(memCode);
     }
     
     

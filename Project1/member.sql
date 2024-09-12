@@ -24,10 +24,22 @@ CREATE TABLE mem_info (
     email VARCHAR(255) NOT NULL,
     role VARCHAR(255)
 );
+
 SELECT * FROM mem_info;
 SELECT * FROM mem_info WHERE id = 'test';
 INSERT INTO mem_info (id, password, name, phone, email) 
 VALUES('qwer1234','1234','user','01012345678','test1234@naver.com');
+-- 관리자
+INSERT INTO mem_info(id,password,name,phone,email,role)
+VALUES('id','password','name','phone','email','role');
+update mem_info set password= '$2a$10$IqEceC8IjLurZgX4vc9E8.E/0iNleYS9rojSbnREz/.37.7.ouQuO;'
+where id = 'admin';
+commit;
+update mem_info set role='ROLE_ADMIN' WHERE mem_code='5';
+
+DELETE FROM mem_info WHERE mem_code = 6;
+SELECT * FROM mem_info;
+
 -- 관광지
 CREATE TABLE theme_park (
     theme_code INT PRIMARY KEY AUTO_INCREMENT,

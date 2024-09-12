@@ -114,6 +114,16 @@ a {
 
 /*바디*/
 /* 기본 폰트 설정 */
+table {
+	margin: 0 auto;
+	width: 70%;
+}
+table, tr, td, th {
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 10px;
+	background: white;
+}
 @font-face {
   font-family: "Paris2024";
   src: url("/fonts/Paris2024-Variable.ttf") format("truetype");

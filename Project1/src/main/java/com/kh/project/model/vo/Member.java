@@ -1,9 +1,8 @@
 package com.kh.project.model.vo;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 
+import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -24,6 +23,7 @@ public class Member implements UserDetails {
 	private String phone;
 	private String email;
 	private String role; // 회원(ROLE_MEMBER), 관리자(ROLE_ADMIN), 업체(ROLE_COMPANY) 
+
 	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
