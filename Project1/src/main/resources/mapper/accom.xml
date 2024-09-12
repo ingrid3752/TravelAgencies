@@ -20,7 +20,7 @@
     </resultMap>
     
     <!-- 예약 목록 조회 -->
-	<select id="ReservationList" resultType="AccomReservation" parameterType="int">
+	<select id="ReservationList" resultType="AccomReservation">
    		SELECT 
    		r.accom_name AS accomName, 
    		r.start_date AS startDate, 
@@ -29,7 +29,6 @@
    		m.mem_code AS memCode
 		FROM accom_reservation r
 		JOIN mem_info m ON r.mem_code = m.mem_code
-		WHERE m.mem_code = #{memCode}
 	</select>
 	
 	<!-- 숙소 예약 추가 -->

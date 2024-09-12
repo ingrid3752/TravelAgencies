@@ -52,7 +52,7 @@ public class AccomController {
         HttpSession session = request.getSession();
         Integer sessionMemCode = (Integer) session.getAttribute("memCode");
         
-        // memCode가 null일 경우 기본값 설정
+        // memCode가 null 일 경우 기본값 설정
         if (memCode == null) {
             memCode = sessionMemCode != null ? sessionMemCode : 1;
         }
@@ -65,6 +65,14 @@ public class AccomController {
             } else {
                 model.addAttribute("accomReservationList", AR);
             }
+            List<Member> members = memberService.memberList(memCode);
+            if (members == null || members.isEmpty()) {
+                model.addAttribute("message", "회원 목록이 없습니다");
+            } else {
+                model.addAttribute("memberList", members);
+            }
+
+            System.out.println("22 : " + AR);
             return "compage";
         }
 
@@ -93,7 +101,6 @@ public class AccomController {
         } else {
             model.addAttribute("accomReservationList", AR);
         }
-        System.out.println("22 : " + members);
         return "adpage";
     }
 

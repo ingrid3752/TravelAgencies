@@ -41,7 +41,7 @@
 				<!-- 로그인 후 버튼 -->
 				<style>
 				.menu>li:hover .submenu {
-					height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+					height: 150px; /*서브메뉴 li한개의 높이 50*5*/
 					transition-duration: 1s;
 				}
 				</style>
@@ -53,7 +53,6 @@
 					<li><a href="/reservation">예약</a></li>
 					<li><a href="/review">리뷰</a></li>
 					<li><a href="/goods">굿즈</a></li>
-					<li><a href="/allMember">회원목록</a></li>
 				</ul></li>
 		</ul>				
 			</sec:authorize>

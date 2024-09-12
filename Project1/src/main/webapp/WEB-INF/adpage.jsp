@@ -19,13 +19,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
 <title>관리자</title>
 </head>
+<style>
+	h1 {
+	font-size: 2rem;
+	}
+	table2, tr, th, td {
+	 border: 1px solid black;
+	  align-items:center;
+	  text-align: center;
+	 background: white;
+	}
+</style>
 <body>
 <%@ include file="./header.jsp" %>
-    <section style="width: 100%; margin-top: 80px;">
+    <section style=" margin-top: 150px;">
 <h1>회원 목록</h1>
 <br>
-	<table>
-		<tr>
+	<table >
+		<tr >
 			<th>아이디</th>
 			<th>비밀번호</th>
 			<th>이름</th>
@@ -51,18 +62,35 @@
   <br>
 <!---------------------------------------------------------------------->
 <div class="reservation-list">
-    <c:forEach var="AccomReservation" items="${accomReservationList}">
+    
     <div>
-        <h3>숙소 이름: ${AccomReservation.accomName}</h3>
-        <br>
-        <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일" /></p>
-        <br>
-        <p>마지막 날짜 :<fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일" /></p>
-        <br>
-        <p>예약 인원: ${AccomReservation.seats}</p>
-        <br><br>
+    <table>
+       <tr>
+       		<th>이름</th>
+			<th>전화번호</th>
+			<th>이메일</th>
+	    	<th>숙소 이름</th>        
+	        <th>시작 날짜 </th>        
+	        <th>마지막 날짜 </th>        
+	        <th>예약 인원 </th>
+       </tr>
+       <c:forEach items="${memberList}" var="member">
+       <c:forEach var="AccomReservation" items="${accomReservationList}" >
+       <tr>
+       <td>${member.name}</td>
+		<td>${member.phone}</td>
+				<td>${member.email}</td>
+       <td>${AccomReservation.accomName}</td>
+       <td><fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일" /></td>
+       <td><fmt:formatDate value="${AccomReservation.endDate}" pattern="yyyy년 M월 d일" /></td>
+       <td>${AccomReservation.seats}</td>
+       </tr>
+       </c:forEach></c:forEach>
+    </table>
+        
+        
     </div>
-	</c:forEach>
+	
 
 
         </div>

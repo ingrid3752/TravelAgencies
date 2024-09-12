@@ -61,24 +61,23 @@ CREATE TABLE goods (
     FOREIGN KEY (theme_code) REFERENCES theme_park(theme_code),
     FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
 );
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','펜싱','빌뇌브다스크');
 
 -- 경기장
 CREATE TABLE stadium (
-    stadium_code INT PRIMARY KEY AUTO_INCREMENT,
-    stadium_event VARCHAR(255),
-    date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    price INT,
-    game VARCHAR(255),
-    stadium_name VARCHAR(255),
-    location VARCHAR(255)
+    stadium_code INT PRIMARY KEY AUTO_INCREMENT, -- 경기장 코드
+    stadium_name VARCHAR(255), -- 경기장 이름
+    stadium_event VARCHAR(255), -- 종목
+    location VARCHAR(255) -- 경기장 위치
 );
-
+SELECT * FROM stadium;
 -- 경기장 예약
 CREATE TABLE stadium_reservation (
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
     mem_id INT NOT NULL,         
     stadium_code INT NOT NULL,
     stadium_name VARCHAR(255),
+    price BIGINT,
     start_date DATE, 
     end_date DATE,
     seats INT NOT NULL,               -- 예약 인원 수

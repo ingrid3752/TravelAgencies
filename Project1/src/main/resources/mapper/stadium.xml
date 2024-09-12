@@ -20,13 +20,12 @@
         <result column="end_date" property="endDate"/>
         <result column="seats" property="seats"/>
     </resultMap>
-    
+    <!-- 티켓리스트 - 이름 종목 위치 날짜 Tel -->
     <!-- 경기장 예약 조회 -->
-    <select id="reservationList" parameterType="StadiumReservation">
+    <select id="reservationList" resultType="StadiumReservation">
 		SELECT r.*, stadium.stadium_name, stadium.location
 		FROM stadium_reservation r
 		JOIN stadium ON r.stadium_code = stadium.stadium_code
-		WHERE r.mem_id = #{memId}
     </select>
      
     <!-- 경기장 예약 추가 -->
