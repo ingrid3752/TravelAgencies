@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import com.kh.project.model.vo.AccomReservation;
 import com.kh.project.model.vo.Member;
+import com.kh.project.model.vo.StadiumReservation;
 import com.kh.project.service.AccomService;
 import com.kh.project.service.MemberService;
+import com.kh.project.service.StadiumService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -30,6 +32,9 @@ public class AccomController {
     
     @Autowired
     private MemberService memberService;
+    
+    @Autowired
+    private StadiumService stadiumService;
 
     /*
      * PathVariable?
@@ -71,6 +76,12 @@ public class AccomController {
             } else {
                 model.addAttribute("memberList", members);
             }
+            List<StadiumReservation> SR = stadiumService.reservationList(memCode);
+            if (SR == null || SR.isEmpty()) {
+            	model.addAttribute("message" , "예약 목록이 없습니다");
+            } else {
+            	model.addAttribute("stadiumReservationList" , SR);
+            }
 
             System.out.println("22 : " + AR);
             return "compage";
@@ -84,6 +95,13 @@ public class AccomController {
             } else {
                 model.addAttribute("accomReservationList", AR);
             }
+            List<StadiumReservation> SR = stadiumService.reservationList(memCode);
+            if (SR == null || SR.isEmpty()) {
+            	model.addAttribute("message" , "예약 목록이 없습니다");
+            } else {
+            	model.addAttribute("stadiumReservationList" , SR);
+            }
+            System.out.println("22 : " + SR);
             return "accomReservation";
         }
 
@@ -101,6 +119,13 @@ public class AccomController {
         } else {
             model.addAttribute("accomReservationList", AR);
         }
+        List<StadiumReservation> SR = stadiumService.reservationList(memCode);
+        if (SR == null || SR.isEmpty()) {
+        	model.addAttribute("message" , "예약 목록이 없습니다");
+        } else {
+        	model.addAttribute("stadiumReservationList" , SR);
+        }
+        
         return "adpage";
     }
 
@@ -121,7 +146,7 @@ public class AccomController {
     		memCode = 1;
     	}
     	service.insertReservation(vo);
-    	return "redirect:/accomReservation/" + vo.getMemCode();
+    	return "redirect:/rest";
     }
     
     // 예약 후 돌아와서 리스트 보여주기

@@ -322,12 +322,13 @@ button {
   font-style: normal;
   color: rgb(0, 0, 0);
   margin-top: 15px;
+  text-align: center;
+  
 }
 .idid label {
   display: block;
   margin-bottom: 5px;
   color: #000000;
-  margin-left: 10%;
 }
 .idid input {
   display: flex;
@@ -340,7 +341,7 @@ button {
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.671);
   color: #000000;
-  margin-left: 20px;
+  margin-left: 120px;
 }
 .infobu {
   width: 500px;
@@ -433,4 +434,13 @@ details[open] summary::marker {
 }
 .spanspan {
   height: 15px;
+}
+
+.mainpage3{
+	width: 500px;
+}
+
+.header {
+	display :block;
+	text-align:center;
 }

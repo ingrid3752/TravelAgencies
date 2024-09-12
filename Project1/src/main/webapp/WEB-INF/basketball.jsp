@@ -121,7 +121,7 @@
         </div>
       </div>
     </div>
-
+	
     <div class="ticket-container">
       <div class="ticket3">
         <div class="ticket-icon">
@@ -364,22 +364,25 @@
             />
             <button id="plus7" class="butt">+</button>
           </div>
-          <div class="price">
-            <p>TotalPrice : <span id="totalPrice7">1000</span> ₩</p>
-            <button type="submit" class="ticket-pay"></button>
-          </div>
+          
+          
         </div>
       </div>
     </div>
+    <form action="/stadium/insertReservation" method="post">
+	<input type="hidden" id="memCode" name="memCode" value="${stadiumReservation.memCode != null ? stadiumReservation.memCode : 1}"> 
+	<input type="hidden" id="stadiumCode" name="stadiumCode" value="${stadiumReservation.stadiumCode != null ? stadiumReservation.stadiumCode : 1}">
+	<input type="hidden" id="stadiumName" name="stadiumName" value="${stadiumReservation.stadiumName}">
+	<input type="hidden" id="stadiumDate" name="stadiumDate" value="${stadiumReservation.stadiumDate}">
+	<input type="hidden" id="stadiumEvent" name="stadiumEvent" value="${stadiumReservation.stadiumEvent}">
     <div id="grandTotalContainer">
-      <a href="/hotelinfo"><button type="submit" id="totalbutton">
-        <i class="fa-solid fa-cart-shopping"></i> &nbsp;total :
-        <span id="grandTotal">0</span>&nbsp;₩ &nbsp;&nbsp;&nbsp;
-        <i
-          class="fa-solid fa-arrow-right"
-        ></i> &nbsp;&nbsp;호텔예약으로
+      <a href="/hotelinfo">
+      <button type="submit" id="totalbutton">
+         &nbsp;&nbsp;호텔예약으로
       </button></a>
     </div>
+    </form>
+    
     <br /><br /><br />
      <div style="display: flex">
         <div id="main6">

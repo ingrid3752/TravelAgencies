@@ -40,7 +40,6 @@
 <!---------------------------------------------------------------------->
 <div class="reservation-list">
     
-    
     <div>
     <table>
        <tr>
@@ -67,10 +66,23 @@
 							</tr>
        </c:forEach></c:forEach>
     </table>
-        
-        
+        <div class="reservation-list">
+	<c:forEach var="StadiumReservation" items="${stadiumReservationList}">
+    <div>
+        <h3>경기장 이름: ${StadiumReservation.stadiumName}</h3>
+        <br>
+        <p>날짜 :<fmt:formatDate value="${StadiumReservation.stadiumDate}" pattern="yyyy년 M월 d일" /></p>
+        <p>종목 : ${StadiumReservation.stadiumEvent}</p>
+        <br>
+        <br>
+        <p>예약 인원: ${StadiumReservation.seats}</p>
+        <br>
+        <br>
     </div>
-	
+	</c:forEach>
+	</div>
+    </div>
+    </div>
 </section>
     <script src="${pageContext.request.contextPath}/js/mypage.js"></script>
   </body>

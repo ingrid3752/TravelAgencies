@@ -42,7 +42,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/basketball" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -60,7 +60,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/gymnastics" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -78,7 +78,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/badminton" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -96,7 +96,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/shooting" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -114,7 +114,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/surfing" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -132,7 +132,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/taekwondo" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -150,7 +150,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/tennis" class="ticket-button">Tickets</a>
           </div>
         </div>
@@ -168,7 +168,7 @@
             </p>
           </div>
           <div class="ticket-action">
-            <p>300 ￦</p>
+            <p></p>
             <a href="/fencing" class="ticket-button">Tickets</a>
           </div>
         </div>

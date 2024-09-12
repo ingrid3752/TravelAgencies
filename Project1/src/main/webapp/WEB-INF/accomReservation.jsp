@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="com.kh.project.model.vo.AccomReservation" %>    
+<%@ page import="com.kh.project.model.vo.AccomReservation" %>
+<%@ page import="com.kh.project.model.vo.StadiumReservation" %>     
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
@@ -25,6 +26,14 @@
     </div>
   </header>  
   <!-- //style="overflow: hidden" -->
+  <style>
+  .blank{
+  	border: 1px solid black;
+  	padding: 15px;
+  	margin: 20px;
+  }
+ 
+  </style>
   <body  style="overflow-x: hidden; overflow-y:auto;" id="body">
    
   </div><br>
@@ -40,19 +49,16 @@
   <div class="container">
 	<div class="header">
 	<h1>호텔 예약 현황</h1>
-	<div class="reservation-form-button">
-		<a href="/hotelinfo"><button>호텔 리스트</button></a>
-		<a href="/accomReservation"><button>호텔 예약 현황</button></a>
-		<a href="/accomInsertReservation"><button>호텔 예약 추가</button></a>
-	</div>
 	</div>
 <div class="reservation-info">
+<div style= "text-align: center;">
 	<p>호텔 예약 정보</p>
+	</div>
 	<br>
 </div>
 	<div class="reservation-list">
     <c:forEach var="AccomReservation" items="${accomReservationList}">
-    <div>
+    <div class="blank">
         <h3>숙소 이름: ${AccomReservation.accomName}</h3>
         <br>
         <p>시작 날짜 :<fmt:formatDate value="${AccomReservation.startDate}" pattern="yyyy년 M월 d일" /></p>
@@ -61,22 +67,39 @@
         <br>
         <p>예약 인원: ${AccomReservation.seats}</p>
         <br>
-        
-        <form action="/deleteReservation" method="post">
-            <input type="hidden" name="reservationId" value="${AccomReservation.reservationId}">
-            <button type="submit">예약 취소</button>
-        </form>
         <br>
     </div>
 	</c:forEach>
-
+	
 
         </div>
+        <br><br>
+        <div class="header">
+	<h1>경기 예약 현황</h1>
 	</div>
-  <div style="text-align: center;">
-    <h1>총 요금</h1>
-      <button id="total">Total :  ₩</button>
+<div class="reservation-info">
+<div style= "text-align: center;">
+	<p>경기 예약 정보</p>
+	</div>
+	<br>
+        <div class="reservation-list">
+	<c:forEach var="StadiumReservation" items="${stadiumReservationList}" begin="0" end="0">
+    <div class="blank">
+        <h3>경기장 이름: ${StadiumReservation.stadiumName}</h3>
+        <br>
+        <p>날짜 :<fmt:formatDate value="${StadiumReservation.stadiumDate}" pattern="yyyy년 M월 d일" /></p>
+        <br>
+        <p>종목 : ${StadiumReservation.stadiumEvent}</p>
+        <br>
+        <p>예약 인원: ${StadiumReservation.seats}</p>
+        <br>
+        <br>
     </div>
+	</c:forEach>
+	</div>
+        
+	</div>
+ 
 </div>
 </details>
 <br>
@@ -133,7 +156,7 @@
               <label for="password">변경할 비밀번호 확인</label>
               <input type="password" id="passwordCheck"  name="passwordCheck" required>
               <span id="passwordCheckSpan"></span>
-          </div>
+          </div><br><br>
           <button type="submit" class="infobu">회원 정보 수정</button>          
           </form>
        </section>

@@ -1,5 +1,3 @@
-/*new font*/
-/*헤더*/
 @font-face {
   src: url("../html/font/Paris2024-Variable.ttf");
   font-family: "Binggrae";
@@ -21,7 +19,6 @@
   font-style: normal;
   top: 0%;
 }
-
 #KHTRAVEL {
   color: white;
   font-size: 2rem;
@@ -70,7 +67,6 @@ a {
   overflow: hidden;
   margin: 150px auto;
 }
-
 .menu > li {
   width: 20%; /*20*5=100%*/
   float: left;
@@ -81,16 +77,13 @@ a {
   font-weight: 400;
   font-style: normal;
 }
-
 .menu a {
   color: #fff;
 }
-
 .submenu > li {
   line-height: 50px;
   background-color: #000000;
 }
-
 .submenu {
   height: 0; /*ul의 높이를 안보이게 처리*/
   overflow: hidden;
@@ -99,22 +92,18 @@ a {
   background-color: #000000;
   transition-duration: 0.5s;
 }
-
 .menu > li:hover .submenu {
   height: 250px; /*서브메뉴 li한개의 높이 50*5*/
   transition-duration: 1s;
 }
-
 .menu > li {
   width: 100%;
   text-align: center;
   line-height: 40px;
   background-color: #00000017;
 }
-
 /*바디*/
 /* 기본 폰트 설정 */
-
 @font-face {
   font-family: "Paris2024";
   src: url("/fonts/Paris2024-Variable.ttf") format("truetype");
@@ -137,24 +126,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 table {
-  
   border-collapse: collapse;
-  margin: 0 auto;
-  
+  margin-top: 80px;
 }
 table2 {
-  
   border-collapse: collapse;
   margin: 0 auto;
-  
 } /*이중선 제거*/
-
-
 h1 {
 font-size: 2rem;
 color:  white;
   margin-left: 47%;
 }
-

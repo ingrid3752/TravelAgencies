@@ -13,6 +13,7 @@ DROP TABLE mem_info;
 DROP TABLE accom;
 DROP TABLE accom_reservation;
 DROP TABLE review;
+SELECT * FROM mem_info;
 
 -- 회원 정보
 CREATE TABLE mem_info (
@@ -32,12 +33,12 @@ VALUES('qwer1234','1234','user','01012345678','test1234@naver.com');
 -- 관리자
 INSERT INTO mem_info(id,password,name,phone,email,role)
 VALUES('id','password','name','phone','email','role');
-update mem_info set password= '$2a$10$IqEceC8IjLurZgX4vc9E8.E/0iNleYS9rojSbnREz/.37.7.ouQuO;'
+update mem_info set password= '$2a$10$i6Yvl6vazGotSLgtmG7TNeiYHrnY8R76429vSY37L.RwZT7IwfWh6;'
 where id = 'admin';
 commit;
-update mem_info set role='ROLE_ADMIN' WHERE mem_code='5';
+update mem_info set role='ROLE_ADMIN' WHERE mem_code='1';
 
-DELETE FROM mem_info WHERE mem_code = 6;
+DELETE FROM mem_info WHERE mem_code = 2;
 SELECT * FROM mem_info;
 
 -- 관광지
@@ -61,6 +62,13 @@ CREATE TABLE goods (
     FOREIGN KEY (theme_code) REFERENCES theme_park(theme_code),
     FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code)
 );
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','농구','빌뇌브다스크');
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','리듬체조','빌뇌브다스크');
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','배드민턴','빌뇌브다스크');
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','사격','빌뇌브다스크');
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','서핑','빌뇌브다스크');
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','태권도','빌뇌브다스크');
+INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','테니스','빌뇌브다스크');
 INSERT INTO stadium (stadium_name,stadium_event,location) VALUES ('스타드 피에르 모루아','펜싱','빌뇌브다스크');
 
 -- 경기장
@@ -70,24 +78,37 @@ CREATE TABLE stadium (
     stadium_event VARCHAR(255), -- 종목
     location VARCHAR(255) -- 경기장 위치
 );
+DROP TABLE stadium;
 SELECT * FROM stadium;
 -- 경기장 예약
 CREATE TABLE stadium_reservation (
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
-    mem_id INT NOT NULL,         
+    mem_code INT NOT NULL,         
     stadium_code INT NOT NULL,
     stadium_name VARCHAR(255),
+    stadium_event VARCHAR(255),
     price BIGINT,
-    start_date DATE, 
-    end_date DATE,
+    stadium_date DATE,
     seats INT NOT NULL,               -- 예약 인원 수
     FOREIGN KEY (mem_code) REFERENCES mem_info(mem_code),
     FOREIGN KEY (stadium_code) REFERENCES stadium (stadium_code)
 );
 SELECT * FROM stadium_reservation;
 DROP TABLE stadium_reservation;
-INSERT INTO accom_reservation (mem_id, accom_code, start_date, end_date, seats)
-VALUES ('1','1','20240726','20240811','2');
+INSERT INTO stadium_reservation (mem_code, stadium_code, stadium_name, stadium_date, stadium_event,seats)
+VALUES (1,1,'스타드 피에르 모루아','20240811','농구','5');
+
+SELECT *
+FROM stadium_reservation r
+JOIN stadium ON r.stadium_code = stadium.stadium_code;
+SELECT * FROM mem_info;
+SELECT * FROM accom_reservation;
+
+SELECT * 
+FROM stadium_reservation
+JOIN stadium USING (stadium_code)
+WHERE mem_code = 1;
+
 -- 식당
 CREATE TABLE rest (
     rest_code INT PRIMARY KEY AUTO_INCREMENT,

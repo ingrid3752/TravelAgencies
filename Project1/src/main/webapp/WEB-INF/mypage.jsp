@@ -110,6 +110,8 @@
         </div><br><br> 
           <button type="submit" class="infobu">회원 정보 수정</button>
         </form>  
+        </section>
+        </div>
   </details>
   <details>
     <summary><span id="more"> <h1><i class="fa-solid fa-lock" style="color: #62865f;"></i>&nbsp;비밀번호 변경</h1></span></summary>

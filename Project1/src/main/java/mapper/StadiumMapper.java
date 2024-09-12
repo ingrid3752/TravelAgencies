@@ -9,10 +9,9 @@ import com.kh.project.model.vo.StadiumReservation;
 @Mapper
 public interface StadiumMapper {
 	
-	List<StadiumReservation> reservationList();
+	List<StadiumReservation> reservationList(int memCode);
     void insertReservation(StadiumReservation vo);
-    void updateStartDate(StadiumReservation vo);
-    void updateEndDate(StadiumReservation vo);
+    void updateDate(StadiumReservation vo);
     void deleteReservation(int reservationId);
     
 }

@@ -1,13 +1,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.StadiumMapper">
 
- <resultMap type="Stadium" id="stadiumMap">
+ 	<resultMap type="Stadium" id="stadiumMap">
         <id column="stadium_code" property="stadiumCode"/>
-        <result column="stadium_event" property="stadiumEvent"/>
-        <result column="date" property="date"/>
-        <result column="price" property="price"/>
-        <result column="game" property="game"/>
         <result column="stadium_name" property="stadiumName"/>
+        <result column="stadium_event" property="stadiumEvent"/>
         <result column="location" property="location"/>
     </resultMap>
 
@@ -16,43 +13,34 @@
         <result column="mem_id" property="memId"/>
         <result column="stadium_code" property="stadiumCode"/>
         <result column="stadium_name" property="stadiumName"/>
-        <result column="start_date" property="startDate"/>
-        <result column="end_date" property="endDate"/>
+        <result column="stadium_event" property="stadiumEvent"/>
+        <result column="price" property="price"/>
+        <result column="stadium_date" property="stadiumDate"/>
         <result column="seats" property="seats"/>
     </resultMap>
-    <!-- 티켓리스트 - 이름 종목 위치 날짜 Tel -->
+    <!-- 티켓리스트 - 이름 종목 위치 날짜-->
     <!-- 경기장 예약 조회 -->
-    <select id="reservationList" resultType="StadiumReservation">
-		SELECT r.*, stadium.stadium_name, stadium.location
-		FROM stadium_reservation r
-		JOIN stadium ON r.stadium_code = stadium.stadium_code
+    <select id="reservationList" resultMap="stadiumReservationMap" parameterType="int">
+		SELECT * 
+		FROM stadium_reservation
+		JOIN stadium USING (stadium_code)
+		WHERE mem_code = #{memCode}
     </select>
      
     <!-- 경기장 예약 추가 -->
     <insert id="insertReservation" parameterType="StadiumReservation">
-    	INSERT INTO stadium_reservation (mem_id, stadium_code, stadium_name, start_date, end_date, seats)
-		VALUES (#{memId},#{stadiumCode},#{stadiumName},#{startDate},#{endDate},#{seats})
+    	INSERT INTO stadium_reservation (mem_code, stadium_code, stadium_name, stadium_date, stadium_event,seats)
+		VALUES (#{memCode},#{stadiumCode},#{stadiumName},#{stadiumDate},#{stadiumEvent},#{seats})
     </insert>
     
     <!-- 경기장 시작 날짜 변경 -->
     <update id="updateStartDate" parameterType="StadiumReservation">
     	UPDATE stadium_reservation
-        SET start_date = #{startDate}, seats = #{seats}
-        WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
-    </update>
-    
-    <!-- 경기장 마지막 날짜 변경 -->
-   <update id="updateEndDate" parameterType="StadiumReservation">
-    	UPDATE stadium_reservation
-    	SET end_date = #{endDate}, seats = #{seats}
-    	WHERE reservation_id = #{reservationId} AND mem_id = #{memId}
+        SET stadium_date = #{stadiumDate}, seats = #{seats}
+        WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
     </update>
 
     
-    <!-- 경기장 예약 삭제 -->
-   <delete id="deleteReservation" parameterType="int">
-		DELETE FROM stadium_reservation
-		WEHRE reservation_id = #{reservationId} AND mem_id = #{memId}
-	</delete>
+
 
 </mapper>
