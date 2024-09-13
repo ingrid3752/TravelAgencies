@@ -36,28 +36,41 @@
     </li>
 </div> <!-- sql acccom 테이블 price INSERT INTO price 80000 120000 150000 추가 ${accom.price}  -->
   </header> 
+  <!-- ppt 기술설명 코드화면추가
+  		개개인 했던부분 추가
+  		mvc패턴 구조화면 추가
+  		
+  		-- 포트폴리오
+  		팀플하면서 힘들었던부분을 어떻게 극복했다
+   -->
        <div class="hotel">
     <form action="/accom/insertReservation" method="post">
+    <a href="/lehotel">
       <div class="hotel-info-box">
         <p>
+        
           <input type="checkbox" id="checkbox-a" name="accomName" value="르 르믹스 호텔" />
           <label for="checkbox-a">르 르믹스 호텔</label>
         </p>
       </div>
-
+</a>
+<a href="/shuhotel">
       <div class="hotel-info-box">
         <p>
           <input type="checkbox" id="checkbox-b" name="accomName" value="슈에트호텔" />
           <label for="checkbox-b">슈에트호텔</label>
         </p>  
       </div>
-
+</a>
+<a href="/dehotel">
       <div class="hotel-info-box">
         <p>
+        
           <input type="checkbox" id="checkbox-c" name="accomName" value="포르테 데 베르사유 호텔" />
           <label for="checkbox-c">포르테 데 베르사유 호텔</label>
         </p>        
       </div>
+      </a>
 
       <input type="hidden" id="memCode" name="memCode" value="${accomReservation.memCode != null ? accomReservation.memCode : 1}">
       <input type="hidden" id="accomCode" name="accomCode" value="${accomReservation.accomCode != null ? accomReservation.accomCode : 1}"> 
