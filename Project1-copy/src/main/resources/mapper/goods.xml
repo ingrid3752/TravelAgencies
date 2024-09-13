@@ -1,0 +1,26 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.GoodsMapper">
+	
+	 <resultMap id="goodsMap" type="Goods">
+        <id column="goods_code" property="goodsCode"/>
+        <result column="goods_name" property="goodsName"/>
+        <result column="price" property="price"/>
+        <result column="stock" property="stock"/>
+        <result column="description" property="description"/>
+        <result column="category" property="category"/>
+        <result column="theme_code" property="themeCode"/>
+    </resultMap>
+
+
+    <!-- 유사한 상품 추천 기능 -->
+    <select id="getSimilarGoods" parameterType="int" resultType="Goods">
+        SELECT g.*
+        FROM goods g
+        JOIN goods original ON g.category = original.category
+        WHERE original.goods_code = #{goodsId}
+        AND g.goods_code != #{goodsId}
+        ORDER BY g.price ASC
+        LIMIT 10
+    </select>
+    
+</mapper>

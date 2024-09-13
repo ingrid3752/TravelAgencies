@@ -1,0 +1,151 @@
+/*바디*/
+section p {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h2 {
+  font-size: 4rem;
+}
+section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+#h2main {
+  font-size: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#inputmain {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: auto;
+  height: 30px;
+}
+#input {
+  width: 500px;
+  height: 40px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  outline: none;
+  border-right: 0px;
+  background-color: rgba(255, 255, 255, 0.274);
+  border: solid 0px;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-family: "Sunflower", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.5)),
+    url(/IMG/Untitled\ design.png);
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+#foid {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+}
+#fopwd {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+}
+#bububu {
+  width: 500px;
+  height: 70px;
+  font-size: 1.3rem;
+  background-color: rgba(255, 184, 103, 0.521);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-left: 25%;
+}
+#bububu:hover {
+  background-color: rgba(110, 202, 255, 0.479);
+  color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333333;
+    margin: 0;
+}
+
+.reservation-form-button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.reservation-form-button a {
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    background-color: #ee9e26;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff8040;
+}
+
+.reservation-list .reservation-item {
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #f7f7f7;
+    border-left: 5px solid rgb(255, 128, 0);
+    border-radius: 4px;
+}
+
+.reservation-item h3 {
+    margin: 0 0 10px;
+    color: #333333;
+}
+
+.reservation-item p {
+    margin: 5px 0;
+    color: #666666;
+}

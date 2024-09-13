@@ -1,0 +1,496 @@
+h2{
+	font-size: 2rem;
+}
+
+/*헤더*/
+#header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding-left: 30px;
+  font-optical-sizing: auto;
+  
+  font-weight: 400;
+  font-style: normal;
+}
+
+#KHTRAVEL {
+  color: white;
+  font-size: 2rem;
+}
+#login {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  
+  font-weight: 400;
+  font-style: normal;
+}
+#sign {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 150px;
+  
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+#loginbutton {
+  height: 30px;
+  color: rgb(155, 108, 108);
+}
+#kh {
+  color: white;
+  padding-left: 30px;
+  font-size: 3rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.menu {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  overflow: hidden;
+  margin: 150px auto;
+  bottom: 500px;
+  height: 285px;
+  width: 100px;
+  overflow: hidden;
+  margin: 150px auto;
+  text-align: center;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000000;
+  
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #000000;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #000000;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000000;
+}
+
+
+
+
+.ticket-container {
+  padding-top: 25px;
+  padding-right: 10%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-left: 24%;
+}
+
+#imgbask {
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
+}
+.ticket {
+  display: flex;
+  align-items: center;
+  background-color: rgba(233, 233, 233, 0.349);
+
+  margin-bottom: 20px; /* 박스 사이의 간격을 더 띄움 */
+  height: 250px;
+
+  width: 1000px;
+  border: 3px solid black;
+}
+
+.ticket-info12 p {
+  margin-left: 250px;
+  margin-top: -200px;
+}
+#sss {
+  width: 150px;
+  height: 150px;
+  margin-left: 10%;
+}
+.ticket3 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(233, 233, 233, 0.349);
+
+  margin-bottom: 0px; /* 박스 사이의 간격을 더 띄움 */
+  height: 150px;
+
+  width: 1000px;
+  border: 3px solid black;
+}
+
+.ticket-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.ticket-icon {
+  margin: 0;
+}
+.ticket-info {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.ticket-info h2,
+.ticket-info h1 {
+  font-size: 1.7em;
+  margin: 0 0 10px 0;
+  color: #000000;
+  
+ 
+}
+
+.ticket-info p {
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.4;
+ 
+}
+
+.ticket-action {
+  text-align: right;
+  min-width: 120px;
+}
+
+.ticket-action p {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.itembu {
+  padding-top: 70px;
+}
+.itembu h1 {
+  padding-left: 50px;
+}
+.butt {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 0.1px color black solid;
+}
+
+.quantity {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.ticket-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+.ticket-pay {
+  background-color: rgba(146, 146, 146, 0.377);
+  margin-left: 30px;
+  height: 30px;
+  width: 100px;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+.control {
+  padding-right: 50px;
+}
+#container {
+  display: inline;
+}
+
+.text {
+  /* 요소의 내용이 영역을 벗어날 경우 그 부분은 숨겨지게 처리 */
+  overflow: hidden;
+  /* 요소의 표시 방법을 -webkit-box로 표시 */
+  display: -webkit-box;
+  /* webkit-box로 표시된 자식 요소들의 배치 방법 결정 (여기서는 수직) */
+  -webkit-box-orient: vertical;
+  /* 요소 내 텍스트를 지정한 라인수까지만 표시 */
+  -webkit-line-clamp: 3;
+  /* 텍스트 양쪽정렬 */
+  text-align: justify;
+  line-height: 19px;
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.more-text {
+  /* 글씨 크기,색상 지정 */
+  font-size: 16px;
+  color: rgb(182, 182, 182);
+
+  /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */
+  cursor: pointer;
+}
+#totalbutton {
+  margin-top: 30px;
+  width: 1000px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 24%;
+}
+.less-text {
+  /* 글씨 크기,색상 지정 */
+  font-size: 16px;
+  color: rgb(182, 182, 182);
+  /* 마우스 포인트가 올라갔을 때 커서 모양을 포인터로 변경 */
+  cursor: pointer;
+  /* 줄이기 버튼 (처음에는 안보이게) */
+  display: none;
+}
+#main5 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+  width: 500px;
+  height: 200px;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.bottom {
+  display: flex;
+  margin-left: 90%;
+  color: white;
+  padding: 5px;
+  font-size: 1.5rem;
+  
+}
+#main6 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 200px;
+  background-color: black;
+  color: rgba(235, 234, 234, 0.699);
+  justify-content: center;
+  margin-left: 460px;
+  font-size: 1.1rem;
+}
+
+#main6 p {
+  margin: 10px;
+}
+
+.price p {
+  
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 30px;
+}
+#modal {
+  position: fixed;
+  top: 100%;
+  transition: all 1.5s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: auto;
+  background-color: white;
+}
+#modaldiv {
+  font-size: 1rem;
+  padding: 30px;
+}
+#modaldiv button {
+  font-size: 1.3rem;
+}
+
+#modal.open {
+  top: 0;
+}
+
+#modalmo {
+  width: 700px;
+  background-color: rgb(247, 246, 246);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 32%;
+}
+#modal_ {
+  border: 1px color black;
+}
+#modal_button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin-right: 100px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+#modal_button i {
+  font-size: 15px;
+}
+#modal_button span {
+  font-size: 15px;
+}
+#close_btn {
+  margin-left: 45%;
+  cursor: pointer;
+  border: none;
+  color: #252525;
+  background-color: white;
+}
+/*모달2*/
+#modal2 {
+  position: fixed;
+  top: 100%;
+  transition: all 1.5s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: auto;
+  background-color: white;
+}
+#modaldiv2 {
+  font-size: 1rem;
+  padding: 30px;
+}
+#modaldiv2 button {
+  font-size: 1.3rem;
+}
+
+#modal2.open {
+  top: 0;
+}
+
+#modalmo2 {
+  width: 700px;
+  background-color: rgb(247, 246, 246);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 32%;
+}
+#modal_2 {
+  border: 1px color black;
+}
+#modal_button2 {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-right: 0px;
+  margin-top: 100px;
+}
+#close_btn2 {
+  margin-left: 45%;
+  cursor: pointer;
+  border: none;
+  color: #252525;
+  background-color: white;
+  margin-left: 350px;
+}
+#modal_2 img {
+  width: 500px;
+  height: 500px;
+  border: 0;
+  margin-left: 13%;
+}
+#modal_2 h4 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.ticket-container6 {
+  display: flex;
+  padding-right: 10%;
+  margin: 0 auto;
+  margin-left: 24%;
+}
+.ticket6 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(233, 233, 233, 0.349);
+
+  border: 3px solid black;
+
+  margin-bottom: 20px;
+  height: 250px;
+
+  width: 700px;
+  max-width: 700px;
+  flex-shrink: 0;
+}
+.ticket8 {
+  text-align: center;
+  background-color: rgba(233, 233, 233, 0.349);
+  border: 3px solid black;
+  height: 250px;
+  width: 270px;
+  margin-left: 30px;
+  max-width: 270px;
+  flex-shrink: 0;
+}
+.ticket8 h2 {
+  padding-right: 30px;
+  padding-top: 20px;
+}
+#totalbutton:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}

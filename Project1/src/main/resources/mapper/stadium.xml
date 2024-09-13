@@ -1,0 +1,46 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.StadiumMapper">
+
+ 	<resultMap type="Stadium" id="stadiumMap">
+        <id column="stadium_code" property="stadiumCode"/>
+        <result column="stadium_name" property="stadiumName"/>
+        <result column="stadium_event" property="stadiumEvent"/>
+        <result column="location" property="location"/>
+    </resultMap>
+
+    <resultMap type="StadiumReservation" id="stadiumReservationMap">
+        <id column="reservation_id" property="reservationId"/>
+        <result column="mem_id" property="memId"/>
+        <result column="stadium_code" property="stadiumCode"/>
+        <result column="stadium_name" property="stadiumName"/>
+        <result column="stadium_event" property="stadiumEvent"/>
+        <result column="price" property="price"/>
+        <result column="stadium_date" property="stadiumDate"/>
+        <result column="seats" property="seats"/>
+    </resultMap>
+    <!-- 티켓리스트 - 이름 종목 위치 날짜-->
+    <!-- 경기장 예약 조회 -->
+    <select id="reservationList" resultMap="stadiumReservationMap" parameterType="int">
+		SELECT * 
+		FROM stadium_reservation
+		JOIN stadium USING (stadium_code)
+		WHERE mem_code = #{memCode}
+    </select>
+     
+    <!-- 경기장 예약 추가 -->
+    <insert id="insertReservation" parameterType="StadiumReservation">
+    	INSERT INTO stadium_reservation (mem_code, stadium_code, stadium_name, stadium_date, stadium_event,seats)
+		VALUES (#{memCode},#{stadiumCode},#{stadiumName},#{stadiumDate},#{stadiumEvent},#{seats})
+    </insert>
+    
+    <!-- 경기장 시작 날짜 변경 -->
+    <update id="updateStartDate" parameterType="StadiumReservation">
+    	UPDATE stadium_reservation
+        SET stadium_date = #{stadiumDate}, seats = #{seats}
+        WHERE reservation_id = #{reservationId} AND mem_code = #{memCode}
+    </update>
+
+    
+
+
+</mapper>

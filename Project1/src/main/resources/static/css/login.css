@@ -1,0 +1,131 @@
+@font-face {
+  src: url("../html/font/Paris2024-Variable.ttf");
+  font-family: "Binggrae";
+}
+#Binggrae_font {
+  font-family: "Binggrae";
+}
+
+/*바디*/
+* {
+  font-weight: bolder;
+}
+body {
+  font-family: "Paris2024", sans-serif;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* 기본 폰트 설정 */
+@font-face {
+  font-family: "Paris2024";
+  src: url("/fonts/Paris2024-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 로그인 */
+#mainlogin {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.123);
+  width: 400px;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 700px;
+  line-height: 10px;
+}
+#mainlogin p {
+  font-size: 1.2rem;
+  color: #000000;
+  padding-left: 70px;
+  line-height: 10px;
+}
+.idid {
+  margin-bottom: 15px;
+  font-family: "Gowun Batang", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.idid label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+  }
+.idid input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(78, 78, 78, 0.692);
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  margin-left: 10%;
+}
+.idid label {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.form-group input:focus {
+  border-color: #ffffff54;
+}
+button {
+  width: 90%;
+  padding: 10px;
+  background-color: #FDCC63;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Gowun Batang", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 20px;
+}
+button:hover {
+  background-color: #8DABFF;
+  color: black;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #ffffff57;
+}
+#mainlogo {
+  width: 200px;
+  height: 200px;
+  margin-left: 25%;
+}
+label{
+	font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+	font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+	font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+input:focus {
+	outline: 1px solid #665ae870;
+}
