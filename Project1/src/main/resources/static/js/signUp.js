@@ -123,7 +123,7 @@ function Validation(event) {
     const regExpid = /^(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6,20}$/;
     if (!regExpid.test(id.value.trim())) {
         idSpan.style.color = "red";
-        idSpan.innerHTML = "아이디는 영문 소문자와 숫자를 포함한 6~20자여야 합니다람쥐.";
+        idSpan.innerHTML = "아이디는 영문 소문자와 숫자를 포함한 6~20자여야 합니다.";
         isValid = false;
     } else {
         idSpan.innerHTML = ""; // 오류 없을 시 메시지 초기화
