@@ -34,7 +34,6 @@
 		
 
 		<div id="login">
-		<!-- 멤버 정보 필요하면 이거 쓰시라고!!!!  -->
 			<sec:authorize access="isAuthenticated()" var="principal">
 			<sec:authentication property="principal" var="member" />
 				<!-- ${member.id} -->
